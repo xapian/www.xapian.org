@@ -13,17 +13,10 @@ set -e
 # FIXME : need to avoid having to update this...
 tarball="xapian-core-0.5.4.tar.gz"
 
-if test ixion = "`hostname`"; then
- projectdir="/u1/olly/xapian-website-update"
- cvsdir=":pserver:anonymous@cvs.xapian.org:/cvsroot/xapian"
- cvsmodule="www.xapian.org"
- htmldir="/usr/data/www/xapian.org"
-else
- projectdir="/home/groups/x/xa/xapian"
- cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
- cvsmodule="www.xapian.org"
- htmldir="${projectdir}/htdocs"
-fi
+projectdir="/u1/olly/xapian-website-update"
+cvsdir=":pserver:cvsuser@cvs.xapian.org:/usr/data/cvs"
+cvsmodule="www.xapian.org"
+htmldir="/usr/data/www/xapian.org"
 
 tmpdir="${projectdir}/mkwebsite_$$"
 excludedir="${tmpdir}/${cvsmodule}/.scripts"
@@ -72,17 +65,13 @@ if test stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
   touch stamp-run-ps2pdf
 fi
 cp -a apidoc.pdf "$tmpdir/$cvsmodule/docs"
-if test ixion = "`hostname`"; then
-  if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
-    cd "$tardir"
-    # no compiler on sf web server, so configure fails!
-    # FIXME is there any easy may around this?
-    ./configure 
-    cd docs
-    make doxygen_source_docs
-    cd "$projectdir"
-    touch stamp-built-sourcedoc
-  fi
+if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
+  cd "$tardir"
+  ./configure 
+  cd docs
+  make doxygen_source_docs
+  cd "$projectdir"
+  touch stamp-built-sourcedoc
 fi
 cp -a "$tardir"/docs/sourcedoc "$tmpdir/$cvsmodule/docs"
 cd "$tmpdir"
