@@ -9,6 +9,106 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<H2>Xapian 0.6.5 <small>(2003-04-10)</small></H2>
+
+<ul>
+<li> OmEnquire: optimised the handling when sort_bands == 1 and fixed incorrect
+  results in this and some other sorting cases; added some sorting testcases.
+  
+<li> OmMSetIterator: added get_collapse_count() which returns a lower bound on
+  the number of items which were removed by collapsing onto the current item.
+
+<li> OmStem: added default OmStem constructor and "none" language.  Both of these
+  give a stemmer object which leaves terms unchanged which should allow for
+  simpler logic in programs using Xapian.  The default constructor also removes
+  the need to mess with pointers in some cases.
+
+<li> Automatically disable the remote backend if we don't have fork() since the
+  remote backend requires it in several places.
+
+<li> Fixed to build with debug enabled.
+ 
+<li> testsuite: fixed to still build when some backends are disabled.
+
+<li> extra/parsequerytest.cc: Fixed to build with GCC 2.95.
+
+<li> Testsuite: Added regression test for Quartz bug which caused problems with
+  long terms on machines with signed chars.
+
+<li> testsuite/index_utils.cc: Handling of ^x was just downright wrong due to a
+  typo.
+
+<li> Improved portability: Fix for 64 bit machines.  Fixed btreetest to build with
+ older compilers lacking &lt;sstream&gt;.  Xapian is now much closer to building
+  with Sun's CFront-based Sun Pro C++ compiler, and with a Linux to mingw
+  cross-compiler.
+
+<li> PLATFORMS: Updated with the results of many test builds.
+
+<li> Improved RPM packaging of xapian-core and omega.
+
+<li> Documentation: Use http://www.doxygen.org/ as URL for doxygen; Fixed bad link
+  to our own website in overview.html; code_structure.html now only includes
+  directories in the build system.
+
+<li> HACKING: updated.
+
+<li> Removed bugs/todo.xml, TODO, TODO.release, docs/todo.html, and
+  docs/todo-release.html from the distribution.  Bugs and todo items will be
+  tracked in Bugzilla instead.
+
+<li> Install docs in /usr/share/doc/xapian-core instead of /usr/share/xapian-core.
+
+<li> omega: If xP and P are both empty, there may be a boolean query, so don't
+  force first page of hits.
+
+<li> omega: Fixed off-by-one error in rounding down topdoc - it was possible to
+  get to an empty page of hits if there were exactly a multiple of HITSPERPAGE
+  matches and the matcher over-estimated the number of matches and Omega
+  displayed page links.
+
+<li> omega: Fixed handling of multiple DB parameters to be as documented.
+
+<li> omega: Added $collapsed to report get_collapse_count() for the current hit.
+
+<li> omega: Added $transform{} which does regexp manipulation (currently disabled
+  until configure tests for regexp library are added)
+	  
+<li> omega: Added $uniq{} to eliminate duplicates from a sorted list.
+	  
+<li> omega: Don't force page 1 for a query with repeated terms!
+
+<li> omega: removed duplicates from terms listed in term frequencies.
+
+<li> omega: Added cgi parameter COLLAPSE to collapse on key values
+
+<li> omega: Added $value{key[,docid]} support to omegascript
+
+<li> omega: Renamed DATE1, DATE2, and DAYSMINUS to the more meaningful START, END,
+  and SPAN (NB SPAN is days before END, or after START, or before today -
+  whereas SPAN was before *DATE1* or before today).  The old parameters names
+  are supported (with the original semantics) for now.
+
+<li> omega: Actually install documentation!
+
+<li> templates/query: propagate B boolean filters
+
+<li> templates/godmode: removed link to EuroFerret image
+
+<li> templates/godmode: added value dumping, for values from 0-255
+
+<li> omindex: Report correct version number (was hard-wired to 1.0!)
+
+<li> scriptindex: Allow '_' in fieldnames.  Diagnose bad characters in fieldnames
+  better.
+
+<li> dbi2omega: Added DBUSER and DBPASSWD environmental variable support so that
+  password protected DBs can easily be used
+
+<li> scriptindex.cc: added missing "#include &lt;stdio.h&gt;" which caused
+  builds to fail for some platforms.
+</ul>
+
 <H2>Xapian 0.6.4 <small>(2002-12-24)</small></H2>
 
 <ul>

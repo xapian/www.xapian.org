@@ -12,7 +12,8 @@ print $navbar;
 Features of Xapian include:
 <ul>
 
-<li> Portable to most Unix platforms (known to work on x86 Linux, FreeBSD,
+<li> Portable to most Unix platforms (known to work on Linux (on x86, alpha,
+  sparc and powerpc), FreeBSD,
   OpenBSD, and Solaris).  A port to Microsoft Windows should be possible.
 
 <li> Written in C++.  Perl bindings are available in the module
