@@ -22,6 +22,13 @@ Or for those with CVS write access and accounts on ixion:
 <pre>
 find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "cvs.xapian.org:/usr/data/cvs\n"'
 </pre>
+
+For checked out trees on ixion itself:
+
+<pre>
+find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "/usr/data/cvs\n"'
+</pre>
+
 <hr>
 
 <P>The Xapian CVS tree (including file history from the original Omsee project)
