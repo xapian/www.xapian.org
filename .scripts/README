@@ -1,0 +1,11 @@
+This directory will not be added to the website.
+
+All other content in the website module will be added automatically.
+
+This directory contains the script used to update the website: if this script
+is modified, the modified version will be put in place by the next checkout,
+and used for all following checkouts.
+
+
+Currently (5 Nov 2001), the website is updated by a cronjob at 20 past each
+hour.  Any errors are sent to <richardb@users.sourceforge.net>.
