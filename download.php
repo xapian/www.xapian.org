@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-
+<? $version = "0.8.4"; $dversion = "0-8-4"; $branch = "0.8"; ?>
 <head>
 <title>The Xapian Project : Downloads</title>
 <? include "styleandmeta.php"; ?>
@@ -13,23 +13,23 @@
 
 <h1>Downloads</h1>
 
-<p>The 0.8 branch
+<p>The <? echo $branch ?> branch
 features greatly improved database update speed with quartz, improved
 compression of quartz termlist tables, many improvements to the documentation,
 many portability improvements, and new bindings allowing Xapian to be used
 from Java and TCL.</p>
 
-<p id="0.8">The latest release is <B>0.8.3</B>:</p>
+<p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>:</p>
 
 <ul>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/xapian-core-0.8.3.tar.gz">xapian-core</A>: the Xapian library itself
-<A HREF="http://cvs.xapian.org/xapian/xapian-core/NEWS?rev=v0-8-3">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/xapian-examples-0.8.3.tar.gz">xapian-examples</A>: small example programs
-<A HREF="http://cvs.xapian.org/xapian/xapian-examples/NEWS?rev=v0-8-3">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/omega-0.8.3.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
-<A HREF="http://cvs.xapian.org/xapian/xapian-applications/omega/NEWS?rev=v0-8-3">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/xapian-bindings-0.8.3.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other languages
-<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0-8-3">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-core-<? echo $version ?>.tar.gz">xapian-core</A>: the Xapian library itself
+<A HREF="http://cvs.xapian.org/xapian/xapian-core/NEWS?rev=v<? echo $dversion ?>">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-examples-<? echo $version ?>.tar.gz">xapian-examples</A>: small example programs
+<A HREF="http://cvs.xapian.org/xapian/xapian-examples/NEWS?rev=v<? echo $dversion ?>">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/omega-<? echo $version ?>.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<A HREF="http://cvs.xapian.org/xapian/xapian-applications/omega/NEWS?rev=v<? echo $dversion ?>">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other languages
+<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v<? echo $dversion ?>">[news]</A>
 </ul>
 
 <h1>Debian packages</h1>
@@ -97,20 +97,10 @@ fixing any of these problem) will be gratefully accepted.
 <h1>RPM packages</h1>
 
 <p>Fabrice Colin has built
-<a href="/RPM/FC2/">RPM packages for Fedora Core 2</a>.  A couple of points:
-
-<ul>
-
-<li> the source RPMs (the three files that end in "src.rpm") are
+<a href="/RPM/FC2/">RPM packages for Fedora Core 2</a>.
+The source RPMs (the three files that end in "src.rpm") are
 not FC2 specific - one can build binary RPMs from those with:
 <code>rpmbuild --rebuild</code>
-
-<li> xapian-bindings requires a newer version of SWIG than FC2 ships with so
-you'll need to upgrade to the development branch version to compile from
-source: <A HREF="ftp://ftp.mirror.ac.uk/sites/fedora.redhat.com/development/SRPMS/swig-1.3.21-3.src.rpm">swig-1.3.21-3.src.rpm</A>
-
-</ul>
-
 </p>
 
 <h1>Gentoo packages</h1>
