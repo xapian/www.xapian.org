@@ -13,7 +13,8 @@ $pages = array(
  "docs/" => "docs",
  "download" => "download",
  "cvs" => "cvs",
- "bugs" => "bugs"
+ "bugs" => "bugs",
+ "omega.cgi" => "search"
 );
 function navlink(&$n, $f) {
   global $this, $pages;

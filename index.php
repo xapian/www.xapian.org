@@ -23,6 +23,12 @@ should take a look at Omega, which is an application we supply built upon
 Xapian.  But unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.
 
+<P>
+<FORM METHOD=GET ACTION="omega.cgi">
+Search the Xapian website:<br>
+<INPUT NAME=P SIZE=60> <INPUT TYPE=submit VALUE=Search BORDER=0>
+</FORM>
+
 <hr>
 <?=$navbar ?>
 </body>
