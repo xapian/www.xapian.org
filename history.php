@@ -26,7 +26,7 @@ then to BrightStation PLC.<p>
 
 Omsee (using the muscat36 backend) was the retrieval engine which powered
 BrightStation's Webtop search engine, which offered a search over around
-500 million web pages (around 1.5 terrabytes of database files).  Searches
+500 million web pages (around 1.5 terabytes of database files).  Searches
 took less than a second.  The whole search engine, including the web crawlers
 and index building, ran on 30 Intel boxes.<p>
 
