@@ -16,9 +16,9 @@
 <p>Welcome to the Xapian project website.</p>
 
 <p>Xapian is an Open Source Probabilistic Information Retrieval library,
-released under the GPL.  It's written in C++, and bindings are under development
-to allow use from other languages (Perl, Python, PHP, Java, and TCL are
-currently supported).</p>
+released under the GPL.  It's written in C++, with bindings to allow use
+from other languages (Perl, Python, PHP, Java, and TCL are currently
+supported).</p>
 
 <p>Xapian is designed to be a highly adaptable toolkit to allow developers
 to easily add advanced indexing and search facilities to their own
