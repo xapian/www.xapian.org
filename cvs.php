@@ -43,7 +43,11 @@ To get the latest version of Xapian directly from our CVS, follow these steps:
 <!-- Sadly not all versions of CVS support putting the password in like this:
 <tt>cvs -z3 -d:pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs co xapian</tt>
 -->
+<!-- Further sadness - this doesn't work portably either:
  <li> <tt>echo anonymous|cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs login</tt>
+-->
+ <li> <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs login</tt>
+ <li> enter the password <tt>anonymous</tt>
  <li> <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs co xapian</tt>
 </ul>
 <li> In the newly created <tt>xapian/xapian-core</tt>,

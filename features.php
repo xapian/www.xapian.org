@@ -15,10 +15,13 @@ Features of Xapian include:
 <li> Portable to most Unix platforms (known to work on x86 Linux, FreeBSD,
   OpenBSD, and Solaris).  A port to Microsoft Windows should be possible.
 
-<li> Written in C++.  Bindings allow the library to be used from languages
-  supported by <a href="http://www.swig.org/">SWIG</a> (including PHP, Python,
-  Perl, and Java).  Note: the bindings are disabled in current
-  Xapian releases as they rely on features only in development versions of SWIG.
+<li> Written in C++.  Perl bindings are available in the module
+  <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
+  on CPAN</a>.  <a href="http://www.swig.org/">SWIG</a> bindings allow the
+  library to be used from supported languages (including PHP, Python,
+  and Java).  Note: the SWIG bindings are disabled in current releases
+  as they rely on features only in development versions of SWIG, but this
+  should be resolved soon.
 
 <li> Free Software/Open Source - licensed under the GPL.
 
@@ -43,8 +46,8 @@ categorise documents, etc.
   are currently included for Danish, Dutch, English, Finnish, French,
   German, Italian, Norwegian, Portuguese, Russian, Spanish, and Swedish.
 
-<li> Supports files &gt; 2GB where supported by the OS
-  - useful for really large document collections.
+<li> Supports database files &gt; 2GB where supported by the OS
+  - essential for scaling to large document collections.
 </ul>
 
 As well as the library, we supply a number of small example programs, and
