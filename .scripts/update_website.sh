@@ -12,7 +12,7 @@
 set -e
 
 # FIXME : need to avoid having to update this...
-tarball="xapian-core-0.6.1.tar.gz"
+tarball="/home/olly/pub/http/xapian-0.6/xapian-core-0.6.2.tar.gz"
 
 projectdir="/u1/olly/xapian-website-update"
 cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
@@ -48,7 +48,7 @@ if ! cmp "$scriptpath_cvs" "$scriptpath_active" >/dev/null 2>&1 ; then
 fi
 
 mkdir "${cvsmodule}/docs"
-tardir="`echo \"$tarball\"|sed 's/\.tar\.gz//'`"
+tardir="`echo \"$tarball\"|sed 's!.*/!!;s/\.tar\.gz//'`"
 cd "$projectdir"
 if test "$tarball" -nt stamp-unpacked-tarball ; then
   rm -rf "$tardir"

@@ -40,9 +40,8 @@ categorise documents, etc.
 <li> Supports stemming of search terms (e.g. a search for "football" would
   match documents which mention "footballs" or "footballer").  This helps
   to find relevant documents which might otherwise be missed.  Stemmers
-  are currently included for Danish, Dutch, English, French,
-  German, Italian, Norwegian, Portuguese, Spanish, and Swedish; Russian
-  and Finnish should be added shortly.
+  are currently included for Danish, Dutch, English, Finnish, French,
+  German, Italian, Norwegian, Portuguese, Russian, Spanish, and Swedish.
 
 <li> Supports files &gt; 2GB where supported by the OS
   - useful for really large document collections.
@@ -53,10 +52,11 @@ a larger application - an indexing and CGI-based application called omega:
 
 <ul>
 
-<li> Indexer supplied can index HTML, PDF, PostScript, and plain text.  Adding
-  support for indexing other formats is easy where conversion filters are
-  available (e.g. Microsoft Word).  The current indexer works using the
-  filing system - a remote web crawler could be hooked in instead.
+<li> Indexer supplied can index HTML, PHP, PDF, PostScript, and plain text.
+  Adding support for indexing other formats is easy where conversion filters
+  are available (e.g. Microsoft Word).  The supplied indexer works using the
+  filing system - we're close to being able to hook up to the htdig web
+  crawler which will allow remote sites to be indexed too.
 
 <li> You can also index data from any SQL or other RDBMS supported by the
 <A HREF="http://dbi.perl.org/">Perl DBI module</A>.

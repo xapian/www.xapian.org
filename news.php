@@ -9,6 +9,71 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<H2>Xapian 0.6.2 <small>(2002-12-07)</small></H2>
+
+<ul>
+<li> Set env var XAPIAN_SIG_DFL to stop the testsuite installing its
+  signal handler (may be useful with some debugging tools).
+
+<li> backends/quartz/btree.cc: max_item_size wasn't being set due to
+  some over-zealous code pruning.  It was defaulting to 0, and
+  was causing the code to write off the end of allocated memory
+  blocks.
+
+<li> matcher/localmatch.cc: fixed handling of wtscheme() - we were
+  trying to use it for the extra weights, and then double
+  deleting it!
+
+<li> common/omdebug.cc,common/omdebug.h: Fixed permissions on newly
+  created log file (was getting 000!); Simplified class internals;
+  Renamed env vars: OM_DEBUG_FILE is now XAPIAN_DEBUG_LOG,
+  OM_DEBUG_TYPES is now XAPIAN_DEBUG_FLAGS (old versions still work
+  for now).
+
+<li> testsuite/testsuite.cc: Fixed so running "gdb .libs/apitest"
+  finds srcdir (for an in-tree build at least).
+
+<li> Fixed to compile with --enable-debug=full.
+
+<li> docs/remote.html: Updated from OmSettings to factory functions.
+
+<li> PLATFORMS: ixion is actually Linux 2.2.
+
+<li> OmWritableDatabase now has a default constructor.
+
+<li> Weighting scheme now specified by passing OmWeight object to OmEnquire.
+  This also allows user weighting schemes (just subclass OmWeight and
+  pass in an instance of this new class).  [This doesn't currently work
+  with the remote backend.]
+
+<li> No longer use OmSettings to specify parameters for constructing databases.
+  Instead there's a factory function for each database type - temporary naming
+  scheme is OmXxx__open(), mostly because it's easy to grep for later.
+  Instead of create and overwrite flags, we pass in a value - a new possible
+  opening mode is "create or open".  [At present stub databases and the
+  machinery in InMemory to allow the multierrhandler1 test aren't working.
+  Everything else should be.]
+
+<li> OmEnquire::get_eset() takes parameters instead of an OmSettings object.
+
+<li> Fixed reversed sense of use_query_terms (and fixed reversed sense test in
+  apitest which meant this wasn't spotted).
+
+<li> Documentation: Link to annotated class lists in doxygen generated
+  documentation instead of the rather empty index pages; added doxygen
+  markup so that apidoc now documents header files; updated todo list.
+
+<li> Documentation: intro doc thing was very out of date in places - fixed.
+
+<li> Omega: index .php files as HTML, with the PHP code stripped out; omindex
+  return non-zero return code if an unexpected exception is caught; fixed
+  HTML parser to not read one character past the end of the document in
+  some cases; updated in line with OmSettings related changes to the API;
+  Fixed $dbname to return "default" for the default database instead of "";
+  templates/query: Removed now unused xDEFAULTOP hidden field, and superfluous
+  "}"; dbi2omega now more efficient and can be restricted to listed fields.
+  </ul>
+
 <H2>Xapian 0.6.1 <small>(2002-11-28)</small></H2>
 
 <ul>
