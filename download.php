@@ -53,20 +53,78 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
-<h2>0.7.1</h2>
+<h2>0.7.2</h2>
 
-The latest release is <A HREF="#0.7.1">0.7.1</A>:
-(xapian-examples hasn't changed since 0.7.0
-so we've not repackaged it solely to bump the version):
+The latest release is <A HREF="#0.7.2">0.7.2</A>:
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.1.tar.gz">xapian-core</A>: the Xapian library itself
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-examples-0.7.0.tar.gz">xapian-examples</A>: small example programs
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/omega-0.7.1.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
-a CGI search frontend.
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.2.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-examples-0.7.2.tar.gz">xapian-examples</A>: small example programs
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/omega-0.7.2.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-bindings-0.7.2.tar.gz">xapian-bindings</A>: SWIG bindings allowing Xapian to be used from various scripting languages
 </ul>
 
 <A NAME="news"><center><h1>News</h1></center></A>
+
+<A NAME="0.7.2"><H2>Xapian 0.7.2 <small>(2003-07-11)</small></H2></A>
+
+<H3>testsuite</H3>
+
+<ul>
+<li> Fixed NULL pointer dereference when a test threw an unexpected exception.
+</ul>
+
+<H3>backends</H3>
+
+<ul>
+<li> Quartz: When asked to create a quartz database, try to create the directory
+  if it doesn't already exist.  Then we don't have to do it in every single
+  Xapian program which wants to create a database...
+</ul>
+
+<H3>portability</H3>
+
+<ul>
+<li> common/getopt.h: Fixed to work better with C++ compilers on non-glibc
+  platforms.
+
+<li> common/utils.h: missing #include <ctype.h>
+
+<li> Quartz: Defined _XOPEN_SOURCE=500 for GLIBC so we get pread() and pwrite().
+
+<li> common/utils.h: Improved mingw implementation of rmdir().
+</ul>
+
+<H3>documentation</H3>
+
+<ul>
+<li> PLATFORMS: Added MacOS X 10.2 success report.
+
+<li> Improvements to doxygen-generated documentation.
+</ul>
+
+<H3>bindings</H3>
+
+<ul>
+<li> Moved to separate xapian-bindings module.
+
+<li> Added configure check for SWIG version (require at least 1.3.14).
+
+<li> bindings/swig/xapian.i: Fixed over-enthusiastic automatic conversion of
+  termname to std::string.
+
+<li> PHP4 bindings much closer to working once again; updated guile and tcl8
+  somewhat.
+</ul>
+
+<H3>omega</H3>
+
+<ul>
+<li> omega: If the same database is listed more than once, only search the first
+  occurrence.
+ 
+<li> omega: use snprintf to help guard against buffer overflows.
+</ul>
 
 <A NAME="0.7.1"><H2>Xapian 0.7.1 <small>(2003-07-08)</small></H2></A>
 
