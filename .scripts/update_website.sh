@@ -41,7 +41,7 @@ chmod g+s "$tmpdir"
 cd "$tmpdir"
 umask 0002
 cvs -Ql -d "$cvsdir" export -r HEAD "$cvsmodule"
-if ! cmp "$scriptpath_cvs" "$scriptpath_active" ; then
+if ! cmp "$scriptpath_cvs" "$scriptpath_active" >/dev/null 2>&1 ; then
   # copy new version of script ready to replace old version
   cp -a "$scriptpath_cvs" "${scriptpath_active}_new" >/dev/null 2>&1
   mv "${scriptpath_active}_new" "$scriptpath_active"
