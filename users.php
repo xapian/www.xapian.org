@@ -82,6 +82,12 @@ the dutch broadcasting organization <a href="http://www.vpro.nl/">VPRO</a>,
 <a href="http://www.webpiraat.nl/index.wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a dutch interchurch organization)<br>
 Languages: Dutch<br>
 Document types: forum topics<br>
+<?php
+/*
+Together there are 12.994.235 messages which are packed in 872.202 
+topics over all the boards that we monitor. We index 1 topic as 1 document.
+*/
+?>
 </p>
 
 <p id="venda">Organisation: <a href="http://www.venda.com/">Venda Ltd</a><br>
