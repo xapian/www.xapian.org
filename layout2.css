@@ -1,0 +1,79 @@
+/* from http://bluerobot.com/web/layouts/layout2.html */
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family:verdana, arial, helvetica, sans-serif;
+	color:#333;
+	background-color:white;
+	}
+h1, h2, h3 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-weight:900;
+	color:black;
+	}
+h1 {
+	font-size:28px;
+	line-height:28px;
+	}
+h2 {
+	font-size:16px;
+	line-height:16px;
+	}
+h3 {
+	font-size:14px;
+	line-height:14px;
+	}
+p {
+	font:11px/18px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 12px 0px;
+	padding:0px;
+	}
+
+li {
+	font:11px/18px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 4px 0px;
+	padding:0px;
+	}
+
+a {
+	color:#09c;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:600;
+	font-family:verdana, arial, helvetica, sans-serif;
+	}
+a:link {color:#09c;}
+a:visited {color:#07a;}
+a:hover {background-color:#eee;}
+
+#Content {
+	margin:0px 180px 10px 10px;
+	padding:10px;
+	}
+
+#Menu {
+	position:absolute;
+	top:40px;
+	right:20px;
+	width:142px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+/* Again, the ugly brilliant hack. */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:120px;
+	}
+/* Again, "be nice to Opera 5". */
+body>#Menu {width:120px;}
+
+#current {
+	color:black;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:600;
+	font-family:verdana, arial, helvetica, sans-serif;
+}

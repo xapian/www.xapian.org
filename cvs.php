@@ -1,18 +1,22 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<html><head><title>The Xapian Project : CVS</title></head>
-<body bgcolor="#FFFFFF" text="#000000">
-<?php
-include "navbar.php";
-print $navbar;
-?>
-<hr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
 
-<center><h1>CVS</h1></center>
+<head>
+<title>The Xapian Project : CVS</title>
+<style type="text/css" media="screen">@import "layout2.css";</style>
+</head>
 
-<P>The Xapian CVS tree (including file history from the original Omsee project)
+<body>
+
+<div id="Content">
+
+<h1>CVS</h1>
+
+<p>The Xapian CVS tree (including file history from the original Omsee project)
 can be browsed online on the <a
 href="http://cvs.xapian.org/">Xapian CVS server</a>.
-To get the latest version of Xapian directly from our CVS, follow these steps:
+To get the latest version of Xapian directly from our CVS, follow these steps:</p>
 <ol>
 <li> Check out the latest version:
  <ul>
@@ -26,11 +30,10 @@ To get the latest version of Xapian directly from our CVS, follow these steps:
  <li> enter the password <tt>anonymous</tt>
  <li> <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs co xapian</tt>
 </ul>
-<li> In the newly created <tt>xapian/xapian-core</tt>,
-    <tt>xapian/xapian-examples</tt>, and
-    <tt>xapian/xapian-applications/omega</tt> directories, issue the command
-    <tt>./bootstrap</tt> - this will run various developer tools to produce a
-    source tree like you'd get from unpacking a release source tarball.
+<li> In the newly created <tt>xapian</tt>
+    directory, run the command <tt>./bootstrap</tt> - this will run various
+    developer tools to produce a
+    source tree like you'd get from unpacking release source tarballs.
 </ol>
 <p>
 We plan to set up an automatic snapshot system which will try to compile and
@@ -39,32 +42,13 @@ This is not currently operational, but you can
 <A HREF="http://www.tartarus.org/~olly/HEAD/">download completely untested
 CVS snapshots</A>,
 which are generated every 20 minutes (so long as the code in CVS isn't too
-broken for even "make dist" to work).
+broken for even "make dist" to work).</p>
 
-<hr>
-<small>
-<P><B>Note:</B> the Xapian CVS has moved from sourceforge to a faster, more
-reliable server.  To continue using an already checked out CVS tree, execute
-this command from the top-level "xapian" directory (the one containing
-xapian-core, etc):
+</div>
 
-<pre>
-find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R ":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs\n"'
-</pre>
+<?php
+include "cssnav.php";
+?>
 
-Or for those with CVS write access and accounts on ixion:
-
-<pre>
-find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "cvs.xapian.org:/usr/data/cvs\n"'
-</pre>
-
-For checked out trees on ixion itself:
-
-<pre>
-find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "/usr/data/cvs\n"'
-</pre>
-</small>
-<hr>
-<?=$navbar ?>
 </body>
 </html>

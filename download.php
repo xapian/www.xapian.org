@@ -1,38 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<html><head><title>The Xapian Project : Downloads</title></head>
-<body bgcolor="#FFFFFF" text="#000000">
-<?php
-include "navbar.php";
-print $navbar;
-?>
-<hr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
 
-<center><h1>Downloads</h1></center>
+<head>
+<title>The Xapian Project : Downloads</title>
+<style type="text/css" media="screen">@import "layout2.css";</style>
+</head>
 
-The <A HREF="#0.7">0.7 branch</A>
+<body>
+
+<div id="Content">
+
+<h1>Downloads</h1>
+
+<p>The <A HREF="#0.7">0.7 branch</A>
 features various API changes (notably everything is now in
 a Xapian namespace, rather than having an Om or om_ prefix).  You should
 be able to build and use code written to use the old API without making
-any changes if you use the supplied om/om.h compatibility header.
+any changes if you use the supplied om/om.h compatibility header.</p>
 
-<P>
-The <A HREF="#0.6">0.6 branch</A>
+<p>The <A HREF="#0.6">0.6 branch</A>
 features improved compression in the quartz database backend
 (~20% smaller), but it can't read databases produced by 0.5.X or earlier.
 Also the stemmers have been updated to Martin Porter's Snowball stemmers,
 which give better (but therefore different) results.  Both of these mean
-you'll need to rebuild your database when upgrading to 0.6.0 or later.
+you'll need to rebuild your database when upgrading to 0.6.0 or later.</p>
 
-<P>
-We plan to ensure any further revisions to the quartz format will allow for
+<p>We plan to ensure any further revisions to the quartz format will allow for
 backward compatibility.  We didn't do that this time as the stemmers
-changed too.
+changed too.</p>
 
-<h2>0.5.5</h2>
+<h2 id="0.5">0.5.5</h2>
 
-The latest 0.5.X series release version is <A HREF="#0.5.5">0.5.5</A>.
+<p>The latest 0.5.X series release version is <A HREF="#0.5.5">0.5.5</A>.
 There are 3 tarballs (xapian-examples hasn't changed since 0.5.1
-so we've not repackaged it solely to bump the version):
+so we've not repackaged it solely to bump the version):</p>
 
 <ul>
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.5/xapian-core-0.5.5.tar.gz">xapian-core</A>: the Xapian library itself
@@ -41,11 +43,11 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
-<A NAME="0.6"><h2>0.6.5</h2></A>
+<h2 id="0.6">0.6.5</h2>
 
-The latest 0.6.X series release is <A HREF="#0.6.5">0.6.5</A>
+<p>The latest 0.6.X series release is <A HREF="#0.6.5">0.6.5</A>
 (xapian-examples hasn't changed since 0.6.3
-so we've not repackaged it solely to bump the version):
+so we've not repackaged it solely to bump the version):</p>
 
 <ul>
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-core-0.6.5.tar.gz">xapian-core</A>: the Xapian library itself
@@ -54,11 +56,11 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
-<A NAME="0.7"><h2>0.7.4</h2></A>
+<h2 id="0.7">0.7.4</h2>
 
-The latest release is <A HREF="#0.7.4">0.7.4</A>
+<p>The latest release is <A HREF="#0.7.4">0.7.4</A>
 (xapian-examples hasn't changed since 0.7.3
-so we've not repackaged it solely to bump the version):
+so we've not repackaged it solely to bump the version):</p>
 
 <ul>
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.4.tar.gz">xapian-core</A>: the Xapian library itself
@@ -67,9 +69,9 @@ so we've not repackaged it solely to bump the version):
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-bindings-0.7.4.tar.gz">xapian-bindings</A>: SWIG bindings allowing Xapian to be used from various scripting languages
 </ul>
 
-<A NAME="news"><center><h1>News</h1></center></A>
+<h1 id="news">News</h1>
 
-<A NAME="0.7.4"><H2>Xapian 0.7.4 <small>(2003-10-02)</small></H2></A>
+<H2 id="0.7.4">Xapian 0.7.4 <small>(2003-10-02)</small></H2>
 
 <H3>API</H3>
 
@@ -157,7 +159,6 @@ that's the dependency order.
 <li> Make the dummy source file C++ rather than C so that automake tells libtool
 that this is a C++ library - vital for correct linking on some platforms.
 
-
 <li> Makefile.am: Pass -no-undefined to libtool so that we can build build a DLL
 on MS Windows.
 
@@ -207,7 +208,7 @@ the match has been run.
 <li> omega: Fixed to build with Sun's C++ compiler.
 </ul>
 
-<A NAME="0.7.3"><H2>Xapian 0.7.3 <small>(2003-08-08)</small></H2></A>
+<H2 id="0.7.3">Xapian 0.7.3 <small>(2003-08-08)</small></H2>
 
 <H3>API</H3>
 
@@ -369,7 +370,7 @@ the match has been run.
 <li> simpleindex: Create database if it doesn't exist.
 </ul>
 
-<A NAME="0.7.2"><H2>Xapian 0.7.2 <small>(2003-07-11)</small></H2></A>
+<H2 id="0.7.2">Xapian 0.7.2 <small>(2003-07-11)</small></H2>
 
 <H3>testsuite</H3>
 
@@ -429,7 +430,7 @@ the match has been run.
 <li> omega: use snprintf to help guard against buffer overflows.
 </ul>
 
-<A NAME="0.7.1"><H2>Xapian 0.7.1 <small>(2003-07-08)</small></H2></A>
+<H2 id="0.7.1">Xapian 0.7.1 <small>(2003-07-08)</small></H2>
 
 <H3>testsuite</H3>
 
@@ -461,7 +462,7 @@ the match has been run.
 <li> PLATFORMS: Updated.
 </ul>
 
-<A NAME="0.7.0"><H2>Xapian 0.7.0 <small>(2003-07-03)</small></H2></A>
+<H2 id="0.7.0">Xapian 0.7.0 <small>(2003-07-03)</small></H2>
 
 <H3>API</H3>
 
@@ -623,7 +624,7 @@ the match has been run.
 <li> Improved RPM packaging of xapian-core and omega.
 </ul>
 
-<A NAME="0.6.5"><H2>Xapian 0.6.5 <small>(2003-04-10)</small></H2></A>
+<H2 id="0.6.5">Xapian 0.6.5 <small>(2003-04-10)</small></H2>
 
 <ul>
 <li> OmEnquire: optimised the handling when sort_bands == 1 and fixed incorrect
@@ -913,7 +914,7 @@ the match has been run.
   access into the dump format expected by scriptindex.
 </ul>
 
-<A NAME="0.5.5"><h2>Xapian 0.5.5 <small>(2002-12-04)</small></h2></A>
+<h2 id="0.5.5">Xapian 0.5.5 <small>(2002-12-04)</small></h2>
 
 <ul>
 <li> Fixed compilation with --enable-debug.
@@ -937,7 +938,7 @@ the match has been run.
 
 <h2>Xapian 0.5.3 <small>(2002-10-12)</small></h2>
 
-<P>Notable changes: Improvements to the test suite, and internal code cleanups:
+<p>Notable changes: Improvements to the test suite, and internal code cleanups:</p>
 
 <ul>
 <li> Internal code cleanups on Quartz Btree implementation.
@@ -964,7 +965,7 @@ the match has been run.
 
 <h2>Xapian 0.5.2 <small>(2002-10-06)</small></h2>
 
-<P>Further improvements to documentation and portability:
+<p>Further improvements to documentation and portability:</p>
 
 <ul>
 <li> docs/: converted all text docs to HTML (except omsettings which will
@@ -981,8 +982,8 @@ the match has been run.
 
 <h2>Xapian 0.5.1 <small>(2002-10-02)</small></h2>
 
-<P>This release fixes features improved documentation and some build system
-portability fixes.
+<p>This release fixes features improved documentation and some build system
+portability fixes.</p>
 
 <ul>
 <li> PLATFORMS: updated with more test results.
@@ -1003,12 +1004,12 @@ portability fixes.
 
 <h2>Xapian 0.5.0 <small>(2002-09-20)</small></h2>
 
-The last release of the software that is now known as Xapian was 
-OmSee 0.4.1 on November 24th 2000, not far from 2 years ago.
+<p>The last release of the software that is now known as Xapian was 
+OmSee 0.4.1 on November 24th 2000, not far from 2 years ago.</p>
 
-<P>
+<p>
 There's been a significant amount of development in this time,
-so we've summarised the most notable changes and improvements:
+so we've summarised the most notable changes and improvements:</p>
 
 <ul>
 <li>
@@ -1149,7 +1150,12 @@ om_termname_list by OmTermIterator
 </ul>
 
 </ul>
-<hr>
-<?=$navbar ?>
+
+</div>
+
+<?php
+include "cssnav.php";
+?>
+
 </body>
 </html>

@@ -1,16 +1,20 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<html><head><title>The Xapian Project : Commercial Support</title></head>
-<body bgcolor="#FFFFFF" text="#000000">
-<?php
-include "navbar.php";
-print $navbar;
-?>
-<hr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
 
-<center><h1>Commercial Support</h1></center>
+<head>
+<title>The Xapian Project : Commercial Support</title>
+<style type="text/css" media="screen">@import "layout2.css";</style>
+</head>
 
-The following companies offer support contracts and consultancy services
-for Xapian, and can also develop bespoke applications to meet your needs:
+<body>
+
+<div id="Content">
+
+<h1>Commercial Support</h1>
+
+<p>The following companies offer support contracts and consultancy services
+for Xapian, and can also develop bespoke applications to meet your needs:</p>
 
 <ul>
 
@@ -19,9 +23,13 @@ for Xapian, and can also develop bespoke applications to meet your needs:
 
 </ul>
 
-Please visit their websites for more information and contact details.
+<p>Please visit their websites for more information and contact details.</p>
 
-<hr>
-<?=$navbar ?>
+</div>
+
+<?php
+include "cssnav.php";
+?>
+
 </body>
 </html>

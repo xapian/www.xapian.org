@@ -1,15 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<html><head><title>The Xapian Project : Features</title></head>
-<body bgcolor="#FFFFFF" text="#000000">
-<?php
-include "navbar.php";
-print $navbar;
-?>
-<hr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
 
-<center><h1>Features</h1></center>
+<head>
+<title>The Xapian Project : Features</title>
+<style type="text/css" media="screen">@import "layout2.css";</style>
+</head>
 
-Features of Xapian include:
+<body>
+
+<div id="Content">
+
+<h1>Features</h1>
+
+<p>Noteworthy features of Xapian include:</p>
 <ul>
 
 <li> Free Software/Open Source - licensed under the GPL.
@@ -60,8 +64,8 @@ right away.
 
 </ul>
 
-As well as the library, we supply a number of small example programs, and
-a larger application - an indexing and CGI-based application called omega:
+<p>As well as the library, we supply a number of small example programs, and
+a larger application - an indexing and CGI-based application called omega:</p>
 
 <ul>
 
@@ -82,7 +86,11 @@ raw search results which you can process in your own page layout code.
 
 </ul>
 
-<hr>
-<?=$navbar ?>
+</div>
+
+<?php
+include "cssnav.php";
+?>
+
 </body>
 </html>
