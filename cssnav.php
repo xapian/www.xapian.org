@@ -11,6 +11,7 @@ $pages = array(
  "history" => "history",
  "lists" => "mailing lists",
  "docs/" => "docs",
+ "users" => "current users",
  "support" => "commercial support",
  "download" => "download",
  "news" => "recent changes",
