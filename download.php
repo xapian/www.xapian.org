@@ -32,6 +32,11 @@ from Java and TCL.</p>
 <A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v<? echo $dversion ?>">[news]</A>
 </ul>
 
+<p>If you want to build the PHP bindings, download this <a
+href="http://www.oligarchy.co.uk/xapian/0.8.5/xapian_wrap.cc.gz">replacement
+file</a>, gunzip it, and copy it over the shipped file in
+xapian-bindings-0.8.5/php4.</p>
+
 <h1 id="deb">Debian packages</h1>
 
 <p>We now supply Debian packages.  Here's how to get them.
