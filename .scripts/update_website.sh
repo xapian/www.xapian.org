@@ -5,8 +5,8 @@
 # (such as building the documentation) which are going to be
 # very costly.
 #
-# Everything in the CVS module "website" will be put onto the website,
-# except for things in "website/.scripts", such as this script.
+# Everything in the CVS module "www.xapian.org" will be put onto the website,
+# except for things in "www.xapian.org/.scripts", such as this script.
 
 set -e
 
@@ -41,6 +41,14 @@ chmod g+s "$tmpdir"
 cd "$tmpdir"
 umask 0002
 cvs -Ql -d "$cvsdir" export -r HEAD "$cvsmodule"
+if ! cmp "$scriptpath_cvs" "$scriptpath_active" ; then
+  # copy new version of script ready to replace old version
+  cp -a "$scriptpath_cvs" "${scriptpath_active}_new" >/dev/null 2>&1
+  mv "${scriptpath_active}_new" "$scriptpath_active"
+  exec "$scriptpath_active"
+  exit 1
+fi
+
 mkdir "${cvsmodule}/docs"
 tardir="`echo \"$tarball\"|sed 's/\.tar\.gz//'`"
 cd "$projectdir"
@@ -72,9 +80,7 @@ cd "$tmpdir"
 
 chmod -R g+w "${tmpdir}"
 
-# copy new version of script ready to replace old version, and remove other
-# stuff to be excluded.
-cp -a "${scriptpath_cvs}" "${scriptpath_active}_new" >/dev/null 2>&1 
+# remove other stuff to be excluded.
 rm -rf "${excludedir}"
 
 # update website with new image: rsync is good. :)
