@@ -9,30 +9,6 @@ print $navbar;
 
 <center><h1>CVS</h1></center>
 
-<hr>
-<P><B>Note:</B> the Xapian CVS has moved from sourceforge to a faster, more
-reliable server.  To continue using an already checked out CVS tree, execute
-this command from the top-level "xapian" directory (the one containing
-xapian-core, etc):
-
-<pre>
-find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R ":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs\n"'
-</pre>
-
-Or for those with CVS write access and accounts on ixion:
-
-<pre>
-find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "cvs.xapian.org:/usr/data/cvs\n"'
-</pre>
-
-For checked out trees on ixion itself:
-
-<pre>
-find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "/usr/data/cvs\n"'
-</pre>
-
-<hr>
-
 <P>The Xapian CVS tree (including file history from the original Omsee project)
 can be browsed online on the <a
 href="http://cvs.xapian.org/">Xapian CVS server</a>.
@@ -61,6 +37,29 @@ We plan to set up an automatic snapshot system which will try to compile and
 run the library testsuite ever night, and upload a snapshot if all tests pass.
 This is not currently operational though.
 
+<hr>
+<small>
+<P><B>Note:</B> the Xapian CVS has moved from sourceforge to a faster, more
+reliable server.  To continue using an already checked out CVS tree, execute
+this command from the top-level "xapian" directory (the one containing
+xapian-core, etc):
+
+<pre>
+find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R ":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs\n"'
+</pre>
+
+Or for those with CVS write access and accounts on ixion:
+
+<pre>
+find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "cvs.xapian.org:/usr/data/cvs\n"'
+</pre>
+
+For checked out trees on ixion itself:
+
+<pre>
+find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R "/usr/data/cvs\n"'
+</pre>
+</small>
 <hr>
 <?=$navbar ?>
 </body>
