@@ -26,6 +26,7 @@ you know of any more!</p>
 <a href="#diezeit">Die Zeit</a> |
 <a href="#qoop">Qoop</a> |
 <a href="#ananova">Ananova</a> |
+<a href="#react">React</a> |
 <a href="#venda">Venda</a> |
 <a href="#webtop">Webtop</a>
 <? /* | <a href="#gmane">Gmane</a>*/ ?>
@@ -71,6 +72,16 @@ Note: The archive search was available to the public.
 It's no longer linked to from the rest of the Ananova site, but you can
 still <a href="http://www.ananova.com/search/">try it out</a> (the web search
 option no longer works)
+</p>
+
+<p id="react">Organisation: <a href="http://www.react.nl/index.php">React</a>
+- Supplier of Forum Software<br>
+Application: Searching discussion forums - sites include
+<a href="http://www.amsterdam.nl/">the city of Amsterdam</a>,
+the dutch broadcasting organization <a href="http://www.vpro.nl/">VPRO</a>,
+<a href="http://www.webpiraat.nl/index.wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a dutch interchurch organization)<br>
+Languages: Dutch<br>
+Document types: forum topics<br>
 </p>
 
 <p id="venda">Organisation: <a href="http://www.venda.com/">Venda Ltd</a><br>
