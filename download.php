@@ -94,6 +94,30 @@ which aren't listed above or in the TODO lists in each package, or
 fixing any of these problem) will be gratefully accepted.
 </p>
 
+<h1>RPM packages</h1>
+
+<p>Fabrice Colin has built
+<a href="/RPM/FC2/">RPM packages for Fedora Core 2</a>.  A couple of points:
+
+<ul>
+
+<li> the source RPMs (the three files that end in "src.rpm") are
+not FC2 specific - one can build binary RPMs from those with:
+<code>rpmbuild --rebuild</code>
+
+<li> xapian-bindings requires a newer version of SWIG than FC2 ships with so
+you'll need to upgrade to the development branch version to compile from
+source: <A HREF="ftp://ftp.mirror.ac.uk/sites/fedora.redhat.com/development/SRPMS/swig-1.3.21-3.src.rpm">swig-1.3.21-3.src.rpm</A>
+
+</ul>
+
+</p>
+
+<h1>Gentoo packages</h1>
+
+<p>Xapian is in <A HREF="http://gentoo-portage.com/dev-libs/xapian">Gentoo
+Portage</A>.</p>
+
 </div>
 
 <?php
