@@ -9,6 +9,58 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<H2>Xapian 0.6.4 <small>(2002-12-24)</small></H2>
+
+<li> Quartz backend: Fixed double setting of position list when updating a
+  document with term position information (overall result was correct, just
+  inefficient); when deleting a position_list, don't check if it's empty,
+  just ask the layer below to delete it and let it handle the case when
+  there's nothing to delete; Fixed unpacking of termlist on platforms where
+  char is signed.
+
+<li> OmQueryParser: Added support for searching probabilistic fields (using
+  &lt;field&gt;:&lt;term&gt;); the unstem multimap now includes "." on the end of a
+  term if it was there in the query.
+
+<li> Don't include "om.h" as a dependency for the api docs since it's generated
+  a configure time and the dependency was forcing users to regenerate the
+  documentation, which requires doxygen to be installed.
+
+<li> Bindings: Python bindings updated to work with the updated API (still
+  disabled by default).
+
+<li> Muscat 3.6 backend: Fixed to build with the new database factory functions;
+  fixed compilation warnings; Muscat 3.6 DA and DB databases don't support
+  positional information.  Instead of throwing an exception when we try to
+  access it, return an empty position list (like a quartz database with no
+  position information would).  This allows copydatabase to be used to convert
+  a Muscat 3.6 database to a quartz one.
+
+<li> Documentation: quartzdesign and todo list updated.
+
+<li> quartzcheck: default mode changed to "v" rather than "+", since "+" is too
+  verbose for a btree of any size; if you pass a quartz database directory,
+  quartzcheck will now check all the tables which make up a quartz database.
+
+<li> quartzcompact: new tool which makes a copy of a quartz database with full
+  compaction turned on - this results in a smaller database which is faster
+  to search.  The next update will result in a lot of block splitting though
+  (since all blocks are as full as possible).
+
+<li> omega: Added $unstem to map a stemmed term to the form(s) used in the query;
+  $queryterms now only includes the first occurence of each stemmed form;
+  $prettyterm makes use of the unstem map; prefer MINHITS to MIN_HITS and
+  RAWSEARCH to RAW_SEARCH since none of the other CGI parameter names have
+  _ separating words (continue to support old names for now); fixed default
+  template to not generate topterms twice, and fixed topterms to not stick
+  outside the green box; corrected omegascript docs - it's $setrelevant
+  not $set_relevant.
+
+<li> scriptindex: index=nopos with new indexnopos action; index and indexnopos now
+  take an optional prefix argument; index=nopos is handled specially for
+  backwards compatibility; added new data action to generate terms for date
+  range searching.
+
 <H2>Xapian 0.6.3 <small>(2002-12-14)</small></H2>
 
 <ul>

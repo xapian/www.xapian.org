@@ -27,7 +27,7 @@ are complete.
 
 The latest 0.5.X series release version is 0.5.5.  There are 3 tarballs
 (xapian-examples hasn't changed since 0.5.1
-so we've not uploaded just to bump the version):
+so we've not repackaged it solely to bump the version):
 
 <ul>
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.5/xapian-core-0.5.5.tar.gz">xapian-core</A>: the Xapian library itself
@@ -36,14 +36,16 @@ so we've not uploaded just to bump the version):
 a CGI search frontend.
 </ul>
 
-<h2>0.6.3</h2>
+<h2>0.6.4</h2>
 
-The latest release is 0.6.3:
+The latest release is 0.6.4
+(xapian-examples hasn't changed since 0.6.3
+so we've not repackaged it solely to bump the version):
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-core-0.6.3.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-core-0.6.4.tar.gz">xapian-core</A>: the Xapian library itself
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-examples-0.6.3.tar.gz">xapian-examples</A>: small example programs
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/omega-0.6.3.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/omega-0.6.4.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
 a CGI search frontend.
 </ul>
 
