@@ -20,7 +20,6 @@ you know of any more!</p>
 // in exchange - for now we need to get the list going though, so don't
 // be strict about this...
 ?>
-<img align=right src="xapian-powered.png">
 <p>
 <a href="#tweakers">Tweakers.net</a> |
 <a href="#diezeit">Die Zeit</a> |
@@ -31,10 +30,13 @@ you know of any more!</p>
 <a href="#venda">Venda</a> |
 <a href="#citebase">Citebase</a> |
 <a href="#flyingdog">Flying Dog Software</a> |
+<a href="#camcity">Cambridge City Council</a> |
 <a href="#webtop">Webtop</a>
 <? /* | <a href="#gmane">Gmane</a>*/ ?>
 </p>
+<img align=right src="xapian-powered.png">
 
+<br>
 <hr>
 
 <p id="tweakers">Organisation: <a href="http://tweakers.net/">Tweakers.net</a> - the largest Dutch ICT-website<br>
@@ -105,8 +107,8 @@ Application: Searching products for ecommerce sites<br>
 Document types: SQL database records<br>
 </p>
 
-<p id="citebase">Organisation: <a href="http://citebase.eprints.org/">Citebase</a><br>
-Application: Searching academic papers<br>
+<p id="citebase">Organisation: <a href="http://citebase.eprints.org/help/index.php">Citebase</a><br>
+Application: <a href="http://citebase.eprints.org/">Searching academic papers</a><br>
 Languages: Mostly English<br>
 Database size: around 300,000 papers<br>
 </p>
@@ -115,6 +117,11 @@ Database size: around 300,000 papers<br>
 (<a href="http://www.flyingdog.biz/flyingdog/powerslave,id,1,_language,de,_country,,nodeid,1.html">oder auf Deutsch</a>)<br>
 Application: Flying Dog Software's Powerslave Content Management System <a
 href="http://www.flyingdog.biz/flyingdog/content/show.php3?id=74&amp;nodeid=7&amp;_language=uk">integrates Xapian to provide searching</a>
+</p>
+
+<p id="camcity">Organisation: <a href="http://www.cambridge.gov.uk/">Cambridge City Council</a><br>
+Application: <a href="http://www.cambridge-cityservices-faqs.co.uk/">Providing an FAQ search</a><br>
+Languages: English<br>
 </p>
 
 <p id="webtop">Organisation: Webtop Ltd (now defunct -
