@@ -14,7 +14,7 @@ set -e
 tarball="xapian-core-0.5.4.tar.gz"
 
 projectdir="/u1/olly/xapian-website-update"
-cvsdir=":pserver:cvsuser@cvs.xapian.org:/usr/data/cvs"
+cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
 cvsmodule="www.xapian.org"
 htmldir="/usr/data/www/xapian.org"
 

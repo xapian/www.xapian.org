@@ -29,8 +29,7 @@ can be browsed online on the <a
 href="http://cvs.xapian.org/">Xapian CVS server</a>.
 To get the latest version of Xapian directly from our CVS, follow these steps:
 <ol>
-<li> Log in anonymously into the CVS: <tt>cvs -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs login</tt>
-(password is <tt>anonymous</tt>)
+<li> Log in anonymously into the CVS: <tt>cvs -d:pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs login</tt>
 <li> Check out the latest version: <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs co xapian</tt>
 <li> In the newly created <tt>xapian/xapian-core</tt>,
     <tt>xapian/xapian-examples</tt>, and
