@@ -42,7 +42,7 @@ cp -a "${scriptpath_cvs}" "${scriptpath_active}_new" >/dev/null 2>&1
 rm -rf "${excludedir}"
 
 # update website with new image: rsync is good. :)
-rsync -a -r -C --delete --delete-after "${tmpdir}/${cvsmodule}/" "${htmldir}"
+rsync -a -r -C --delete --delete-after "${tmpdir}/${cvsmodule}/"* "${htmldir}/"
 
 # Clean up temporary directory.
 rm -rf "${tmpdir}"
