@@ -33,6 +33,68 @@ users of 0.8.0 should definitely upgrade):</p>
 <A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0-8-1">[news]</A>
 </ul>
 
+<h1>Debian packages</h1>
+
+<p>We now supply Debian packages.  Here's how to get them.
+</p>
+
+<p>If you're running Debian stable add the following to your sources.list:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian stable main<br>
+deb-src http://www.xapian.org/debian stable main
+</code></blockquote>
+
+<p>
+If you're running Debian unstable or testing, add the following:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian unstable main<br>
+deb-src http://www.xapian.org/debian unstable main
+</code></blockquote>
+
+<p>
+Note that these packages are still incomplete: while they should work
+well enough for most purposes, they fail lintian tests due to manpages
+for some of the binaries being missing.  In addition, only the python
+bindings are packaged so far, and the omega package doesn't perform any
+automatic configuration (ideally, it would be possible to configure it
+at install time to index, for example, the system documentation).
+There are also some other lintian failure with the stable packages,
+which don't look serious but need addressing.
+</p>
+
+<p>
+Note also that packages are only built for i386.  If you're on another
+architecture, you can build your own by adding the "deb-src" line above,
+then:
+</p>
+
+<blockquote><code>
+# su -<br>
+# apt-get update<br>
+# apt-get build-dep xapian-core<br>
+# exit<br>
+$ fakeroot apt-get source -b xapian-core<br>
+# su -<br>
+# dpkg -i libxapian2* libxapian-dev* xapian-doc* xapian-tools*<br>
+# apt-get build-dep xapian-bindings xapian-omega<br>
+# exit<br>
+$ fakeroot apt-get source -b xapian-bindings xapian-omega
+</code></blockquote>
+
+<p>
+If you're on stable, you'll need to install a swig 1.3.20 or later from
+<a href="http://www.backports.org/package.php?search=swig">backports.org</a>.
+</p>
+
+<p>Any assistance (getting these packages into Debian, reporting problems
+which aren't listed above or in the TODO lists in each package, or
+fixing any of these problem) will be gratefully accepted.
+</p>
+
 </div>
 
 <?php
