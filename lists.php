@@ -9,11 +9,10 @@ print $navbar;
 
 <center><h1>Mailing Lists</h1></center>
 
-There are four mailing lists relating to Xapian:
+There are three mailing lists relating to Xapian:
 <ul>
 <li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-discuss">xapian-discuss</a></tt> for general discussions about the Xapian project. 
 <li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-devel">xapian-devel</a></tt> for technical discussions about the development of Xapian. 
-<li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-tracker">xapian-tracker</a></tt> receives Tracker updates. 
 <li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-commits">xapian-commits</a></tt> receives CVS commits (can be a <em>lot</em> of messages).
 </ul>
 
