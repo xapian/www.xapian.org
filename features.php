@@ -20,11 +20,9 @@ Features of Xapian include:
 
 <li> Written in C++.  Perl bindings are available in the module
   <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
-  on CPAN</a>.  <a href="http://www.swig.org/">SWIG</a> bindings allow the
-  library to be used from supported languages (including PHP, Python,
-  and Java).  Note: the SWIG bindings are disabled in current releases
-  as they rely on features only in development versions of SWIG, but this
-  should be resolved soon.
+  on CPAN</a>.  <a href="http://www.swig.org/">SWIG</a> can generate bindings
+  for 11 supported languages (including PHP, Python, and Java).  At present
+  Python and PHP bindings are fully up to date.
 
 <li> Ranked probablistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
