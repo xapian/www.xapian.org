@@ -13,7 +13,7 @@
 
 <h1>Recent Changes</h1>
 
-<A NAME="0.8.0"><H2>Xapian 0.8.0 <small>(2004-04-20)</small></H2></A>
+<H2 id="0.8.0">Xapian 0.8.0 <small>(2004-04-20)</small></H2>
 
 <H3>API</H3>
 
@@ -267,7 +267,7 @@ system hasn't been tested at all - please alert us to any problems.
 <li> Python: Added basic documentation, and some examples.
 </ul>
 
-<A NAME="0.7.5"><H2>Xapian 0.7.5 <small>(2003-11-26)</small></H2></A>
+<H2 id="0.7.5">Xapian 0.7.5 <small>(2003-11-26)</small></H2>
 
 <H3>API</H3>
 
