@@ -13,6 +13,7 @@ $pages = array(
  "docs/" => "docs",
  "support" => "commercial support",
  "download" => "download",
+ "news" => "recent changes",
  "cvs" => "cvs",
  "bugs" => "bugs",
  "search" => "search this website"
