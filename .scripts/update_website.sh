@@ -35,7 +35,7 @@ scriptpath_active="${projectdir}/update_website.sh"
 rm -rf "$tmpdir"
 mkdir -p "$tmpdir"
 chmod go= "$tmpdir"
-chmod g+s "$tmpdir"
+chmod g+rws "$tmpdir"
 
 # Check website out of CVS
 cd "$tmpdir"
@@ -56,7 +56,7 @@ if test "$tarball" -nt stamp-unpacked-tarball ; then
   rm -rf "$tardir"
   tar zxf "$tarball"
   chmod go= "$tardir"
-  chmod g+s "$tardir"
+  chmod g+rws "$tardir"
   touch stamp-unpacked-tarball
 fi
 cp -a "$tardir"/docs/*.html "$tardir"/docs/apidoc "$tmpdir/$cvsmodule/docs"
@@ -78,7 +78,7 @@ cp -a apidoc.pdf "$tmpdir/$cvsmodule/docs"
 #cp -a "$tardir"/docs/sourcedoc "$tmpdir/$cvsmodule/docs"
 cd "$tmpdir"
 
-chmod -R g+w "${tmpdir}"
+chmod -R g+rw "${tmpdir}"
 
 # remove other stuff to be excluded.
 rm -rf "${excludedir}"
