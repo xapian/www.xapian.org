@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # This script builds the website by checking it out from CVS.
-# It will be run hourly, so should not involve any operations
-# (such as building the documentation) which are going to be
-# very costly.
+# It will be run hourly, so should not automatically involve any operations
+# (such as building the documentation) which are going to be very costly.
+# We implement such operations in a lazy way, only performing them when
+# the source data has changed.
 #
 # Everything in the CVS module "www.xapian.org" will be put onto the website,
 # except for things in "www.xapian.org/.scripts", such as this script.
@@ -26,10 +27,7 @@ scriptpath_cvs="${tmpdir}/${cvsmodule}/.scripts/update_website.sh"
 # Where this script is running from
 scriptpath_active="${projectdir}/update_website.sh"
 
-
-######################
-# BEGIN doing things
-
+###
 
 # Prepare temporary directory
 rm -rf "$tmpdir"

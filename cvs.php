@@ -14,7 +14,7 @@ print $navbar;
 server.  To continue using an already checked out CVS tree, execute this command from the top-level "xapian" directory (the one containing xapian-core, etc):
 
 <pre>
-find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R ":pserver:cvsuser@cvs.xapian.org:/usr/data/cvs\n"'
+find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R ":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs\n"'
 </pre>
 
 Or for those with CVS write access and accounts on ixion:
@@ -29,8 +29,7 @@ can be browsed online on the <a
 href="http://cvs.xapian.org/">Xapian CVS server</a>.
 To get the latest version of Xapian directly from our CVS, follow these steps:
 <ol>
-<li> Log in anonymously into the CVS: <tt>cvs -d:pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs login</tt>
-<li> Check out the latest version: <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs co xapian</tt>
+<li> Check out the latest version: <tt>cvs -z3 -d:pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs co xapian</tt>
 <li> In the newly created <tt>xapian/xapian-core</tt>,
     <tt>xapian/xapian-examples</tt>, and
     <tt>xapian/xapian-applications/omega</tt> directories, issue the command
