@@ -65,7 +65,7 @@ fi
 cp -a apidoc.pdf "$tmpdir/$cvsmodule/docs"
 if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
   cd "$tardir"
-  ./configure 
+  ./configure --enable-maintainer-mode
   cd docs
   make doxygen_source_docs
   cd "$projectdir"
