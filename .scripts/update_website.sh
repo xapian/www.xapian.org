@@ -11,7 +11,7 @@
 set -e
 
 # FIXME : need to avoid having to update this...
-tarball="xapian-core-0.5.3.tar.gz"
+tarball="xapian-core-0.5.4.tar.gz"
 
 projectdir="/home/groups/x/xa/xapian"
 cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
