@@ -7,10 +7,10 @@ if (preg_match("!([^/]*)\.php!", $_SERVER['PHP_SELF'], $m)) {
 $pages = array(
  "index" => "home",
  "features" => "features",
- "news" => "news",
  "history" => "history",
  "lists" => "mailing lists",
  "docs/" => "docs",
+ "support" => "commercial support",
  "download" => "download",
  "cvs" => "cvs",
  "bugs" => "bugs",
