@@ -62,7 +62,7 @@ for some of the binaries being missing.  In addition, only the python
 bindings are packaged so far, and the omega package doesn't perform any
 automatic configuration (ideally, it would be possible to configure it
 at install time to index, for example, the system documentation).
-There are also some other lintian failure with the stable packages,
+There are also some other lintian failures with the stable packages,
 which don't look serious but need addressing.
 </p>
 
