@@ -9,6 +9,13 @@ print $navbar;
 
 <center><h1>Downloads</h1></center>
 
+The 0.7 branch features various API changes (notably everything is now in
+a Xapian namespace, rather than having an Om or om_ prefix).  Old code
+should still build if you use the supplied om/om.h compatibility header.
+However, the changes between 0.6.5 and 0.7.0 are extensive so you should
+test carefully before deploying 0.7.0 in a production environment.
+
+<P>
 The 0.6 branch features improved compression in the quartz database backend
 (~20% smaller), but it can't read databases produced by 0.5.X or earlier.
 Also the stemmers have been updated to Martin Porter's Snowball stemmers,
@@ -17,11 +24,7 @@ you'll need to rebuild your database when upgrading to 0.6 or later.
 
 <P>
 The revised quartz format shouldn't change further for a while
-(and when it does, the old format will be supported), but the API is also
-being cleaned up, and this work is not yet complete.  If you use omega
-unmodified, this doesn't matter to you.  If you've written your own code,
-you may wish to stay with 0.5.X and update it just once when the API changes
-are complete.
+(and when it does, the old format will be supported).
 
 <h2>0.5.4</h2>
 
@@ -38,7 +41,7 @@ a CGI search frontend.
 
 <h2>0.6.5</h2>
 
-The latest release is <A HREF="#0.6.5">0.6.5</A>
+The latest 0.6.X series release is <A HREF="#0.6.5">0.6.5</A>
 (xapian-examples hasn't changed since 0.6.3
 so we've not repackaged it solely to bump the version):
 
@@ -49,7 +52,180 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
+<h2>0.7.0</h2>
+
+The latest release is <A HREF="#0.7.0">0.7.0</A>:
+
+<ul>
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.0.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-examples-0.7.0.tar.gz">xapian-examples</A>: small example programs
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/omega-0.7.0.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
+a CGI search frontend.
+</ul>
+
 <A NAME="news"><center><h1>News</h1></center></A>
+
+<A NAME="0.7.0"><H2>Xapian 0.7.0 <small>(2003-07-03)</small></H2></A>
+
+<H3>API</H3>
+
+<ul>
+<li> Moved everything into a Xapian namespace, which the main header now being
+  xapian.h (rather than om/om.h).
+
+<li> Three classes have been renamed for better naming consistency:
+  OmOpeningError is now Xapian::DatabaseOpeningError, OmPostListIterator is
+  now Xapian::PostingIterator, and OmPositionListIterator is now
+  Xapian::PositionIterator.
+
+<li> xapian.h includes &lt;iosfwd&gt; rather than &lt;iostream&gt;
+  - if you were relying on
+  the implicit inclusion, you'll need to add an explicit "#include &lt;iostream&gt;".
+
+<li> Replaced om_termname with explicit use of std::string - om_termname was just
+  a typedef for std::string and the typedef doesn't really buy us anything.
+
+<li> Older code can be compiled by continuing to use om/om.h which uses #define
+  and other tricks to map the old names onto the new ones.
+
+<li> Define XAPIAN_VERSION (e.g. 0.7.0), XAPIAN_MAJOR_VERSION (e.g. 0), and
+  XAPIAN_MINOR_VERSION (e.g. 7).
+
+<li> Updated omega and xapian-examples to use Xapian namespace.
+</ul>
+
+<H3>queryparser</H3>
+
+<ul>
+<li> Xapian::QueryParser: Accent normalisation added; Improved error reporting;
+  Fixed to handle the most common examples found in the wild which used to give
+  "parse error".
+</ul>
+
+<H3>bindings</H3>
+
+<ul>
+<li> Python bindings brought up to date - use ./configure --enable-bindings to
+  build them.  Requires Python &gt;= 2.0 - may require Python &gt;= 2.1.
+  
+<li> Enabled optional building of bindings as part of normal build process.  Old
+  Perl and Java bindings dropped; for Perl, use Search::Xapian from CPAN; Java
+  JNI bindings will be replaced with a SWIG-based implmentation.
+</ul>
+
+<H3>internal implementation changes</H3>
+
+<ul>
+<li> Removed one wrapper layer from the internal implementation of most API
+  classes.
+
+<li> Xapian::Stem now uses reference counted internals.
+
+<li> Internally a lot of cases of unnecessary header inclusion have been removed
+  or replaced with forward declarations of classes.  This should speed up
+  compilation and recompilation of the Xapian library.
+
+<li> Suppress warnings in Snowball generated C code.
+
+<li> Reworked query serialisation in the remote backend so that the code is now
+  all in one place.  The serialisation is now rather more compact and no longer
+  relies on flex for parsing.
+</ul>
+
+<H3>testsuite</H3>
+
+<ul>
+<li> Moved all the core library tests to tests subdirectory.
+
+<li> apitest now allows backend to be specified with "-b" rather than having to
+  mess with environmental variables.
+
+<li> Testsuite programs can now hook into valgrind for leak checking, undefined
+  variable checking, etc.
+</ul>
+
+<H3>backends</H3>
+
+<ul>
+<li> Fixed parsing of port number in remote stub databases.
+
+<li> Quartz: Improved error message when asked to open a pre-0.6 Quartz database.
+
+<li> Quartz backend: Workaround for shared_level problem turns out to
+  be arguably the better approach, so made it permanent and tidied up
+  code.
+</ul>
+
+<H3>build system</H3>
+
+<ul>
+<li> Build system fixed to never leave partial files in place of the expected
+  output if a build is interrupted.
+
+<li> quartzcheck, quartzdump, and quartzcompact are now built by "make" rather
+  than only by "make check".
+
+<li> xapian-config: Removed --prefix and --exec-prefix - you can't reliably
+  install Xapian with a different prefix to the one it was configured with,
+  yet these options give the impression you can.
+</ul>
+
+<H3>miscellaneous</H3>
+
+<ul>
+<li> Fixed sending debug output to a file with XAPIAN_DEBUG_LOG with a value which
+  didn't contain "%%" (%% expands to the current PID).
+
+<li> Fixed Xapian::MSetIterator::get_collapse_count() to work as intended.
+</ul>
+
+<H3>omega</H3>
+
+<ul>
+<li> omindex,scriptindex: Normalise accents in probabilistic terms.
+
+<li> omindex: Read output from pstotext and pdftotext via pipes rather
+  than temporary files to side-step the whole problem of secure temporary file
+  creation; Use pdfinfo to get the title and keywords from when indexing a PDF;
+  Safe filename escaping tweaked to not escape common safe punctuation.
+
+<li> omindex: Implement an upper limit on the length of URL terms - this is a
+  slightly conservative 240 characters.  If the URL term would be longer than
+  this, its last few bytes are replaced by a hash of the tail of the URL.  This
+  means that (apart from hopefully very rare collisions) urlterms should still
+  be unique ids for documents.  This is forward and backward compatible for
+  URLs less than 240 characters.
+
+<li> omindex: Clean up processing of HTML documents:
+  <ul>
+  <li> Ignore the contents of &lt;script&gt; and &lt;style&gt; tags in HTML.
+  <li> Strip initial whitespace in each tag in an HTML document.
+  <li> Try not to split words in half when truncating title and summary.
+  </ul>
+
+<li> query.cc: Set STEM_LANGUAGE near the start of the file so it's easy
+  for users to change until we get better configurability.
+
+<li> omega: Replaced half-hearted logging support with flexible OmegaScript-based
+  approach with new $log command.  Also added $now to allow the current
+  date/time to be logged.
+
+<li> templates/xml: added collapse info to xml template.
+</ul>
+
+<H3>documentation</H3>
+
+<ul>
+<li> Assorted minor documentation improvements.
+
+<li> PLATFORMS: Updated.
+</ul>
+
+<H3>rpms</H3>
+
+<ul>
+<li> Improved RPM packaging of xapian-core and omega.
+</ul>
 
 <A NAME="0.6.5"><H2>Xapian 0.6.5 <small>(2003-04-10)</small></H2></A>
 

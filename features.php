@@ -12,9 +12,11 @@ print $navbar;
 Features of Xapian include:
 <ul>
 
+<li> Free Software/Open Source - licensed under the GPL.
+
 <li> Portable to most Unix platforms (known to work on Linux (on x86, alpha,
-  sparc and powerpc), FreeBSD,
-  OpenBSD, and Solaris).  A port to Microsoft Windows should be possible.
+  sparc and powerpc), FreeBSD, OpenBSD, and Solaris).  Builds for Microsoft
+  Windows, but currently untested.
 
 <li> Written in C++.  Perl bindings are available in the module
   <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
@@ -23,8 +25,6 @@ Features of Xapian include:
   and Java).  Note: the SWIG bindings are disabled in current releases
   as they rely on features only in development versions of SWIG, but this
   should be resolved soon.
-
-<li> Free Software/Open Source - licensed under the GPL.
 
 <li> Ranked probablistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
@@ -38,8 +38,10 @@ categorise documents, etc.
   occuring in an exact phrase or within a specified number of words,
   either in a specified order, or in any order.
 
-<li> Full range of boolean search operators ("stock NOT market", etc).
-  The results of the boolean search are ranked by the probablistic weights.
+<li> Full range of structured boolean search operators ("stock NOT market",
+  etc).  The results of the boolean search are ranked by the probablistic
+  weights.  Boolean filters can also be applied to restrict a probabilistic
+  search.
 
 <li> Supports stemming of search terms (e.g. a search for "football" would
   match documents which mention "footballs" or "footballer").  This helps
@@ -49,6 +51,13 @@ categorise documents, etc.
 
 <li> Supports database files &gt; 2GB where supported by the OS
   - essential for scaling to large document collections.
+
+<li> Platform independent data formats - you can build a database on one
+  machine and search it on another.
+
+<li> Allows simultaneous update and searching.  New documents become searchable
+right away.
+
 </ul>
 
 As well as the library, we supply a number of small example programs, and
