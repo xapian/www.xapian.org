@@ -19,17 +19,17 @@ compression of quartz termlist tables, many improvements to the documentation,
 many portability improvements, and new bindings allowing Xapian to be used
 from Java and TCL.</p>
 
-<p id="0.8">The latest release is <B>0.8.2</B>:</p>
+<p id="0.8">The latest release is <B>0.8.3</B>:</p>
 
 <ul>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.2/xapian-core-0.8.2.tar.gz">xapian-core</A>: the Xapian library itself
-<A HREF="http://cvs.xapian.org/xapian/xapian-core/NEWS?rev=v0-8-2">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.2/xapian-examples-0.8.2.tar.gz">xapian-examples</A>: small example programs
-<A HREF="http://cvs.xapian.org/xapian/xapian-examples/NEWS?rev=v0-8-2">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.2/omega-0.8.2.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
-<A HREF="http://cvs.xapian.org/xapian/xapian-applications/omega/NEWS?rev=v0-8-2">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.2/xapian-bindings-0.8.2.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other languages
-<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0-8-2">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/xapian-core-0.8.3.tar.gz">xapian-core</A>: the Xapian library itself
+<A HREF="http://cvs.xapian.org/xapian/xapian-core/NEWS?rev=v0-8-3">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/xapian-examples-0.8.3.tar.gz">xapian-examples</A>: small example programs
+<A HREF="http://cvs.xapian.org/xapian/xapian-examples/NEWS?rev=v0-8-3">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/omega-0.8.3.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<A HREF="http://cvs.xapian.org/xapian/xapian-applications/omega/NEWS?rev=v0-8-3">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.3/xapian-bindings-0.8.3.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other languages
+<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0-8-3">[news]</A>
 </ul>
 
 <h1>Debian packages</h1>

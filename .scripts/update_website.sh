@@ -12,7 +12,7 @@
 set -e
 
 # FIXME : need to avoid having to update this...
-tarball="/usr/data/www/oligarchy.co.uk/xapian/0.8.2/xapian-core-0.8.2.tar.gz"
+tarball="/usr/data/www/oligarchy.co.uk/xapian/0.8.3/xapian-core-0.8.3.tar.gz"
 
 projectdir="/u1/olly/xapian-website-update"
 cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
