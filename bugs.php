@@ -47,8 +47,8 @@
 <li> <a href="/cgi-bin/bugzilla/relogin.cgi">Forget the currently stored login</a>
 <li> <a href="/cgi-bin/bugzilla/userprefs.cgi">Change password or user preferences</a>
 </ul>
-<script type="JavaScript" src="localconfig.js"></script>
-<script type="JavaScript" src="quicksearch.js"></script>
+<script type="JavaScript" src="/bugzilla/localconfig.js"></script>
+<script type="JavaScript" src="/bugzilla/quicksearch.js"></script>
 
 <form name="f" action="/cgi-bin/bugzilla/show_bug.cgi" method="get"
       onsubmit="QuickSearch(); return false;"> 
