@@ -88,6 +88,9 @@ body>#Menu {width:8em;}
 
 #Content>#info {
 	position:fixed;
+	/* Windows versions MSIE 5 5.5 and 6 ignore the _, fixing their lack
+	   of support for position:fixed (well, fixing after a fashion) */
+	_position:absolute;
 	top: 10px;
 	right: 20px;
 }
