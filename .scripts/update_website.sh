@@ -92,7 +92,7 @@ rm -rf "${tmpdir}"
 
 # rebuild omega's database
 # FIXME: sort out permissions so this'll work for other people too
-LD_LIBRARY_PATH=/u1/olly/install/lib /u1/olly/install/bin/omindex --db /u1/olly/omega/data/default6 --url / /usr/data/www/xapian.org
+LD_LIBRARY_PATH=/u1/olly/install-0.6/lib /u1/olly/install-0.6/bin/omindex --db /u1/olly/omega/data6/default --url / /usr/data/www/xapian.org
 
 # return successfully.
 exit 0
