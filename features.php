@@ -14,15 +14,16 @@ Features of Xapian include:
 
 <li> Free Software/Open Source - licensed under the GPL.
 
-<li> Portable to most Unix platforms (known to work on Linux (on x86, alpha,
-  sparc and powerpc), FreeBSD, OpenBSD, and Solaris).  Builds for Microsoft
-  Windows, but currently untested.
+<li> Portable to most Unix platforms (known to work on Linux (on x86, amd64,
+  alpha, sparc and powerpc), FreeBSD, OpenBSD, Solaris, and MacOS X).  It
+  also work on Microsoft Windows.
 
 <li> Written in C++.  Perl bindings are available in the module
   <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
-  on CPAN</a>.  <a href="http://www.swig.org/">SWIG</a> can generate bindings
-  for 11 supported languages (including PHP, Python, and Java).  At present
-  Python and PHP bindings are fully up to date.
+  on CPAN</a>.  Java JNI bindings are working and will be released shortly.
+  We also support <a href="http://www.swig.org/">SWIG</a> which can generate
+  bindings for 11 languages.  At present those for Python and PHP are
+  fully up to date.
 
 <li> Ranked probablistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near

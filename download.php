@@ -364,8 +364,8 @@ The latest release is <A HREF="#0.7.3">0.7.3</A>:
   build them.  Requires Python &gt;= 2.0 - may require Python &gt;= 2.1.
   
 <li> Enabled optional building of bindings as part of normal build process.  Old
-  Perl and Java bindings dropped; for Perl, use Search::Xapian from CPAN; Java
-  JNI bindings will be replaced with a SWIG-based implmentation.
+  Perl and Java bindings dropped; for Perl, use Search::Xapian from CPAN; New
+  Java JNI bindings will be released shortly.
 </ul>
 
 <H3>internal implementation changes</H3>
