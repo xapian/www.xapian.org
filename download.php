@@ -22,11 +22,16 @@ The latest 0.5.X series release version is 0.5.4.  There are 3 tarballs
 0.5.3 so we've not uploaded just to bump the version):
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.3/xapian-core-0.5.3.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.4/xapian-core-0.5.4.tar.gz">xapian-core</A>: the Xapian library itself
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.1/xapian-examples-0.5.1.tar.gz">xapian-examples</A>: small example programs
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.3/omega-0.5.3.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
 a CGI search frontend.
 </ul>
+
+The 0.5.4 tarball won't build if you configure with --enable-debug.  If you
+want a debug build, apply this
+<A HREF="http://www.tartarus.org/~olly/xapian-0.5.4/xapian-core-0.5.4.patch"
+>small patch</A> to fix the problems.
 
 <h2>0.6.1</h2>
 
