@@ -20,7 +20,7 @@ with potential breakage and want to try the latest development code, or
 do development yourself, you can access our version control system.
 </p>
 
-<h1>Subversion</h1>
+<h2>Subversion</h2>
 
 <p>As of April 2005, we've switched version control systems from CVS to
 Subversion (also known as SVN for short).  The Subversion repository includes
@@ -102,7 +102,7 @@ svn co svn+ssh+userv://svn.xapian.org/xapian/trunk xapian
 </tt></blockquote>
 <?php } ?>
 
-<h1>CVS</h1>
+<h2>CVS</h2>
 
 <p>If you're interested in source archeology, you can
 <a href="http://cvs.xapian.org/xapian/">browse</a>
