@@ -9,7 +9,24 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
-<h2>Xapian 0.5.1</h2>
+<h2>Xapian 0.5.2 <small>(2002-10-06)</small></h2>
+
+<P>Further improvements to documentation and portability:
+
+<ul>
+<li> docs/: converted all text docs to HTML (except omsettings which will
+  has odd markup (LaTeX?) and will probably soon be obsolete anyway).
+
+<li> remote backend: Fixed handling of timeouts which are now in the past - fixes
+  test failures with redhat/x86.
+
+<li> quartz backend: now works on 64 bit platforms.
+
+<li> test suite: try to spot mishandled exceptions and stop them causing bogus
+  OMEXCEPT failures.
+</ul>
+
+<h2>Xapian 0.5.1 <small>(2002-10-02)</small></h2>
 
 <P>This release fixes features improved documentation and some build system
 portability fixes.
@@ -30,7 +47,7 @@ portability fixes.
   in preference.
 </ul>
 
-<h2>Xapian 0.5.0</h2>
+<h2>Xapian 0.5.0 <small>(2002-09-20)</small></h2>
 
 The last release of the software that is now known as Xapian was 
 OmSee 0.4.1 on November 24th 2000, not far from 2 years ago.
