@@ -36,6 +36,18 @@ chmod g+s "${tmpdir}"
 cd "${tmpdir}"
 umask 0002
 cvs -Ql -d "${cvsdir}" export -r HEAD "${cvsmodule}"
+cvs -Ql -d "${cvsdir}" export -r HEAD "xapian/xapian-core"
+cd xapian/xapian-core
+./buildall
+./configure
+cd docs
+make
+make doxygen_source_docs
+mkdir "${tmpdir}/${cvsmodule}/docs"
+mv *.html apidoc sourcedoc "${tmpdir}/${cvsmodule}/docs" 
+cd ../../..
+rm -rf xapian
+
 chmod -R g+w "${tmpdir}"
 
 # copy new version of script ready to replace old version, and remove other
@@ -58,4 +70,4 @@ rm -rf "${tmpdir}"
 mv "${scriptpath_active}_new" "${scriptpath_active}" >/dev/null 2>&1 
 
 # return successfully.
-exit 0;
+exit 0
