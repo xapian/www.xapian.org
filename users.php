@@ -27,6 +27,7 @@ you know of any more!</p>
 <a href="#qoop">Qoop</a> |
 <a href="#ananova">Ananova</a> |
 <a href="#react">React</a> |
+<a href="#theyworkforyou">TheyWorkForYou</a> |
 <a href="#venda">Venda</a> |
 <a href="#webtop">Webtop</a>
 <? /* | <a href="#gmane">Gmane</a>*/ ?>
@@ -89,6 +90,12 @@ topics over all the boards that we monitor. We index 1 topic as 1 document.
 */
 ?>
 </p>
+
+<p id="theyworkforyou">Organisation: <a href="http://www.theyworkforyou.com/"
+>TheyWorkForYou.com</a><br>
+Application: Searching Hansard, the UK House of Commons Official Report<br>
+Languages: English<br>
+Database size: at least 400,000 documents
 
 <p id="venda">Organisation: <a href="http://www.venda.com/">Venda Ltd</a><br>
 Application: Searching products for ecommerce sites<br>
