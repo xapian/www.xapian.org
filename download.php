@@ -9,12 +9,12 @@ print $navbar;
 
 <center><h1>Downloads</h1></center>
 
-The latest release version is 0.5.0.  There are 3 tarballs:
+The latest release version is 0.5.1.  There are 3 tarballs:
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.0/xapian-core-0.5.0.tar.gz">xapian-core</A>: the Xapian library itself
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.0/xapian-examples-0.5.0.tar.gz">xapian-examples</A>: small example programs
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.0/omega-0.5.0.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.1/xapian-core-0.5.1.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.1/xapian-examples-0.5.1.tar.gz">xapian-examples</A>: small example programs
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.1/omega-0.5.1.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
 a CGI search frontend.
 </ul>
 
