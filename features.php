@@ -49,7 +49,8 @@ categorise documents, etc.
   German, Italian, Norwegian, Portuguese, Russian, Spanish, and Swedish.
 
 <li> Supports database files &gt; 2GB where supported by the OS
-  - essential for scaling to large document collections.
+  - essential for
+  <A HREF="docs/scalability.html">scaling to large document collections</A>.
 
 <li> Platform independent data formats - you can build a database on one
   machine and search it on another.
