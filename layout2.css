@@ -25,7 +25,7 @@ h3 {
 	line-height:14px;
 	}
 p {
-	font:11px/18px verdana, arial, helvetica, sans-serif;
+	font:13px/18px verdana, arial, helvetica, sans-serif;
 	margin:0px 0px 12px 0px;
 	padding:0px;
 	}
@@ -35,14 +35,14 @@ ul, ol {
 	padding-left:1em;
 	}
 li {
-	font:11px/18px verdana, arial, helvetica, sans-serif;
+	font:13px/18px verdana, arial, helvetica, sans-serif;
 	margin:0px 0px 4px 0px;
 	padding:0px;
 	}
 
 a {
 	color:#09c;
-	font-size:11px;
+	font-size:13px;
 	text-decoration:none;
 	font-weight:600;
 	font-family:verdana, arial, helvetica, sans-serif;
@@ -77,7 +77,7 @@ body>#Menu {width:8em;}
 
 #current {
 	color:black;
-	font-size:11px;
+	font-size:13px;
 	text-decoration:none;
 	font-weight:600;
 	font-family:verdana, arial, helvetica, sans-serif;
