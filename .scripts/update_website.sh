@@ -8,6 +8,8 @@
 # Everything in the CVS module "website" will be put onto the website,
 # except for things in "website/.scripts", such as this script.
 
+set -e
+
 projectdir="/home/groups/x/xa/xapian"
 cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
 cvsmodule="www.xapian.org"
