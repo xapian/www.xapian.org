@@ -19,7 +19,9 @@ compression of quartz termlist tables, many improvements to the documentation,
 many portability improvements, and new bindings allowing Xapian to be used
 from Java and TCL.</p>
 
-<p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>:</p>
+<p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>
+(there's a minor update to xapian-bindings numbered <B>0.8.5.1</B>
+which fixes problems with the PHP and Java bindings):</p>
 
 <ul>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-core-<? echo $version ?>.tar.gz">xapian-core</A>: the Xapian library itself
@@ -28,14 +30,10 @@ from Java and TCL.</p>
 <A HREF="http://cvs.xapian.org/xapian/xapian-examples/NEWS?rev=v<? echo $dversion ?>">[news]</A>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/omega-<? echo $version ?>.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
 <A HREF="http://cvs.xapian.org/xapian/xapian-applications/omega/NEWS?rev=v<? echo $dversion ?>">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other languages
-<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v<? echo $dversion ?>">[news]</A>
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.5/xapian-bindings-0.8.5.1.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
+<!--<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v<? echo $dversion ?>">[news]</A>-->
+<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0.8.5.1">[news]</A>
 </ul>
-
-<p>If you want to build the PHP bindings, download this <a
-href="http://www.oligarchy.co.uk/xapian/0.8.5/xapian_wrap.cc.gz">replacement
-file</a>, gunzip it, and copy it over the shipped file in
-xapian-bindings-0.8.5/php4.</p>
 
 <h1 id="deb">Debian packages</h1>
 
