@@ -1,6 +1,6 @@
 <?php
 list($file, $rev, $rev2) = explode('?', $QUERY_STRING);
-$redirect = 'http://cvs.sf.net/cgi-bin/viewcvs.cgi/xapian/' . $file;
+$redirect = 'http://cvs.xapian.org/' . $file;
 if ($rev == '') {
  // deleted file
 } else if ($rev2 == '') {
