@@ -9,6 +9,33 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<h2>Xapian 0.5.3 <small>(2002-10-12)</small></h2>
+
+<P>Notable changes: Improvements to the test suite, and internal code cleanups:
+
+<ul>
+<li> Internal code cleanups on Quartz Btree implementation.
+
+<li> Minor documentation updates (TODO and PLATFORMS updated; Martin Porter's
+  stemming paper removed - see the Snowball site for background stemmer
+  info).
+
+<li> Implemented QuartzAllTermsList::get_approx_size().
+
+<li> Removed a couple of occurences of "using std::XXX;" from externally
+  visible headers.
+
+<li> With GCC, add warning flags "-Wall -W" rather than "-Wall -Wunused" (-Wall
+  implies -Wunused anyway).  Fixed all the warnings this throws up, except in
+  languages/ (that code is to be replaced with Snowball soon).
+
+<li> Test suite: Disable colour test output if stdout isn't a terminal and
+  reworked check for broken exception handling as the previous  version never
+  seemed to fire.  Other assorted minor improvements.
+
+<li> include/om/om.h is now removed on "make distclean" rather than "make clean".
+</ul>
+
 <h2>Xapian 0.5.2 <small>(2002-10-06)</small></h2>
 
 <P>Further improvements to documentation and portability:
