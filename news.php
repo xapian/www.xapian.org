@@ -11,6 +11,7 @@ print $navbar;
 
 <H2>Xapian 0.6.4 <small>(2002-12-24)</small></H2>
 
+<ul>
 <li> Quartz backend: Fixed double setting of position list when updating a
   document with term position information (overall result was correct, just
   inefficient); when deleting a position_list, don't check if it's empty,
@@ -60,6 +61,7 @@ print $navbar;
   take an optional prefix argument; index=nopos is handled specially for
   backwards compatibility; added new data action to generate terms for date
   range searching.
+</ul>
 
 <H2>Xapian 0.6.3 <small>(2002-12-14)</small></H2>
 
