@@ -78,6 +78,8 @@ a:hover {background-color:#eee;}
    the box model correct, and understand selectors. */
 body>#Menu {width:8em;}
 
+#Menu a:hover {background-color:#006;color:#fff;}
+
 #current {
 	color:black;
 	font-size:13px;
