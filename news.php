@@ -34,7 +34,7 @@ print $navbar;
 <li> Assorted improvements to the documentation, especially the documentation
   of the internals of the Quartz backend.
 
-<li> Removed the three uses of RTTI (typeid() and dynamic_cast<>) - one was
+<li> Removed the three uses of RTTI (typeid() and dynamic_cast&lt;&gt;) - one was
   totally superfluous, and the other two easily avoided.
 
 <li> Omega and simpleindex example: limit probabilistic term length to 64
@@ -43,6 +43,20 @@ print $navbar;
 
 <li> Omega: Added dbi2omega perl script to dump any database which perl DBI can
   access into the dump format expected by scriptindex.
+</ul>
+
+<h2>Xapian 0.5.5 <small>(2002-12-04)</small></h2>
+
+<ul>
+<li> Fixed compilation with --enable-debug.
+
+<li> Minor documentation updates.
+
+<li> Omega: Fixed paging on default database; removed xDEFAULTOP from the query
+  template as it's no longer used; removed bogus unmatched '}' from query
+  template; added dbi2omega perl script to dump any database which perl DBI
+  can access into the dump format expected by scriptindex; limit length of
+  probabilistic terms generated to 64 characters.
 </ul>
 
 <h2>Xapian 0.5.4 <small>(2002-10-16)</small></h2>
