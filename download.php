@@ -9,9 +9,9 @@ print $navbar;
 
 <center><h1>Downloads</h1></center>
 
-The latest release version is 0.5.3.  There are 3 tarballs (xapian-examples
-hasn't changed since 0.5.1 so we've not uploaded just to bump
-the version):
+The latest release version is 0.5.4.  There are 3 tarballs (xapian-examples
+hasn't changed since 0.5.1, and omega hasn't changed since 0.5.3
+so we've not uploaded just to bump the version):
 
 <ul>
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.3/xapian-core-0.5.3.tar.gz">xapian-core</A>: the Xapian library itself

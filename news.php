@@ -9,6 +9,14 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<h2>Xapian 0.5.4 <small>(2002-10-16)</small></h2>
+
+<ul>
+<li> Fixed a compilation error with "make check" when using GCC 3.2.
+
+<li> PLATFORMS: checked 0.5.3 works on OpenBSD and Solaris 7.
+</ul>
+
 <h2>Xapian 0.5.3 <small>(2002-10-12)</small></h2>
 
 <P>Notable changes: Improvements to the test suite, and internal code cleanups:
