@@ -14,7 +14,6 @@ $pages = array(
  "users" => "current users",
  "support" => "commercial support",
  "download" => "download",
- "news" => "recent changes",
  "cvs" => "cvs",
  "bugs" => "bugs",
  "search" => "search this website"
