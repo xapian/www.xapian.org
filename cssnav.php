@@ -32,7 +32,7 @@ function navlink(&$n, $f) {
 array_walk($pages, "navlink");
 print join("<br/>\n", $pages);
 if ($this != "search") {
-print "<br/>\n<form method=\"GET\" action=\"omega.cgi\"><input name=\"P\" size=\"14\" /></form>\n";
+print "<br/>\n<form method=\"GET\" action=\"search.php\"><input name=\"P\" size=\"14\" /></form>\n";
 }
 
 ?>

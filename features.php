@@ -18,9 +18,10 @@
 
 <li> Free Software/Open Source - licensed under the GPL.
 
-<li> Portable to most Unix platforms (known to work on Linux (on x86, amd64,
-  alpha, sparc and powerpc), FreeBSD, OpenBSD, Solaris, and MacOS X).  It
-  also work on Microsoft Windows.
+<li> <a
+HREF="http://cvs.xapian.org/*checkout*/xapian/xapian-core/PLATFORMS">Highly
+portable</a> - runs on many Linux, MacOS X, many other Unix platforms,
+and Microsoft Windows.
 
 <li> Written in C++.  Perl bindings are available in the module
   <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
@@ -52,8 +53,7 @@ categorise documents, etc.
   are currently included for Danish, Dutch, English, Finnish, French,
   German, Italian, Norwegian, Portuguese, Russian, Spanish, and Swedish.
 
-<li> Supports database files &gt; 2GB where supported by the OS
-  - essential for
+<li> Supports database files &gt; 2GB - essential for
   <A HREF="docs/scalability.html">scaling to large document collections</A>.
 
 <li> Platform independent data formats - you can build a database on one
