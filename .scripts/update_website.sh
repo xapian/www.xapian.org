@@ -13,12 +13,19 @@ set -e
 # FIXME : need to avoid having to update this...
 tarball="xapian-core-0.5.4.tar.gz"
 
-projectdir="/home/groups/x/xa/xapian"
-cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
-cvsmodule="www.xapian.org"
+if ixion = "`hostname`"; then
+ projectdir="/u1/olly/xapian-website-update"
+ cvsdir=":pserver:anonymous@cvs.xapian.org:/cvsroot/xapian"
+ cvsmodule="www.xapian.org"
+ htmldir="/usr/data/www/xapian.org"
+else
+ projectdir="/home/groups/x/xa/xapian"
+ cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
+ cvsmodule="www.xapian.org"
+ htmldir="${projectdir}/htdocs"
+fi
 
 tmpdir="${projectdir}/mkwebsite_$$"
-htmldir="${projectdir}/htdocs"
 excludedir="${tmpdir}/${cvsmodule}/.scripts"
 
 # Where this script resides in CVS
@@ -65,17 +72,19 @@ if test stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
   touch stamp-run-ps2pdf
 fi
 cp -a apidoc.pdf "$tmpdir/$cvsmodule/docs"
-#if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
-#  cd "$tardir"
-#  # no compiler on sf web server, so configure fails!
-#  # FIXME is there any easy may around this?
-#  ./configure 
-#  cd docs
-#  make doxygen_source_docs
-#  cd "$tardir"
-#  touch stamp-built-sourcedoc
-#fi
-#cp -a "$tardir"/docs/sourcedoc "$tmpdir/$cvsmodule/docs"
+if ixion = "`hostname`"; then
+  if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
+    cd "$tardir"
+    # no compiler on sf web server, so configure fails!
+    # FIXME is there any easy may around this?
+    ./configure 
+    cd docs
+    make doxygen_source_docs
+    cd "$tardir"
+    touch stamp-built-sourcedoc
+  fi
+fi
+cp -a "$tardir"/docs/sourcedoc "$tmpdir/$cvsmodule/docs"
 cd "$tmpdir"
 
 chmod -R g+rw "${tmpdir}"
