@@ -20,7 +20,7 @@ you know of any more!</p>
 // in exchange - for now we need to get the list going though, so don't
 // be strict about this...
 ?>
-
+<img align=right src="xapian-powered.png">
 <p>
 <a href="#tweakers">Tweakers.net</a> |
 <a href="#diezeit">Die Zeit</a> |
@@ -48,7 +48,7 @@ of machines the system runs on, number of users and thus queries per day
 etc...generally anything that says something about performance.
 */
 ?>
-<p id="diezeit">Organisation: <a href="http://www.zeit.de/">De Zeit</a> -
+<p id="diezeit">Organisation: <a href="http://www.zeit.de/">Die Zeit</a> -
 German Newspaper<br>
 Application: Currently in use internally, with use on the live site planned<br>
 Languages: German<br>
@@ -56,7 +56,7 @@ Languages: German<br>
 
 <p id="qoop">Organisation: <a href="http://www.qoop.nl/">Qoop</a> -
 Online Auction Site<br>
-Application: Searching online auctions<br>
+Application: <a href="http://www.qoop.nl/index.php?page=%2Fzoeken_omega.php">Searching online auctions</a><br>
 Languages: Dutch<br>
 Database size: around 400000 documents<br>
 </p>
