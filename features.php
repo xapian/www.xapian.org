@@ -69,11 +69,11 @@ a larger application - an indexing and CGI-based application called omega:</p>
 
 <ul>
 
-<li> Indexer supplied can index HTML, PHP, PDF, PostScript, and plain text.
+<li> The indexer supplied can index HTML, PHP, PDF, PostScript, and plain text.
   Adding support for indexing other formats is easy where conversion filters
-  are available (e.g. Microsoft Word).  The supplied indexer works using the
-  filing system - we're close to being able to hook up to the htdig web
-  crawler which will allow remote sites to be indexed too.
+  are available (e.g. Microsoft Word).  This indexer works using the
+  filing system, but we also provide a script to allow the htdig web
+  crawler to be hooked in, allowing remote sites to be searched using Omega.
 
 <li> You can also index data from any SQL or other RDBMS supported by the
 <A HREF="http://dbi.perl.org/">Perl DBI module</A>.
