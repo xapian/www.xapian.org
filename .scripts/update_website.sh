@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 # This script builds the website by checking it out from CVS.
 # It will be run hourly, so should not involve any operations
@@ -10,6 +10,7 @@
 
 set -e
 
+# FIXME : need to avoid having to update this...
 tarball="xapian-core-0.5.3.tar.gz"
 
 projectdir="/home/groups/x/xa/xapian"
@@ -31,29 +32,43 @@ scriptpath_active="${projectdir}/update_website.sh"
 
 
 # Prepare temporary directory
-rm -rf "${tmpdir}"
-mkdir -p "${tmpdir}"
-chmod go= "${tmpdir}"
-chmod g+s "${tmpdir}"
+rm -rf "$tmpdir"
+mkdir -p "$tmpdir"
+chmod go= "$tmpdir"
+chmod g+s "$tmpdir"
 
 # Check website out of CVS
-cd "${tmpdir}"
+cd "$tmpdir"
 umask 0002
-cvs -Ql -d "${cvsdir}" export -r HEAD "${cvsmodule}"
-
-# get docs from tarball
+cvs -Ql -d "$cvsdir" export -r HEAD "$cvsmodule"
 mkdir "${cvsmodule}/docs"
-tar zxf "$projectdir/$tarball"
-mv xapian-core-*/docs/*.html "${cvsmodule}/docs"
-mv xapian-core-*/docs/apidoc "${cvsmodule}/docs"
-# no compiler on sf web server, so configure fails!
-#cd xapian-core-*
-#./configure
-#cd docs
-#make doxygen_source_docs
-#cd ../..
-#mv xapian-core-*/docs/sourcedoc "${cvsmodule}/docs"
-rm -rf xapian-core-*
+tardir="`echo \"$tarball\"|sed 's/\.tar\.gz//'`"
+cd "$projectdir"
+if "$tarball" -nt stamp-unpacked-tarball ; then
+  rm -rf "$tardir"
+  tar zxf "$tarball"
+  chmod go= "$tardir"
+  chmod g+s "$tardir"
+  touch stamp-unpacked-tarball
+fi
+cp -a "$tardir"/docs/*.html "$tardir"/docs/apidoc "${cvsmodule}/docs"
+if stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
+  ps2pdf12 "$tardir"/docs/apidoc.ps apidoc.pdf
+  touch stamp-run-ps2pdf
+fi
+cp -a apidoc.pdf "${cvsmodule}/docs"
+#if stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
+#  cd "$tardir"
+#  # no compiler on sf web server, so configure fails!
+#  # FIXME is there any easy may around this?
+#  ./configure 
+#  cd docs
+#  make doxygen_source_docs
+#  cd "$tardir"
+#  touch stamp-built-sourcedoc
+#fi
+#cp -a "$tardir"/docs/sourcedoc "${cvsmodule}/docs"
+cd "$tmpdir"
 
 chmod -R g+w "${tmpdir}"
 
