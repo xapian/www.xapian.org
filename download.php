@@ -13,13 +13,32 @@
 
 <h1>Downloads</h1>
 
-<p>The <A HREF="#0.7">0.7 branch</A>
+<p>The 0.8 branch
+features greatly improved database update speed with quartz, improved
+compression of quartz termlist tables, many improvements to the documentation,
+many portability improvements, and new bindings allowing Xapian to be used
+from Java and TCL.</p>
+
+<p id="0.8">The latest release is <A HREF="news.php#0.8.0">0.8.0</A>:</p>
+
+<ul>
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.8/xapian-core-0.8.0.tar.gz">xapian-core</A>: the Xapian library itself
+<A HREF="http://cvs.xapian.org/xapian/xapian-core/NEWS?rev=v0-8-0">[news]</A>
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.8/xapian-examples-0.8.0.tar.gz">xapian-examples</A>: small example programs
+<A HREF="http://cvs.xapian.org/xapian/xapian-examples/NEWS?rev=v0-8-0">[news]</A>
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.8/omega-0.8.0.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<A HREF="http://cvs.xapian.org/xapian/xapian-applications/omega/NEWS?rev=v0-8-0">[news]</A>
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.8/xapian-bindings-0.8.0.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other languages
+<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0-8-0">[news]</A>
+</ul>
+
+<p>The 0.7 branch
 features various API changes from earlier versions (notably everything is now in
 a Xapian namespace, rather than having an Om or om_ prefix).  But you should
 be able to build and use code written for the old API without making
 any changes by using the supplied om/om.h compatibility header.</p>
 
-<p>The latest release is <A HREF="news.php#0.7.5">0.7.5</A>
+<p id="0.7">The latest release is <A HREF="news.php#0.7.5">0.7.5</A>
 (xapian-examples hasn't changed since 0.7.3
 so we've not repackaged it solely to bump the version;
 similarly xapian-bindings hasn't changed since 0.7.4):</p>

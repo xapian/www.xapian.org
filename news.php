@@ -13,6 +13,260 @@
 
 <h1>Recent Changes</h1>
 
+<A NAME="0.8.0"><H2>Xapian 0.8.0 <small>(2004-04-20)</small></H2></A>
+
+<H3>API</H3>
+
+<ul>
+<li> Throw an exception when an empty query is used to build in the binary
+operator Query constructor (previously this caused a segfault.  Added
+regression test.
+
+<li> Made the TradWeight constructor explicit.  This is technically an API change
+as before you could pass a double where a Xapian::Weight was required - now
+you must pass Xapian::TradWeight(2.0) instead of 2.0.  That seems desirable,
+and it's unlikely any existing code will be affected.
+
+<li> Added "explicit" qualifier to constructors for internal use which take a
+single parameter.
+
+<li> Renamed Xapian::Document::add_term_nopos to Xapian::Document::add_term
+(with forwarding wrapper method for compatibility with existing code).
+
+<li> The reference counting mechanism used by most API classes now handles
+creating a new object slightly more efficiently.
+
+<li> Xapian::QueryParser: Don't use a raw term for a term which starts with a
+digit.
+</ul>
+
+<H3>testsuite</H3>
+
+<ul>
+<li> apitest, quartztest: Added a couple of tests, and commented out some test
+lines which fail in debug builds.
+
+<li> quartztest: cause a test to fail if there's still a directory after a call
+to rmdir(), or if there isn't a directory after calling mkdir().
+
+<li> apitest: Check returned docids are the expected values in a couple more
+cases.  Improved wording of a comment.
+</ul>
+
+<H3>quartz backend</H3>
+
+<ul>
+<li> We now merge a batch of changes into a posting list in a single pass which
+relieves an update bottleneck in previous versions.
+
+<li> When storing the termlist, pack the wdf into the same byte as the reuse
+length when possible - doing so typically makes the termlist 14% smaller!
+This change is backward compatible (0.7 database will work with 0.8, but
+databases built or updated with 0.8 won't work with 0.7).
+
+<li> quartzcheck: Check the structure within the postlist Btree as well as
+the Btree structures themselves.
+
+<li> Reduced code duplication in the btree manager and btreechecking code.
+
+<li> quartzdump: Backslash escape space and backslash in output rather than hex
+encoding them; renamed start-term and end-term to start-key and end-key;
+removed rather pointless "Calling next" message; if there's an error, write
+it to stderr not stdout, and exit with return code 1.
+
+<li> Corrected a number of comments in the source.
+
+<li> Removed several needless inclusions of quartz_table_entries.h.
+
+<li> Removed OLD_TERMLIST_FORMAT code - it has been disabled for since 0.6.0.
+
+<li> Removed all the quartz lexicon code and docs.  It's been disabled for ages,
+and we've not missed it.
+</ul>
+
+<H3>build system</H3>
+
+<ul>
+<li> XO_LIB_XAPIAN autoconf macro can now be called without arguments in the
+common case where you want the test to fail if Xapian isn't found.
+
+<li> Fixed the configure test for valgrind - it wasn't working correctly when
+valgrind was installed but was too a version to support VALGRIND_COUNT_ERRORS
+and VALGRIND_COUNT_LEAKS.
+
+<li> GCC 2.95 supported -Wno-long-long and is our minimum recommended version, so
+unconditionally use -Wno-long-long with GCC, and don't test for it on other
+compilers (the old test incorrectly decided to use it with SGI's compiler
+resulting in a warning for every file compiled).
+</ul>
+
+<H3>documentation</H3>
+
+<ul>
+<li> Updated the quickstart tutorial and removed the warning that "this
+document isn't up to date".
+
+<li> docs/intro_ir.html: Added a link to "Information Retrieval" by Keith van
+Rijsbergen which can be downloaded from his website!
+
+<li> docs/quartzdesign.html: Some minor improvements.
+
+<li> docs/matcherdesign.html: Merged in more details from a message sent to the
+mailing list.
+
+<li> docs/queryparser.html: Grammar fixes.
+
+<li> Doxygen wasn't picking up the documentation for PostingIterator and
+PositionListIterator - fixed.  Added doxygen comments for Xapian::Stopper
+and Xapian::QueryParser.
+
+<li> PLATFORMS: Updated with many results from tinderbox and from users.
+
+<li> AUTHORS: Updated the list of contributors.
+
+<li> HACKING: XAPIAN_DEBUG_TYPES should be XAPIAN_DEBUG_FLAGS.
+
+<li> HACKING: Updated to mention that building from CVS requires 
+`./configure --enable-maintainer-mode' (or use bootstrap).
+
+<li> HACKING: Added notes about using "using", and pointers to a couple of useful
+C++ web resources.
+</ul>
+
+<H3>portability</H3>
+
+<ul>
+<li> Solaris: Code tweaks for compiling with Sun's C++ compiler.
+
+<li> IRIX: Code tweaks for compiling with SGI's C++ compiler.
+
+<li> NetBSD mkdir() doesn't cope with a trailing / on the path - fixed our code to
+cope with this.
+
+<li> mingw/cygwin: Only use O_SYNC (on the debug log) if the headers define it.
+
+<li> backends/quartz/quartz_table_manager.cc: Fix for building on mingw.
+
+<li> mingw: Added configure test for link() to avoid infinite loop in our C++
+wrapper for link.
+
+<li> mingw and cygwin both need -Wl,--enable-runtime-pseudo-reloc passing when
+linking.  Arrange for xapian-config to include this, and check that the ld
+installed is a new enough version (or at least that it was at configure
+time).  Also pass to programs linked as part of the xapian-core build.
+
+<li> cygwin: Close a QuartzDatabase or QuartzWritableDatabase before trying to
+overwrite it - cygwin doesn't allow use to delete open/locked files...
+
+<li> backends/quartz/quartz_termlist.cc: Use Xapian::doccount instead of
+unsigned int in set_entries().
+
+<li> Database::Internal::Internal::keep_alive() should be
+Database::Internal::keep_alive().
+
+<li> Make Xapian::Weight::Weight() protected rather than private as we want to be
+able to call it from derived classes (GCC 3.4 flags this, other compilers
+seem to miss it).
+</ul>
+
+<H3>debug code</H3>
+
+<ul>
+<li> Open debug log with flag O_WRONLY so that we can actually write to it!
+
+<li> backends/quartz/quartz_values.cc: Fixed problem with dereferencing
+a pointer to the end of a string in debug output.
+</ul>
+
+<H3>examples</H3>
+
+<ul>
+<li> delve: `delve -v DATABASE' now reports the number of terms.
+
+<li> Added or improved the short description of each example at the top of
+its source file.
+
+<li> Replaced the rather peculiar msearch with quest - a simpler command line
+search program which uses Xapian::QueryParser.
+
+<li> simpleindex: We were ignoring the last paragraph if it had no trailing \n
+- fixed (bug#24).
+</ul>
+
+<H3>omega</H3>
+
+<ul>
+<li> scriptindex: Change default to *not* overwriting the database (use
+--overwrite if you really want to do this); -u is now accepted but ignored.
+
+<li> scriptindex: Use getopt for option parsing.
+
+<li> omindex: Added --overwrite option which forces an existing database to be
+deleted before indexing begins.
+
+<li> templates/xml: Correct spelling of `relavence' to `relevance'.  NB: if you're
+parsing the XML output, you'll need to fix this spelling in your parser!
+
+<li> templates/xml: Now set HTTP header: "Content-Type: application/html".
+
+<li> templates/xml: Remove unused OmegaScript code:
+`$set{topterms,$or{$ne{$msize,0},$query}}'.
+
+<li> indextext.cc,omindex.cc,scriptindex.cc: Updated to use add_term() instead of
+add_term_nopos().
+
+<li> omega: Added $httpheader Omegascript to allow arbitrary HTTP headers and
+alternative Content-Type headers to be specified.
+
+<li> omega: If the probabilistic query was bad, don't try to run the match.
+
+<li> omega: Don't crash if there's a date filter but no probabilistic query.
+
+<li> omindex/scriptindex: Raw terms with a multicharacter prefix are now indexed
+with a : inserted (e.g. as XFOO:Rterm).  This matches what the query parser
+does.
+
+<li> omindex/scriptindex: Don't create R terms for terms which start with a digit.
+
+<li> omindex: Use O_STREAMING and/or posix_fadvise() when reading files to be
+indexed (if available).  This helps to keep the Xapian database in cache,
+and should greatly improve indexing throughput.
+
+<li> docs/scriptindex.txt: Make more explicit that boolean produces a *single*
+boolean term.
+
+<li> docs/cgiparams.txt: Note that START and END should be in the format YYYYMMDD.
+</ul>
+
+<H3>bindings</H3>
+
+<ul>
+<li> README: Started collecting information on supporting Xapian from even
+more languages.
+
+<li> Added configure tests to enable bindings only where the necessary tools
+are installed and have a supported version.  ./configure --without-LANGUAGE
+allows particular languages to be forcibly disabled.
+
+<li> Added Xapian::Document::add_term() - the new name for add_term_nopos().
+
+<li> A couple of Xapian::Query constructors weren't being wrapped - fixed.
+
+<li> Added Eric B. Ridge's JNI bindings for Java.  The JNI bindings themselves
+have been well tested, but integration with the xapian-bindings configure
+system hasn't been tested at all - please alert us to any problems.
+
+<li> Xapian can now be used from TCL.
+
+<li> Python: MSet now provides a Python iterator.
+
+<li> Python: OMMSET_* and OMESET_* renamed to MSET_* and ESET_*.
+
+<li> Python: enable directors for MatchDecider, to allow subclassing in Python.
+
+<li> Python: Added basic documentation, and some examples.
+</ul>
+
 <A NAME="0.7.5"><H2>Xapian 0.7.5 <small>(2003-11-26)</small></H2></A>
 
 <H3>API</H3>
