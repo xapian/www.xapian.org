@@ -31,6 +31,7 @@ you know of any more!</p>
 <a href="#citebase">Citebase</a> |
 <a href="#flyingdog">Flying Dog Software</a> |
 <a href="#camcity">Cambridge City Council</a> |
+<a href="#divmod">Divmod</a> |
 <a href="#webtop">Webtop</a>
 <? /* | <a href="#gmane">Gmane</a>*/ ?>
 </p>
@@ -123,6 +124,10 @@ href="http://www.flyingdog.biz/flyingdog/content/show.php3?id=74&amp;nodeid=7&am
 Application: <a href="http://www.cambridge-cityservices-faqs.co.uk/">Providing an FAQ search</a><br>
 Languages: English<br>
 </p>
+
+<p id="divmod">Organisation: <a href="http://www.divmod.com/">Divmod</a>
+- Webmail and VOIP provider<br>
+Application: Searching email
 
 <p id="webtop">Organisation: Webtop Ltd (now defunct -
 <a href="http://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>)<br>
