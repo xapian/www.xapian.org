@@ -52,20 +52,20 @@ fi
 mkdir "${cvsmodule}/docs"
 tardir="`echo \"$tarball\"|sed 's/\.tar\.gz//'`"
 cd "$projectdir"
-if "$tarball" -nt stamp-unpacked-tarball ; then
+if test "$tarball" -nt stamp-unpacked-tarball ; then
   rm -rf "$tardir"
   tar zxf "$tarball"
   chmod go= "$tardir"
   chmod g+s "$tardir"
   touch stamp-unpacked-tarball
 fi
-cp -a "$tardir"/docs/*.html "$tardir"/docs/apidoc "${cvsmodule}/docs"
-if stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
+cp -a "$tardir"/docs/*.html "$tardir"/docs/apidoc "$tmpdir/$cvsmodule/docs"
+if test stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
   ps2pdf12 "$tardir"/docs/apidoc.ps apidoc.pdf
   touch stamp-run-ps2pdf
 fi
-cp -a apidoc.pdf "${cvsmodule}/docs"
-#if stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
+cp -a apidoc.pdf "$tmpdir/$cvsmodule/docs"
+#if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
 #  cd "$tardir"
 #  # no compiler on sf web server, so configure fails!
 #  # FIXME is there any easy may around this?
@@ -75,7 +75,7 @@ cp -a apidoc.pdf "${cvsmodule}/docs"
 #  cd "$tardir"
 #  touch stamp-built-sourcedoc
 #fi
-#cp -a "$tardir"/docs/sourcedoc "${cvsmodule}/docs"
+#cp -a "$tardir"/docs/sourcedoc "$tmpdir/$cvsmodule/docs"
 cd "$tmpdir"
 
 chmod -R g+w "${tmpdir}"
