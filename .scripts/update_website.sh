@@ -80,7 +80,7 @@ if test ixion = "`hostname`"; then
     ./configure 
     cd docs
     make doxygen_source_docs
-    cd "$tardir"
+    cd "$projectdir"
     touch stamp-built-sourcedoc
   fi
 fi
