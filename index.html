@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html><head><title>The Xapian project</title></head>
-<body bgcolor="#FFFFFF">
+<body bgcolor="#FFFFFF" text="#000000">
 <center><h1>The Xapian Project</h1></center><br>
 Welcome to the pages of the Xapian project.<P>
 
@@ -9,6 +9,8 @@ advanced information retrieval techniques in their own projects. This makes
 it an attractive alternative to &quot;packaged&quot; search engines that need to be
 extensively hacked in order to use it as a specialty search engine.
 <p>
+
+<H2>Features</H2>
 
 Features of Xapian include:
 <ul>
@@ -19,7 +21,7 @@ Features of Xapian include:
 <li> Relevance feedback.
 </ul>
 
-The Xapian project will continue development of the Omsee search engine
+The Xapian project continues development of the Omsee search engine
 library, as published under the GPL by Brightstation plc. Since
 Brightstation will not continue development of Omsee under the
 GPL, the Xapian project unites developers and users of the library to pursue
@@ -29,47 +31,57 @@ A previous incarnation of this project was called Omseek, but we have been infor
 department that this was too similar to Omsee. After much deliberation, the project name was changed to
 Xapian.
 
-<p>
+<H2>Documentation</H2>
 
-There are four mailing lists available for discussions:<br>
-<tt>xapian-discuss</tt>, a list for general discussions about the Xapian project. Subscribe yourself
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-discuss">here</a>.<br>
-<tt>xapian-devel</tt>, a list for technical discussions about the development of Xapian. Subscribe yourself
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-devel">here</a>.<br>
-<tt>xapian-tracker</tt>, a lists that sends Tracker updates. Subscribe yourself
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-tracker">here</a>.<br>
-<tt>xapian-commits</tt>, a lists that sends CVS commits. Subscribe yourself
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-commits">here</a>.<br>
+Documentation is available in the xapian-core package.  You can also
+<A HREF="docs/">browse the documentation</A> on this website.
 
+<H2>Mailing Lists</H2>
 
-<p>
+There are four mailing lists available for discussions:
+<ul>
+<li> <tt>xapian-discuss</tt> for general discussions about the Xapian project. 
+<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-discuss">Subscribe</a>.
+<li> <tt>xapian-devel</tt> for technical discussions about the development of Xapian. 
+<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-devel">Subscribe</a>.
+<li> <tt>xapian-tracker</tt> receives Tracker updates. 
+<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-tracker">Subscribe</a>.
+<li> <tt>xapian-commits</tt> receives CVS commits (can be a <em>lot</em> of messages.
+<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-commits">Subscribe</a>.
+</ul>
 
-The original CVS tree of the Omsee project is preserved on the <a href='http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/xapian/'>Xapian CVS server</a>, though the Xapian developers have since
-made many modifications. To get the latest version of Xapian directly from our CVS, follow these steps:
+<H2>Downloads</H2>
+
+The latest release version is 0.5.0.  There are 3 tarballs:
+
+<ul>
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.0/xapian-core-0.5.0.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.0/xapian-examples-0.5.0.tar.gz">xapian-examples</A>: small example programs
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.5.0/omega-0.5.0.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
+a CGI search frontend.
+</ul>
+
+<H2>Access to Non-Release Versions via CVS</H2>
+
+The Xapian CVS tree (including file history from the original Omsee project)
+can be browsed online on the <a
+href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/xapian/">Xapian CVS server</a>.
+To get the latest version of Xapian directly from our CVS, follow these steps:
 <ol>
 <li> Log in anonymously into the CVS: <tt>cvs -d:pserver:anonymous@cvs.xapian.org:/cvsroot/xapian login</tt>
 (Just hit return when you are asked for the password.)
 <li> Check out the latest version: <tt>cvs -z3 -d:pserver:anonymous@cvs.xapian.org:/cvsroot/xapian co xapian</tt>
-<li> In the newly created <tt>xapian</tt> directory, issue the command <tt>./buildall</tt>.
+<li> In the newly created <tt>xapian</tt> directory, issue the command <tt>./buildall</tt> - this will run various developer tools to produce a source tree
+like you'd get from unpacking a release source tarball.
 </ol>
 
-If you encounter any problems, contact the developers on the <tt>xapian-devel</tt> mailing list, or report bugs via <a href='bugs/'>the bug tracking system</a>.
+If you encounter any problems, contact the developers on the <tt>xapian-devel</tt> mailing list, or report bugs via <a href="bugs/">the bug tracking system</a>.
 
-<p>
-
-Some documentation is now available via the web:
-<ul>
-<li>
-<a href="docs/apidoc/html/index.html">Autogenerated API documentation</a>
-</li><li>
-<a href="docs/sourcedoc/html/index.html">Autogenerated full source documentation</a>
-</li>
-</ul>
-
-<p>
-
-The Xapian project makes use of Sourceforge for <a href='http://sourceforge.net/projects/xapian/'>project infrastructure</a>.<br>
+<hr>
+<small>
+The Xapian project makes use of Sourceforge for <a href="http://sourceforge.net/projects/xapian/">project infrastructure</a>.<br>
 <A href="http://sourceforge.net">
 <IMG src="http://sourceforge.net/sflogo.php?group_id=35626&type=1" width="88" height="31" border="0" alt="SourceForge Logo"></A>
+</small>
 </body>
 </html>
