@@ -20,7 +20,7 @@ to easily add advanced indexing and search facilities to applications.
 
 <P>If you're after a packaged "search engine" to search your website, you
 should take a look at Omega, which is an application we supply built upon
-Xapian.  But unlikely most other website search solutions, Xapian's
+Xapian.  But unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.
 
 <hr>

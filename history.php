@@ -21,14 +21,14 @@ library, which was originally written by Dr. Martin Porter at Cambridge
 University.  In 1984, Martin and John Snyder founded Cambridge CD Publishing
 to commercially exploit the technology; the company was soon renamed
 Muscat Ltd when the focus shifted from CDs to the web.  Muscat Ltd was
-bought be Maid PLC, who renamed themselves first to Dialog Corporation, and
+bought by Maid PLC, who renamed themselves first to Dialog Corporation, and
 then to BrightStation PLC.<p>
 
 Omsee (using the muscat36 backend) was the retrieval engine which powered
 BrightStation's Webtop search engine, which offered a search over around
 500 million web pages (around 1.5 terrabytes of database files).  Searches
-took less than a second, and including the web crawlers and index building,
-it all ran on 30 Intel boxes.<p>
+took less than a second.  The whole search engine, including the web crawlers
+and index building, ran on 30 Intel boxes.<p>
 
 Xapian is a modern class library, but has evolved out of over 20 years of
 commercial and academic experience.

@@ -20,23 +20,22 @@ Features of Xapian include:
   Perl, and Java).  Note: the bindings are disabled in current
   Xapian releases as they rely on features only in development versions of SWIG.
 
-<li> Open Source - licensed under the GPL.
+<li> Free Software/Open Source - licensed under the GPL.
 
-<li> Ranked probablistic search - important words get more weight that unimportant
-  words, so the most relevant documents are more likely to be come near the
-  top of the results list.
+<li> Ranked probablistic search - important words get more weight than
+unimportant words, so the most relevant documents are more likely to come near
+the top of the results list.
 
-<li> Relevance feedback - given one or more documents, Xapian can suggest the most
-  relevant index terms to expand a query, suggest related documents, categorise
-  documents, etc.
+<li> Relevance feedback - given one or more documents, Xapian can suggest the
+most relevant index terms to expand a query, suggest related documents,
+categorise documents, etc.
 
-<li> Phrase and proximity searching - users can search find places where words
-  occur in an exact phrase, or words occur within a specified number of words,
+<li> Phrase and proximity searching - users can search for words
+  occuring in an exact phrase or within a specified number of words,
   either in a specified order, or in any order.
 
-<li> Full range of boolean search operators ("stock NOT market", etc).  Some
-  users like to have these as they feel it gives them more control.  The
-  results of the boolean search are ranked.
+<li> Full range of boolean search operators ("stock NOT market", etc).
+  The results of the boolean search are ranked by the probablistic weights.
 
 <li> Supports stemming of search terms (e.g. a search for "football" would
   match documents which mention "footballs" or "footballer").  This helps
