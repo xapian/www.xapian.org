@@ -32,7 +32,7 @@ which fixes problems with the PHP and Java bindings):</p>
 <A HREF="http://cvs.xapian.org/xapian/xapian-applications/omega/NEWS?rev=v<? echo $dversion ?>">[news]</A>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/0.8.5/xapian-bindings-0.8.5.1.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <!--<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v<? echo $dversion ?>">[news]</A>-->
-<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0.8.5.1">[news]</A>
+<A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v0-8-5-1">[news]</A>
 </ul>
 
 <h1 id="deb">Debian packages</h1>
