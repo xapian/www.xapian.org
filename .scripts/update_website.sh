@@ -10,6 +10,8 @@
 
 set -e
 
+tarball="xapian-core-0.5.0.tar.gz"
+
 projectdir="/home/groups/x/xa/xapian"
 cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
 cvsmodule="www.xapian.org"
@@ -38,17 +40,15 @@ chmod g+s "${tmpdir}"
 cd "${tmpdir}"
 umask 0002
 cvs -Ql -d "${cvsdir}" export -r HEAD "${cvsmodule}"
-cvs -Ql -d "${cvsdir}" export -r HEAD "xapian/xapian-core"
-cd xapian/xapian-core
-./buildall
-./configure
-cd docs
-make
+mkdr "${cvsmodule}/docs"
+tar zxf "$projectdir/$tarball"
+mv xapian-core-*/docs/*.html "${cvsmodule}/docs"
+mv xapian-core-*/docs/apidoc "${cvsmodule}/docs"
+cd xapian-core-*/docs
 make doxygen_source_docs
-mkdir "${tmpdir}/${cvsmodule}/docs"
-mv *.html apidoc sourcedoc "${tmpdir}/${cvsmodule}/docs" 
-cd ../../..
-rm -rf xapian
+cd -
+mv xapian-core-*/docs/sourcedoc "${cvsmodule}/docs"
+rm -rf xapian-core-*
 
 chmod -R g+w "${tmpdir}"
 
