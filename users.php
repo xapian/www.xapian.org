@@ -33,7 +33,8 @@ you know of any more!</p>
 <a href="#camcity">Cambridge City Council</a> |
 <a href="#divmod">Divmod</a> |
 <a href="#webtop">Webtop</a> |
-<a href="#daviswiki">Davis Wiki</a>
+<a href="#daviswiki">Davis Wiki</a> |
+<a href="#orange">Orange</a>
 <? /* | <a href="#gmane">Gmane</a>*/ ?>
 </p>
 <img align=right src="xapian-powered.png">
@@ -70,15 +71,13 @@ Database size: around 400,000 documents<br>
 </p>
 
 <p id="ananova">Organisation: <a href="http://www.ananova.com/">Ananova</a> -
-a News Site owned by <a href="http://web.orange.co.uk/">Orange</a><br>
+a News website<br>
 Application: Used internally to allow journalists to search archives of news
 stories<br>
 Languages: English<br>
 Document types: news stories<br>
-Note: The archive search was available to the public.
-It's no longer linked to from the rest of the Ananova site, but you can
-still <a href="http://www.ananova.com/search/">try it out</a> (the web search
-option no longer works)
+Note: The archive search was available to the public, but Ananova have now
+removed it from their public site.
 </p>
 
 <p id="react">Organisation: <a href="http://www.react.nl/index.php">React</a>
@@ -124,6 +123,7 @@ href="http://www.flyingdog.biz/flyingdog/content/show.php3?id=74&amp;nodeid=7&am
 <p id="camcity">Organisation: <a href="http://www.cambridge.gov.uk/">Cambridge City Council</a><br>
 Application: <a href="http://www.cambridge-cityservices-faqs.co.uk/">Providing an FAQ search</a><br>
 Languages: English<br>
+Database size: designed to support at least 30,000 questions/answers<br>
 </p>
 
 <p id="divmod">Organisation: <a href="http://www.divmod.com/">Divmod</a>
@@ -157,6 +157,11 @@ Note:
 Application: <a href="http://www.daviswiki.org/index.cgi/Wiki_20Developers?action=highlight&value=xapian">Searching a wiki for Davis, California, USA</a><br>
 Document types: MoinMoin Wiki pages<br>
 Database size: over 1000 pages<br>
+</p>
+ 
+<p id="orange">Organisation: <a href="http://www.orange.co.uk/">Orange</a> -
+mobile phone company<br>
+Application: WAP search for users of Orange mobile phones<br>
 </p>
 
 <?php
