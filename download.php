@@ -13,7 +13,8 @@ The 0.7 branch features various API changes (notably everything is now in
 a Xapian namespace, rather than having an Om or om_ prefix).  Old code
 should still build if you use the supplied om/om.h compatibility header.
 However, the changes between 0.6.5 and 0.7.0 are extensive so you should
-test carefully before deploying 0.7.0 in a production environment.
+test carefully before deploying 0.7 in a production environment (and
+let us know how you get on).
 
 <P>
 The 0.6 branch features improved compression in the quartz database backend
@@ -52,18 +53,52 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
-<h2>0.7.0</h2>
+<h2>0.7.1</h2>
 
-The latest release is <A HREF="#0.7.0">0.7.0</A>:
+The latest release is <A HREF="#0.7.1">0.7.1</A>:
+(xapian-examples hasn't changed since 0.7.0
+so we've not repackaged it solely to bump the version):
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.0.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.1.tar.gz">xapian-core</A>: the Xapian library itself
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-examples-0.7.0.tar.gz">xapian-examples</A>: small example programs
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/omega-0.7.0.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/omega-0.7.1.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
 a CGI search frontend.
 </ul>
 
 <A NAME="news"><center><h1>News</h1></center></A>
+
+<A NAME="0.7.1"><H2>Xapian 0.7.1 <small>(2003-07-08)</small></H2></A>
+
+<H3>testsuite</H3>
+
+<ul>
+<li> Fixed testsuite programs to not try to use "rm -rf" under mingw.
+</ul>
+
+<H3>backends</H3>
+
+<ul>
+<li> Quartz: Use pread() and pwrite() on platforms which support them.  Doing so
+  avoids one syscall per block read/write.
+
+<li> Quartz block count is now unsigned, which should nearly double the size of
+  database for a given block size.  Not tested this yet.
+</ul>
+
+<H3>omega</H3>
+
+<ul>
+<li> omindex: Fixed compilation problem in 0.7.0.
+</ul>
+
+<H3>documentation</H3>
+
+<ul>
+<li> Added new document discussing scalability issues.
+
+<li> PLATFORMS: Updated.
+</ul>
 
 <A NAME="0.7.0"><H2>Xapian 0.7.0 <small>(2003-07-03)</small></H2></A>
 
