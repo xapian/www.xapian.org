@@ -26,7 +26,7 @@ versatility allows you to extend Omega to meet your needs as they grow.
 <P>
 <FORM METHOD=GET ACTION="omega.cgi">
 Search the Xapian website:<br>
-<INPUT NAME=P SIZE=60> <INPUT TYPE=submit VALUE=Search BORDER=0>
+<INPUT NAME=P SIZE=32> <INPUT TYPE=submit VALUE=Search BORDER=0>
 </FORM>
 
 <hr>
