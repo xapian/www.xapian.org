@@ -34,8 +34,12 @@ To get the latest version of Xapian directly from our CVS, follow these steps:
 </ol>
 <p>
 We plan to set up an automatic snapshot system which will try to compile and
-run the library testsuite ever night, and upload a snapshot if all tests pass.
-This is not currently operational though.
+run the library testsuite every night, and upload a snapshot if all tests pass.
+This is not currently operational, but you can
+<A HREF="http://www.tartarus.org/~olly/HEAD/">download completely untested
+CVS snapshots</A>,
+which are generated every 20 minutes (so long as the code in CVS isn't too
+broken for even "make dist" to work).
 
 <hr>
 <small>
