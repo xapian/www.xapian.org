@@ -11,7 +11,8 @@
 
 <div id="Content">
 
-<h1>The Xapian Project</h1>
+<img src="xapian-logo.png" alt="The Xapian Project">
+
 <p>Welcome to the Xapian project website.</p>
 
 <p>Xapian is an Open Source Probabilistic Information Retrieval library,
