@@ -32,7 +32,8 @@ you know of any more!</p>
 <a href="#flyingdog">Flying Dog Software</a> |
 <a href="#camcity">Cambridge City Council</a> |
 <a href="#divmod">Divmod</a> |
-<a href="#webtop">Webtop</a>
+<a href="#webtop">Webtop</a> |
+<a href="#daviswiki">Davis Wiki</a>
 <? /* | <a href="#gmane">Gmane</a>*/ ?>
 </p>
 <img align=right src="xapian-powered.png">
@@ -151,6 +152,12 @@ Note:
 </p>
 */
 ?>
+
+<p id="daviswiki">Organisation: <a href="http://www.daviswiki.org/">Davis Wiki</a><br>
+Application: <a href="http://www.daviswiki.org/index.cgi/Wiki_20Developers?action=highlight&value=xapian">Searching a wiki for Davis, California, USA</a><br>
+Document types: MoinMoin Wiki pages<br>
+Database size: over 1000 pages<br>
+</p>
 
 <?php
 /*
