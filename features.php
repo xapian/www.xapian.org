@@ -58,10 +58,14 @@ a larger application - an indexing and CGI-based application called omega:
   available (e.g. Microsoft Word).  The current indexer works using the
   filing system - a remote web crawler could be hooked in instead.
 
-<li> CGI search front-end supplied with highly customisable appearance.  This can
-  also be customised to output results in XML or CSV - this is useful if you are
-  using dynamically generating pages (e.g. with PHP or mod_perl) and just want
-  raw search results which you can process in your own code.
+<li> You can also index data from any SQL or other RDBMS supported by the
+<A HREF="http://dbi.perl.org/">Perl DBI module</A>.
+That includes MySQL, PostgreSQL, SQLite, Sybase, MS SQL, LDAP, and ODBC.
+
+<li> CGI search front-end supplied with highly customisable appearance.  This
+can also be customised to output results in XML or CSV, which is useful if you
+are dynamically generating pages (e.g. with PHP or mod_perl) and just want
+raw search results which you can process in your own page layout code.
 
 </ul>
 

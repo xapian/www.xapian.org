@@ -9,6 +9,34 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<H2>Xapian 0.6.0 <small>(2002-11-27)</small></H2>
+
+<ul>
+<li> Quartz database backend: lexicon disabled (./configure CXXFLAGS=-DUSE_LEXICON
+  to reenable it), and encoding schemes simplified and made more compact;
+  extended and added test cases; minimum block size is now 2048 bytes (as
+  documented before, but now we actually enforce this); btree checking code
+  split off and only linked in when required; tidied up btreetest's output.
+
+<li> Replaced our stemmers with those from Snowball.  These give better results,
+  and are actively maintained by Martin Porter (who wrote the original Xapian
+  stemmers too).  It also means that Xapian now has stemmers for Finnish,
+  and Russian, and an implementation of Lovins' English stemmer.
+
+<li> Assorted improvements to the documentation, especially the documentation
+  of the internals of the Quartz backend.
+
+<li> Removed the three uses of RTTI (typeid() and dynamic_cast<>) - one was
+  totally superfluous, and the other two easily avoided.
+
+<li> Omega and simpleindex example: limit probabilistic term length to 64
+  characters to stop the index filling up with junk terms which nobody will
+  ever search for.
+
+<li> Omega: Added dbi2omega perl script to dump any database which perl DBI can
+  access into the dump format expected by scriptindex.
+</ul>
+
 <h2>Xapian 0.5.4 <small>(2002-10-16)</small></h2>
 
 <ul>
