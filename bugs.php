@@ -4,9 +4,7 @@
 
 <head>
 <title>The Xapian Project : Bugs</title>
-<style type="text/css" media="screen">@import "layout2.css";</style>
-<style type="text/css" media="print">@import "print.css";</style>
-<meta name="MSSmartTagsPreventParsing" content="true" />
+<? include "styleandmeta.php"; ?>
 </head>
 
 <body>
@@ -49,18 +47,20 @@
 <li> <a href="/cgi-bin/bugzilla/relogin.cgi">Forget the currently stored login</a>
 <li> <a href="/cgi-bin/bugzilla/userprefs.cgi">Change password or user preferences</a>
 </ul>
-<script language="JavaScript" src="localconfig.js"></script>
-<script language="JavaScript" src="quicksearch.js"></script>
+<script type="JavaScript" src="localconfig.js"></script>
+<script type="JavaScript" src="quicksearch.js"></script>
 
 <form name="f" action="/cgi-bin/bugzilla/show_bug.cgi" method="get"
       onsubmit="QuickSearch(); return false;"> 
- <p>Enter a bug # or some search terms:</p>
+ <p>Enter a bug number<!-- (FIXME: search terms don't work!)
+ or some search terms-->:
   <input type="text" name="id">
   <input type="submit" value="Show">
   <a href="/bugzilla/quicksearch.html">[Help]</a>
+ </p>
 </form>
 
-<script>
+<script type="JavaScript">
 <!--
 document.forms['f'].id.focus();
 //-->

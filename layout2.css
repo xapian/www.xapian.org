@@ -53,15 +53,17 @@ a:visited {color:#07a;}
 a:hover {background-color:#eee;}
 
 #Content {
-	margin:0px 11em 10px 10px;
+	margin:0px 12em 10px 10px;
 	padding:10px;
 	}
 
 #Menu {
+/* konqueror 3.1.3 reads both style sheets, so unhide the menu here */
+	display:inherit;
 	position:absolute;
 	top:40px;
 	right:20px;
-	width:9em;
+	width:10em;
 	padding:1em;
 	background-color:#eee;
 	border:1px dashed #999;
@@ -69,10 +71,10 @@ a:hover {background-color:#eee;}
 /* Again, the ugly brilliant hack. */
 	voice-family: "\"}\"";
 	voice-family:inherit;
-	width:7em;
+	width:8em;
 	}
 /* Again, "be nice to Opera 5". */
-body>#Menu {width:7em;}
+body>#Menu {width:8em;}
 
 #current {
 	color:black;

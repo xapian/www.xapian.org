@@ -30,9 +30,9 @@ function navlink(&$n, $f) {
   }
 }
 array_walk($pages, "navlink");
-print join("<br/>\n", $pages);
+print join("<br>\n", $pages);
 if ($this != "search") {
-print "<br/>\n<form method=\"GET\" action=\"search.php\"><input name=\"P\" size=\"14\" /></form>\n";
+print "<br>\n<form method=\"GET\" action=\"search.php\"><div><input name=\"P\" size=\"14\"></div></form>\n";
 }
 
 ?>
