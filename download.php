@@ -89,11 +89,6 @@ $ fakeroot apt-get source -b xapian-core<br>
 $ fakeroot apt-get source -b xapian-bindings xapian-omega
 </code></blockquote>
 
-<p>
-If you're on stable, you'll need to install a swig 1.3.20 or later from
-<a href="http://www.backports.org/package.php?search=swig">backports.org</a>.
-</p>
-
 <p>Any assistance (getting these packages into Debian, reporting problems
 which aren't listed above or in the TODO lists in each package, or
 fixing any of these problem) will be gratefully accepted.
