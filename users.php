@@ -33,9 +33,10 @@ you know of any more!</p>
 <a href="#camcity">Cambridge City Council</a> |
 <a href="#divmod">Divmod</a> |
 <a href="#webtop">Webtop</a> |
+<a href="#gmane">Gmane</a> |
 <a href="#daviswiki">Davis Wiki</a> |
-<a href="#orange">Orange</a>
-<? /* | <a href="#gmane">Gmane</a>*/ ?>
+<a href="#orange">Orange</a> |
+<a href="#recoll">Recoll</a>
 </p>
 <img align=right src="xapian-powered.png">
 
@@ -141,17 +142,12 @@ half a billion webpages using 30 Intel boxes with sub-second retrieval times.
 Unfortunately Webtop's parent company stopped trading in 2001.
 </p>
 
-<?php
-/*
 <p id="gmane">Organisation: Gmane.org (in development)<br>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups)<br>
-Location: <a href="http://www.gmane.org">www.gmane.org</a><br>
-Document types:<br>
-Database size: around 19,000,000 pages<br>
+Location: <a href="http://rain.gmane.org">rain.gmane.org</a><br>
+Database size: around 22,000,000 messages<br>
 Note:
 </p>
-*/
-?>
 
 <p id="daviswiki">Organisation: <a href="http://www.daviswiki.org/">Davis Wiki</a><br>
 Application: <a href="http://www.daviswiki.org/index.cgi/Wiki_20Developers?action=highlight&value=xapian">Searching a wiki for Davis, California, USA</a><br>
@@ -164,6 +160,8 @@ mobile phone company<br>
 Application: WAP search for users of Orange mobile phones<br>
 </p>
 
+<p id="recoll">Application: <a href="http://perso.wanadoo.fr/dockes/recoll/">Recoll</a> is a personal full text indexing system
+</p>
 <?php
 /*
 Synd is a software framework written in PHP, used primarily for building
