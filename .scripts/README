@@ -9,3 +9,9 @@ and used for all following checkouts.
 
 Currently (5 Nov 2001), the website is updated by a cronjob at 20 past each
 hour.  Any errors are sent to <richardb@users.sourceforge.net>.
+
+You (if you are a xapian developer) can force an update by running:
+
+ssh <user>@xapian.sourceforge.net /home/groups/x/xa/xapian/update_website.sh
+ (where <user> is your username)
+
