@@ -14,7 +14,7 @@ $pages = array(
  "users" => "current users",
  "support" => "commercial support",
  "download" => "download",
- "cvs" => "cvs",
+ "bleeding" => "bleeding edge",
  "bugs" => "bugs",
  "search" => "search this website"
 );
