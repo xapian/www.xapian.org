@@ -29,6 +29,8 @@ you know of any more!</p>
 <a href="#react">React</a> |
 <a href="#theyworkforyou">TheyWorkForYou</a> |
 <a href="#venda">Venda</a> |
+<a href="#citebase">Citebase</a> |
+<a href="#flyingdog">Flying Dog Software</a> |
 <a href="#webtop">Webtop</a>
 <? /* | <a href="#gmane">Gmane</a>*/ ?>
 </p>
@@ -60,7 +62,7 @@ Languages: German<br>
 Online Auction Site<br>
 Application: <a href="http://www.qoop.nl/index.php?page=%2Fzoeken_omega.php">Searching online auctions</a><br>
 Languages: Dutch<br>
-Database size: around 400000 documents<br>
+Database size: around 400,000 documents<br>
 </p>
 
 <p id="ananova">Organisation: <a href="http://www.ananova.com/">Ananova</a> -
@@ -83,6 +85,7 @@ the dutch broadcasting organization <a href="http://www.vpro.nl/">VPRO</a>,
 <a href="http://www.webpiraat.nl/index.wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a dutch interchurch organization)<br>
 Languages: Dutch<br>
 Document types: forum topics<br>
+Database size: around 900,000 topics
 <?php
 /*
 Together there are 12.994.235 messages which are packed in 872.202 
@@ -102,6 +105,18 @@ Application: Searching products for ecommerce sites<br>
 Document types: SQL database records<br>
 </p>
 
+<p id="citebase">Organisation: <a href="http://citebase.eprints.org/">Citebase</a><br>
+Application: Searching academic papers<br>
+Languages: Mostly English<br>
+Database size: around 300,000 papers<br>
+</p>
+
+<p id="flyingdog">Organisation: <a href="http://www.flyingdog.biz/flyingdog/powerslave,id,1,_language,uk,_country,,nodeid,1.html">Flying Dog Software</a>
+(<a href="http://www.flyingdog.biz/flyingdog/powerslave,id,1,_language,de,_country,,nodeid,1.html">oder auf Deutsch</a>)<br>
+Application: Flying Dog Software's Powerslave Content Management System <a
+href="http://www.flyingdog.biz/flyingdog/content/show.php3?id=74&amp;nodeid=7&amp;_language=uk">integrates Xapian to provide searching</a>
+</p>
+
 <p id="webtop">Organisation: Webtop Ltd (now defunct -
 <a href="http://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>)<br>
 Application: Global Web Search Engine<br>
@@ -119,11 +134,21 @@ Unfortunately Webtop's parent company stopped trading in 2001.
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups)<br>
 Location: <a href="http://www.gmane.org">www.gmane.org</a><br>
 Document types:<br>
-Database size: around 15,000,000 pages<br>
+Database size: around 19,000,000 pages<br>
 Note:
 </p>
 */
 ?>
+
+<?php
+/*
+Synd is a software framework written in PHP, used primarily for building
+dynamic websites.  It allows Xapian to be used to provide an integrated search
+engine.
+http://synd.grow.nu/snaps/README.html
+*/
+?>
+
 </div>
 
 <?php
