@@ -11,14 +11,10 @@ print $navbar;
 
 There are four mailing lists available for discussions:
 <ul>
-<li> <tt>xapian-discuss</tt> for general discussions about the Xapian project. 
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-discuss">Subscribe</a>.
-<li> <tt>xapian-devel</tt> for technical discussions about the development of Xapian. 
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-devel">Subscribe</a>.
-<li> <tt>xapian-tracker</tt> receives Tracker updates. 
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-tracker">Subscribe</a>.
-<li> <tt>xapian-commits</tt> receives CVS commits (can be a <em>lot</em> of messages.
-<a href="http://lists.sourceforge.net/mailman/listinfo/xapian-commits">Subscribe</a>.
+<li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-discuss">xapian-discuss</a></tt> for general discussions about the Xapian project. 
+<li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-devel">xapian-devel</a></tt> for technical discussions about the development of Xapian. 
+<li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-tracker">xapian-tracker</a></tt> receives Tracker updates. 
+<li> <tt><a href="http://lists.sourceforge.net/mailman/listinfo/xapian-commits">xapian-commits</a></tt> receives CVS commits (can be a <em>lot</em> of messages).
 </ul>
 
 <hr>

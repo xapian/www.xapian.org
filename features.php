@@ -41,12 +41,12 @@ Features of Xapian include:
 <li> Supports stemming of search terms (e.g. a search for "football" would
   match documents which mention "footballs" or "footballer").  This helps
   to find relevant documents which might otherwise be missed.  Stemmers
-  are supplied For many languages (currently Danish, Dutch, English, French,
+  are currently included for Danish, Dutch, English, French,
   German, Italian, Norwegian, Portuguese, Spanish, and Swedish; Russian
-  and Finnish should be added shortly).
+  and Finnish should be added shortly.
 
-<li> Supports files &gt; 2GB where supported by the OS (Linux and Solaris both
-  do) - useful for really large document collections.
+<li> Supports files &gt; 2GB where supported by the OS
+  - useful for really large document collections.
 </ul>
 
 As well as the library, we supply a number of small example programs, and
