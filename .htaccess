@@ -1,2 +1,3 @@
 DirectoryIndex index.php
 RedirectPermanent /index.html http://www.xapian.org/
+RedirectPermanent /omega.conf http://www.xapian.org/omega.cgi
