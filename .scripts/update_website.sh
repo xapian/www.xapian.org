@@ -13,7 +13,7 @@ set -e
 # FIXME : need to avoid having to update this...
 tarball="xapian-core-0.5.4.tar.gz"
 
-if ixion = "`hostname`"; then
+if test ixion = "`hostname`"; then
  projectdir="/u1/olly/xapian-website-update"
  cvsdir=":pserver:anonymous@cvs.xapian.org:/cvsroot/xapian"
  cvsmodule="www.xapian.org"
@@ -72,7 +72,7 @@ if test stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
   touch stamp-run-ps2pdf
 fi
 cp -a apidoc.pdf "$tmpdir/$cvsmodule/docs"
-if ixion = "`hostname`"; then
+if test ixion = "`hostname`"; then
   if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
     cd "$tardir"
     # no compiler on sf web server, so configure fails!
