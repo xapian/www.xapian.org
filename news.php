@@ -9,6 +9,41 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<H2>Xapian 0.6.3 <small>(2002-12-14)</small></H2>
+
+<ul>
+<li> Updated PLATFORMS and todo list.  Noted in HACKING that Bison 1.50 seems to
+  work with Xapian.
+
+<li> OmQueryParser now creates an "unstem" multimap to allow probabilistic
+  query terms to be converted back to the form the user originally typed.
+
+<li> Updated documentation for remote protocol description and the quickstart
+  tutorial which were both very out of date.
+
+<li> No longer use OmSettings to pass matcher parameters.  This completes the
+  removal of OmSettings.
+  
+<li> Added workaround for problem with cursors sharing levels in the btree.
+  This should fix sporadic problems with large databases (small databases
+  have fewer btree levels so aren't affected).
+
+<li> Stub databases now work again, though with a different format.  The new
+  format allows multiple databases to be specified in the stub file.
+
+<li> OmEnquire::get_eset() now takes a flags argument of bit constants |-ed
+  together instead of 2 bools.
+
+<li> Applied Martin Porter's better fix for the btree sequential addition bug
+  which Richard fixed a few months ago.  Richard's fix resulted in a correct
+  btree, but didn't always utilise space as efficiently as possible.
+
+<li> Fixed the remote backend to handle weighting schemes after the OmSettings
+  changes.  You can now even implement your own weighting scheme and use it
+  with the remote backend provided you register it with SocketServer at
+  runtime (this feature has been on the todo list for ages).
+</ul>
+
 <H2>Xapian 0.6.2 <small>(2002-12-07)</small></H2>
 
 <ul>

@@ -9,12 +9,19 @@ print $navbar;
 
 <center><h1>Downloads</h1></center>
 
-The quartz backend is undergoing major changes in the 0.6 series, so you may
-need to rebuild your databases after installing each 0.6.X release.  There are also some API changes in progress.  If you're
-just experimenting with Xapian, or developing an application, this may not
-be a problem.  If you have a large deployed system, you may wish to stick
-with 0.5.X until 0.7.0, then you'll have to rebuild your database and update
-your code just once.
+The 0.6 branch features improved compression in the quartz database backend
+(~20% smaller), but it can't read databases produced by 0.5.X or earlier.
+Also the stemmers have been updated to Martin Porter's Snowball stemmers,
+which give better (but therefore different) results.  Both of these mean
+you'll need to rebuild your database when upgrading to 0.6 or later.
+
+<P>
+The revised quartz format shouldn't change further for a while
+(and when it does, the old format will be supported), but the API is also
+being cleaned up, and this work is not yet complete.  If you use omega
+unmodified, this doesn't matter to you.  If you've written your own code,
+you may wish to stay with 0.5.X and update it just once when the API changes
+are complete.
 
 <h2>0.5.4</h2>
 
@@ -29,14 +36,14 @@ so we've not uploaded just to bump the version):
 a CGI search frontend.
 </ul>
 
-<h2>0.6.2</h2>
+<h2>0.6.3</h2>
 
-The latest release is 0.6.2:
+The latest release is 0.6.3:
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-core-0.6.2.tar.gz">xapian-core</A>: the Xapian library itself
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-examples-0.6.2.tar.gz">xapian-examples</A>: small example programs
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/omega-0.6.2.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-core-0.6.3.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-examples-0.6.3.tar.gz">xapian-examples</A>: small example programs
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/omega-0.6.3.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
 a CGI search frontend.
 </ul>
 
