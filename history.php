@@ -35,11 +35,5 @@ commercial and academic experience.
 
 <hr>
 <?=$navbar ?>
-<br>
-<A href="http://sourceforge.net"><IMG
-src="http://sourceforge.net/sflogo.php?group_id=35626&type=1" width="88" height="31" border="0" alt="SourceForge Logo"></A>
-<small>
-The Xapian project makes use of Sourceforge for <a href="http://sourceforge.net/projects/xapian/">project infrastructure</a>.
-</small>
 </body>
 </html>
