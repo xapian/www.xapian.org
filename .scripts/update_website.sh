@@ -34,7 +34,9 @@ chmod g+s "${tmpdir}"
 
 # Check website out of CVS
 cd "${tmpdir}"
+umask 0002
 cvs -Ql -d "${cvsdir}" export -r HEAD "${cvsmodule}"
+chmod -R g+w "${tmpdir}"
 
 # copy new version of script ready to replace old version, and remove other
 # stuff to be excluded.
