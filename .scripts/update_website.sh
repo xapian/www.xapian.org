@@ -10,7 +10,7 @@
 
 projectdir="/home/groups/x/xa/xapian"
 cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
-cvsmodule="website"
+cvsmodule="www.xapian.org"
 
 tmpdir="${projectdir}/mkwebsite_$$"
 htmldir="${projectdir}/htdocs"
