@@ -10,8 +10,10 @@ print $navbar;
 <center><h1>CVS</h1></center>
 
 <hr>
-<P><B>Note:</B> the Xapian CVS moved from sourceforge to a faster, more reliable
-server.  To continue using an already checked out CVS tree, execute this command from the top-level "xapian" directory (the one containing xapian-core, etc):
+<P><B>Note:</B> the Xapian CVS has moved from sourceforge to a faster, more
+reliable server.  To continue using an already checked out CVS tree, execute
+this command from the top-level "xapian" directory (the one containing
+xapian-core, etc):
 
 <pre>
 find . -name CVS -type d -print|perl -ne 'chomp;open R,"&gt;$_/Root";print R ":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs\n"'
