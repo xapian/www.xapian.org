@@ -84,7 +84,7 @@ body>#Menu {width:8em;}
 }
 
 #Content>#info {
-	position: absolute;
+	position:fixed;
 	top: 10px;
 	right: 20px;
 }
