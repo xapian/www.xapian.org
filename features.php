@@ -27,8 +27,8 @@ and Microsoft Windows.
   <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
   on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
   We also support <a href="http://www.swig.org/">SWIG</a> which can generate
-  bindings for 11 languages.  At present those for Python, PHP4, and TCL are
-  working.
+  bindings for 13 languages.  At present those for Python, PHP4, and TCL are
+  working.  Guile and C# are being worked on.</p>
 
 <li> Ranked probablistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
