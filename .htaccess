@@ -1,0 +1,2 @@
+DirectoryIndex index.php
+RedirectPermanent /index.html http://www.xapian.org/
