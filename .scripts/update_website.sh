@@ -10,7 +10,7 @@
 
 set -e
 
-tarball="xapian-core-0.5.0.tar.gz"
+tarball="xapian-core-0.5.1.tar.gz"
 
 projectdir="/home/groups/x/xa/xapian"
 cvsdir=":pserver:anonymous@cvs1:/cvsroot/xapian"
