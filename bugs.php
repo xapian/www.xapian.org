@@ -10,8 +10,8 @@ print $navbar;
 <center><h1>Bugs</h1></center>
 
 <P>If you encounter any problems, contact the developers on the
-<tt>xapian-devel</tt> mailing list, or report bugs via <a href="bugs/">the bug
-tracking system</a>.
+<A HREF="http://www.xapian.org/lists.php"><tt>xapian-devel</tt> mailing list</A><!--,
+or report bugs via <a href="bugs/">the bug tracking system</a>-->.
 
 <hr>
 <?=$navbar ?>
