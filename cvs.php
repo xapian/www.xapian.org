@@ -15,7 +15,7 @@
 
 <p>The Xapian CVS tree (including file history from the original Omsee project)
 can be browsed online on the <a
-href="http://cvs.xapian.org/">Xapian CVS server</a>.
+href="http://cvs.xapian.org/xapian/">Xapian CVS server</a>.
 To get the latest version of Xapian directly from our CVS, follow these steps:</p>
 <ol>
 <li> Check out the latest version:
