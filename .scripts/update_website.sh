@@ -90,8 +90,9 @@ rsync -a -r -C "${tmpdir}/${cvsmodule}/"* "${htmldir}/"
 # Clean up temporary directory.
 rm -rf "${tmpdir}"
 
-# put new script in place.
-mv "${scriptpath_active}_new" "${scriptpath_active}" >/dev/null 2>&1 
+# rebuild omega's database
+# FIXME: sort out permissions so this'll work for other people too
+LD_LIBRARY_PATH=/u1/olly/install/lib omindex --db /u1/olly/omega/data/default --url / /usr/data/www/xapian.org
 
 # return successfully.
 exit 0
