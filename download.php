@@ -9,25 +9,26 @@ print $navbar;
 
 <center><h1>Downloads</h1></center>
 
-The 0.7 branch features various API changes (notably everything is now in
-a Xapian namespace, rather than having an Om or om_ prefix).  Old code
-should still build if you use the supplied om/om.h compatibility header.
-However, the changes between 0.6.5 and 0.7.0 are extensive so you should
-test carefully before deploying 0.7 in a production environment (and
-let us know how you get on).
+The <A HREF="#0.7">0.7 branch</A>
+features various API changes (notably everything is now in
+a Xapian namespace, rather than having an Om or om_ prefix).  You should
+be able to build and use code written to use the old API without making
+any changes if you use the supplied om/om.h compatibility header.
 
 <P>
-The 0.6 branch features improved compression in the quartz database backend
+The <A HREF="#0.6">0.6 branch</A>
+features improved compression in the quartz database backend
 (~20% smaller), but it can't read databases produced by 0.5.X or earlier.
 Also the stemmers have been updated to Martin Porter's Snowball stemmers,
 which give better (but therefore different) results.  Both of these mean
-you'll need to rebuild your database when upgrading to 0.6 or later.
+you'll need to rebuild your database when upgrading to 0.6.0 or later.
 
 <P>
-The revised quartz format shouldn't change further for a while
-(and when it does, the old format will be supported).
+We plan to ensure any further revisions to the quartz format will allow for
+backward compatibility.  We didn't do that this time as the stemmers
+changed too.
 
-<h2>0.5.4</h2>
+<h2>0.5.5</h2>
 
 The latest 0.5.X series release version is <A HREF="#0.5.5">0.5.5</A>.
 There are 3 tarballs (xapian-examples hasn't changed since 0.5.1
@@ -40,7 +41,7 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
-<h2>0.6.5</h2>
+<A NAME="0.6"><h2>0.6.5</h2></A>
 
 The latest 0.6.X series release is <A HREF="#0.6.5">0.6.5</A>
 (xapian-examples hasn't changed since 0.6.3
@@ -53,18 +54,158 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
-<h2>0.7.3</h2>
+<A NAME="0.7"><h2>0.7.4</h2></A>
 
-The latest release is <A HREF="#0.7.3">0.7.3</A>:
+The latest release is <A HREF="#0.7.4">0.7.4</A>
+(xapian-examples hasn't changed since 0.7.3
+so we've not repackaged it solely to bump the version):
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.3.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-core-0.7.4.tar.gz">xapian-core</A>: the Xapian library itself
 <li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-examples-0.7.3.tar.gz">xapian-examples</A>: small example programs
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/omega-0.7.3.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-bindings-0.7.3.tar.gz">xapian-bindings</A>: SWIG bindings allowing Xapian to be used from various scripting languages
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/omega-0.7.4.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.7/xapian-bindings-0.7.4.tar.gz">xapian-bindings</A>: SWIG bindings allowing Xapian to be used from various scripting languages
 </ul>
 
 <A NAME="news"><center><h1>News</h1></center></A>
+
+<A NAME="0.7.4"><H2>Xapian 0.7.4 <small>(2003-10-02)</small></H2></A>
+
+<H3>API</H3>
+
+<ul>
+<li> Fixed small memory leak if Xapian::Enquire::set_query() is called more than
+once.
+
+<li> Xapian::ESet now has reference counted internals (library interface version
+bumped because of this).
+
+<li> Removed unused OmDocumentTerm::termfreq member variable.
+
+<li> OmDocumentTerm ctor now takes wdf, and replaced set_wdf() with inc_wdf() and
+dec_wdf().
+
+<li> Removed unused open_document() method from SubMatch and derived classes.
+
+<li> Calls made by the matcher to Document::Internal::open_document() now use the
+lazy flag provided for precisely this purpose, but apparently never used -
+this should give quite a speed boost to any matcher options which use values
+(e.g. sort, collapse).
+</ul>
+
+<H3>testsuite</H3>
+
+<ul>
+<li> Finished off support for running tests under valgrind to check for memory
+leaks and access to uninitialised variables.
+
+<li> apitest: Sped up deldoc4.
+
+<li> btreetest: Removed superfluous `/'s from constructed paths.
+
+<li> quartztest: adddoc2 now checks that there weren't any extra values created.
+</ul>
+
+<H3>backends</H3>
+
+<ul>
+<li> quartz: don't start the document's TermIterator from scratch on every
+iteration in replace_document().  Should be a small performance win.
+
+<li> quartz: Pass 0 for the lexicon/postlist table when creating a termlist just
+to find the doc length.
+
+<li> quartz: quartz_table_entries.cc: Removed rather unnecessary use of
+const_cast.
+
+<li> quartz: quartz_table.cc: Removed unused variable.
+
+<li> quartz: Improved encapsulation of class Btree.
+</ul>
+
+<H3>build system</H3>
+
+<ul>
+<li> libbtreecheck.la now has an explicit dependency on libxapian.la.
+
+<li> We now set the dependencies for libxapian correctly so that linking
+applications will pull in other required libraries.
+
+<li> matcher/Makefile.am: Ship networkmatch.cc even if "make dist" is run from a
+tree with the remote backend disabled.
+
+<li> configure.in: Sorted out tests for gethostbyname and gethostbyaddr using
+standard autoconf macros.
+
+<li> configure.in: If fork is found, but socketpair isn't, automatically disable
+the remote backend rather than configure dying with an error.
+
+<li> autoconf/: Removed various unused autoconf macros.
+</ul>
+
+<H3>portability</H3>
+
+<ul>
+<li> xapian-config.in: Link with libxapianqueryparser before libxapian, since
+that's the dependency order.
+
+<li> Removed or replaced uses of &lt;iostream&gt; and &lt;iosfwd&gt; in the library sources
+- we don't need or want the library to pull in cin and friends.
+
+<li> extra/queryparser.yy: Fixed to build with Sun's C++ compiler.
+
+<li> Make the dummy source file C++ rather than C so that automake tells libtool
+that this is a C++ library - vital for correct linking on some platforms.
+
+
+<li> Makefile.am: Pass -no-undefined to libtool so that we can build build a DLL
+on MS Windows.
+
+<li> configure.in: Fixed check for socketpair - we were automatically disabling
+the remote backend on platforms where socketpair is in libsocket
+(such as Solaris).
+
+<li> Use O_BINARY for binary I/O if it exists.
+
+<li> common/utils.h: mkdir() only takes one argument on mingw.
+
+<li> common/utils.h,testsuite/backendmanager.cc: Touch file using open() rather
+than system().
+
+<li> common/utils.cc: Fixed to compile if snprintf isn't available.
+</ul>
+
+<H3>documentation</H3>
+
+<ul>
+<li> docs/scalability.html: Fixed slip (32GB should be 32TB);  Added note about
+Linux 2.4 and ext2 filesize limits.
+
+<li> PLATFORMS: Updated.
+
+<li> NEWS: Fixed a few typos.
+</ul>
+
+<H3>bindings</H3>
+
+<ul>
+<li> xapian.i: using namespace std in SWIG parsed segment to sort out typemaps.
+</ul>
+
+<H3>packaging</H3>
+
+<ul>
+<li> Updated RPM packaging.
+</ul>
+
+<H3>omega</H3>
+
+<ul>
+<li> omega: $topdoc now ensures the match has been run; $date no longer ensures
+the match has been run.
+
+<li> omega: Fixed to build with Sun's C++ compiler.
+</ul>
 
 <A NAME="0.7.3"><H2>Xapian 0.7.3 <small>(2003-08-08)</small></H2></A>
 
