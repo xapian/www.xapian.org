@@ -28,7 +28,7 @@ and Microsoft Windows.
   on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
   We also support <a href="http://www.swig.org/">SWIG</a> which can generate
   bindings for 11 languages.  At present those for Python, PHP4, and TCL are
-  fully up to date.
+  working.
 
 <li> Ranked probablistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
