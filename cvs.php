@@ -38,7 +38,14 @@ can be browsed online on the <a
 href="http://cvs.xapian.org/">Xapian CVS server</a>.
 To get the latest version of Xapian directly from our CVS, follow these steps:
 <ol>
-<li> Check out the latest version: <tt>cvs -z3 -d:pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs co xapian</tt>
+<li> Check out the latest version:
+ <ul>
+<!-- Sadly not all versions of CVS support putting the password in like this:
+<tt>cvs -z3 -d:pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs co xapian</tt>
+-->
+ <li> <tt>echo anonymous|cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs login</tt>
+ <li> <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs co xapian</tt>
+</ul>
 <li> In the newly created <tt>xapian/xapian-core</tt>,
     <tt>xapian/xapian-examples</tt>, and
     <tt>xapian/xapian-applications/omega</tt> directories, issue the command
