@@ -36,7 +36,7 @@ so we've not repackaged it solely to bump the version):
 a CGI search frontend.
 </ul>
 
-<h2>0.6.4</h2>
+<h2>0.6.5</h2>
 
 The latest release is 0.6.5
 (xapian-examples hasn't changed since 0.6.3
