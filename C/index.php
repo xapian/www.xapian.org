@@ -8,7 +8,7 @@ if ($rev == '') {
  $redirect .= '?rev=' . $rev . '&content-type=text/vnd.viewcvs-markup';
 } else {
  // updated file
- $redirect .= '?r1=' . $rev . '&r2=' . $rev2;
+ $redirect .= '.diff?r1=' . $rev . '&r2=' . $rev2;
 }
 header('Location: ' . $redirect);
 ?>
