@@ -89,16 +89,16 @@ $ fakeroot apt-get source -b xapian-bindings xapian-omega
 
 <p>Any assistance (getting these packages into Debian, reporting problems
 which aren't listed above or in the TODO lists in each package, or
-fixing any of these problem) will be gratefully accepted.
+fixing any of these problems) will be gratefully accepted.
 </p>
 
 <h1 id="RPM">RPM packages</h1>
 
 <p>Fabrice Colin has built
-<a href="/RPM/FC2/">RPM packages for Fedora Core 2</a>.
+<a href="http://www.chez.com/colinf/xapian/">RPM packages for Fedora Core 3 and Yellow Dog 4.0</a>.
 The source RPMs (the three files that end in "src.rpm") are
-not FC2 specific - one can build binary RPMs from those with:
-<code>rpmbuild --rebuild</code>
+not distribution specific - one can build binary RPMs from those with:
+<code>rpmbuild&nbsp;--rebuild</code>
 </p>
 
 <h1>Gentoo packages</h1>
