@@ -5,6 +5,8 @@
 <head>
 <title>The Xapian Project : Downloads</title>
 <style type="text/css" media="screen">@import "layout2.css";</style>
+<style type="text/css" media="print">@import "print.css";</style>
+<meta name="MSSmartTagsPreventParsing" content="true" />
 </head>
 
 <body>
