@@ -40,14 +40,19 @@ chmod g+s "${tmpdir}"
 cd "${tmpdir}"
 umask 0002
 cvs -Ql -d "${cvsdir}" export -r HEAD "${cvsmodule}"
-mkdr "${cvsmodule}/docs"
+
+# get docs from tarball
+mkdir "${cvsmodule}/docs"
 tar zxf "$projectdir/$tarball"
 mv xapian-core-*/docs/*.html "${cvsmodule}/docs"
 mv xapian-core-*/docs/apidoc "${cvsmodule}/docs"
-cd xapian-core-*/docs
-make doxygen_source_docs
-cd -
-mv xapian-core-*/docs/sourcedoc "${cvsmodule}/docs"
+# no compiler on sf web server, so configure fails!
+#cd xapian-core-*
+#./configure
+#cd docs
+#make doxygen_source_docs
+#cd ../..
+#mv xapian-core-*/docs/sourcedoc "${cvsmodule}/docs"
 rm -rf xapian-core-*
 
 chmod -R g+w "${tmpdir}"
