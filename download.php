@@ -28,14 +28,15 @@ The latest 0.5.X series release version is 0.5.4.  There are 3 tarballs
 a CGI search frontend.
 </ul>
 
-<h2>0.6.0</h2>
+<h2>0.6.1</h2>
 
-The latest release is 0.6.0:
+The latest release is 0.6.1 (xapian-examples and omega haven't changed, so
+are still at 0.6.0):
 
 <ul>
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6.0/xapian-core-0.6.0.tar.gz">xapian-core</A>: the Xapian library itself
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6.0/xapian-examples-0.6.0.tar.gz">xapian-examples</A>: small example programs
-<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6.0/omega-0.6.0.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-core-0.6.1.tar.gz">xapian-core</A>: the Xapian library itself
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/xapian-examples-0.6.0.tar.gz">xapian-examples</A>: small example programs
+<li> <A HREF="http://www.tartarus.org/~olly/xapian-0.6/omega-0.6.0.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and
 a CGI search frontend.
 </ul>
 

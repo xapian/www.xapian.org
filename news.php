@@ -9,6 +9,14 @@ print $navbar;
 
 <center><h1>News</h1></center>
 
+<H2>Xapian 0.6.1 <small>(2002-11-28)</small></H2>
+
+<ul>
+<li> Fixed to compile with GCC 3.0.
+
+<li> PLATFORMS: Updated.
+</ul>
+
 <H2>Xapian 0.6.0 <small>(2002-11-27)</small></H2>
 
 <ul>
