@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<? $version = "0.8.4"; $dversion = "0-8-4"; $branch = "0.8"; ?>
+<? $version = "0.8.5"; $dversion = "0-8-5"; $branch = "0.8"; ?>
 <head>
 <title>The Xapian Project : Downloads</title>
 <? include "styleandmeta.php"; ?>
@@ -32,7 +32,7 @@ from Java and TCL.</p>
 <A HREF="http://cvs.xapian.org/xapian/xapian-bindings/NEWS?rev=v<? echo $dversion ?>">[news]</A>
 </ul>
 
-<h1>Debian packages</h1>
+<h1 id="deb">Debian packages</h1>
 
 <p>We now supply Debian packages.  Here's how to get them.
 </p>
@@ -94,7 +94,7 @@ which aren't listed above or in the TODO lists in each package, or
 fixing any of these problem) will be gratefully accepted.
 </p>
 
-<h1>RPM packages</h1>
+<h1 id="RPM">RPM packages</h1>
 
 <p>Fabrice Colin has built
 <a href="/RPM/FC2/">RPM packages for Fedora Core 2</a>.
