@@ -57,7 +57,9 @@ if test "$tarball" -nt stamp-unpacked-tarball ; then
   chmod g+rws "$tardir"
   touch stamp-unpacked-tarball
 fi
-cp -a "$tardir"/docs/*.html "$tardir"/docs/apidoc "$tmpdir/$cvsmodule/docs"
+cp -a "$tardir"/docs/*.html "$tmpdir/$cvsmodule/docs"
+mkdir "$tmpdir/$cvsmodule/docs/apidoc" 2> /dev/null || :
+cp -a "$tardir"/docs/apidoc/html "$tmpdir/$cvsmodule/docs/apidoc"
 if test stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
   ps2pdf12 "$tardir"/docs/apidoc.ps apidoc.pdf
   touch stamp-run-ps2pdf
@@ -71,7 +73,8 @@ if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
   cd "$projectdir"
   touch stamp-built-sourcedoc
 fi
-cp -a "$tardir"/docs/sourcedoc "$tmpdir/$cvsmodule/docs"
+mkdir "$tmpdir/$cvsmodule/docs/sourcedoc" 2> /dev/null || :
+cp -a "$tardir"/docs/sourcedoc/html "$tmpdir/$cvsmodule/docs/sourcedoc"
 cd "$tmpdir"
 
 chmod -R g+rw "${tmpdir}"
