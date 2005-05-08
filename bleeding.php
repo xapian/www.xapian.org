@@ -32,8 +32,8 @@ can still be used in the now frozen Xapian CVS tree).
 Additionally, we've recreated copy and rename operations into the Subversion
 history (CVS doesn't support copy or rename directly).</p>
 
-<p>Our Subversion repository can't yet be browsed online - this is coming
-soon!</p>
+<p>Our Subversion repository can also be
+<a href="http://svn.xapian.org/">browsed online</a>.</p>
 
 <p>
 To get the very latest version of Xapian from our repository, follow these

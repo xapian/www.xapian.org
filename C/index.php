@@ -6,25 +6,14 @@ if (ereg("^[0-9]+$", $file)) {
     $tmp = $file;
     $file = $rev;
     $rev = $tmp;
-?>
-<HTML><BODY>
-<pre>
-No links currently, but paste this command to view diffs in a terminal:
-
-<?php
-if ($rev2 != "" && $file != "") {
-?>
-svn cat -r<?echo $rev, " ", $file;?>
-<?php
-} else {
-?>
-svn diff -r<?echo $rev-1;?>:<?echo $rev; if ($file != "") echo " ", $file;?>
-<?php
-}
-?>
-
-</pre></BODY></HTML>
-<?php
+    $redirect = 'http://svn.xapian.org/';
+    if ($rev2 != '' && $file != '') {
+	$redirect .= $file . '?rev=' . $rev . '&view=markup';
+    } else if ($file != '') {
+	$redirect .= $file . '?r1=' . ($rev-1) . '&r2=' . $rev;
+    } else {
+	$redirect .= '?rev=' . $rev;
+    }
 } else {
     $redirect = 'http://cvs.xapian.org/' . $file;
     if ($rev == '') {
@@ -36,6 +25,6 @@ svn diff -r<?echo $rev-1;?>:<?echo $rev; if ($file != "") echo " ", $file;?>
      // updated file
      $redirect .= '.diff?r1=' . $rev . '&r2=' . $rev2;
     }
-    header('Location: ' . $redirect);
 }
+header('Location: ' . $redirect);
 ?>
