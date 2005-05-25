@@ -100,7 +100,7 @@ topics over all the boards that we monitor. We index 1 topic as 1 document.
 
 <p id="theyworkforyou">Organisation: <a href="http://www.theyworkforyou.com/"
 >TheyWorkForYou.com</a><br>
-Application: Searching Hansard, the UK House of Commons Official Report<br>
+Application: Searching Hansard, the UK House of Commons Official Report; also email alerts<br>
 Languages: English<br>
 Database size: around 500,000 documents; 0.5G of source data.
 
