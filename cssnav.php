@@ -16,6 +16,7 @@ $pages = array(
  "download" => "download",
  "bleeding" => "bleeding edge",
  "bugs" => "bugs",
+ "contact" => "contact us",
  "search" => "search this website"
 );
 function navlink(&$n, $f) {
@@ -31,7 +32,7 @@ function navlink(&$n, $f) {
   }
 }
 array_walk($pages, "navlink");
-print join("<br>\n", $pages);
+print "<p>",join("</p>\n<p>", $pages),"</p>\n";
 if ($this != "search") {
 print "<br>\n<form method=\"GET\" action=\"search.php\"><div><input name=\"P\" size=\"14\"></div></form>\n";
 }
