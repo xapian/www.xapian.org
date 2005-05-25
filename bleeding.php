@@ -40,7 +40,6 @@ To get the very latest version of Xapian from our repository, follow these
 steps:
 <ol>
 <li> <tt>svn co svn://svn.xapian.org/xapian/trunk xapian</tt>
-</blockquote>
 <li> In the newly created <tt>xapian</tt>
     directory, run the command <tt>./bootstrap</tt> - this will run various
     developer tools to produce a
@@ -50,6 +49,21 @@ steps:
 <li> If you're looking to do development work on Xapian, then
   <tt>xapian-core/HACKING</tt> is recommended reading.
 </ol>
+
+<p>
+You can also get the latest Search::Xapian (Perl bindings for Xapian)
+development sources like so:
+
+<ol>
+<li> <tt>svn co svn://svn.xapian.org/search-xapian Search_Xapian</tt>
+<li> You can configure Search::Xapian to build against xapian installed in a non-standard place like so:
+<p>
+  <tt>XAPIAN_CONFIG=/path/to/xapian/xapian-core/xapian-config perl Makefile.PL</tt>
+</ol>
+
+<p>
+Note: you can't currently build Search::Xapian against an uninstalled
+xapian-core.
 
 <p>
 We plan to set up an automatic snapshot system which will try to compile and
