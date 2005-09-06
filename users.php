@@ -60,7 +60,7 @@ etc...generally anything that says something about performance.
 ?>
 <p id="diezeit">Organisation: <a href="http://www.zeit.de/">Die Zeit</a> -
 German Newspaper<br>
-Application: Currently in use internally, with use on the live site planned<br>
+Application: <a href="http://suche.zeit.de/suche">Searching newspaper articles</a>; also powers internal search facilities for newspaper staff.
 Languages: German<br>
 </p>
 
