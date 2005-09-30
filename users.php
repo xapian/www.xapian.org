@@ -36,7 +36,9 @@ you know of any more!</p>
 <a href="#gmane">Gmane</a> |
 <a href="#daviswiki">Davis Wiki</a> |
 <a href="#orange">Orange</a> |
-<a href="#recoll">Recoll</a>
+<a href="#recoll">Recoll</a> |
+<a href="#beeblex">BeebleX</a> |
+<a href="#srpko">Srpko</a>
 </p>
 <img align=right src="xapian-powered.png">
 
@@ -144,7 +146,7 @@ Unfortunately Webtop's parent company stopped trading in 2001.
 
 <p id="gmane">Organisation: <a href="http://www.gmane.org/">Gmane</a><br>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
-Location: <a href="http://search.gmane.org">search.gmane.org</a><br>
+Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
 Database size: around 28,000,000 messages
 </p>
 
@@ -161,6 +163,21 @@ Application: WAP search for users of Orange mobile phones<br>
 
 <p id="recoll">Application: <a href="http://perso.wanadoo.fr/dockes/recoll/">Recoll</a> is a personal full text indexing system
 </p>
+
+<p id="beeblex">Organisation: BeebleX<br>
+Application: Searching all things PHP related<br>
+Location: <a href="http://www.beeblex.com/">BeebleX</a><br>
+Document types: Mailing lists, News, Articles, Forums, Documentation, Blogs, Job listings
+Database size: over 890,000 documents<br>
+</p>
+
+<p id="srpko">Organisation: Srpko<br>
+Application: Searching documents related to Serbia and Montenegro<br>
+Location: <a href="http://www.srpko.com/">Srpko</a><br>
+Document types: Web pages, News articles, Wikipedia pages, Dictionary entries
+Database size: over 5,000,000 pages<br>
+</p>
+
 <?php
 /*
 Synd is a software framework written in PHP, used primarily for building
