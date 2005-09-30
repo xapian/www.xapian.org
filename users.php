@@ -167,14 +167,14 @@ Application: WAP search for users of Orange mobile phones<br>
 <p id="beeblex">Organisation: BeebleX<br>
 Application: Searching all things PHP related<br>
 Location: <a href="http://www.beeblex.com/">BeebleX</a><br>
-Document types: Mailing lists, News, Articles, Forums, Documentation, Blogs, Job listings
+Document types: Mailing lists, News, Articles, Forums, Documentation, Blogs, Job listings<br>
 Database size: over 890,000 documents<br>
 </p>
 
 <p id="srpko">Organisation: Srpko<br>
 Application: Searching documents related to Serbia and Montenegro<br>
 Location: <a href="http://www.srpko.com/">Srpko</a><br>
-Document types: Web pages, News articles, Wikipedia pages, Dictionary entries
+Document types: Web pages, News articles, Wikipedia pages, Dictionary entries<br>
 Database size: over 5,000,000 pages<br>
 </p>
 
