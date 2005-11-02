@@ -147,7 +147,7 @@ Unfortunately Webtop's parent company stopped trading in 2001.
 <p id="gmane">Organisation: <a href="http://www.gmane.org/">Gmane</a><br>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: around 28,000,000 messages
+Database size: around 29,000,000 messages
 </p>
 
 <p id="daviswiki">Organisation: <a href="http://www.daviswiki.org/">Davis Wiki</a><br>
