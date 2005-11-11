@@ -103,6 +103,10 @@ not distribution specific - one can build binary RPMs from those with:
 <p>Xapian is in <A HREF="http://gentoo-portage.com/dev-libs/xapian">Gentoo
 Portage</A>.</p>
 
+<h1>FreeBSD Ports Collection</h1>
+
+<p>Xapian is in the <A HREF="http://www.freebsd.org/cgi/ports.cgi?query=xapian&stype=name">FreeBSD Ports Collection</A>.</p>
+
 </div>
 
 <?php
