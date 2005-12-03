@@ -92,8 +92,9 @@ fixing any of these problems) will be gratefully accepted.
 <h1 id="RPM">RPM packages</h1>
 
 <p>Fabrice Colin has built
-<a href="http://www.chez.com/colinf/xapian/">RPM packages for Fedora Core 3 and Yellow Dog 4.0</a>.
-The source RPMs (the three files that end in "src.rpm") are
+<a href="http://www.chez.com/colinf/rpms/">RPM packages for Fedora Core 4</a>
+(i386 and source RPMs, ppc coming soon).
+The source RPMs (the three files that end in ".src.rpm") are
 not distribution specific - one can build binary RPMs from those with:
 <code>rpmbuild&nbsp;--rebuild</code>
 </p>
