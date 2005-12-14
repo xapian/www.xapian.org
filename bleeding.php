@@ -104,7 +104,7 @@ For remote access via ssh, again create a <tt>[tunnels]</tt> section in your
 </p>
 
 <blockquote><tt>
-ssh+userv = sh -c 'ssh $0 userv xapian-svn svnserve'
+ssh+userv=bash -c 'user=${0/@*};host=${0/$user@};ssh $host userv $user svnserve'
 </tt></blockquote>
 
 <p>
@@ -112,7 +112,7 @@ Then you can check out a tree with commit access like so:
 </p>
        
 <blockquote><tt>
-svn co svn+ssh+userv://svn.xapian.org/xapian/trunk xapian
+svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 </tt></blockquote>
 <?php } ?>
 
