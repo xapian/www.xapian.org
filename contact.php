@@ -23,8 +23,8 @@ the developers!
 you're getting free help and advice the least you can do is make sure the
 whole message thread is in the list archive to help others in the future!
 
-<p>If you want private one-to-one assistance, <A HREF="support.php">consultancy
-services</A> are available.
+<p>If you want private one-to-one assistance and are prepared to pay for
+it, <A HREF="support.php">consultancy services</A> are available.
 
 </div>
 
