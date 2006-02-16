@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<? $version = "0.9.2"; $branch = "0.9"; ?>
+<? $version = "0.9.3"; $branch = "0.9"; ?>
 <head>
 <title>The Xapian Project : Downloads</title>
 <? include "styleandmeta.php"; ?>
