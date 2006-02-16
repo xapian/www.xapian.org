@@ -24,6 +24,7 @@ you know of any more!</p>
 <li><a href="#commweb">Community Websites</a></li>
 <li><a href="#otherweb">Other Websites</a></li>
 <li><a href="#desktop">Desktop Search Applications</a></li>
+<li><a href="#webapps">Web Based Applications</a></li>
 <li><a href="#frameworks">Software Frameworks</a></li>
 </ul>
 
@@ -58,7 +59,7 @@ Database size: around 300,000 papers<br>
 <li id="srpko"><div class="orgname"><a href="http://www.srpko.com/">Srpko</a></div>
 Application: Searching documents related to Serbia and Montenegro<br>
 Document types: Web pages, News articles, Wikipedia pages, Dictionary entries<br>
-Database size: over 5,000,000 pages<br>
+Database size: over 7.8 million pages<br>
 </li>
 
 <li id="webtop"><div class="orgname">Webtop Ltd (now defunct - <a href="http://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>)</div>
@@ -158,7 +159,7 @@ Database size: around 1500 pages<br>
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: around 29,000,000 messages
+Database size: 31 million messages and counting!
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
@@ -195,6 +196,15 @@ Application: Recoll is a personal full text indexing system<br>
 <li id="pinot"><div class="orgname"><a href="http://pinot.berlios.de/">Pinot</a></div>
 Application: Pinot is a metasearch tool for the Free Desktop<br>
 </li>
+</ul>
+
+<hr>
+
+<h2 id="webapps">Web Based Applications</h2>
+
+<ul>
+<li id="roundup"><div class="orgname"><a href="http://roundup.sourceforge.net/">Roundup</a></div>
+Application: Issue Tracker which can use Xapian for searching
 </ul>
 
 <hr>
