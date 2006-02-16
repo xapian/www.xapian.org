@@ -17,8 +17,8 @@
 
 <p>Xapian is an Open Source Probabilistic Information Retrieval library,
 released under the GPL.  It's written in C++, with bindings to allow use
-from other languages (Perl, Python, PHP, Java, and TCL are currently
-supported; Guile and C# are being worked on).</p>
+from other languages (Perl, Python, PHP, Java, TCL, and C# are currently
+supported).</p>
 
 <p>Xapian is designed to be a highly adaptable toolkit to allow developers
 to easily add advanced indexing and search facilities to their own
@@ -28,6 +28,9 @@ applications.</p>
 should take a look at Omega, which is an application we supply built upon
 Xapian.  But unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.</p>
+
+<p>The <a href="download.php">latest stable version is 0.9.3</a>, released
+on 2006-02-16.
 
 </div>
 
