@@ -104,7 +104,7 @@ be better tailored:
 </p>
 
 <ul>
-<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linix</a></li>
+<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linux</a></li>
 </ul>
 
 <h1>Gentoo packages</h1>
