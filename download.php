@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<? $version = "0.9.3"; $branch = "0.9"; ?>
+<? include "version.php"; ?>
 <head>
 <title>The Xapian Project : Downloads</title>
 <? include "styleandmeta.php"; ?>
@@ -98,6 +98,14 @@ The source RPMs (the three files that end in ".src.rpm") are
 not distribution specific - one can build binary RPMs from those with:
 <code>rpmbuild&nbsp;--rebuild</code>
 </p>
+
+<p>These RPM-based distributions have their own RPM packages which might
+be better tailored:
+</p>
+
+<ul>
+<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linix</a></li>
+</ul>
 
 <h1>Gentoo packages</h1>
 

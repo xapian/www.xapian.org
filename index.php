@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-
+<? include "version.php"; ?>
 <head>
 <title>The Xapian Project</title>
 <? include "styleandmeta.php"; ?>
@@ -29,8 +29,8 @@ should take a look at Omega, which is an application we supply built upon
 Xapian.  But unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.</p>
 
-<p>The <a href="download.php">latest stable version is 0.9.3</a>, released
-on 2006-02-16.
+<p>The <a href="download.php">latest stable version is <?echo $version;?></a>,
+released on <?echo $release_date;?>.
 
 </div>
 
