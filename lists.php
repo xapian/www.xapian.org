@@ -26,6 +26,18 @@
 <p>The [Gmane] links take you to the Gmane news gateway which allows you to
 read these list with a newsreader, or browse the archives on the web.</p>
 
+<form method="get" action="http://search.gmane.org/">
+<p>
+Search
+<select name="group">
+<option value="gmane.comp.search.xapian.general">xapian-discuss</option>
+<option value="gmane.comp.search.xapian.devel">xapian-devel</option>
+</select>
+list archives for <input type="text" name="query">
+<input type="submit" value="Search">
+</p>
+</form>
+
 </div>
 
 <?php
