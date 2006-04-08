@@ -147,8 +147,10 @@ Application: search for wiki about Rochester, NY, USA<br>
 Document types: wiki pages<br>
 Database size: around 1500 pages<br>
 </li>
-</ul>
 
+<li id="gaze"><div class="orgname"><a href="http://www.mysociety.org/">mysociety.org</a></div>
+Application: <a href="http://www.mysociety.org/?p=83">web api to gazeteer service</a>, built using Search::Xapian
+</li>
 </ul>
 
 <hr>
@@ -159,7 +161,7 @@ Database size: around 1500 pages<br>
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 31 million messages and counting!
+Database size: 32 million messages and counting!
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
@@ -180,6 +182,11 @@ Application: WAP search for users of Orange mobile phones<br>
 
 <li id="divmod"><div class="orgname"><a href="http://www.divmod.com/">Divmod</a> - Webmail and VOIP provider</div>
 Application: Searching email
+</li>
+
+<li id="procare"><div class="orgname"><a href="http://www.procarestores.com/">ProCare Stores</a></div>
+Application: <a href="http://www.procarestores.com/product/general_catalog/index.php">Product Search</a> for on-line store<br>
+Database size: 9000 products<br>
 </li>
 
 </ul>
@@ -213,7 +220,8 @@ Application: Issue Tracker which can use Xapian for searching
 
 <ul>
 <li id="catalyst"><div class="orgname"><a href="http://catalyst.perl.org/">Catalyst</a></div>
-Catalyst is a Web Development Framework which includes support for using Xapian as a search engine.
+Catalyst is a Web Development Framework which includes
+<a href="http://search.cpan.org/~mramberg/Catalyst-Model-Xapian-0.02/lib/Catalyst/Model/Xapian.pm">support for using Xapian as a search engine</a>.
 </li>
 
 <li id="synd"><div class="orgname"><a href="http://www.synd.info/">Synd</a></div>
