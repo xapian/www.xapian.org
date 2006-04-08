@@ -30,11 +30,13 @@ xapian-examples download was due to configure and other generated files!)
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</A>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</A>
+<li> <A HREF="http://search.cpan.org/~kilinrax/Search-Xapian/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
+<A HREF="http://search.cpan.org/~kilinrax/Search-Xapian/Changes">[news]</A>
 </ul>
 
-<h1 id="deb">Debian packages</h1>
+<h1 id="deb">Debian and Ubuntu packages</h1>
 
-<p>We now supply Debian packages.  Here's how to get them.
+<p>We now supply Debian and Ubuntu packages.  Here's how to get them.
 </p>
 
 <p>If you're running Debian stable add the following to your sources.list:
@@ -55,10 +57,17 @@ deb-src http://www.xapian.org/debian unstable main
 </code></blockquote>
 
 <p>
-Note that these packages are still incomplete: while they should work
-well enough for most purposes, they fail lintian tests due to manpages
-for some of the binaries being missing.  In addition, only the python
-bindings are packaged so far, and the omega package doesn't perform any
+If you're running Ubuntu breezy, add the following:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian breezy main<br>
+deb-src http://www.xapian.org/debian breezy main
+</code></blockquote>
+
+<p>
+Note that currently only the python bindings are packaged for debian/ubuntu,
+and the omega package doesn't perform any
 automatic configuration (ideally, it would be possible to configure it
 at install time to index, for example, the system documentation).
 There are also some other lintian failures with the stable packages,
@@ -68,21 +77,46 @@ which don't look serious but need addressing.
 <p>
 Note also that packages are only built for i386.  If you're on another
 architecture, you can build your own by adding the "deb-src" line above,
-then:
+then for Debian:
 </p>
 
 <blockquote><code>
-# su -<br>
+$ su -<br>
 # apt-get update<br>
 # apt-get build-dep xapian-core<br>
 # exit<br>
 $ fakeroot apt-get source -b xapian-core<br>
-# su -<br>
-# dpkg -i libxapian2* libxapian-dev* xapian-doc* xapian-tools*<br>
+$ su -<br>
+# dpkg -i libxapian* xapian-doc* xapian-tools*<br>
 # apt-get build-dep xapian-bindings xapian-omega<br>
 # exit<br>
-$ fakeroot apt-get source -b xapian-bindings xapian-omega
+$ fakeroot apt-get source -b xapian-bindings xapian-omega<br>
+$ su -<br>
+# dpkg -i xapian-omega*.deb python2.4-xapian*.deb<br>
+# exit
 </code></blockquote>
+
+<p>
+Or for Ubuntu (Ubuntu doesn't have a root login by default, so you need to
+use sudo):
+</p>
+
+<blockquote><code>
+$ sudo apt-get update<br>
+$ sudo apt-get install fakeroot<br>
+$ sudo apt-get build-dep xapian-core<br>
+$ fakeroot apt-get source -b xapian-core<br>
+$ sudo dpkg -i libxapian* xapian-doc* xapian-tools*<br>
+$ sudo apt-get build-dep xapian-bindings xapian-omega<br>
+$ fakeroot apt-get source -b xapian-bindings xapian-omega<br>
+$ sudo dpkg -i xapian-omega*.deb python2.4-xapian*.deb
+</code></blockquote>
+
+<p>
+If you want Xapian bindings for a different python version, change "python2.4"
+in the last line to reflect the version you want.  By default 2.2, 2.3, and
+2.4 versions are currently built.
+</p>
 
 <p>Any assistance (getting these packages into Debian, reporting problems
 which aren't listed above or in the TODO lists in each package, or
