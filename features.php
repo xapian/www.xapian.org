@@ -28,7 +28,7 @@ and Microsoft Windows.
   on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
   We also support <a href="http://www.swig.org/">SWIG</a> which can generate
   bindings for many languages.  At present those for Python, PHP, TCL, and
-  C# are working.
+  C# are working, and Ruby support is being actively worked on.
 
 <li> Ranked probablistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
@@ -53,6 +53,8 @@ categorise documents, etc.
   are currently included for Danish, Dutch, English, Finnish, French,
   German, Italian, Norwegian, Portuguese, Russian, Spanish, and Swedish.
 
+<li> Wildcard search is supported (e.g. "xap*").
+  
 <li> Supports database files &gt; 2GB - essential for
   <A HREF="docs/scalability.html">scaling to large document collections</A>.
 
@@ -69,9 +71,11 @@ a larger application - an indexing and CGI-based application called omega:</p>
 
 <ul>
 
-<li> The indexer supplied can index HTML, PHP, PDF, PostScript, and plain text.
+<li> The indexer supplied can index HTML, PHP, PDF, PostScript,
+  OpenOffice/StarOffice, OpenDocument, Microsoft Word, Word Perfect,
+  RTF, Perl POD documentation, and plain text.
   Adding support for indexing other formats is easy where conversion filters
-  are available (e.g. Microsoft Word).  This indexer works using the
+  are available.  This indexer works using the
   filing system, but we also provide a script to allow the htdig web
   crawler to be hooked in, allowing remote sites to be searched using Omega.
 
