@@ -20,15 +20,16 @@
 
 <li> <a
 HREF="http://cvs.xapian.org/*checkout*/xapian/xapian-core/PLATFORMS">Highly
-portable</a> - runs on many Linux, MacOS X, many other Unix platforms,
-and Microsoft Windows.
+portable</a> - runs on Linux, MacOS X, FreeBSD, NetBSD, OpenBSD, Solaris,
+HP-UX, Tru64, IRIX, and probably other Unix platforms, as well as
+Microsoft Windows.
 
 <li> Written in C++.  Perl bindings are available in the module
   <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
   on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
   We also support <a href="http://www.swig.org/">SWIG</a> which can generate
   bindings for many languages.  At present those for Python, PHP, TCL, and
-  C# are working, and Ruby support is being actively worked on.
+  C# are working, and Ruby support will be in the next release.
 
 <li> Ranked probablistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
