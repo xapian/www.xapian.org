@@ -36,7 +36,8 @@ xapian-examples download was due to configure and other generated files!)
 
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
-<p>We now supply Debian and Ubuntu packages.  Here's how to get them.
+<p>We now supply packages for Debian (stable, testing, and unstable) and Ubuntu
+(breezy and dapper).  Here's how to get them.
 </p>
 
 <p>If you're running Debian stable add the following to your sources.list:
@@ -66,16 +67,24 @@ deb-src http://www.xapian.org/debian breezy main
 </code></blockquote>
 
 <p>
+And if you're running Ubuntu dapper, add the following:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian dapper main<br>
+deb-src http://www.xapian.org/debian dapper main
+</code></blockquote>
+
+<p>
 Note that currently only the python bindings are packaged for debian/ubuntu,
 and the omega package doesn't perform any
 automatic configuration (ideally, it would be possible to configure it
 at install time to index, for example, the system documentation).
-There are also some other lintian failures with the stable packages,
-which don't look serious but need addressing.
 </p>
 
 <p>
-Note also that packages are only built for i386.  If you're on another
+Note also that packages are only currently built for i386 (x86-64 packages
+will hopefully be coming soon).  If you're on another
 architecture, you can build your own by adding the "deb-src" line above,
 then for Debian:
 </p>
@@ -113,25 +122,39 @@ $ sudo dpkg -i xapian-omega*.deb python2.4-xapian*.deb
 </code></blockquote>
 
 <p>
-If you want Xapian bindings for a different python version, change "python2.4"
-in the last line to reflect the version you want.  By default 2.2, 2.3, and
-2.4 versions are currently built.
+If you want Xapian bindings for a different Python version, change "python2.4"
+in the last line to reflect the version you want.  By default packages are
+currently built for Python versions 
+2.1, 2.2, 2.3, and 2.4.
 </p>
 
-<p>Any assistance (getting these packages into Debian, reporting problems
-which aren't listed above or in the TODO lists in each package, or
+<p>
+Any assistance (getting these packages into Debian, reporting problems
+which aren't noted above or in the TODO lists in each package, or
 fixing any of these problems) will be gratefully accepted.
 </p>
 
 <h1 id="RPM">RPM packages</h1>
 
 <p>Fabrice Colin has built
-<a href="http://www.chez.com/colinf/rpms/">RPM packages for Fedora Core 4</a>
-(i386 and source RPMs, ppc coming soon).
+<a href="/RPM/">RPM packages for Fedora Core 5</a>
+- there are binary packages (for i386, x86_64, and ppc) and source RPMs.</p>
+
+<p>If you have Fedora Core 5, copy <a href="/RPM/xapian.repo">xapian.repo</a>
+into <code>/etc/yum/repos.d/</code> and the you can install the packages
+like so:</p>
+<pre>
+<span style="color:silver;">$</span> yum update
+<span style="color:silver;">$</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
+</pre>
+
+<p>
 The source RPMs (the three files that end in ".src.rpm") are
-not distribution specific - one can build binary RPMs from those with:
-<code>rpmbuild&nbsp;--rebuild</code>
+not distribution specific - you can build binary RPMs from those with:
 </p>
+<pre>
+<span style="color:silver;">$</span> rpmbuild&nbsp;--rebuild
+</pre>
 
 <p>These RPM-based distributions have their own RPM packages which might
 be better tailored:
