@@ -17,23 +17,25 @@
 If you want a stable version of Xapian, we recommend using a
 <a href="download.php">released version</a>.  But if you're happy to cope
 with potential breakage and want to try the latest development code, or
-do development yourself, you can access our version control system.
+do development yourself, you can access our version control system
+which runs on Subversion (known as SVN for short.)
 </p>
 
-<h2>Subversion</h2>
-
-<p>As of April 2005, we've switched version control systems from CVS to
-Subversion (also known as SVN for short).  The Subversion repository includes
+<p>
+The Subversion repository includes
 a complete history of the code, including that from the original
 Open Muscat project (when converting to SVN we dropped old nightly snapshot
 tags and a few
 others which it seems highly unlikely anyone would find useful - these
-can still be used in the now frozen Xapian CVS tree).
+can still be used in the now frozen Xapian CVS tree - see below.)
 Additionally, we've recreated copy and rename operations into the Subversion
-history (CVS doesn't support copy or rename directly).</p>
+history (CVS doesn't support copy or rename directly.)</p>
 
-<p>Our Subversion repository can also be
-<a href="http://svn.xapian.org/">browsed online</a>.</p>
+<h2>Access Details</h2>
+
+<p>Note: If you just want to look at the history of a few files, you may find
+it easier and quicker to 
+<a href="http://svn.xapian.org/">browse our SVN repository online</a>.</p>
 
 <p>
 To get the very latest version of Xapian from our repository, follow these
@@ -118,15 +120,12 @@ svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 
 <h2>CVS</h2>
 
-<p>If you're interested in source archeology, you can
+<p>Prior to April 2005 we used CVS as our version control system.  The SVN tree
+contains the full history, except some useless really old tags weren't converted.
+But the ViewCVS version we're currently running doesn't support annotate for SVN
+so if you're interested in source archeology, you may want to
 <a href="http://cvs.xapian.org/xapian/">browse</a>
-the (now frozen) Xapian CVS tree online.  
-And you can check out a source tree from CVS like so:</p>
-<ul>
- <li> <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs login</tt>
- <li> enter the password <tt>anonymous</tt>
- <li> <tt>cvs -z3 -d:pserver:cvsuser@cvs.xapian.org:/usr/data/cvs co xapian</tt>
-</ul>
+the (now frozen) Xapian CVS tree online.
 
 </div>
 
