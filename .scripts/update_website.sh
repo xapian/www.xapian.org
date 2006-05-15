@@ -15,7 +15,8 @@ set -e
 tarball="/usr/data/www/oligarchy.co.uk/xapian/0.9.6/xapian-core-0.9.6.tar.gz"
 
 projectdir="/u1/olly/xapian-website-update"
-cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
+#cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
+cvsdir="/usr/data/cvs"
 cvsmodule="www.xapian.org"
 htmldir="/usr/data/www/xapian.org"
 
