@@ -1,1 +1,1 @@
-<? $version = "0.9.5"; $branch = "0.9"; $release_date = "2006-04-08"; ?>
+<? $version = "0.9.6"; $branch = "0.9"; $release_date = "2006-05-15"; ?>
