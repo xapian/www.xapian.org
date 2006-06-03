@@ -161,7 +161,7 @@ Application: <a href="http://www.mysociety.org/?p=83">web api to gazeteer servic
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 33 million messages and counting!
+Database size: 34 million messages and counting!
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
@@ -230,9 +230,10 @@ dynamic websites.  It <a href="http://www.synd.info/api/default/_core_index_Xapi
 >allows Xapian to be used</a> to provide an integrated search engine.
 </li>
 
-<li id="flyingdog"><div class="orgname"><a href="http://www.flyingdog.biz/flyingdog/powerslave,id,1,_language,uk,_country,,nodeid,1.html">Flying Dog Software</a> (<a href="http://www.flyingdog.biz/flyingdog/powerslave,id,1,_language,de,_country,,nodeid,1.html">oder auf Deutsch</a>)</div>
+<li id="flyingdog"><div class="orgname"><a href="http://www.flyingdog.biz/">Flying Dog Software</a></div>
 Application: Flying Dog Software's Powerslave Content Management System <a
-href="http://www.flyingdog.biz/flyingdog/content/show.php3?id=74&amp;nodeid=7&amp;_language=uk">integrates Xapian to provide searching</a>
+href="http://live.homepage.fdog.de/flyingdog/powerslave,id,1,_language,uk,,nodeid,1.html?xv_query=+xapian&amp;nodeid=1&amp;id=1&amp;_language=uk&amp;_country=&amp;xv_start=0">integrates Xapian to provide searching</a>
+(<a href="http://live.homepage.fdog.de/flyingdog/powerslave,id,1,_language,de,,nodeid,1.html?xv_query=xapian&amp;nodeid=1&amp;id=1&amp;_language=uk&amp;_country=&amp;xv_start=0">oder auf Deutsch</a>)
 </li>
 
 <li id="venda"><div class="orgname"><a href="http://www.venda.com/">Venda Ltd</a></div>

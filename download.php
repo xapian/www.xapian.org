@@ -32,6 +32,8 @@ xapian-examples download was due to configure and other generated files!)
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</A>
 <li> <A HREF="http://search.cpan.org/~kilinrax/Search-Xapian/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
 <A HREF="http://search.cpan.org/~kilinrax/Search-Xapian/Changes">[news]</A>
+<br>
+Note: the latest bindings on CPAN are currently for Xapian 0.9.2, but there are <A HREF="http://article.gmane.org/gmane.comp.search.xapian.general/2919">updated bindings for 0.9.6 available</A>.
 </ul>
 
 <h1 id="deb">Debian and Ubuntu packages</h1>
@@ -89,43 +91,47 @@ architecture, you can build your own by adding the "deb-src" line above,
 then for Debian:
 </p>
 
-<blockquote><code>
-$ su -<br>
-# apt-get update<br>
-# apt-get build-dep xapian-core<br>
-# exit<br>
-$ fakeroot apt-get source -b xapian-core<br>
-$ su -<br>
-# dpkg -i libxapian* xapian-doc* xapian-tools*<br>
-# apt-get build-dep xapian-bindings xapian-omega<br>
-# exit<br>
-$ fakeroot apt-get source -b xapian-bindings xapian-omega<br>
-$ su -<br>
-# dpkg -i xapian-omega*.deb python2.4-xapian*.deb<br>
-# exit
-</code></blockquote>
+<blockquote><pre>
+<span id="prompt">$</span> su -
+<i>enter your root password</i>
+<span id="prompt">#</span> apt-get update
+<span id="prompt">#</span> apt-get build-dep xapian-core
+<span id="prompt">#</span> exit
+<span id="prompt">$</span> fakeroot apt-get source -b xapian-core
+<span id="prompt">$</span> su -
+<i>enter your root password</i>
+<span id="prompt">#</span> dpkg -i libxapian* xapian-doc* xapian-tools*
+<span id="prompt">#</span> apt-get build-dep xapian-bindings xapian-omega
+<span id="prompt">#</span> exit
+<span id="prompt">$</span> fakeroot apt-get source -b xapian-bindings xapian-omega
+<span id="prompt">$</span> su -
+<i>enter your root password</i>
+<span id="prompt">#</span> dpkg -i xapian-omega*.deb python2.4-xapian*.deb
+<span id="prompt">#</span> exit
+</pre></blockquote>
 
 <p>
 Or for Ubuntu (Ubuntu doesn't have a root login by default, so you need to
 use sudo):
 </p>
 
-<blockquote><code>
-$ sudo apt-get update<br>
-$ sudo apt-get install fakeroot<br>
-$ sudo apt-get build-dep xapian-core<br>
-$ fakeroot apt-get source -b xapian-core<br>
-$ sudo dpkg -i libxapian* xapian-doc* xapian-tools*<br>
-$ sudo apt-get build-dep xapian-bindings xapian-omega<br>
-$ fakeroot apt-get source -b xapian-bindings xapian-omega<br>
-$ sudo dpkg -i xapian-omega*.deb python2.4-xapian*.deb
-</code></blockquote>
+<blockquote><pre>
+<span id="prompt">$</span> sudo apt-get update
+<i>enter your root password</i>
+<span id="prompt">$</span> sudo apt-get install fakeroot
+<span id="prompt">$</span> sudo apt-get build-dep xapian-core
+<span id="prompt">$</span> fakeroot apt-get source -b xapian-core
+<span id="prompt">$</span> sudo dpkg -i libxapian* xapian-doc* xapian-tools*
+<span id="prompt">$</span> sudo apt-get build-dep xapian-bindings xapian-omega
+<span id="prompt">$</span> fakeroot apt-get source -b xapian-bindings xapian-omega
+<span id="prompt">$</span> sudo dpkg -i xapian-omega*.deb python2.4-xapian*.deb
+</pre></blockquote>
 
 <p>
 If you want Xapian bindings for a different Python version, change "python2.4"
 in the last line to reflect the version you want.  By default packages are
-currently built for Python versions 
-2.1, 2.2, 2.3, and 2.4.
+currently built for all Python versions which are packaged for a particular
+release.
 </p>
 
 <p>
@@ -141,20 +147,23 @@ fixing any of these problems) will be gratefully accepted.
 - there are binary packages (for i386, x86_64, and ppc) and source RPMs.</p>
 
 <p>If you have Fedora Core 5, copy <a href="/RPM/xapian.repo">xapian.repo</a>
-into <code>/etc/yum/repos.d/</code> and the you can install the packages
-like so:</p>
-<pre>
-<span style="color:silver;">$</span> yum update
-<span style="color:silver;">$</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
-</pre>
+into <code>/etc/yum/repos.d/</code> and then you can install the packages
+using yum:</p>
+<blockquote><pre>
+<span id="prompt">$</span> su
+<i>enter your root password</i>
+<span id="prompt">#</span> cd /etc/yum/repos.d
+<span id="prompt">#</span> wget http://www.xapian.org/RPM/xapian.repo
+<span id="prompt">#</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
+</pre></blockquote>
 
 <p>
 The source RPMs (the three files that end in ".src.rpm") are
 not distribution specific - you can build binary RPMs from those with:
 </p>
-<pre>
-<span style="color:silver;">$</span> rpmbuild&nbsp;--rebuild
-</pre>
+<blockquote><pre>
+<span id="prompt">$</span> rpmbuild --rebuild
+</pre></blockquote>
 
 <p>These RPM-based distributions have their own RPM packages which might
 be better tailored:

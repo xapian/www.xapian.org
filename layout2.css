@@ -96,3 +96,7 @@ body>#Menu {width:8em;}
 	top: 10px;
 	right: 20px;
 }
+
+#prompt {
+	color:silver;
+}
