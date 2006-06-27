@@ -78,15 +78,12 @@ deb-src http://www.xapian.org/debian dapper main
 </code></blockquote>
 
 <p>
-Note that currently only the python bindings are packaged for debian/ubuntu,
-and the omega package doesn't perform any
-automatic configuration (ideally, it would be possible to configure it
-at install time to index, for example, the system documentation).
+Currently the Python, PHP, ruby, and tcl bindings are packaged for
+debian and ubuntu.  The Perl, C#, and Java bindings aren't yet packaged.
 </p>
 
 <p>
-Note also that packages are only currently built for i386 (x86-64 packages
-will hopefully be coming soon).  If you're on another
+The packages are currently built for i386 and amd64.  If you're on another
 architecture, you can build your own by adding the "deb-src" line above,
 then for Debian:
 </p>
@@ -106,7 +103,7 @@ then for Debian:
 <span id="prompt">$</span> fakeroot apt-get source -b xapian-bindings xapian-omega
 <span id="prompt">$</span> su -
 <i>enter your root password</i>
-<span id="prompt">#</span> dpkg -i xapian-omega*.deb python2.4-xapian*.deb
+<span id="prompt">#</span> dpkg -i xapian-omega*.deb python-xapian*.deb
 <span id="prompt">#</span> exit
 </pre></blockquote>
 
@@ -124,15 +121,8 @@ use sudo):
 <span id="prompt">$</span> sudo dpkg -i libxapian* xapian-doc* xapian-tools*
 <span id="prompt">$</span> sudo apt-get build-dep xapian-bindings xapian-omega
 <span id="prompt">$</span> fakeroot apt-get source -b xapian-bindings xapian-omega
-<span id="prompt">$</span> sudo dpkg -i xapian-omega*.deb python2.4-xapian*.deb
+<span id="prompt">$</span> sudo dpkg -i xapian-omega*.deb python-xapian*.deb
 </pre></blockquote>
-
-<p>
-If you want Xapian bindings for a different Python version, change "python2.4"
-in the last line to reflect the version you want.  By default packages are
-currently built for all Python versions which are packaged for a particular
-release.
-</p>
 
 <p>
 Any assistance (getting these packages into Debian, reporting problems
@@ -181,6 +171,13 @@ Portage</A>.</p>
 <h1>FreeBSD Ports Collection</h1>
 
 <p>Xapian is in the <A HREF="http://www.freebsd.org/cgi/ports.cgi?query=xapian&stype=name">FreeBSD Ports Collection</A>.</p>
+
+<h1>Compiling on MS Windows with MSVC</h1>
+
+<p>You can download <a
+href="http://www.lemurconsulting.com/Products/Xapian/Overview.shtml">makefiles for
+compiling with MSVC</a>, originally put together by Ulrik Petersen, and further
+refined and currently maintained by Charlie Hull.</p>
 
 </div>
 
