@@ -39,10 +39,11 @@ Note: the latest bindings on CPAN are currently for Xapian 0.9.2, but there are 
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
 <p>We now supply packages for Debian (stable, testing, and unstable) and Ubuntu
-(breezy and dapper).  The xapian-core and xapian-omega packages have now been
+(breezy and dapper).  These packages have now been
 accepted into the Debian archive, so if you're using unstable you can install
-them as you would any other Debian package.  If you're not using Debian
-unstable, or need the bindings, here's how to get them.
+them as you would any other Debian package (the same should be true for testing
+very soon).  For Debian stable and Ubuntu, here's how to get them from the
+xapian.org package repository:
 </p>
 
 <p>If you're running Debian stable add the following to your sources.list:
@@ -54,7 +55,8 @@ deb-src http://www.xapian.org/debian stable main
 </code></blockquote>
 
 <p>
-If you're running Debian unstable or testing, add the following:
+If you're running Debian testing (and the packages haven't propagated in
+Debian yet), add the following:
 </p>
 
 <blockquote><code>
