@@ -42,14 +42,18 @@ To get the very latest version of Xapian from our repository, follow these
 steps:
 <ol>
 <li> <tt>svn co svn://svn.xapian.org/xapian/trunk xapian</tt>
-<li> In the newly created <tt>xapian</tt>
-    directory, run the command <tt>./bootstrap</tt> - this will run various
-    developer tools to produce a
+
+<li> Read the "Building from SVN" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
+
+<li> In the newly created <tt>xapian</tt> directory, run the command
+    <tt>./bootstrap</tt> - this will run various developer tools to produce a
     source tree like you'd get from unpacking release source tarballs.
+
 <li> <tt>bootstrap</tt> will create a top level <tt>configure</tt> script,
     which you can use to configure the whole source tree together.
-<li> If you're looking to do development work on Xapian, then
-  <tt>xapian-core/HACKING</tt> is recommended reading.
+
+<li> If you're looking to do development work on Xapian, then the rest of
+    <tt>xapian-core/HACKING</tt> is recommended reading.
 </ol>
 
 <p>
@@ -121,11 +125,13 @@ svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 <h2>CVS</h2>
 
 <p>Prior to April 2005 we used CVS as our version control system.  The SVN tree
-contains the full history, except some useless really old tags weren't converted.
-But the ViewCVS version we're currently running doesn't support annotate for SVN
-so if you're interested in source archeology, you may want to
-<a href="http://cvs.xapian.org/xapian/">browse</a>
-the (now frozen) Xapian CVS tree online.
+contains the full history, except some useless really old tags weren't
+converted.  The (now frozen) Xapian CVS tree can still be browsed online
+at http://cvs.xapian.org/xapian/ should you really want to (we've not
+made this a link, to try to avoid people browsing it without really reading
+this paragraph and getting confused - such people almost certainly want to
+<a href="http://svn.xapian.org/">browse our SVN repository online</a> instead!)
+</p>
 
 </div>
 
