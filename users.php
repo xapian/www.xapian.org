@@ -37,6 +37,10 @@ extra data: number of documents, size of index, number
 of machines the system runs on, number of users and thus queries per day
 etc...generally anything that says something about performance.
 */
+
+
+// http://www.osservatoriobalcani.org/
+// search at http://www.opencontent.it/cgi-bin/omega/omega?DB=ob&FMT=ob
 ?>
 
 <img align=right src="xapian-powered.png"><br><hr>
@@ -47,10 +51,10 @@ etc...generally anything that says something about performance.
 <li id="beeblex"><div class="orgname"><a href="http://www.beeblex.com/">BeebleX</a></div>
 Application: Searching all things PHP related<br>
 Document types: Mailing lists, News, Articles, Forums, Documentation, Blogs, Job listings<br>
-Database size: over 890,000 documents<br>
+Database size: over 1.1 million documents<br>
 </li>
 
-<li id="citebase"><div class="orgname"><a href="http://citebase.eprints.org/help/index.php">Citebase</a></div>
+<li id="citebase"><div class="orgname"><a href="http://citebase.eprints.org/help/">Citebase</a></div>
 Application: <a href="http://citebase.eprints.org/">Searching academic papers</a><br>
 Languages: Mostly English<br>
 Database size: around 300,000 papers<br>
@@ -59,7 +63,7 @@ Database size: around 300,000 papers<br>
 <li id="srpko"><div class="orgname"><a href="http://www.srpko.com/">Srpko</a></div>
 Application: Searching documents related to Serbia and Montenegro<br>
 Document types: Web pages, News articles, Wikipedia pages, Dictionary entries<br>
-Database size: over 7.8 million pages<br>
+Database size: over 8.4 million pages<br>
 </li>
 
 <li id="webtop"><div class="orgname">Webtop Ltd (now defunct - <a href="http://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>)</div>
@@ -161,7 +165,7 @@ Application: <a href="http://www.mysociety.org/?p=83">web api to gazeteer servic
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 34 million messages and counting!
+Database size: 37 million messages and counting!
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
