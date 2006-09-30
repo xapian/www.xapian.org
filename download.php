@@ -160,7 +160,7 @@ be better tailored:
 
 <ul>
 <li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linux RPMs</a></li>
-<li><a href="http://repos.opensuse.org/server:/search/">SuSE RPMs</a>
+<li><a href="http://software.opensuse.org/download/server:/search/">SuSE RPMs</a>
 (and <a href="http://en.opensuse.org/Build_Service/User">instructions for use</a>)</li>
 </ul>
 
