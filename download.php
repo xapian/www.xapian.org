@@ -159,7 +159,9 @@ be better tailored:
 </p>
 
 <ul>
-<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linux</a></li>
+<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linux RPMs</a></li>
+<li><a href="http://repos.opensuse.org/server:/search/">SuSE RPMs</a>
+(and <a href="http://en.opensuse.org/Build_Service/User">instructions for use</a>)</li>
 </ul>
 
 <h1>Gentoo packages</h1>
