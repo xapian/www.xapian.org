@@ -34,11 +34,14 @@ then to BrightStation PLC (when they sold the Dialog brand and content
 to Thomson).</p>
 
 <p>Open Muscat (using the muscat36 backend) was the retrieval engine which powered
-BrightStation's Webtop search engine, which offered a search over around
+BrightStation's Webtop search engine
+(<a href="http://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>),
+which offered a search over around
 500 million web pages (around 1.5 terabytes of database files).  Searches
 took less than a second.  The whole search engine, including the web crawlers
 and index building, ran on 30 Intel boxes.  Webtop also incorporated
-technology from Muscat Ltd's EuroFerret search engine.</p>
+technology from Muscat Ltd's EuroFerret search engine.
+</p>
 
 </div>
 

@@ -41,6 +41,10 @@ etc...generally anything that says something about performance.
 
 // http://www.osservatoriobalcani.org/
 // search at http://www.opencontent.it/cgi-bin/omega/omega?DB=ob&FMT=ob
+
+// http://clickchronicle.com/
+
+// iusethis
 ?>
 
 <img align=right src="xapian-powered.png"><br><hr>
@@ -64,16 +68,6 @@ Database size: around 300,000 papers<br>
 Application: Searching documents related to Serbia and Montenegro<br>
 Document types: Web pages, News articles, Wikipedia pages, Dictionary entries<br>
 Database size: over 8.4 million pages<br>
-</li>
-
-<li id="webtop"><div class="orgname">Webtop Ltd (now defunct - <a href="http://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>)</div>
-Application: Global Web Search Engine<br>
-Languages: Many!<br>
-Document types: mainly HTML<br>
-Database size: around 500,000,000 pages<br>
-Note: Webtop used an early version of Xapian to provide a search of
-half a billion webpages using 30 Intel boxes with sub-second retrieval times.
-Unfortunately Webtop's parent company stopped trading in 2001.
 </li>
 </ul>
 
@@ -218,6 +212,10 @@ Application: Pinot is a metasearch tool for the Free Desktop<br>
 Application: Issue Tracker which can use Xapian for searching
 </ul>
 
+<?php
+// MailManager - opensource web application for customer service and help desk
+// email management http://www.logicalware.org/
+?>
 <hr>
 
 <h2 id="frameworks">Software Frameworks</h2>
@@ -240,7 +238,7 @@ href="http://live.homepage.fdog.de/flyingdog/powerslave,id,1,_language,uk,,nodei
 (<a href="http://live.homepage.fdog.de/flyingdog/powerslave,id,1,_language,de,,nodeid,1.html?xv_query=xapian&amp;nodeid=1&amp;id=1&amp;_language=uk&amp;_country=&amp;xv_start=0">oder auf Deutsch</a>)
 </li>
 
-<li id="venda"><div class="orgname"><a href="http://www.venda.com/">Venda Ltd</a></div>
+<li id="venda"><div class="orgname"><a href="http://www.venda.com/" rel="nofollow">Venda Ltd</a></div>
 Application: Searching products on numerous ecommerce sites including
 <a href="http://www.bbcshop.com/">The BBC Shop</a>,
 <a href="http://www.shop.bt.com/">British Telecom's Shop</a>,
