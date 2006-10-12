@@ -40,10 +40,10 @@ Note: the latest bindings on CPAN are currently for Xapian 0.9.2, but there are 
 
 <p>We now supply packages for Debian (stable, testing, and unstable) and Ubuntu
 (breezy and dapper).  These packages have now been
-accepted into the Debian archive, so if you're using unstable you can install
-them as you would any other Debian package (the same should be true for testing
-very soon).  For Debian stable and Ubuntu, here's how to get them from the
-xapian.org package repository:
+accepted into the Debian archive, so if you're using testing or unstable you
+can install them as you would any other Debian package (and they should be
+part of the next Debian release too).  For Debian stable and Ubuntu, here's how
+to get them from the xapian.org package repository:
 </p>
 
 <p>If you're running Debian stable add the following to your sources.list:
@@ -54,6 +54,7 @@ deb http://www.xapian.org/debian stable main<br>
 deb-src http://www.xapian.org/debian stable main
 </code></blockquote>
 
+<!--
 <p>
 If you're running Debian testing (and the packages haven't propagated in
 Debian yet), add the following:
@@ -63,6 +64,7 @@ Debian yet), add the following:
 deb http://www.xapian.org/debian unstable main<br>
 deb-src http://www.xapian.org/debian unstable main
 </code></blockquote>
+-->
 
 <p>
 If you're running Ubuntu breezy, add the following:
@@ -84,7 +86,7 @@ deb-src http://www.xapian.org/debian dapper main
 
 <p>
 Currently the Python, PHP, ruby, and tcl bindings are packaged for
-debian and ubuntu.  The Perl, C#, and Java bindings aren't yet packaged.
+Debian and Ubuntu.  The Perl, C#, and Java bindings aren't yet packaged.
 </p>
 
 <p>
