@@ -98,11 +98,10 @@ rm -rf "${tmpdir}"
 # FIXME: sort out permissions so this'll work for other people too
 #rm -rf /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default.old
 
-LD_LIBRARY_PATH=/u1/olly/install-0.6/lib /u1/olly/install-0.6/bin/omindex --db /u1/olly/omega/data6/default --url / /usr/data/www/xapian.org
+XAPIAN_PREFER_FLINT=1 /u1/olly/install/bin/omindex --db /u1/olly/omega/data6/default.tmp --url / /usr/data/www/xapian.org
 
-#LD_LIBRARY_PATH=/u1/olly/install-0.6/lib /u1/olly/install-0.6/bin/omindex --db /u1/olly/omega/data6/default.tmp --url / /usr/data/www/xapian.org
-#mv /u1/olly/omega/data6/default /u1/olly/omega/data6/default.old
-#mv /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default
+mv /u1/olly/omega/data6/default /u1/olly/omega/data6/default.old
+mv /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default
 # keep it just in case! rm -rf /u1/olly/omega/data6/default.old
 
 # return successfully.
