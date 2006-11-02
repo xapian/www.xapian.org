@@ -12,7 +12,7 @@
 set -e
 
 # FIXME : need to avoid having to update this...
-tarball="/usr/data/www/oligarchy.co.uk/xapian/0.9.7/xapian-core-0.9.7.tar.gz"
+tarball="/usr/data/www/oligarchy.co.uk/xapian/0.9.8/xapian-core-0.9.8.tar.gz"
 
 projectdir="/u1/olly/xapian-website-update"
 #cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
@@ -61,11 +61,7 @@ fi
 cp -a "$tardir"/docs/*.html "$tmpdir/$cvsmodule/docs"
 mkdir "$tmpdir/$cvsmodule/docs/apidoc" 2> /dev/null || :
 cp -a "$tardir"/docs/apidoc/html "$tmpdir/$cvsmodule/docs/apidoc"
-if test stamp-unpacked-tarball -nt stamp-run-ps2pdf ; then
-  ps2pdf12 "$tardir"/docs/apidoc.ps apidoc.pdf
-  touch stamp-run-ps2pdf
-fi
-cp -a apidoc.pdf "$tmpdir/$cvsmodule/docs"
+cp -a "$tardir"/docs/apidoc.pdf "$tmpdir/$cvsmodule/docs"
 if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
   cd "$tardir"
   ./configure --enable-maintainer-mode
@@ -96,7 +92,7 @@ rm -rf "${tmpdir}"
 
 # rebuild omega's database
 # FIXME: sort out permissions so this'll work for other people too
-#rm -rf /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default.old
+rm -rf /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default.old
 
 XAPIAN_PREFER_FLINT=1 /u1/olly/install/bin/omindex --db /u1/olly/omega/data6/default.tmp --url / /usr/data/www/xapian.org
 
