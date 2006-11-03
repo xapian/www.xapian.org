@@ -173,7 +173,7 @@ Portage</A>.</p>
 
 <h1>FreeBSD Ports Collection</h1>
 
-<p>Xapian is in the <A HREF="http://www.freebsd.org/cgi/ports.cgi?query=xapian&stype=name">FreeBSD Ports Collection</A>.</p>
+<p>Xapian is in the <A HREF="http://www.freshports.org/databases/xapian-core/">FreeBSD Ports Collection</A>.</p>
 
 <h1>Compiling on MS Windows with MSVC</h1>
 
