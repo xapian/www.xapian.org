@@ -14,18 +14,6 @@
 
 set -e
 
-argvpath=`echo "$0"|sed 's![^/]*$!!'`
-version=`sed 's/.*version *= *"\([0-9.]*\)".*/\1/p;d' ${argvpath}../version.php`
-
-echo "Updating website"
-echo "Latest Xapian release is $version"
-tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-core-$version.tar.gz"
-
-if ! test -r $tarball ; then
-  echo "$0: Latest release tarball doesn't exist: '$tarball'"
-  exit 1
-fi
-
 projectdir="/u1/olly/xapian-website-update"
 #cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
 cvsdir="/usr/data/cvs"
@@ -57,6 +45,16 @@ if ! cmp "$scriptpath_cvs" "$scriptpath_active" >/dev/null 2>&1 ; then
   cp -a "$scriptpath_cvs" "${scriptpath_active}_new" >/dev/null 2>&1
   mv "${scriptpath_active}_new" "$scriptpath_active"
   exec "$scriptpath_active"
+  exit 1
+fi
+
+version=`sed 's/.*version *= *"\([0-9.]*\)".*/\1/p;d' ${tmpdir}/${cvsmodule}/version.php`
+
+echo "Latest Xapian release is $version"
+tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-core-$version.tar.gz"
+
+if ! test -r $tarball ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
   exit 1
 fi
 
