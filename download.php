@@ -33,13 +33,14 @@ xapian-examples download was due to configure and other generated files!)
 <li> <A HREF="http://search.cpan.org/~kilinrax/Search-Xapian/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
 <A HREF="http://search.cpan.org/~kilinrax/Search-Xapian/Changes">[news]</A>
 <br>
-Note: the latest bindings on CPAN are currently for Xapian 0.9.2, but there are <A HREF="http://article.gmane.org/gmane.comp.search.xapian.general/2919">updated bindings for 0.9.6 available</A>.
+Note: the latest bindings on CPAN are currently for Xapian 0.9.6, but there are also
+<A HREF="http://www.oligarchy.co.uk/xapian/trunk/Search-Xapian-0.9.9.0.tar.gz">updated bindings for 0.9.9 available</A>.
 </ul>
 
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
 <p>We now supply packages for Debian (stable, testing, and unstable) and Ubuntu
-(breezy and dapper).  These packages have now been
+(dapper and edgy).  These packages have now been
 accepted into the Debian archive, so if you're using testing or unstable you
 can install them as you would any other Debian package (and they should be
 part of the next Debian release too).  For Debian stable and Ubuntu, here's how
@@ -67,16 +68,7 @@ deb-src http://www.xapian.org/debian unstable main
 -->
 
 <p>
-If you're running Ubuntu breezy, add the following:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian breezy main<br>
-deb-src http://www.xapian.org/debian breezy main
-</code></blockquote>
-
-<p>
-And if you're running Ubuntu dapper, add the following:
+If you're running Ubuntu dapper, add the following:
 </p>
 
 <blockquote><code>
@@ -85,12 +77,21 @@ deb-src http://www.xapian.org/debian dapper main
 </code></blockquote>
 
 <p>
+And if you're running Ubuntu edgy, add the following:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian edgy main<br>
+deb-src http://www.xapian.org/debian edgy main
+</code></blockquote>
+
+<p>
 Currently the Python, PHP, ruby, and tcl bindings are packaged for
 Debian and Ubuntu.  The Perl, C#, and Java bindings aren't yet packaged.
 </p>
 
 <p>
-The packages are currently built for i386 and amd64.  If you're on another
+Binary packages are currently built for i386 and amd64.  If you're on another
 architecture, you can build your own by adding the "deb-src" line above,
 then for Debian:
 </p>
