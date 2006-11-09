@@ -1,18 +1,30 @@
 #!/bin/bash
 
-# This script builds the website by checking it out from CVS.
-# It will be run hourly, so should not automatically involve any operations
-# (such as building the documentation) which are going to be very costly.
-# We implement such operations in a lazy way, only performing them when
-# the source data has changed.
+# This script rebuilds the website by checking it out from CVS.
+#
+# We want to be able to run this script from cron (though we don't currently)
+# so it should not unconditionally involve any operations (such as building the
+# documentation) which are going to be very costly.
+#
+# To avoid this we implement such operations in a lazy way, only performing
+# them when the source data has changed.
 #
 # Everything in the CVS module "www.xapian.org" will be put onto the website,
 # except for things in "www.xapian.org/.scripts", such as this script.
 
 set -e
 
-# FIXME : need to avoid having to update this...
-tarball="/usr/data/www/oligarchy.co.uk/xapian/0.9.8/xapian-core-0.9.8.tar.gz"
+argvpath=`echo "$0"|sed 's![^/]*$!!'`
+version=`sed 's/.*version *= *"\([0-9.]*\)".*/\1/p;d' ${argvpath}../version.php`
+
+echo "Updating website"
+echo "Latest Xapian release is $version"
+tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-core-$version.tar.gz"
+
+if ! test -r $tarball ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  exit 1
+fi
 
 projectdir="/u1/olly/xapian-website-update"
 #cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
