@@ -94,8 +94,8 @@ rm -rf "${excludedir}"
 # files.
 # FIXME: set it up to delete except for in certain directories which are
 # generated, 
-# rsync -a -r -C --delete --delete-after "${tmpdir}/${cvsmodule}/"* "${htmldir}/"
-rsync -a -r -C "${tmpdir}/${cvsmodule}/"* "${htmldir}/"
+# rsync -a -C --delete --delete-after "${tmpdir}/${cvsmodule}/"* "${htmldir}/"
+rsync -a -C "${tmpdir}/${cvsmodule}/"* "${htmldir}/"
 
 # Clean up temporary directory.
 rm -rf "${tmpdir}"
