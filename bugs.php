@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-
+<? include "version.php"; ?>
 <head>
 <title>The Xapian Project : Bugs</title>
 <? include "styleandmeta.php"; ?>
@@ -35,7 +35,12 @@
 -->
 <H1>Bugs</H1>
 
-<p>Welcome to <B>Bugzilla</B>, the xapian.org bug tracking system.
+<p>Welcome to <B>Bugzilla</B>, the xapian.org bug tracking system.</p>
+
+<p>Before reporting a bug, please check that the bug occurs in the
+latest Xapian release (<? echo $version ?>) and that it's not already
+covered by the
+<a href="http://wiki.xapian.org/ReleaseNotes">Release Notes</a>.</p>
 
 <p>Please choose one of the following options:</p>
 

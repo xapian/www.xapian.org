@@ -37,6 +37,10 @@ Note: the latest bindings on CPAN are currently for Xapian 0.9.6, but there are 
 <A HREF="http://www.oligarchy.co.uk/xapian/trunk/Search-Xapian-0.9.9.0.tar.gz">updated bindings for 0.9.9 available</A>.
 </ul>
 
+<p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
+relating to the latest release.
+</p>
+
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
 <p>We now supply packages for Debian (stable, testing, and unstable) and Ubuntu
