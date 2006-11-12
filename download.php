@@ -166,15 +166,21 @@ be better tailored:
 </p>
 
 <ul>
-<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linux RPMs</a></li>
-<li><a href="http://software.opensuse.org/download/server:/search/">SuSE RPMs</a>
+<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linux RPMs</a> of xapian-core only</li>
+<li><a href="http://software.opensuse.org/download/server:/search/">SuSE RPMs</a> of xapian-core and omega
 (and <a href="http://en.opensuse.org/Build_Service/User">instructions for use</a>)</li>
 </ul>
 
-<h1>Gentoo packages</h1>
+<h1>Other Linux Distributions</h1>
 
-<p>Xapian is in <A HREF="http://gentoo-portage.com/dev-libs/xapian">Gentoo
-Portage</A>.</p>
+<ul>
+<li>Gentoo Portage has ebuilds for
+<a HREF="http://gentoo-portage.com/dev-libs/xapian">xapian-core</a> and
+<a HREF="http://gentoo-portage.com/dev-libs/xapian-bindings">xapian-bindings</a>
+</li>
+<li>FrugalWare Linux has packaged <a href="http://www.frugalware.org/packages/14387">xapian-core</a>.
+</li>
+</ul>
 
 <h1>FreeBSD Ports Collection</h1>
 
