@@ -19,12 +19,21 @@
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.general">Gmane</a>]
 <li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-devel">xapian-devel</a></tt> for technical discussions about the development of Xapian 
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.devel">Gmane</a>]
-<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-commits">xapian-commits</a></tt> receives CVS commits (can be a <em>lot</em> of messages)
+<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-commits">xapian-commits</a></tt> receives details of SVN commits (can be a <em>lot</em> of messages)
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.cvs">Gmane</a>]
 </ul>
 
 <p>The [Gmane] links take you to the Gmane news gateway which allows you to
 read these list with a newsreader, or browse the archives on the web.</p>
+
+<p>
+If you just wish to hear when new versions become available, you can
+"subscribe" to the <a href="http://freshmeat.net/projects/xapian/">Xapian
+project page on freshmeat</a>.  New releases are announced there and on
+xapian-discuss.
+</p>
+
+<h2>Searching the lists</h2>
 
 <form method="get" action="http://search.gmane.org/">
 <p>
