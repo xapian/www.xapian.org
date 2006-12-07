@@ -47,7 +47,7 @@ relating to the latest release.
 (dapper and edgy).  These packages have now been
 accepted into the Debian archive, so if you're using testing or unstable you
 can install them as you would any other Debian package (and they should be
-part of the next Debian release too).  For Debian stable and Ubuntu, here's how
+part of the next Debian release "etch" too).  For Debian stable and Ubuntu, here's how
 to get them from the xapian.org package repository:
 </p>
 
@@ -81,13 +81,22 @@ deb-src http://www.xapian.org/debian dapper main
 </code></blockquote>
 
 <p>
-And if you're running Ubuntu edgy, add the following:
+Ubuntu edgy has xapian-core packages (version 0.9.6-5), but not xapian-omega
+or xapian-bindings.  If you're running Ubuntu edgy and want either of the
+latter two, or just a newer xapian-core, add the following:
 </p>
 
 <blockquote><code>
 deb http://www.xapian.org/debian edgy main<br>
 deb-src http://www.xapian.org/debian edgy main
 </code></blockquote>
+
+<p>
+The development version of Ubuntu (feisty) has all the xapian packages which
+should get regularly updated from those in Debian unstable, so we don't
+currently provide our own packages for feisty.  Once feisty is released we'll
+probably provide backported packages of the latest version of Xapian.
+</p>
 
 <p>
 Currently the Python, PHP, ruby, and tcl bindings are packaged for
@@ -180,11 +189,21 @@ be better tailored:
 </li>
 <li>FrugalWare Linux has packaged <a href="http://www.frugalware.org/packages/14387">xapian-core</a>.
 </li>
+<li>Zenwalk Linux has packaged <a href="http://users.zenwalk.org/user-accounts/oskar/pinot/">xapian-core</a>
+(<a href="http://users.zenwalk.org/user-accounts/oskar/source/">sources</a>).
 </ul>
 
 <h1>FreeBSD Ports Collection</h1>
 
 <p>Xapian is in the <A HREF="http://www.freshports.org/databases/xapian-core/">FreeBSD Ports Collection</A>.</p>
+
+<h1>Cygwin</h1>
+
+<p>
+Reini Urban has put together
+<a href="http://rurban.xarch.at/software/cygwin/contrib/xapian/">Cygwin packages</a>
+for xapian-core and omega.  He's working on packaging the bindings too.
+</p>
 
 <h1>Compiling on MS Windows with MSVC</h1>
 
