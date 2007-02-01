@@ -177,7 +177,7 @@ be better tailored:
 </p>
 
 <ul>
-<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian">ALT Linux RPMs</a> of xapian-core only</li>
+<li><a href="http://www.altlinux.com/index.php?module=sisyphus&package=xapian-core">ALT Linux RPMs</a> of xapian-core only</li>
 <li><a href="http://software.opensuse.org/download/server:/search/">SuSE RPMs</a> of xapian-core and omega
 (and <a href="http://en.opensuse.org/Build_Service/User">instructions for use</a>)</li>
 </ul>
