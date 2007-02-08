@@ -159,13 +159,13 @@ Application: <a href="http://www.mysociety.org/?p=83">web api to gazeteer servic
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 37 million messages and counting!
+Database size: 41 million messages and counting!
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
 Application: Searching online auctions<br>
 Languages: Dutch<br>
-Database size: around 400,000 documents<br>
+Database size: around 850,000 documents<br>
 </li>
 
 <li id="camcity"><div class="orgname"><a href="http://www.cambridge.gov.uk/">Cambridge City Council</a></div>
@@ -194,7 +194,7 @@ Database size: 9000 products<br>
 <h2 id="desktop">Desktop Search Applications</h2>
 
 <ul>
-<li id="recoll"><div class="orgname"><a href="http://perso.wanadoo.fr/dockes/recoll/">Recoll</a></div>
+<li id="recoll"><div class="orgname"><a href="http://www.lesbonscomptes.com/recoll/">Recoll</a></div>
 Application: Recoll is a personal full text indexing system<br>
 </li>
 
