@@ -80,6 +80,12 @@ snapshots</A>,
 which are generated every 20 minutes (so long as the code in SVN isn't too
 broken for even <tt>make dist</tt> to work).</p>
 
+<p>
+The snapshots are built automatically on various different platforms - you
+can view the results of these builds in our <a
+href="http://www.oligarchy.co.uk/tinderbox/xapian/status.html">tinderbox</a>.
+</p>
+
 <?php if ($QUERY_STRING != "") { ?>
 <p>
 If you have write access, you need to do a small amount of configuration
