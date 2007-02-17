@@ -19,13 +19,13 @@
 <li> Free Software/Open Source - licensed under the GPL.
 
 <li> <a
-HREF="http://cvs.xapian.org/*checkout*/xapian/xapian-core/PLATFORMS">Highly
+HREF="http://svn.xapian.org/trunk/xapian-core/PLATFORMS?view=co">Highly
 portable</a> - runs on Linux, MacOS X, FreeBSD, NetBSD, OpenBSD, Solaris,
 HP-UX, Tru64, IRIX, and probably other Unix platforms, as well as
 Microsoft Windows.
 
 <li> Written in C++.  Perl bindings are available in the module
-  <a href="http://cpan.perl.org/modules/by-module/Search/">Search::Xapian
+  <a href="http://search.cpan.org/~olly/Search-Xapian/">Search::Xapian
   on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
   We also support <a href="http://www.swig.org/">SWIG</a> which can generate
   bindings for many languages.  At present those for Python, PHP, TCL, C#,
@@ -82,12 +82,13 @@ a larger application - an indexing and CGI-based application called omega:</p>
 
 <li> You can also index data from any SQL or other RDBMS supported by the
 <A HREF="http://dbi.perl.org/">Perl DBI module</A>.
-That includes MySQL, PostgreSQL, SQLite, Sybase, MS SQL, LDAP, and ODBC.
+That includes MySQL, PostgreSQL, SQLite, Oracle, DB2, MS SQL, LDAP, and ODBC.
 
 <li> CGI search front-end supplied with highly customisable appearance.  This
 can also be customised to output results in XML or CSV, which is useful if you
-are dynamically generating pages (e.g. with PHP or mod_perl) and just want
-raw search results which you can process in your own page layout code.
+just want raw search results which you can process in your own page layout code
+for dynamically generated pages, or for integrating search into an AJAX
+front-end.
 
 </ul>
 
