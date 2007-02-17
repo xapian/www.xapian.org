@@ -15,7 +15,8 @@
 
 <p>Welcome to the Xapian project website.</p>
 
-<p>Xapian is an Open Source Search Engine Library, released under the GPL.
+<p>Xapian is an Open Source Search Engine Library, released under the
+<a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.
 It's written in C++, with bindings to allow use
 from Perl, Python, PHP, Java, Tcl, C#, and Ruby (so far!)</p>
 
