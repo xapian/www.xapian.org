@@ -27,7 +27,8 @@
 read these list with a newsreader, or browse the archives on the web.</p>
 
 <p>
-If you just wish to hear when new versions become available, you can
+We don't currently have a dedicated announcements list.  If you just wish to
+hear when new versions become available, you can
 "<a href="http://freshmeat.net/subscribe/40427/">subscribe</a>" to
 release announcements via the
 <a href="http://freshmeat.net/projects/xapian/">Xapian project page on
