@@ -20,7 +20,7 @@
 
 <li> <a
 HREF="http://svn.xapian.org/trunk/xapian-core/PLATFORMS?view=co">Highly
-portable</a> - runs on Linux, MacOS X, FreeBSD, NetBSD, OpenBSD, Solaris,
+portable</a> - runs on Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Solaris,
 HP-UX, Tru64, IRIX, and probably other Unix platforms, as well as
 Microsoft Windows.
 
