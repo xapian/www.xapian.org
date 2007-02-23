@@ -26,6 +26,11 @@
 <p>The [Gmane] links take you to the Gmane news gateway which allows you to
 read these list with a newsreader, or browse the archives on the web.</p>
 
+<p>Posts from non-subscribers currently require approval (we'd rather not
+have to impose this restriction, but we also want to avoid relaying spam
+to our subscribers).  So if you aren't subscribed, there's likely to be
+a delay before your message is approved and relayed to the list.
+
 <p>
 We don't currently have a dedicated announcements list.  If you just wish to
 hear when new versions become available, you can
