@@ -150,10 +150,10 @@ use sudo):
 <h1 id="RPM">RPM packages</h1>
 
 <p>Fabrice Colin has built
-<a href="/RPM/">RPM packages for Fedora Core 5</a>
+<a href="/RPM/">RPM packages for Fedora Core 6</a>
 - there are binary packages (for i386, x86_64, and ppc) and source RPMs.</p>
 
-<p>If you have Fedora Core 5, copy <a href="/RPM/xapian.repo">xapian.repo</a>
+<p>If you have Fedora Core 6, copy <a href="/RPM/xapian.repo">xapian.repo</a>
 into <code>/etc/yum/repos.d/</code> and then you can install the packages
 using yum:</p>
 <blockquote><pre>
