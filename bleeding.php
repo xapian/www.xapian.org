@@ -77,7 +77,7 @@ run the library testsuite every night, and upload a snapshot if all tests pass.
 This is not currently operational, but you can
 <A HREF="http://www.oligarchy.co.uk/xapian/trunk/">download completely untested
 snapshots</A>,
-which are generated every 20 minutes (so long as the code in SVN isn't too
+which are generated once an hour (so long as the code in SVN isn't too
 broken for even <tt>make dist</tt> to work).</p>
 
 <p>
