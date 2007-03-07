@@ -30,13 +30,8 @@ xapian-examples download was due to configure and other generated files!)
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</A>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</A>
-<li> <A HREF="http://search.cpan.org/~olly/Search-Xapian-0.9.10.0/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
-<A HREF="http://search.cpan.org/~olly/Search-Xapian-0.9.10.0/Changes">[news]</A>
-<!--
-<br>
-Note: the latest bindings on CPAN are currently for Xapian 0.9.6, but there are also
-<A HREF="http://www.oligarchy.co.uk/xapian/trunk/Search-Xapian-0.9.9.0.tar.gz">updated bindings for 0.9.9 available</A>.
--->
+<li> <A HREF="http://search.cpan.org/~olly/Search-Xapian/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
+<A HREF="http://search.cpan.org/~olly/Search-Xapian/Changes">[news]</A>
 </ul>
 
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
