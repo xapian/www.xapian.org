@@ -73,8 +73,8 @@ a larger application - an indexing and CGI-based application called omega:</p>
 <ul>
 
 <li> The indexer supplied can index HTML, PHP, PDF, PostScript,
-  OpenOffice/StarOffice, OpenDocument, Microsoft Word, Word Perfect,
-  RTF, Perl POD documentation, and plain text.
+  OpenOffice/StarOffice, OpenDocument, Microsoft Word, Excel, Powerpoint,
+  Word Perfect, RTF, Perl POD documentation, and plain text.
   Adding support for indexing other formats is easy where conversion filters
   are available.  This indexer works using the
   filing system, but we also provide a script to allow the htdig web
