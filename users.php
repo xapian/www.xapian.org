@@ -135,19 +135,26 @@ topics over all the boards that we monitor. We index 1 topic as 1 document.
 </li>
 
 <li id="daviswiki"><div class="orgname"><a href="http://www.daviswiki.org/">Davis Wiki</a></div>
-Application: <a href="http://www.daviswiki.org/index.cgi/Wiki_20Developers?action=highlight&value=xapian">Searching a wiki for Davis, California, USA</a><br>
+Application: <a href="http://www.daviswiki.org/index.cgi/Wiki_20Developers">Searching a wiki for Davis, California, USA</a><br>
 Document types: MoinMoin Wiki pages<br>
-Database size: around 6000 pages<br>
+Database size: around 8000 pages<br>
 </li>
  
 <li id="rocwiki"><div class="orgname"><a href="http://rocwiki.org/">RocWiki</a></div>
 Application: search for wiki about Rochester, NY, USA<br>
 Document types: wiki pages<br>
-Database size: around 1500 pages<br>
+Database size: around 3000 pages<br>
 </li>
 
 <li id="gaze"><div class="orgname"><a href="http://www.mysociety.org/">mysociety.org</a></div>
 Application: <a href="http://www.mysociety.org/?p=83">web api to gazeteer service</a>, built using Search::Xapian
+</li>
+
+<li id="spin"><div class="orgname"><a href="http://spin.de/">spin.de</a></div>
+Application: Free online community with profiles, chat, boards, blogs, games, and more<br>
+Languages: German<br>
+Document types: User profiles, forums, mails, and help documents<br>
+Database size: 1.89 million documents to date
 </li>
 </ul>
 
