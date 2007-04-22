@@ -67,9 +67,7 @@ development sources like so:
   <tt>XAPIAN_CONFIG=/path/to/xapian/xapian-core/xapian-config perl Makefile.PL</tt>
 </ol>
 
-<p>
-Note: you can't currently build Search::Xapian against an uninstalled
-xapian-core.
+<h2>Snapshots</h2>
 
 <p>
 We plan to set up an automatic snapshot system which will try to compile and
