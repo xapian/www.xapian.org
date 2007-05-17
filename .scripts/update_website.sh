@@ -102,11 +102,11 @@ rm -rf "${tmpdir}"
 
 # rebuild omega's database
 # FIXME: sort out permissions so this'll work for other people too
-rm -rf /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default.old
+rm -rf /u1/olly/omega/data/default.tmp /u1/olly/omega/data/default.old
 
-XAPIAN_PREFER_FLINT=1 /u1/olly/install/bin/omindex --db /u1/olly/omega/data6/default.tmp --url / /usr/data/www/xapian.org
+/u1/olly/install/bin/omindex --db /u1/olly/omega/data/default.tmp --url / /usr/data/www/xapian.org
 
-mv /u1/olly/omega/data6/default /u1/olly/omega/data6/default.old
+#mv /u1/olly/omega/data/default /u1/olly/omega/data6/default.old
 mv /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default
 # keep it just in case! rm -rf /u1/olly/omega/data6/default.old
 
