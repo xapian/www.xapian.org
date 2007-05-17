@@ -6,12 +6,5 @@ This directory contains the script used to update the website: if this script
 is modified, the modified version will be put in place by the next checkout,
 and used for all following checkouts.
 
-
-Currently (5 Nov 2001), the website is updated by a cronjob at 20 past each
-hour.  Any errors are sent to <richardb@users.sourceforge.net>.
-
-You (if you are a xapian developer) can force an update by running:
-
-ssh <user>@xapian.sourceforge.net /home/groups/x/xa/xapian/update_website.sh
- (where <user> is your username)
-
+Currently you'll have to get Olly to run this script by hand if you make
+changes to the website.
