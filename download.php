@@ -13,12 +13,14 @@
 
 <h1>Downloads</h1>
 
-<p>The <? echo $branch ?> branch
-features a few API changes, the most notable being a rewritten QueryParser
-which is reentrant, has encapsulated internals, and parses better than the old
-one.  Note that the examples are now a subdirectory of xapian-core, so there
-is no longer a separate xapian-examples download (most of the size of the
-xapian-examples download was due to configure and other generated files!)
+<p>The <? echo $branch ?> branch features substantial improvements.
+The <code>Xapian::Stem</code>, <code>Xapian::QueryParser</code>,
+and <code>Xapian::TermGenerator</code> classes now all handle
+Unicode text encoded as UTF-8, as do Omega and xapian-bindings.
+The new <code>Xapian::TermGenerator</code>
+class provides indexing functionality.  If you wish, you can
+read a <a href="http://wiki.xapian.org/ReleaseOverview">more complete
+overview of the changes</a> in this release.
 </p>
 
 <p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>:</p>
@@ -26,7 +28,7 @@ xapian-examples download was due to configure and other generated files!)
 <ul>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-core-<? echo $version ?>.tar.gz">xapian-core</A>: the Xapian library itself
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-core/NEWS">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/omega-<? echo $version ?>.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-omega-<? echo $version ?>.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</A>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</A>
@@ -96,8 +98,8 @@ probably provide backported packages of the latest version of Xapian.
 </p>
 
 <p>
-Currently the Python, PHP, ruby, and tcl bindings are packaged for
-Debian and Ubuntu.  The Perl, C#, and Java bindings aren't yet packaged.
+Currently the Python, PHP, Ruby, Tcl, and Perl bindings are packaged for
+Debian and Ubuntu.  The C# and Java bindings aren't yet packaged.
 </p>
 
 <p>
