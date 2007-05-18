@@ -19,8 +19,8 @@ and <code>Xapian::TermGenerator</code> classes now all handle
 Unicode text encoded as UTF-8, as do Omega and xapian-bindings.
 The new <code>Xapian::TermGenerator</code>
 class provides indexing functionality.  If you wish, you can
-read a <a href="http://wiki.xapian.org/ReleaseOverview">more complete
-overview of the changes</a> in this release.
+read a <a href="http://wiki.xapian.org/ReleaseOverview/1.0.0">more
+complete overview of the changes</a> in this release.
 </p>
 
 <p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>:</p>
