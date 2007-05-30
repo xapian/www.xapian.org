@@ -32,8 +32,8 @@ complete overview of the changes</a> in this release.
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</A>
 <li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</A>
-<li> <A HREF="http://search.cpan.org/~olly/Search-Xapian/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
-<A HREF="http://search.cpan.org/~olly/Search-Xapian/Changes">[news]</A>
+<li> <A HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.0.0/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
+<A HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.0.0/Changes">[news]</A>
 </ul>
 
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
@@ -43,11 +43,10 @@ relating to the latest release.
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
 <p>We now supply packages for Debian (stable, testing, and unstable) and Ubuntu
-(dapper and edgy).  These packages have now been
-accepted into the Debian archive, so if you're using testing or unstable you
-can install them as you would any other Debian package (and they should be
-part of the next Debian release "etch" too).  For Debian stable and Ubuntu, here's how
-to get them from the xapian.org package repository:
+(edgy and feisty) in a repository on xapian.org.
+These packages are available from the Debian and Ubuntu
+archives (starting with Debian etch and Ubuntu feisty) but the versions here
+will often be more recent.
 </p>
 
 <p>If you're running Debian stable add the following to your sources.list:
@@ -58,18 +57,17 @@ deb http://www.xapian.org/debian stable main<br>
 deb-src http://www.xapian.org/debian stable main
 </code></blockquote>
 
-<!--
 <p>
 If you're running Debian testing (and the packages haven't propagated in
-Debian yet), add the following:
+Debian yet), add the following to your sources.list:
 </p>
 
 <blockquote><code>
 deb http://www.xapian.org/debian unstable main<br>
 deb-src http://www.xapian.org/debian unstable main
 </code></blockquote>
--->
 
+<!--
 <p>
 If you're running Ubuntu dapper, add the following:
 </p>
@@ -78,11 +76,12 @@ If you're running Ubuntu dapper, add the following:
 deb http://www.xapian.org/debian dapper main<br>
 deb-src http://www.xapian.org/debian dapper main
 </code></blockquote>
+-->
 
 <p>
 Ubuntu edgy has xapian-core packages (version 0.9.6-5), but not xapian-omega
 or xapian-bindings.  If you're running Ubuntu edgy and want either of the
-latter two, or just a newer xapian-core, add the following:
+latter two, or just a newer xapian-core, add the following to your sources.list:
 </p>
 
 <blockquote><code>
@@ -91,10 +90,20 @@ deb-src http://www.xapian.org/debian edgy main
 </code></blockquote>
 
 <p>
-The development version of Ubuntu (feisty) has all the xapian packages which
+Ubuntu feisty has packages based on 0.9.9 with some backported fixes from
+0.9.10.  To get newer packages, add the following to your sources.list:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian feisty main<br>
+deb-src http://www.xapian.org/debian feisty main
+</code></blockquote>
+
+<p>
+The development version of Ubuntu (gutsy) has all the xapian packages which
 should get regularly updated from those in Debian unstable, so we don't
-currently provide our own packages for feisty.  Once feisty is released we'll
-probably provide backported packages of the latest version of Xapian.
+currently provide our own packages for gutsy.  Once gutsy is released we'll
+provide backported packages of the latest version of Xapian.
 </p>
 
 <p>
