@@ -155,20 +155,42 @@ use sudo):
 
 <h1 id="RPM">RPM packages</h1>
 
+<h2 id="fedora">Fedora Core 6</h2>
+
 <p>Fabrice Colin has built
-<a href="/RPM/">RPM packages for Fedora Core 6</a>
+<a href="/RPM/fc6/">RPM packages for Fedora Core 6</a>
 - there are binary packages (for i386, x86_64, and ppc) and source RPMs.</p>
 
-<p>If you have Fedora Core 6, copy <a href="/RPM/xapian.repo">xapian.repo</a>
+<p>If you have Fedora Core 6, copy <a href="/RPM/fc6/xapian.repo">xapian.repo</a>
 into <code>/etc/yum/repos.d/</code> and then you can install the packages
 using yum:</p>
 <blockquote><pre>
 <span id="prompt">$</span> su
 <i>enter your root password</i>
 <span id="prompt">#</span> cd /etc/yum/repos.d
-<span id="prompt">#</span> wget http://www.xapian.org/RPM/xapian.repo
+<span id="prompt">#</span> wget http://www.xapian.org/RPM/fc6/xapian.repo
 <span id="prompt">#</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
 </pre></blockquote>
+
+<h2 id="rhel">RedHat Enterprise Linux 4</h2>
+
+<p>Tim Brody has built
+<a href="/RPM/rhel4/">RPM packages for RedHat Enterprise Linux 4</a>
+- there are binary packages for i386 and source RPMs.</p>
+
+<p>If you have RHEL 4 and use DAG's <code>yum</code>,
+copy <a href="/RPM/rhel4/xapian.repo">xapian.repo</a>
+into <code>/etc/yum.repos.d/</code> and then you can install the packages
+using yum:</p>
+<blockquote><pre>
+<span id="prompt">$</span> su
+<i>enter your root password</i>
+<span id="prompt">#</span> cd /etc/yum.repos.d
+<span id="prompt">#</span> wget http://www.xapian.org/RPM/fc6/xapian.repo
+<span id="prompt">#</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
+</pre></blockquote>
+
+<h2 id="srpm">Source RPMs</h2>
 
 <p>
 The source RPMs (the three files that end in ".src.rpm") are
@@ -177,6 +199,8 @@ not distribution specific - you can build binary RPMs from those with:
 <blockquote><pre>
 <span id="prompt">$</span> rpmbuild --rebuild
 </pre></blockquote>
+
+<h2>Other RPM-based distributions</h2>
 
 <p>These RPM-based distributions have their own RPM packages which might
 be better tailored:
