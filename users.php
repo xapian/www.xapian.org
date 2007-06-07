@@ -69,6 +69,13 @@ Application: Searching documents related to Serbia and Montenegro<br>
 Document types: Web pages, News articles, Wikipedia pages, Dictionary entries<br>
 Database size: over 8.4 million pages<br>
 </li>
+
+<li id="kug"><div class="orgname"><a href="http://kug.ub.uni-koeln.de/">Library of the University of Cologne</a></div>
+Application: Searching the library's OPAC (Online Public Access Catalogue) with <a href="http://www.openbib.org/">OpenBib</a><br>
+Languages: German<br>
+Database size: over 5.2 million title entries split across 133 separate databases<br>
+</li>
+
 </ul>
 
 <hr>
@@ -166,7 +173,7 @@ Database size: 1.89 million documents to date
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 43 million messages and counting!
+Database size: 46 million messages and counting!
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
