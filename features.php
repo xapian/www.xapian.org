@@ -18,6 +18,8 @@
 
 <li> Free Software/Open Source - licensed under the GPL.
 
+<li> Supports Unicode, and stores indexed data in UTF-8.
+
 <li> <a
 HREF="http://svn.xapian.org/trunk/xapian-core/PLATFORMS?view=co">Highly
 portable</a> - runs on Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Solaris,
@@ -52,7 +54,8 @@ categorise documents, etc.
   match documents which mention "footballs" or "footballer").  This helps
   to find relevant documents which might otherwise be missed.  Stemmers
   are currently included for Danish, Dutch, English, Finnish, French,
-  German, Italian, Norwegian, Portuguese, Russian, Spanish, and Swedish.
+  German, Hungarian, Italian, Norwegian, Portuguese, Romanian, Russian,
+  Spanish, Swedish, and Turkish.
 
 <li> Wildcard search is supported (e.g. "xap*").
   
@@ -68,12 +71,12 @@ right away.
 </ul>
 
 <p>As well as the library, we supply a number of small example programs, and
-a larger application - an indexing and CGI-based application called omega:</p>
+a larger application - an indexing and CGI search application called Omega:</p>
 
 <ul>
 
 <li> The indexer supplied can index HTML, PHP, PDF, PostScript,
-  OpenOffice/StarOffice, OpenDocument, Microsoft Word, Excel, Powerpoint,
+  OpenOffice/StarOffice, OpenDocument, Microsoft Word/Excel/Powerpoint/Works,
   Word Perfect, RTF, Perl POD documentation, and plain text.
   Adding support for indexing other formats is easy where conversion filters
   are available.  This indexer works using the
