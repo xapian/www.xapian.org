@@ -13,7 +13,7 @@
 
 <h1>History</h1>
 
-<p>Xapian is a modern class library, but has evolved out of over 20 years of
+<p>Xapian is a modern class library, but has evolved out of over 25 years of
 commercial and academic experience.</p>
 
 <p>The Xapian project is based upon the code of Open Muscat (also known as
