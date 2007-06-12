@@ -42,12 +42,51 @@ relating to the latest release.
 
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
-<p>We now supply packages for Debian (stable, testing, and unstable) and Ubuntu
-(edgy and feisty) in a repository on xapian.org.
-These packages are available from the Debian and Ubuntu
-archives (starting with Debian etch and Ubuntu feisty) but the versions here
-will often be more recent.
+<p>
+Packages of xapian-core, xapian-omega, and xapian-bindings are available from
+the Debian and Ubuntu archives (starting with Debian etch and Ubuntu feisty).
+However, packages aren't available for older Debian or Ubuntu releases, and
+those which are available may not be fully up-to-date, so for your convenience
+we provide backported packages from our own repository on xapian.org.  If
+you're happy with the packages in the Debian or Ubuntu archive, you can ignore
+the rest of this section.
 </p>
+
+<p>
+Currently we supply packages for Debian oldstable (sarge), stable (etc), and
+testing/unstable, and for Ubuntu dapper (6.06), edgy (6.10), feisty (7.04),
+and gutsy (currently under development).  Starting from Xapian 1.0.1,
+the repository is now signed by a <a href="http://www.xapian.org/debian/archive_key.asc">key</a> which has this fingerprint:
+<p>
+
+<p>7E71 70B7 6A23 65C5 DB40  1AE8 52A4 ECB5 287B 9696</p>
+
+<p>
+You'll need to import the registry key so that apt can verify these signatures.
+You can do that like so on Debian:
+</p>
+
+<blockquote><code><pre>
+<span id="prompt">$</span> su -
+<i>enter your root password</i>
+<span id="prompt">#</span> wget -O- http://www.xapian.org/debian/archive_key.asc|apt-key add -
+<span id="prompt">#</span> exit
+</pre></code></blockquote>
+
+<p>And on Ubuntu:</p>
+
+<blockquote><code><pre>
+<span id="prompt">$</span> sudo wget -O- http://www.xapian.org/debian/archive_key.asc|apt-key add -
+<i>enter your root password</i>
+</pre></code></blockquote>
+
+<p>If you're running Debian oldstable add the following to your sources.list:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian oldstable main<br>
+deb-src http://www.xapian.org/debian oldstable main
+</code></blockquote>
 
 <p>If you're running Debian stable add the following to your sources.list:
 </p>
@@ -59,7 +98,8 @@ deb-src http://www.xapian.org/debian stable main
 
 <p>
 If you're running Debian testing (and the packages haven't propagated in
-Debian yet), add the following to your sources.list:
+Debian yet) or unstable (and the packages are stuck in the NEW queue),
+add the following to your sources.list:
 </p>
 
 <blockquote><code>
@@ -67,7 +107,6 @@ deb http://www.xapian.org/debian unstable main<br>
 deb-src http://www.xapian.org/debian unstable main
 </code></blockquote>
 
-<!--
 <p>
 If you're running Ubuntu dapper, add the following:
 </p>
@@ -76,7 +115,6 @@ If you're running Ubuntu dapper, add the following:
 deb http://www.xapian.org/debian dapper main<br>
 deb-src http://www.xapian.org/debian dapper main
 </code></blockquote>
--->
 
 <p>
 Ubuntu edgy has xapian-core packages (version 0.9.6-5), but not xapian-omega
@@ -101,10 +139,14 @@ deb-src http://www.xapian.org/debian feisty main
 
 <p>
 The development version of Ubuntu (gutsy) has all the xapian packages which
-should get regularly updated from those in Debian unstable, so we don't
-currently provide our own packages for gutsy.  Once gutsy is released we'll
-provide backported packages of the latest version of Xapian.
+should get regularly updated from those in Debian unstable, but if you're
+impatient, add the following to your sources.list:
 </p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian gutsy main<br>
+deb-src http://www.xapian.org/debian gutsy main
+</code></blockquote>
 
 <p>
 Currently the Python, PHP, Ruby, Tcl, and Perl bindings are packaged for
