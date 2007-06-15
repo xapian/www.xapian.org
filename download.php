@@ -228,7 +228,7 @@ using yum:</p>
 <span id="prompt">$</span> su
 <i>enter your root password</i>
 <span id="prompt">#</span> cd /etc/yum.repos.d
-<span id="prompt">#</span> wget http://www.xapian.org/RPM/fc6/xapian.repo
+<span id="prompt">#</span> wget http://www.xapian.org/RPM/rhel4/xapian.repo
 <span id="prompt">#</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
 </pre></blockquote>
 
