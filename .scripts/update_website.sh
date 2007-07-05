@@ -106,9 +106,9 @@ rm -rf /u1/olly/omega/data/default.tmp /u1/olly/omega/data/default.old
 
 /u1/olly/install/bin/omindex --db /u1/olly/omega/data/default.tmp --url / /usr/data/www/xapian.org
 
-#mv /u1/olly/omega/data/default /u1/olly/omega/data6/default.old
-mv /u1/olly/omega/data6/default.tmp /u1/olly/omega/data6/default
-# keep it just in case! rm -rf /u1/olly/omega/data6/default.old
+mv /u1/olly/omega/data/default /u1/olly/omega/data/default.old
+mv /u1/olly/omega/data/default.tmp /u1/olly/omega/data/default
+# keep it just in case! rm -rf /u1/olly/omega/data/default.old
 
 # return successfully.
 exit 0
