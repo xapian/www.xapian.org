@@ -201,6 +201,11 @@ Application: <a href="http://www.procarestores.com/product/general_catalog/index
 Database size: 9000 products<br>
 </li>
 
+<li id="grokbase"><div class="orgname"><a href="http://grokbase.com/">grokbase</a></div>
+Application: <a href="http://grokbase.com/">Searching mailing list archives</a><br>
+Database size: unknown<br>
+</li>
+
 </ul>
 
 <hr>
