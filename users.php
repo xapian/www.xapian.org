@@ -135,7 +135,7 @@ Document types: forum topics<br>
 Database size: around 900,000 topics
 <?php
 /*
-Together there are 12.994.235 messages which are packed in 872.202 
+Together there are 12.994.235 messages which are packed in 872.202
 topics over all the boards that we monitor. We index 1 topic as 1 document.
 */
 ?>
@@ -143,14 +143,14 @@ topics over all the boards that we monitor. We index 1 topic as 1 document.
 
 <li id="daviswiki"><div class="orgname"><a href="http://www.daviswiki.org/">Davis Wiki</a></div>
 Application: <a href="http://www.daviswiki.org/index.cgi/Wiki_20Developers">Searching a wiki for Davis, California, USA</a><br>
-Document types: MoinMoin Wiki pages<br>
-Database size: around 8000 pages<br>
+Document types: wiki pages<br>
+Database size: over 10,000 pages<br>
 </li>
- 
+
 <li id="rocwiki"><div class="orgname"><a href="http://rocwiki.org/">RocWiki</a></div>
 Application: search for wiki about Rochester, NY, USA<br>
 Document types: wiki pages<br>
-Database size: around 3000 pages<br>
+Database size: around 3,000 pages<br>
 </li>
 
 <li id="gaze"><div class="orgname"><a href="http://www.mysociety.org/">mysociety.org</a></div>
@@ -163,6 +163,12 @@ Languages: German<br>
 Document types: User profiles, forums, mails, and help documents<br>
 Database size: 1.89 million documents to date
 </li>
+
+<li id="wikispot"><div class="orgname"><a href="http://wikispot.org/">wiki spot</a></div>
+Application: Searching across hundreds of wikis<br>
+Document types: Wiki pages<br>
+Database size: around 25,000 pages
+</li>
 </ul>
 
 <hr>
@@ -173,7 +179,7 @@ Database size: 1.89 million documents to date
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 46 million messages and counting!
+Database size: 48 million messages and counting!
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
