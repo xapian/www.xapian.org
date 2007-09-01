@@ -257,10 +257,10 @@ dynamic websites.  It <a href="http://www.synd.info/api/default/_core_index_Xapi
 >allows Xapian to be used</a> to provide an integrated search engine.
 </li>
 
-<li id="flyingdog"><div class="orgname"><a href="http://www.flyingdog.biz/">Flying Dog Software</a></div>
-Application: Flying Dog Software's Powerslave Content Management System <a
-href="http://live.homepage.fdog.de/flyingdog/powerslave,id,1,_language,uk,,nodeid,1.html?xv_query=+xapian&amp;nodeid=1&amp;id=1&amp;_language=uk&amp;_country=&amp;xv_start=0">integrates Xapian to provide searching</a>
-(<a href="http://live.homepage.fdog.de/flyingdog/powerslave,id,1,_language,de,,nodeid,1.html?xv_query=xapian&amp;nodeid=1&amp;id=1&amp;_language=uk&amp;_country=&amp;xv_start=0">oder auf Deutsch</a>)
+<li id="djapian"><div class="orgname"><a href="http://code.google.com/p/djapian/">Djapian</a></div>
+Djapian provides integration between Xapian and
+<a href="http://www.djangoproject.com/">Django</a> (a high-level Python Web
+framework that encourages rapid development and clean, pragmatic design).
 </li>
 
 <li id="venda"><div class="orgname"><a href="http://www.venda.com/" rel="nofollow">Venda Ltd</a></div>
