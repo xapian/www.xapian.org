@@ -209,7 +209,10 @@ Database size: 9000 products<br>
 
 <li id="grokbase"><div class="orgname"><a href="http://grokbase.com/">grokbase</a></div>
 Application: <a href="http://grokbase.com/">Searching mailing list archives</a><br>
-Database size: unknown<br>
+</li>
+
+<li id="pdo"><div class="orgname"><a href="http://www.debian.org/">Debian GNU/Linux</a></div>
+Application: <a href="http://packages.debian.org/">Searching Debian's archive of software packages</a><br>
 </li>
 
 </ul>
