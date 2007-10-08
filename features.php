@@ -18,7 +18,8 @@
 
 <li> Free Software/Open Source - licensed under the GPL.
 
-<li> Supports Unicode, and stores indexed data in UTF-8.
+<li> Supports Unicode (including codepoints beyond the BMP), and stores indexed
+data in UTF-8.
 
 <li> <a
 HREF="http://svn.xapian.org/trunk/xapian-core/PLATFORMS?view=co">Highly
@@ -59,6 +60,14 @@ categorise documents, etc.
 
 <li> Wildcard search is supported (e.g. "xap*").
   
+<li> Synonyms are supported, both explicitly (e.g. "~cash") and as an automatic
+  form of query expansion.
+
+<li> Xapian can suggest spelling corrections for user supplied queries.  This
+  is based on words which occur in the data being indexed, so works even for
+  words which wouldn't be found in a dictionary (e.g. "xapian" would be
+  suggested as a correct for "xapain").
+
 <li> Supports database files &gt; 2GB - essential for
   <A HREF="docs/scalability.html">scaling to large document collections</A>.
 
@@ -77,7 +86,7 @@ a larger application - an indexing and CGI search application called Omega:</p>
 
 <li> The indexer supplied can index HTML, PHP, PDF, PostScript,
   OpenOffice/StarOffice, OpenDocument, Microsoft Word/Excel/Powerpoint/Works,
-  Word Perfect, RTF, Perl POD documentation, and plain text.
+  Word Perfect, AbiWord, RTF, DVI, Perl POD documentation, and plain text.
   Adding support for indexing other formats is easy where conversion filters
   are available.  This indexer works using the
   filing system, but we also provide a script to allow the htdig web
