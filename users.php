@@ -38,7 +38,6 @@ of machines the system runs on, number of users and thus queries per day
 etc...generally anything that says something about performance.
 */
 
-
 // http://www.osservatoriobalcani.org/
 // search at http://www.opencontent.it/cgi-bin/omega/omega?DB=ob&FMT=ob
 
@@ -231,19 +230,27 @@ Application: Pinot is a metasearch tool for the Free Desktop<br>
 </li>
 </ul>
 
+<!-- olpc! -->
+
 <hr>
 
 <h2 id="webapps">Web Based Applications</h2>
 
 <ul>
 <li id="roundup"><div class="orgname"><a href="http://roundup.sourceforge.net/">Roundup</a></div>
-Application: Issue Tracker which can use Xapian for searching
+Application: Roundup is an Issue Tracker which can use Xapian for searching
 </ul>
 
-<?php
-// MailManager - opensource web application for customer service and help desk
-// email management http://www.logicalware.org/
-?>
+<ul>
+<li id="sycamore"><div class="orgname"><a href="http://www.projectsycamore.org/">Sycamore Wiki Engine</a></div>
+Application: Wiki Engine with built in Xapian-powered search
+</ul>
+
+<ul>
+<li id="mailmanager"><div class="orgname"><a href="http://sourceforge.net/projects/mailmanager">MailManager</a></div>
+Application: Open source web application providing email management for customer service, help desk, etc.
+</ul>
+
 <hr>
 
 <h2 id="frameworks">Software Frameworks</h2>
