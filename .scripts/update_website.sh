@@ -51,8 +51,8 @@ fi
 version=`sed 's/.*version *= *"\([0-9.]*\)".*/\1/p;d' ${tmpdir}/${cvsmodule}/version.php`
 
 echo "Latest Xapian release is $version"
-tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-core-$version.tar.gz"
 
+tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-core-$version.tar.gz"
 if ! test -r $tarball ; then
   echo "$0: Latest release tarball doesn't exist: '$tarball'"
   exit 1
@@ -82,6 +82,44 @@ if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
 fi
 mkdir "$tmpdir/$cvsmodule/docs/sourcedoc" 2> /dev/null || :
 cp -a "$tardir"/docs/sourcedoc/html "$tmpdir/$cvsmodule/docs/sourcedoc"
+
+tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-omega-$version.tar.gz"
+if ! test -r $tarball ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  exit 1
+fi
+
+tardir=`echo "$tarball"|sed 's!.*/!!;s/\.tar\.gz//'`
+if test "$tarball" -nt stamp-unpack-omega-tarball ; then
+  rm -rf "$tardir"
+  tar zxf "$tarball"
+  chmod go= "$tardir"
+  chmod g+rws "$tardir"
+  touch stamp-unpacked-omega-tarball
+fi
+mkdir "$tmpdir/$cvsmodule/omega"
+cp -a "$tardir"/docs/*.txt "$tmpdir/$cvsmodule/omega"
+
+tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-bindings-$version.tar.gz"
+if ! test -r $tarball ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  exit 1
+fi
+
+tardir=`echo "$tarball"|sed 's!.*/!!;s/\.tar\.gz//'`
+if test "$tarball" -nt stamp-unpack-bindings-tarball ; then
+  rm -rf "$tardir"
+  tar zxf "$tarball"
+  chmod go= "$tardir"
+  chmod g+rws "$tardir"
+  touch stamp-unpacked-bindings-tarball
+fi
+mkdir "$tmpdir/$cvsmodule/bindings"
+for l in python php ruby tcl8 csharp ; do
+  mkdir "$tmpdir/$cvsmodule/bindings/$l"
+  cp -a "$tardir/$l"/docs/* "$tmpdir/$cvsmodule/bindings/$l"
+done
+
 cd "$tmpdir"
 
 chmod -R g+rw "${tmpdir}"
