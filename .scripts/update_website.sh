@@ -97,8 +97,8 @@ if test "$tarball" -nt stamp-unpack-omega-tarball ; then
   chmod g+rws "$tardir"
   touch stamp-unpacked-omega-tarball
 fi
-mkdir "$tmpdir/$cvsmodule/omega"
-cp -a "$tardir"/docs/*.txt "$tmpdir/$cvsmodule/omega"
+mkdir "$tmpdir/$cvsmodule/docs/omega"
+cp -a "$tardir"/docs/*.txt "$tmpdir/$cvsmodule/docs/omega"
 
 tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-bindings-$version.tar.gz"
 if ! test -r $tarball ; then
@@ -114,10 +114,10 @@ if test "$tarball" -nt stamp-unpack-bindings-tarball ; then
   chmod g+rws "$tardir"
   touch stamp-unpacked-bindings-tarball
 fi
-mkdir "$tmpdir/$cvsmodule/bindings"
+mkdir "$tmpdir/$cvsmodule/docs/bindings"
 for l in python php ruby tcl8 csharp ; do
-  mkdir "$tmpdir/$cvsmodule/bindings/$l"
-  cp -a "$tardir/$l"/docs/* "$tmpdir/$cvsmodule/bindings/$l"
+  mkdir "$tmpdir/$cvsmodule/docs/bindings/$l"
+  cp -a "$tardir/$l"/docs/* "$tmpdir/$cvsmodule/docs/bindings/$l"
 done
 
 cd "$tmpdir"
