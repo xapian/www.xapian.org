@@ -139,7 +139,7 @@ if test "$tarball" -nt stamp-unpacked-perl-tarball ; then
   touch stamp-unpacked-perl-tarball
 fi
 mkdir "$tmpdir/$cvsmodule/docs/bindings/perl"
-cp -a "$tardir"/html/* "tardir"/README "$tmpdir/$cvsmodule/docs/bindings/perl"
+cp -a "$tardir"/html/* "$tardir"/README "$tmpdir/$cvsmodule/docs/bindings/perl"
 
 cd "$tmpdir"
 
