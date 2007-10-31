@@ -135,6 +135,7 @@ if test "$tarball" -nt stamp-unpacked-perl-tarball ; then
   chmod g+rws "$tardir"
   cd "$tardir"
   ./makehtmldocs
+  cd ..
   touch stamp-unpacked-perl-tarball
 fi
 mkdir "$tmpdir/$cvsmodule/docs/bindings/perl"
