@@ -90,7 +90,7 @@ if ! test -r $tarball ; then
 fi
 
 tardir=`echo "$tarball"|sed 's!.*/!!;s/\.tar\.gz//'`
-if test "$tarball" -nt stamp-unpack-omega-tarball ; then
+if test "$tarball" -nt stamp-unpacked-omega-tarball ; then
   rm -rf "$tardir"
   tar zxf "$tarball"
   chmod go= "$tardir"
@@ -107,7 +107,7 @@ if ! test -r $tarball ; then
 fi
 
 tardir=`echo "$tarball"|sed 's!.*/!!;s/\.tar\.gz//'`
-if test "$tarball" -nt stamp-unpack-bindings-tarball ; then
+if test "$tarball" -nt stamp-unpacked-bindings-tarball ; then
   rm -rf "$tardir"
   tar zxf "$tarball"
   chmod go= "$tardir"
@@ -119,6 +119,26 @@ for l in python php ruby tcl8 csharp ; do
   mkdir "$tmpdir/$cvsmodule/docs/bindings/$l"
   cp -a "$tardir/$l"/docs/* "$tmpdir/$cvsmodule/docs/bindings/$l"
 done
+
+# FIXME: doesn't handle Search-Xapian-0.9.9.1.tar.gz
+tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/Search-Xapian-$version.0.tar.gz"
+if ! test -r $tarball ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  exit 1
+fi
+
+tardir=`echo "$tarball"|sed 's!.*/!!;s/\.tar\.gz//'`
+if test "$tarball" -nt stamp-unpacked-perl-tarball ; then
+  rm -rf "$tardir"
+  tar zxf "$tarball"
+  chmod go= "$tardir"
+  chmod g+rws "$tardir"
+  cd "$tardir"
+  ./makehtmldocs
+  touch stamp-unpacked-perl-tarball
+fi
+mkdir "$tmpdir/$cvsmodule/docs/bindings/perl"
+cp -a "$tardir"/html/* "tardir"/README "$tmpdir/$cvsmodule/docs/bindings/perl"
 
 cd "$tmpdir"
 
