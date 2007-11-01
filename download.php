@@ -19,21 +19,22 @@ and <code>Xapian::TermGenerator</code> classes now all handle
 Unicode text encoded as UTF-8, as do Omega and xapian-bindings.
 The new <code>Xapian::TermGenerator</code>
 class provides indexing functionality.  If you wish, you can
-read a <a href="http://wiki.xapian.org/ReleaseOverview/1.0.0">more
-complete overview of the changes</a> in this release.
+read a <a href="http://wiki.xapian.org/ReleaseOverview/">more
+complete overview of the changes</a> in the 1.0 release.
 </p>
 
 <p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>:</p>
 
 <ul>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-core-<? echo $version ?>.tar.gz">xapian-core</A>: the Xapian library itself
-<A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-core/NEWS">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-omega-<? echo $version ?>.tar.gz">omega</A>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
-<A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</A>
-<li> <A HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</A>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
-<A HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</A>
-<li> <A HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.3.0/">Search::Xapian</A>: Perl bindings (on CPAN)</A>
-<A HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.3.0/Changes">[news]</A>
+<li> <a HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-core-<? echo $version ?>.tar.gz">xapian-core</a>: the Xapian library itself
+<a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-core/NEWS">[news]</a>
+<li> <a HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-omega-<? echo $version ?>.tar.gz">omega</a>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</a>
+<li> <a HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</a>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
+<a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</a>
+<li> <a HREF="http://www.oligarchy.co.uk/xapian/1.0.4/Search-Xapian-1.0.4.0.tar.gz">Search::Xapian</a>: Perl bindings
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.4.0/">on CPAN</a>)
+<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.4.0/Changes">[news]</a>
 </ul>
 
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
