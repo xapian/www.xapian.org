@@ -19,7 +19,7 @@
 <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.
 It's written in <a href="/docs/apidoc/html/annotated.html">C++</a>,
 with bindings to allow use from
-<a href="http://svn.xapian.org/README?revision=HEAD&root=Search-Xapian" xhref="/docs/bindings/perl/">Perl</a>,
+<a href="/docs/bindings/perl/Search/Xapian.html">Perl</a>,
 <a href="/docs/bindings/python/">Python</a>,
 <a href="/docs/bindings/php/">PHP</a>,
 <a href="http://svn.xapian.org/trunk/xapian-bindings/java/README?revision=HEAD" xhref="/docs/bindings/java/">Java</a>,
@@ -33,7 +33,8 @@ applications.  It supports the Probabilistic Information Retrieval
 model and also supports a rich set of boolean query operators.</p>
 
 <p>If you're after a packaged search engine for your website, you
-should take a look at Omega: an application we supply built upon
+should take a look at <a href="/docs/omega/">Omega</a>:
+an application we supply built upon
 Xapian.  Unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.</p>
 
