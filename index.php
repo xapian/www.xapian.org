@@ -33,7 +33,7 @@ applications.  It supports the Probabilistic Information Retrieval
 model and also supports a rich set of boolean query operators.</p>
 
 <p>If you're after a packaged search engine for your website, you
-should take a look at <a href="/docs/omega/">Omega</a>:
+should take a look at <a href="/docs/omega/overview.html">Omega</a>:
 an application we supply built upon
 Xapian.  Unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.</p>
