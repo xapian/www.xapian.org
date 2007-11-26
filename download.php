@@ -46,6 +46,12 @@ relating to the latest release.
 <p>
 Packages of xapian-core, xapian-omega, and xapian-bindings are available from
 the Debian and Ubuntu archives (starting with Debian etch and Ubuntu feisty).
+For Debian stable, more up-to-date xapian-core packages are also available
+from <a href="http://packages.debian.org/source/etch-backports/xapian-core"
+>backports.org</a>.
+</p>
+
+<p>
 However, packages aren't available for older Debian or Ubuntu releases, and
 those which are available may not be fully up-to-date, so for your convenience
 we provide backported packages from our own repository on xapian.org.  If
@@ -54,10 +60,11 @@ the rest of this section.
 </p>
 
 <p>
-Currently we supply packages for Debian oldstable (sarge), stable (etc), and
+Currently we supply packages for Debian oldstable (sarge), stable (etch), and
 testing/unstable, and for Ubuntu dapper (6.06), edgy (6.10), feisty (7.04),
-and gutsy (currently under development).  Starting from Xapian 1.0.1,
-the repository is now signed by a <a href="/debian/archive_key.asc">key</a> which has this fingerprint:
+and gutsy (7.10).  Starting from Xapian 1.0.1,
+the repository is now signed by a <a href="/debian/archive_key.asc">key</a>
+which has this fingerprint:
 <p>
 
 <p>7E71 70B7 6A23 65C5 DB40  1AE8 52A4 ECB5 287B 9696</p>
@@ -224,15 +231,14 @@ RPM packages of Xapian 1.0.0 are available for
 longer being updated for newer Xapian releases.
 </p>
 
-<h2 id="rhel">RedHat Enterprise Linux 4</h2>
+<h2 id="rhel">RedHat Enterprise Linux</h2>
 
 <p>Tim Brody has built RPM packages for
 <a href="/RPM/rhel4/">RedHat Enterprise Linux 4</a> and
 <a href="/RPM/rhel5/">RedHat Enterprise Linux 5</a>
 - there are binary packages for i386 and source RPMs.</p>
 
-<p>If you have RHEL 5 and use DAG's <code>yum</code>,
-copy <a href="/RPM/rhel5/xapian.repo">xapian.repo</a>
+<p>If you have RHEL 5, copy <a href="/RPM/rhel5/xapian.repo">xapian.repo</a>
 into <code>/etc/yum.repos.d/</code> and then you can install the packages
 using yum:</p>
 <blockquote><pre>
@@ -245,7 +251,10 @@ using yum:</p>
 </pre></blockquote>
 
 <p>
-For RHEL 4, use this <a href="/RPM/rhel4/xapian.repo">xapian.repo</a> instead.
+For RHEL 4, use this <a href="/RPM/rhel4/xapian.repo">xapian.repo</a> instead
+if you are using DAG's <code>yum</code>.  Otherwise
+you can download the <a href="/RPM/rhel4/">individual packages</a> and install
+them by hand.
 </p>
 
 <h2 id="srpm">Source RPMs</h2>
