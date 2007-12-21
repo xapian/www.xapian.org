@@ -46,9 +46,10 @@ relating to the latest release.
 <p>
 Packages of xapian-core, xapian-omega, and xapian-bindings are available from
 the Debian and Ubuntu archives (starting with Debian etch and Ubuntu feisty).
-For Debian stable, more up-to-date xapian-core packages are also available
-from <a href="http://packages.debian.org/source/etch-backports/xapian-core"
->backports.org</a>.
+For Debian stable, <a href="http://packages.debian.org/search?keywords=xapian&searchon=names&section=all&suite=etch-backports"
+>backported versions of the latest packages</a> are also available for all
+Debian's supported architectures, courtesy of
+<a href="http://backports.org/">backports.org</a>.
 </p>
 
 <p>
