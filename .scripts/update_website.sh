@@ -16,7 +16,8 @@ set -e
 
 projectdir="/u1/olly/xapian-website-update"
 #cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
-cvsdir="/usr/data/cvs"
+cvsdir=":pserver:cvsuser:anonymous@atreus.tartarus.org:/usr/data/cvs"
+#cvsdir="/usr/data/cvs"
 cvsmodule="www.xapian.org"
 htmldir="/usr/data/www/xapian.org"
 
