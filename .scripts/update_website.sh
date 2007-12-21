@@ -99,7 +99,7 @@ if test "$tarball" -nt stamp-unpacked-omega-tarball ; then
   touch stamp-unpacked-omega-tarball
 fi
 mkdir "$tmpdir/$cvsmodule/docs/omega"
-cp -a "$tardir"/docs/*.txt "$tmpdir/$cvsmodule/docs/omega"
+cp -a "$tardir"/docs/*.html "$tmpdir/$cvsmodule/docs/omega"
 
 tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-bindings-$version.tar.gz"
 if ! test -r $tarball ; then
