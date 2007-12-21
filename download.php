@@ -13,6 +13,7 @@
 
 <h1>Downloads</h1>
 
+<? if (0) { ?>
 <p>The <? echo $branch ?> branch features substantial improvements.
 The <code>Xapian::Stem</code>, <code>Xapian::QueryParser</code>,
 and <code>Xapian::TermGenerator</code> classes now all handle
@@ -22,6 +23,7 @@ class provides indexing functionality.  If you wish, you can
 read a <a href="http://wiki.xapian.org/ReleaseOverview/">more
 complete overview of the changes</a> in the 1.0 release.
 </p>
+<? } ?>
 
 <p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>:</p>
 
