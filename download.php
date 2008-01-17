@@ -304,9 +304,11 @@ be better tailored:
 <h1>Cygwin</h1>
 
 <p>
-Reini Urban has put together
-<a href="http://rurban.xarch.at/software/cygwin/contrib/xapian/">Cygwin packages</a>
-for xapian-core and omega.  He's working on packaging the bindings too.
+Packages for xapian-core, xapian-bindings, and Search::Xapian are available
+from <a href="http://cygwinports.dotsrc.org/">Cygwin Ports</a>.
+Packages for Omega aren't there yet, but you can get
+those from 
+<a href="http://rurban.xarch.at/software/cygwin/contrib/xapian/">Reini Urban's site</a>.
 </p>
 
 <h1>Compiling on MS Windows with MSVC</h1>
