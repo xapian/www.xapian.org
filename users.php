@@ -37,13 +37,6 @@ extra data: number of documents, size of index, number
 of machines the system runs on, number of users and thus queries per day
 etc...generally anything that says something about performance.
 */
-
-// http://www.osservatoriobalcani.org/
-// search at http://www.opencontent.it/cgi-bin/omega/omega?DB=ob&FMT=ob
-
-// http://clickchronicle.com/
-
-// iusethis
 ?>
 
 <img align=right src="xapian-powered.png"><br><hr>
@@ -51,11 +44,16 @@ etc...generally anything that says something about performance.
 <h2 id="searchweb">Search Websites</h2>
 
 <ul>
+
+<?php // Hasn't responded to tests for a while 2008-02-03
+/*
 <li id="beeblex"><div class="orgname"><a href="http://www.beeblex.com/">BeebleX</a></div>
 Application: Searching all things PHP related<br>
 Document types: Mailing lists, News, Articles, Forums, Documentation, Blogs, Job listings<br>
 Database size: over 1.1 million documents<br>
 </li>
+*/
+?>
 
 <li id="citebase"><div class="orgname"><a href="http://citebase.eprints.org/help/">Citebase</a></div>
 Application: <a href="http://citebase.eprints.org/">Searching academic papers</a><br>
@@ -103,6 +101,12 @@ Document types: news stories<br>
 Note: The archive search was available to the public, but Ananova have now
 removed it from their public site.
 </li>
+
+<li id="balcani"><div class="orgname"><a href="http://www.osservatoriobalcani.org/">Osservatorio Balcani</a> (<a href="http://www.osservatoriobalcani.org/article/frontpage/161">The Observatory on the Balkans</a>)</div>
+Application: Searching articles about the Balkans<br>
+Languages: Italian, English, and others<br>
+</li>
+
 </ul>
 
 <hr>
@@ -128,7 +132,7 @@ Database size: around 500,000 documents; 0.5G of source data.
 Application: Searching discussion forums - sites include
 <a href="http://www.amsterdam.nl/">the city of Amsterdam</a>,
 the dutch broadcasting organization <a href="http://www.vpro.nl/">VPRO</a>,
-<a href="http://www.webpiraat.nl/index.wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a dutch interchurch organization)<br>
+<a href="http://www.webpiraat.nl/wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a dutch interchurch organization)<br>
 Languages: Dutch<br>
 Document types: forum topics<br>
 Database size: around 900,000 topics
@@ -178,7 +182,13 @@ Database size: around 25,000 pages
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 50 million messages and counting!
+Database size: 52 million messages and counting!
+</li>
+
+<li id="lists.debian.org"><div class="orgname"><a href="http://lists.debian.org/search.html">Debian Mailing List Search</a></div>
+Application: Searching mailing list archives<br>
+Languages: Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Portuguese, Romanian, Russian, Spanish, Swedish, and Turkish<br>
+Database size: 3.5 million messages
 </li>
 
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
@@ -207,11 +217,19 @@ Database size: 9000 products<br>
 </li>
 
 <li id="grokbase"><div class="orgname"><a href="http://grokbase.com/">grokbase</a></div>
-Application: <a href="http://grokbase.com/">Searching mailing list archives</a><br>
+Application: Searching mailing list archive
 </li>
 
 <li id="pdo"><div class="orgname"><a href="http://www.debian.org/">Debian GNU/Linux</a></div>
 Application: <a href="http://packages.debian.org/">Searching Debian's archive of software packages</a><br>
+</li>
+
+<li id="clickchronicle"><div class="orgname"><a href="http://clickchronicle.com/">ClickChronicle</a></div>
+Application: Searching web-browsing history
+</li>
+
+<li id="iusethis"><div class="orgname"><a href="http://osx.iusethis.com/">i use this</a></div>
+Application: Providing a way to organise your Mac OS X applications and discover new ones
 </li>
 
 </ul>
@@ -221,16 +239,22 @@ Application: <a href="http://packages.debian.org/">Searching Debian's archive of
 <h2 id="desktop">Desktop Search Applications</h2>
 
 <ul>
-<li id="recoll"><div class="orgname"><a href="http://www.lesbonscomptes.com/recoll/">Recoll</a></div>
+<li id="recoll"><div class="orgname"><a href="http://www.recoll.org/">Recoll</a></div>
 Application: Recoll is a personal full text indexing system<br>
 </li>
 
 <li id="pinot"><div class="orgname"><a href="http://pinot.berlios.de/">Pinot</a></div>
 Application: Pinot is a metasearch tool for the Free Desktop<br>
 </li>
+
+<li id="olpc"><div class="orgname"><a href="http://laptop.org/">one laptop per child</a></div>
+Application: The One Laptop Per Child (OLPC) project is building a low-cost laptop for
+use by children in developing countries.  The datastore search is implemented using
+Xapian.<br>
+</li>
+
 </ul>
 
-<!-- olpc! -->
 
 <hr>
 
@@ -251,6 +275,11 @@ Application: Wiki Engine with built in Xapian-powered search
 Application: Open source web application providing email management for customer service, help desk, etc.
 </ul>
 
+<ul>
+<li id="moinmoin"><div class="orgname"><a href="http://moinmo.in/">MoinMoin</a></div>
+Application: Wiki software with <a href="http://moinmo.in/HelpOnXapian">Xapian search</a> (as of <a href="http://moinmo.in/MoinMoinRelease1.6">version 1.6</a>)
+</ul>
+
 <hr>
 
 <h2 id="frameworks">Software Frameworks</h2>
@@ -258,7 +287,7 @@ Application: Open source web application providing email management for customer
 <ul>
 <li id="catalyst"><div class="orgname"><a href="http://catalyst.perl.org/">Catalyst</a></div>
 Catalyst is a Web Development Framework which includes
-<a href="http://search.cpan.org/~mramberg/Catalyst-Model-Xapian-0.02/lib/Catalyst/Model/Xapian.pm">support for using Xapian as a search engine</a>.
+<a href="http://search.cpan.org/~mramberg/Catalyst-Model-Xapian-0.03/lib/Catalyst/Model/Xapian.pm">support for using Xapian as a search engine</a>.
 </li>
 
 <li id="synd"><div class="orgname"><a href="http://www.synd.info/">Synd</a></div>
@@ -273,11 +302,15 @@ Djapian provides integration between Xapian and
 framework that encourages rapid development and clean, pragmatic design).
 </li>
 
+<li id="flax"><div class="orgname"><a href="http://www.flax.co.uk">Flax</a></div>
+Flax is an enterprise search platform based on Xapian, with a web-based
+administration system, scheduled indexing, and more.  It's written in Python.
+</li>
+
 <li id="venda"><div class="orgname"><a href="http://www.venda.com/" rel="nofollow">Venda Ltd</a></div>
 Application: Searching products on numerous ecommerce sites including
 <a href="http://www.bbcshop.com/">The BBC Shop</a>,
 <a href="http://www.shop.bt.com/">British Telecom's Shop</a>,
-<a href="http://www.virginmegastores.co.uk/">Virgin Megastores</a>,
 and
 <a href="http://www.mothercare.com/">Mothercare</a>.
 <br>
