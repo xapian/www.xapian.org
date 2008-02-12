@@ -232,6 +232,10 @@ Application: Searching web-browsing history
 Application: Providing a way to organise your Mac OS X applications and discover new ones
 </li>
 
+<li id="mydeco"><div class="orgname"><a href="http://mydeco.com/">mydeco</a></div>
+Application: Home decoration website
+</li>
+
 </ul>
 
 <hr>
@@ -263,21 +267,24 @@ Xapian.<br>
 <ul>
 <li id="roundup"><div class="orgname"><a href="http://roundup.sourceforge.net/">Roundup</a></div>
 Application: Roundup is an Issue Tracker which can use Xapian for searching
-</ul>
+</li>
 
-<ul>
 <li id="sycamore"><div class="orgname"><a href="http://www.projectsycamore.org/">Sycamore Wiki Engine</a></div>
 Application: Wiki Engine with built in Xapian-powered search
-</ul>
+</li>
 
-<ul>
 <li id="mailmanager"><div class="orgname"><a href="http://sourceforge.net/projects/mailmanager">MailManager</a></div>
 Application: Open source web application providing email management for customer service, help desk, etc.
-</ul>
+</li>
 
-<ul>
 <li id="moinmoin"><div class="orgname"><a href="http://moinmo.in/">MoinMoin</a></div>
 Application: Wiki software with <a href="http://moinmo.in/HelpOnXapian">Xapian search</a> (as of <a href="http://moinmo.in/MoinMoinRelease1.6">version 1.6</a>)
+</li>
+
+<li id="lxr"><div class="orgname"><a href="http://lxr.linux.no/">LXR</a></div>
+Application: Experimental version of LXR, the Linux Cross Referencer
+</li>
+
 </ul>
 
 <hr>
