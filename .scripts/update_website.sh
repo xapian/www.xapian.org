@@ -19,6 +19,7 @@ projectdir="/home/olly/tmp/xapian-website-update"
 cvsdir="/usr/data/cvs"
 cvsmodule="www.xapian.org"
 htmldir="/srv/www/xapian.org"
+tarballdir="/srv/www/oligarchy.co.uk/xapian/$version"
 
 tmpdir="${projectdir}/mkwebsite_$$"
 excludedir="${tmpdir}/${cvsmodule}/.scripts"
@@ -52,7 +53,7 @@ version=`sed 's/.*version *= *"\([0-9.]*\)".*/\1/p;d' ${tmpdir}/${cvsmodule}/ver
 
 echo "Latest Xapian release is $version"
 
-tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-core-$version.tar.gz"
+tarball="$tarballdir/xapian-core-$version.tar.gz"
 if ! test -r $tarball ; then
   echo "$0: Latest release tarball doesn't exist: '$tarball'"
   exit 1
@@ -83,7 +84,7 @@ fi
 mkdir "$tmpdir/$cvsmodule/docs/sourcedoc" 2> /dev/null || :
 cp -a "$tardir"/docs/sourcedoc/html "$tmpdir/$cvsmodule/docs/sourcedoc"
 
-tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-omega-$version.tar.gz"
+tarball="$tarballdir/xapian-omega-$version.tar.gz"
 if ! test -r $tarball ; then
   echo "$0: Latest release tarball doesn't exist: '$tarball'"
   exit 1
@@ -100,7 +101,7 @@ fi
 mkdir "$tmpdir/$cvsmodule/docs/omega"
 cp -a "$tardir"/docs/*.html "$tmpdir/$cvsmodule/docs/omega"
 
-tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/xapian-bindings-$version.tar.gz"
+tarball="$tarballdir/xapian-bindings-$version.tar.gz"
 if ! test -r $tarball ; then
   echo "$0: Latest release tarball doesn't exist: '$tarball'"
   exit 1
@@ -121,7 +122,7 @@ for l in python php ruby tcl8 csharp ; do
 done
 
 # FIXME: doesn't handle Search-Xapian-0.9.9.1.tar.gz
-tarball="/usr/data/www/oligarchy.co.uk/xapian/$version/Search-Xapian-$version.0.tar.gz"
+tarball="$tarballdir/Search-Xapian-$version.0.tar.gz"
 if ! test -r $tarball ; then
   echo "$0: Latest release tarball doesn't exist: '$tarball'"
   exit 1
