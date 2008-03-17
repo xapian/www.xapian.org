@@ -93,7 +93,7 @@ as we use userv to provide additional security.
 </p>
 
 <p>
-For access on ixion itself, simply create a <tt>[tunnels]</tt> section in your
+For access on atreus itself, simply create a <tt>[tunnels]</tt> section in your
 <tt>~/.subversion/config</tt> file, and add to it the line:
 </p>
 
@@ -132,11 +132,14 @@ svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 
 <p>Prior to April 2005 we used CVS as our version control system.  The SVN tree
 contains the full history, except some useless really old tags weren't
-converted.  The (now frozen) Xapian CVS tree can still be browsed online
+converted.  The (now frozen) Xapian CVS tree
+is preserved, but not currently accessible online.
+<!--can still be browsed online
 at http://cvs.xapian.org/xapian/ should you really want to (we've not
 made this a link, to try to avoid people browsing it without really reading
 this paragraph and getting confused - such people almost certainly want to
 <a href="http://svn.xapian.org/">browse our SVN repository online</a> instead!)
+-->
 </p>
 
 </div>
