@@ -1,6 +1,6 @@
 #!/bin/bash
 
-• This script rebuilds the website by checking it out from CVS.
+# This script rebuilds the website by checking it out from CVS.
 #
 # We want to be able to run this script from cron (though we don't currently)
 # so it should not unconditionally involve any operations (such as building the
