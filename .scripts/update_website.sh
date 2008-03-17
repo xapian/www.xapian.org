@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script rebuilds the website by checking it out from CVS.
+• This script rebuilds the website by checking it out from CVS.
 #
 # We want to be able to run this script from cron (though we don't currently)
 # so it should not unconditionally involve any operations (such as building the
@@ -19,7 +19,7 @@ projectdir="/home/olly/tmp/xapian-website-update"
 cvsdir="/usr/data/cvs"
 cvsmodule="www.xapian.org"
 htmldir="/srv/www/xapian.org"
-tarballdir="/srv/www/oligarchy.co.uk/xapian/$version"
+tarballdir="/srv/www/oligarchy.co.uk/xapian"
 
 tmpdir="${projectdir}/mkwebsite_$$"
 excludedir="${tmpdir}/${cvsmodule}/.scripts"
@@ -52,6 +52,7 @@ fi
 version=`sed 's/.*version *= *"\([0-9.]*\)".*/\1/p;d' ${tmpdir}/${cvsmodule}/version.php`
 
 echo "Latest Xapian release is $version"
+tarballdir="$tarballdir/$version"
 
 tarball="$tarballdir/xapian-core-$version.tar.gz"
 if ! test -r $tarball ; then
