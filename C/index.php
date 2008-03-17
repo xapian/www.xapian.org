@@ -15,15 +15,15 @@ if (ereg("^[0-9]+$", $file)) {
 	$redirect .= '?rev=' . $rev;
     }
 } else {
-    $redirect = 'http://cvs.xapian.org/' . $file;
+    $redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
     if ($rev == '') {
      // deleted file
     } else if ($rev2 == '') {
      // added file
-     $redirect .= '?rev=' . $rev . '&content-type=text/vnd.viewcvs-markup';
+     $redirect .= '&rev=' . $rev . '&content-type=text/vnd.viewcvs-markup';
     } else {
      // updated file
-     $redirect .= '.diff?r1=' . $rev . '&r2=' . $rev2;
+     $redirect .= '&r1=' . $rev . '&r2=' . $rev2;
     }
 }
 header('Location: ' . $redirect);
