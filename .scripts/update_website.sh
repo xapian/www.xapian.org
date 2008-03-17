@@ -14,12 +14,11 @@
 
 set -e
 
-projectdir="/u1/olly/xapian-website-update"
-#cvsdir=":pserver:cvsuser:anonymous@cvs.xapian.org:/usr/data/cvs"
-cvsdir=":pserver:cvsuser:anonymous@atreus.tartarus.org:/usr/data/cvs"
-#cvsdir="/usr/data/cvs"
+projectdir="/home/olly/tmp/xapian-website-update"
+#cvsdir=":pserver:cvsuser:anonymous@atreus.tartarus.org:/usr/data/cvs"
+cvsdir="/usr/data/cvs"
 cvsmodule="www.xapian.org"
-htmldir="/usr/data/www/xapian.org"
+htmldir="/srv/www/xapian.org"
 
 tmpdir="${projectdir}/mkwebsite_$$"
 excludedir="${tmpdir}/${cvsmodule}/.scripts"
@@ -162,13 +161,13 @@ rm -rf "${tmpdir}"
 
 # rebuild omega's database
 # FIXME: sort out permissions so this'll work for other people too
-rm -rf /u1/olly/omega/data/default.tmp /u1/olly/omega/data/default.old
+rm -rf /home/olly/omega/data/default.tmp /home/olly/omega/data/default.old
 
-/u1/olly/install/bin/omindex --db /u1/olly/omega/data/default.tmp --url / /usr/data/www/xapian.org
+/home/olly/install/bin/omindex --db /home/olly/omega/data/default.tmp --url / /usr/data/www/xapian.org
 
-mv /u1/olly/omega/data/default /u1/olly/omega/data/default.old
-mv /u1/olly/omega/data/default.tmp /u1/olly/omega/data/default
-# keep it just in case! rm -rf /u1/olly/omega/data/default.old
+mv /home/olly/omega/data/default /home/olly/omega/data/default.old
+mv /home/olly/omega/data/default.tmp /home/olly/omega/data/default
+# keep it just in case! rm -rf /home/olly/omega/data/default.old
 
 # return successfully.
 exit 0
