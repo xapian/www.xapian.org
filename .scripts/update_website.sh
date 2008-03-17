@@ -126,8 +126,8 @@ done
 tarball="$tarballdir/Search-Xapian-$version.0.tar.gz"
 if ! test -r $tarball ; then
   echo "$0: Latest release tarball doesn't exist: '$tarball'"
-  exit 1
-fi
+  #exit 1
+else
 
 tardir=`echo "$tarball"|sed 's!.*/!!;s/\.tar\.gz//'`
 if test "$tarball" -nt stamp-unpacked-perl-tarball ; then
@@ -142,6 +142,8 @@ if test "$tarball" -nt stamp-unpacked-perl-tarball ; then
 fi
 mkdir "$tmpdir/$cvsmodule/docs/bindings/perl"
 cp -a "$tardir"/html/* "$tardir"/README "$tmpdir/$cvsmodule/docs/bindings/perl"
+
+fi
 
 cd "$tmpdir"
 
