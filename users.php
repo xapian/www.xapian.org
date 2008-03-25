@@ -182,7 +182,7 @@ Database size: around 25,000 pages
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 52 million messages and counting!
+Database size: 54 million messages and counting!
 </li>
 
 <li id="lists.debian.org"><div class="orgname"><a href="http://lists.debian.org/search.html">Debian Mailing List Search</a></div>
