@@ -1,9 +1,9 @@
 <div id="Menu">
 <?php
 if (preg_match("!([^/]*)\.php!", $_SERVER['PHP_SELF'], $m)) {
-  $this = $m[1];
+  $current = $m[1];
 } else {
-  $this = '?';
+  $current = '?';
 }
 $pages = array(
  "index" => "home",
@@ -20,8 +20,8 @@ $pages = array(
  "search" => "search this website"
 );
 function navlink(&$n, $f) {
-  global $this, $pages;
-  if ($f == $this) {
+  global $current, $pages;
+  if ($f == $current) {
     $n = "<span id=\"current\">".$n."</span>";
   } else {
     if ($f == "index")
@@ -33,7 +33,7 @@ function navlink(&$n, $f) {
 }
 array_walk($pages, "navlink");
 print join("<br>\n", $pages);
-if ($this != "search") {
+if ($current != "search") {
 print "<br>\n<form method=\"GET\" action=\"search.php\"><div><input name=\"P\" size=\"14\"></div></form>\n";
 }
 
