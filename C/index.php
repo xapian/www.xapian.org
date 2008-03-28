@@ -1,5 +1,5 @@
 <?php
-list($file, $rev, $rev2) = explode('?', $QUERY_STRING);
+list($file, $rev, $rev2) = explode('?', $_SERVER['QUERY_STRING']);
 if (ereg("^[0-9]+$", $file)) {
     // This is a redirect to SVN - luckily CVS Xapian had no files with
     // entirely numeric names!
