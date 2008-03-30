@@ -34,9 +34,9 @@ complete overview of the changes</a> in the 1.0 release.
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</a>
 <li> <a HREF="http://www.oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</a>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</a>
-<li> <a HREF="http://www.oligarchy.co.uk/xapian/1.0.5/Search-Xapian-1.0.5.0.tar.gz">Search::Xapian</a>: Perl bindings
-(<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.5.0/">on CPAN</a>)
-<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.5.0/Changes">[news]</a>
+<li> <a HREF="http://www.oligarchy.co.uk/xapian/1.0.6/Search-Xapian-1.0.6.0.tar.gz">Search::Xapian</a>: Perl bindings
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.6.0/">on CPAN</a>)
+<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.6.0/Changes">[news]</a>
 </ul>
 
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
