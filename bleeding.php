@@ -73,7 +73,7 @@ development sources like so:
 We plan to set up an automatic snapshot system which will try to compile and
 run the library testsuite every night, and upload a snapshot if all tests pass.
 This is not currently operational, but you can
-<A HREF="http://www.oligarchy.co.uk/xapian/trunk/">download completely untested
+<A HREF="http://oligarchy.co.uk/xapian/trunk/">download completely untested
 snapshots</A>,
 which are generated once an hour (so long as the code in SVN isn't too
 broken for even <tt>make dist</tt> to work).</p>
@@ -81,7 +81,7 @@ broken for even <tt>make dist</tt> to work).</p>
 <p>
 The snapshots are built automatically on various different platforms - you
 can view the results of these builds in our <a
-href="http://www.oligarchy.co.uk/tinderbox/xapian/status.html">tinderbox</a>
+href="http://oligarchy.co.uk/tinderbox/xapian/status.html">tinderbox</a>
 and also MinGW and MSVC build in
 <a href="http://buildbot.enfoldsystems.com/xapian/">buildbot</a>.
 </p>
