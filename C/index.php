@@ -6,15 +6,16 @@ if (ereg("^[0-9]+$", $file)) {
     $tmp = $file;
     $file = $rev;
     $rev = $tmp;
-    $redirect = 'http://svn.xapian.org/';
+    $redirect = 'http://trac.xapian.org/';
     if ($rev2 != '' && $file != '') {
-	$redirect .= $file . '?rev=' . $rev . '&view=markup';
+	$redirect .= $file . '?rev=' . $rev;
     } else if ($file != '') {
-	$redirect .= $file . '?r1=' . ($rev-1) . '&r2=' . $rev;
+	$redirect .= 'changeset/' . $rev . '/' . $file . '#file0';
     } else {
-	$redirect .= '?rev=' . $rev;
+	$redirect .= 'changeset/' . $rev;
     }
 } else {
+    // CVS
     $redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
     if ($rev == '') {
      // deleted file
