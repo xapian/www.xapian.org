@@ -35,7 +35,8 @@ history (CVS doesn't support copy or rename directly.)</p>
 
 <p>Note: If you just want to look at the history of a few files, you may find
 it easier and quicker to 
-<a href="http://svn.xapian.org/">browse our SVN repository online</a>.</p>
+<a href="http://trac.xapian.org/browser">browse our SVN repository online (using trac)</a>
+(or <a href="http://svn.xapian.org/">using viewvc</a>).</p>
 
 <p>
 To get the very latest version of Xapian from our repository, follow these
