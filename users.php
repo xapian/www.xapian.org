@@ -36,6 +36,9 @@ you know of any more!</p>
 extra data: number of documents, size of index, number
 of machines the system runs on, number of users and thus queries per day
 etc...generally anything that says something about performance.
+
+http://www.bivio.biz/f/bOP/README
+
 */
 ?>
 
@@ -59,12 +62,6 @@ Database size: over 1.1 million documents<br>
 Application: <a href="http://citebase.eprints.org/">Searching academic papers</a><br>
 Languages: Mostly English<br>
 Database size: around 300,000 papers<br>
-</li>
-
-<li id="srpko"><div class="orgname"><a href="http://www.srpko.com/">Srpko</a></div>
-Application: Searching documents related to Serbia and Montenegro<br>
-Document types: Web pages, News articles, Wikipedia pages, Dictionary entries<br>
-Database size: over 8.4 million pages<br>
 </li>
 
 <li id="kug"><div class="orgname"><a href="http://kug.ub.uni-koeln.de/">Library of the University of Cologne</a></div>
@@ -114,12 +111,19 @@ Languages: Italian, English, and others<br>
 <h2 id="commweb">Community Websites</h2>
 
 <ul>
+<li id="delicious"><div class="orgname"><a href="http://del.icio.us/">del.icio.us</a> - social bookmarking site</div>
+Application: <a href="http://del.icio.us/search/?fr=del_icio_us&p=&type=all">searching bookmarks</a><br>
+Database size: More than 100 million bookmarked URLs
+<!-- Size taken from wikipedia - searching for OR combinations of common words
+reports 25315700 matches, so >100M total size is very plausible. -->
+</li>
+
 <li id="tweakers"><div class="orgname"><a href="http://tweakers.net/">Tweakers.net</a> - the largest Dutch ICT-website</div>
 Application:
 <a href="http://gathering.tweakers.net/forum/find">Forum search engine</a><br>
 Languages: Dutch<br>
 Document types: Complete forum discussions<br>
-Database size: Over 850000 documents, about 15GB of uncompressed, 10GB compressed database size.
+Database size: Over 850,000 documents, about 15GB of uncompressed, 10GB compressed database size.
 </li>
 
 <li id="theyworkforyou"><div class="orgname"><a href="http://www.theyworkforyou.com/" >TheyWorkForYou.com</a></div>
@@ -157,7 +161,7 @@ Database size: around 3,000 pages<br>
 </li>
 
 <li id="gaze"><div class="orgname"><a href="http://www.mysociety.org/">mysociety.org</a></div>
-Application: <a href="http://www.mysociety.org/?p=83">web api to gazeteer service</a>, built using Search::Xapian
+Application: <a href="http://www.mysociety.org/?p=83">web api to gazetteer service</a>, built using Search::Xapian
 </li>
 
 <li id="spin"><div class="orgname"><a href="http://spin.de/">spin.de</a></div>
@@ -172,9 +176,12 @@ Application: Searching across hundreds of wikis<br>
 Document types: Wiki pages<br>
 Database size: around 25,000 pages
 </li>
-</ul>
 
+<li id="whatdotheyknow"><div class="orgname"><a href="http://www.whatdotheyknow.com/">WhatDoTheyKnow.com</a></div>
+Application: Searching UK Freedom of Information Act requests and responses
 <hr>
+</li>
+</ul>
 
 <h2 id="otherweb">Other Websites</h2>
 
@@ -182,7 +189,7 @@ Database size: around 25,000 pages
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 54 million messages and counting!
+Database size: 58 million messages and counting!
 </li>
 
 <li id="lists.debian.org"><div class="orgname"><a href="http://lists.debian.org/search.html">Debian Mailing List Search</a></div>
@@ -283,6 +290,10 @@ Application: Wiki software with <a href="http://moinmo.in/HelpOnXapian">Xapian s
 
 <li id="lxr"><div class="orgname"><a href="http://lxr.linux.no/">LXR</a></div>
 Application: Experimental version of LXR, the Linux Cross Referencer
+</li>
+
+<li id="ikiwiki"><div class="orgname"><a href="http://ikiwiki.info/">ikiwiki</a></div>
+Application: Wiki software with Xapian search (as of <a href="http://ikiwiki.info/news/version_2.49/">version 2.49</a>)
 </li>
 
 </ul>
