@@ -68,26 +68,7 @@ development sources like so:
   <tt>XAPIAN_CONFIG=/path/to/xapian/xapian-core/xapian-config perl Makefile.PL</tt>
 </ol>
 
-<h2>Snapshots</h2>
-
-<p>
-We plan to set up an automatic snapshot system which will try to compile and
-run the library testsuite every night, and upload a snapshot if all tests pass.
-This is not currently operational, but you can
-<A HREF="http://oligarchy.co.uk/xapian/trunk/">download completely untested
-snapshots</A>,
-which are generated once an hour (so long as the code in SVN isn't too
-broken for even <tt>make dist</tt> to work).</p>
-
-<p>
-The snapshots are built automatically on various different platforms - you
-can view the results of these builds in our <a
-href="http://oligarchy.co.uk/tinderbox/xapian/status.html">tinderbox</a>
-and also MinGW and MSVC build in
-<a href="http://buildbot.enfoldsystems.com/xapian/">buildbot</a>.
-</p>
-
-<?php if ($QUERY_STRING != "") { ?>
+<?php if ($_SERVER['QUERY_STRING'] != "") { ?>
 <p>
 If you have write access, you need to do a small amount of configuration
 as we use userv to provide additional security.
@@ -128,6 +109,25 @@ Then you can check out a tree with commit access like so:
 svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 </tt></blockquote>
 <?php } ?>
+
+<h2>Snapshots</h2>
+
+<p>
+We plan to set up an automatic snapshot system which will try to compile and
+run the library testsuite every night, and upload a snapshot if all tests pass.
+This is not currently operational, but you can
+<A HREF="http://oligarchy.co.uk/xapian/trunk/">download completely untested
+snapshots</A>,
+which are generated once an hour (so long as the code in SVN isn't too
+broken for even <tt>make dist</tt> to work).</p>
+
+<p>
+The snapshots are built automatically on various different platforms - you
+can view the results of these builds in our <a
+href="http://oligarchy.co.uk/tinderbox/xapian/status.html">tinderbox</a>
+and also MinGW and MSVC build in
+<a href="http://buildbot.enfoldsystems.com/xapian/">buildbot</a>.
+</p>
 
 <h2>CVS</h2>
 
