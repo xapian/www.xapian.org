@@ -325,6 +325,10 @@ Flax is an enterprise search platform based on Xapian, with a web-based
 administration system, scheduled indexing, and more.  It's written in Python.
 </li>
 
+<li id="acts_as_xapian"><div class="orgname"><a href="http://github.com/frabcus/acts_as_xapian/wikis">acts_as_xapian</a></div>
+acts_as_xapian provides Xapian support for the <a href="http://www.rubyonrails.org/">Ruby on Rails</a> web framework.
+</li>
+
 <li id="venda"><div class="orgname"><a href="http://www.venda.com/" rel="nofollow">Venda Ltd</a></div>
 Application: Searching products on numerous ecommerce sites including
 <a href="http://www.bbcshop.com/">The BBC Shop</a>,
