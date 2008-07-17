@@ -34,9 +34,9 @@ complete overview of the changes</a> in the 1.0 release.
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</a>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</a>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</a>
-<li> <a HREF="http://oligarchy.co.uk/xapian/1.0.6/Search-Xapian-1.0.6.0.tar.gz">Search::Xapian</a>: Perl bindings
-(<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.6.0/">on CPAN</a>)
-<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.6.0/Changes">[news]</a>
+<li> <a HREF="http://oligarchy.co.uk/xapian/1.0.7/Search-Xapian-1.0.7.0.tar.gz">Search::Xapian</a>: Perl bindings
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.7.0/">on CPAN</a>)
+<a HREF="http://search.cpan.org/~olly/Search-Xapian-1.0.7.0/Changes">[news]</a> <small>(CPAN mirrors may not have updated yet)</small>
 </ul>
 
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
@@ -139,8 +139,8 @@ deb-src http://www.xapian.org/debian edgy main
 </code></blockquote>
 
 <p>
-Ubuntu feisty has packages based on 0.9.9 with some backported fixes from
-0.9.10.  To get newer packages, add the following to your sources.list:
+Ubuntu feisty has packages based on 0.9.9 with some backported fixes from 0.9.10.
+To get newer packages, add the following to your sources.list:
 </p>
 
 <blockquote><code>
@@ -149,15 +149,26 @@ deb-src http://www.xapian.org/debian feisty main
 </code></blockquote>
 
 <p>
-The development version of Ubuntu (gutsy) has all the xapian packages which
-should get regularly updated from those in Debian unstable, but if you're
-impatient, add the following to your sources.list:
+Ubuntu gutsy has 1.0.2 packages.
+To get newer packages, add the following to your sources.list:
 </p>
 
 <blockquote><code>
 deb http://www.xapian.org/debian gutsy main<br>
 deb-src http://www.xapian.org/debian gutsy main
 </code></blockquote>
+
+<!--
+based on 0.9.9 with some backported fixes from
+The development version of Ubuntu (gutsy) has all the xapian packages which
+should get regularly updated from those in Debian unstable, but if you're
+impatient, add the following to your sources.list:
+-->
+
+<p>
+Ubuntu hardy has 1.0.5 packages.  We'll offer newer packages from our repo
+when we package 1.0.7.
+</p>
 
 <p>
 Currently the Python, PHP, Ruby, Tcl, and Perl bindings are packaged for
