@@ -85,7 +85,7 @@ Languages: German<br>
 
 <li id="abcsok"><div class="orgname">ABC Startsiden</div>
 Application: Search through 3 years worth of Norwegian news<br>
-Location: <a href="http://nyheter.abcsok.no/">ABCSok</a><br>
+Location: <a href="http://nyheter.abcsok.no/">ABCSok</a> and <a href="http://overblikk.no/">Overblikk</a><br>
 Languages: Norwegian<br>
 Document types: News stories
 </li>
@@ -179,9 +179,14 @@ Database size: around 25,000 pages
 
 <li id="whatdotheyknow"><div class="orgname"><a href="http://www.whatdotheyknow.com/">WhatDoTheyKnow.com</a></div>
 Application: Searching UK Freedom of Information Act requests and responses
-<hr>
+</li>
+
+<li id="ubuntuusersde"><div class="orgname"><a href="http://ubuntuusers.de/">UbuntuUsers.de</a></div>
+Application: Official German Portal for Ubuntu Linux
 </li>
 </ul>
+
+<hr>
 
 <h2 id="otherweb">Other Websites</h2>
 
@@ -265,7 +270,6 @@ Xapian.<br>
 </li>
 
 </ul>
-
 
 <hr>
 
