@@ -70,6 +70,7 @@ the repository is now signed by a <a href="/debian/archive_key.asc">key</a>
 which has this fingerprint:
 <p>
 
+<!-- 2F40 2DEE 23BE C7AD C665  CA99 C953 695C 3E84 0A52 -->
 <p>7E71 70B7 6A23 65C5 DB40  1AE8 52A4 ECB5 287B 9696</p>
 
 <p>
@@ -87,7 +88,7 @@ You can do that like so on Debian:
 <p>And on Ubuntu:</p>
 
 <blockquote><code><pre>
-<span id="prompt">$</span> sudo wget -O- http://www.xapian.org/debian/archive_key.asc|apt-key add -
+<span id="prompt">$</span> wget -O- http://www.xapian.org/debian/archive_key.asc|sudo apt-key add -
 <i>enter your root password</i>
 </pre></code></blockquote>
 
