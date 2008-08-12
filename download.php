@@ -49,7 +49,7 @@ relating to the latest release.
 Packages of xapian-core, xapian-omega, and xapian-bindings are available from
 the Debian and Ubuntu archives (starting with Debian etch and Ubuntu feisty).
 For Debian stable, <a href="http://packages.debian.org/search?keywords=xapian&searchon=names&section=all&suite=etch-backports"
->backported versions of the latest packages</a> are also available for all
+>backported versions of more recent packages</a> are also available for all
 Debian's supported architectures, courtesy of
 <a href="http://backports.org/">backports.org</a>.
 </p>
@@ -63,15 +63,18 @@ the rest of this section.
 </p>
 
 <p>
-Currently we supply packages for Debian oldstable (sarge), stable (etch), and
-testing/unstable, and for Ubuntu dapper (6.06), edgy (6.10), feisty (7.04),
-and gutsy (7.10).  Starting from Xapian 1.0.1,
-the repository is now signed by a <a href="/debian/archive_key.asc">key</a>
-which has this fingerprint:
+Currently we supply packages for Debian stable (etch), and
+testing/unstable, and for Ubuntu dapper (6.06), feisty (7.04),
+gutsy (7.10), and hardy (8.04).  The repository is signed with a GPG key.
+The original key expired so 1.0.7 and later are signed by a
+<a href="/debian/archive_key.asc">new key</a> which has this fingerprint:
 <p>
 
-<!-- 2F40 2DEE 23BE C7AD C665  CA99 C953 695C 3E84 0A52 -->
-<p>7E71 70B7 6A23 65C5 DB40  1AE8 52A4 ECB5 287B 9696</p>
+<p><code>2F40 2DEE 23BE C7AD C665  CA99 C953 695C 3E84 0A52</code></p>
+
+<p>(Should you need to install a package signed by the
+<a href="/debian/archive_key_1.0.1-1.0.5.asc">old key</a>, its fingerprint
+was: <code>7E71 70B7 6A23 65C5 DB40  1AE8 52A4 ECB5 287B 9696</code>)</p>
 
 <p>
 You'll need to import the registry key so that apt can verify these signatures.
@@ -92,6 +95,7 @@ You can do that like so on Debian:
 <i>enter your root password</i>
 </pre></code></blockquote>
 
+<? /*
 <p>If you're running Debian oldstable add the following to your sources.list:
 </p>
 
@@ -99,9 +103,10 @@ You can do that like so on Debian:
 deb http://www.xapian.org/debian oldstable main<br>
 deb-src http://www.xapian.org/debian oldstable main
 </code></blockquote>
+*/ ?>
 
-<p>If you're running Debian stable add the following to your sources.list:
-</p>
+<p>If you're running Debian stable (etch) add the following to your
+sources.list:</p>
 
 <blockquote><code>
 deb http://www.xapian.org/debian stable main<br>
@@ -110,8 +115,8 @@ deb-src http://www.xapian.org/debian stable main
 
 <p>
 If you're running Debian testing (and the packages haven't propagated in
-Debian yet) or unstable (and the packages are stuck in the NEW queue),
-add the following to your sources.list:
+Debian yet) or unstable (and the packages haven't yet been uploaded to
+Debian), add the following to your sources.list:
 </p>
 
 <blockquote><code>
@@ -126,17 +131,6 @@ If you're running Ubuntu dapper, add the following:
 <blockquote><code>
 deb http://www.xapian.org/debian dapper main<br>
 deb-src http://www.xapian.org/debian dapper main
-</code></blockquote>
-
-<p>
-Ubuntu edgy has xapian-core packages (version 0.9.6-5), but not xapian-omega
-or xapian-bindings.  If you're running Ubuntu edgy and want either of the
-latter two, or just a newer xapian-core, add the following to your sources.list:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian edgy main<br>
-deb-src http://www.xapian.org/debian edgy main
 </code></blockquote>
 
 <p>
@@ -159,17 +153,22 @@ deb http://www.xapian.org/debian gutsy main<br>
 deb-src http://www.xapian.org/debian gutsy main
 </code></blockquote>
 
+<p>
+Ubuntu hardy has 1.0.5 packages, except for xapian-omega which is 1.0.4.
+To get newer packages, add the following to your sources.list:
+</p>
+
+<blockquote><code>
+deb http://www.xapian.org/debian hardy main<br>
+deb-src http://www.xapian.org/debian hardy main
+</code></blockquote>
+
 <!--
 based on 0.9.9 with some backported fixes from
 The development version of Ubuntu (gutsy) has all the xapian packages which
 should get regularly updated from those in Debian unstable, but if you're
 impatient, add the following to your sources.list:
 -->
-
-<p>
-Ubuntu hardy has 1.0.5 packages.  We'll offer newer packages from our repo
-when we package 1.0.7.
-</p>
 
 <p>
 Currently the Python, PHP, Ruby, Tcl, and Perl bindings are packaged for
@@ -311,7 +310,15 @@ be better tailored:
 
 <h1>FreeBSD Ports Collection</h1>
 
-<p>Xapian is in the <A HREF="http://www.freshports.org/databases/xapian-core/">FreeBSD Ports Collection</A>.</p>
+<p>The FreeBSD Ports Collection has
+<a href="http://www.freshports.org/search.php?query=xapian">packages</a> for 
+xapian-core, xapian-omega, xapian-bindings (Python and PHP), and Search::Xapian.</p>
+
+<h1>NetBSD pkgsrc</h1>
+
+<p>The NetBSD pkgsrc collection has 
+<a href="http://pkgsrc.se/search.php?so=xapian">packages</a>
+for xapian-core, xapian-omega, and Search::Xapian.</p>
 
 <h1>Cygwin</h1>
 
