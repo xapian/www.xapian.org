@@ -58,15 +58,9 @@ steps:
 </ol>
 
 <p>
-You can also get the latest Search::Xapian (Perl bindings for Xapian)
-development sources like so:
-
-<ol>
-<li> <tt>svn co svn://svn.xapian.org/search-xapian Search_Xapian</tt>
-<li> You can configure Search::Xapian to build against xapian installed in a non-standard place like so:
-<p>
-  <tt>XAPIAN_CONFIG=/path/to/xapian/xapian-core/xapian-config perl Makefile.PL</tt>
-</ol>
+The latest Search::Xapian (Perl bindings for Xapian) development sources are
+now in the tree checked out by the above command.
+</p>
 
 <?php if ($_SERVER['QUERY_STRING'] != "") { ?>
 <p>
