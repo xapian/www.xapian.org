@@ -304,8 +304,8 @@ be better tailored:
 </li>
 <li>FrugalWare Linux has packaged <a href="http://www.frugalware.org/packages/14387">xapian-core</a>.
 </li>
-<li>Zenwalk Linux has packaged <a href="http://users.zenwalk.org/user-accounts/oskar/pinot/">xapian-core</a>
-(<a href="http://users.zenwalk.org/user-accounts/oskar/source/">sources</a>).
+<li>Zenwalk Linux has packaged <a href="http://zur.zenwalk.org/view/package/name/xapian-core">xapian-core</a>.</li>
+<li>archlinux has packaged <a href="http://aur.archlinux.org/packages.php?ID=8701">xapian-core</a> and xapian-bindings (<a href="http://aur.archlinux.org/packages.php?ID=19033">Python</a> and <a href="http://aur.archlinux.org/packages.php?ID=14007">PHP</a>).</li>
 </ul>
 
 <h1>FreeBSD Ports Collection</h1>
