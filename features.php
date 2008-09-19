@@ -34,7 +34,7 @@ Microsoft Windows.
   bindings for many languages.  At present those for Python, PHP, TCL, C#,
   and Ruby are working.
 
-<li> Ranked probablistic search - important words get more weight than
+<li> Ranked probabilistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
 the top of the results list.
 
@@ -47,7 +47,7 @@ categorise documents, etc.
   either in a specified order, or in any order.
 
 <li> Full range of structured boolean search operators ("stock NOT market",
-  etc).  The results of the boolean search are ranked by the probablistic
+  etc).  The results of the boolean search are ranked by the probabilistic
   weights.  Boolean filters can also be applied to restrict a probabilistic
   search.
 
