@@ -320,6 +320,12 @@ xapian-core, xapian-omega, xapian-bindings (Python and PHP), and Search::Xapian.
 <a href="http://pkgsrc.se/search.php?so=xapian">packages</a>
 for xapian-core, xapian-omega, and Search::Xapian.</p>
 
+<h1>Mac OS X</h1>
+
+<p>The <a href="http://www.finkproject.org/">Fink project</a> has <a
+href="http://pdb.finkproject.org/pdb/browse.php?summary=xapian">packages</a>
+for xapian-core.</p>
+
 <h1>Cygwin</h1>
 
 <p>
