@@ -330,7 +330,7 @@ for xapian-core.</p>
 
 <p>
 Packages for xapian-core, xapian-bindings, and Search::Xapian are available
-from <a href="http://cygwinports.dotsrc.org/">Cygwin Ports</a>.
+from <a href="http://sourceware.org/cygwinports/">Cygwin Ports</a>.
 Packages for Omega aren't there yet, but you can get
 those from 
 <a href="http://rurban.xarch.at/software/cygwin/contrib/xapian/">Reini Urban's site</a>.
