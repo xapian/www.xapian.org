@@ -8,7 +8,7 @@ if (ereg("^[0-9]+$", $file)) {
     $rev = $tmp;
     $redirect = 'http://trac.xapian.org/';
     if ($rev2 != '' && $file != '') {
-	$redirect .= $file . '?rev=' . $rev;
+	$redirect .= 'browser/' . $file . '?rev=' . $rev;
     } else if ($file != '') {
 	$redirect .= 'changeset/' . $rev . '/' . $file . '#file0';
     } else {
