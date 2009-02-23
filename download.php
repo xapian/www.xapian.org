@@ -343,6 +343,9 @@ href="http://www.lemurconsulting.com/Products/Xapian/Overview.shtml">makefiles f
 compiling with MSVC</a>, originally put together by Ulrik Petersen, and further
 refined and currently maintained by Charlie Hull.</p>
 
+<p>
+Alexandre Gauthier offers a <a href="http://www.raptorized.com/xapian-python-win32/">pre-built version of xapian-core and the Python bindings</a> for download.
+</p>
 </div>
 
 <?php
