@@ -13,8 +13,11 @@
 
 <h1>Xapian Users</h1>
 
-<p>The following organisations are known to use Xapian. Please let us know if
-you know of any more!</p>
+<p>
+The following organisations are known to use Xapian.  If you are using
+Xapian or know someone who is, please add an entry to
+<a href="http://trac.xapian.org/wiki/MoreUsers">the wiki</a>.
+</p>
 
 <h2>Categories</h2>
 
@@ -57,7 +60,8 @@ Database size: around 300,000 papers <small>(2006-02-06)</small><br>
 
 <!-- URLs checked 2009-03-14 -->
 <li id="kug"><div class="orgname"><a href="http://kug.ub.uni-koeln.de/">Library of the University of Cologne</a></div>
-Application: Searching the library's OPAC (Online Public Access Catalogue) with <a href="http://www.openbib.org/">OpenBib</a><br>
+Xapian is used with <a href="http://www.openbib.org/">OpenBib</a> to search
+the library's OPAC (Online Public Access Catalogue)<br>
 Languages: German<br>
 Database size: over 7.3 million title entries split across 167 separate databases
 <small>(2008-03-14)</small><br>
@@ -104,7 +108,7 @@ Languages: Italian, English, and others<br>
 Application: <a href="http://del.icio.us/search/?fr=del_icio_us&p=&type=all">searching bookmarks</a><br>
 Database size: More than 100 million bookmarked URLs<br>
 Note: Since delicious has now been bought by Yahoo, it seems likely that
-Yahoo have migrated it to use their own search technology...
+Yahoo have migrated it to use their own search technology.
 <!-- Size taken from wikipedia - searching for OR combinations of common words
 reports 25315700 matches, so >100M total size is very plausible. -->
 </li>
