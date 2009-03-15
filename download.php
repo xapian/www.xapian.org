@@ -324,7 +324,7 @@ for xapian-core, xapian-omega, and Search::Xapian.</p>
 
 <p>The <a href="http://www.finkproject.org/">Fink project</a> has <a
 href="http://pdb.finkproject.org/pdb/browse.php?summary=xapian">packages</a>
-for xapian-core.</p>
+for xapian-core and omega.</p>
 
 <h1>Cygwin</h1>
 
