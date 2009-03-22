@@ -184,10 +184,23 @@ Database size: 65 million messages <small>(2009-03-14)</small>
 </li>
 
 <!-- URLs checked 2009-03-14 -->
-<li id="lists.debian.org"><div class="orgname"><a href="http://lists.debian.org/search.html">Debian Mailing List Search</a></div>
-Application: Searching mailing list archives<br>
+<li id="debian"><div class="orgname"><a href="http://www.debian.org/">Debian GNU/Linux</a></div>
+Debian use Xapian for:
+<ul>
+<li> <a href="http://lists.debian.org/search.html">Debian Mailing List Archive Search</a><br>
 Languages: Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Portuguese, Romanian, Russian, Spanish, Swedish, and Turkish<br>
 Database size: 3.8 million messages <small>(2009-03-14)</small>
+</li>
+<li> <a href="http://packages.debian.org/">Searching their archive of software packages</a><br>
+Database size: over 30000 packages <small>(2009-03-16)</small>
+</li>
+<li> <a href="http://debtags.alioth.debian.org/">Debtags Package Tagging</a> uses Xapian for its
+<a href="http://debtags.alioth.debian.org/fts.html">full text search</a>,
+<a href="http://debtags.alioth.debian.org/ssearch.html">smart search</a>,
+and <a href="http://debtags.alioth.debian.org/edit.html">tag editor</a>.
+</li>
+
+</ul>
 </li>
 
 <!-- URLs checked 2009-03-14 -->
@@ -209,13 +222,10 @@ Application: Searching mailing list archive
 </li>
 
 <!-- URLs checked 2009-03-14 -->
-<li id="pdo"><div class="orgname"><a href="http://www.debian.org/">Debian GNU/Linux</a></div>
-Application: <a href="http://packages.debian.org/">Searching Debian's archive of software packages</a><br>
-</li>
-
-<!-- URLs checked 2009-03-14 -->
 <li id="iusethis"><div class="orgname"><a href="http://osx.iusethis.com/">i use this</a></div>
-Application: Providing a way to organise your Mac OS X applications and discover new ones
+Provides a way to organise your Mac OS X applications and
+discover new ones (also available for iPhone and Microsoft Windows
+applications).
 </li>
 
 <!-- URLs checked 2009-03-14 -->
@@ -223,7 +233,8 @@ Application: Providing a way to organise your Mac OS X applications and discover
 Application: Home decoration website
 </li>
 
-<li id="whosaid"><div class="orgname"><a hred="http://sandwich.ukcod.org.uk/~matthew/subtitles/">Who Said...</a></div>
+<!-- URLs checked 2009-03-15 -->
+<li id="whosaid"><div class="orgname"><a href="http://sandwich.ukcod.org.uk/~matthew/subtitles/">Who Said...</a></div>
 Application: Subtitle search for Doctor Who episodes.
 </li>
 
@@ -276,7 +287,6 @@ Example deployments:
 <li> <a href="http://rocwiki.org/">Rochester, NY, USA</a>: 8,929 pages <small>(2009-03-13)</small><!-- size from http://rocwiki.org/System_Info -->
 </li>
 </ul>
-
 </li>
 
 <!-- URLs checked 2009-03-14 -->
@@ -302,6 +312,13 @@ Application: Wiki software with Xapian search (as of version 2.49)
 <!-- URLs checked 2009-03-14 -->
 <li id="automne"><div class="orgname"><a href="http://www.automne.ws/">automne</a></div>
 French Web content management software.  Xapian powers the <a href="http://www.automne.ws/web/168-rechercher.php">website search</a> and is available as a module version 4.0.0 (in beta as of 2009-03-06).
+</li>
+
+<!-- URLs checked 2009-03-16 -->
+<li id="ovirt"><div class="orgname"><a href="http://ovirt.org/">oVirt</a></div>
+oVirt provides management of virtual machines via a
+web-based virtual machine management console, and uses Xapian to provide
+search functionality.
 </li>
 
 </ul>
