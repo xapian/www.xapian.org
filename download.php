@@ -221,13 +221,21 @@ use sudo):
 
 <h2 id="fedora">Fedora</h2>
 
-<p>Fedora 7 and 8 have RPM packages for Xapian in the default repository, but may
-be one or two releases behind.</p>
+<p>Fedora 7 and newer have RPM packages for Xapian in their default
+repositories, though these may lag behind the latest releases a bit.</p>
 
-<p>Fabrice Colin has built RPM packages for
-<a href="/RPM/fc7/">Fedora 7</a>
-- there are binary packages (for i386, x86-64, and ppc) and source RPMs.</p>
+<p>Fabrice Colin used to build RPM packages for Fedora Core 6 and Fedora 7
+but these are no longer being updated for newer Xapian releases:</p>
 
+<ul>
+
+<li> <a href="/RPM/fc6/">Fedora Core 6</a> (1.0.1) - binary packages for x86-64 and source RPMs.
+
+<li> <a href="/RPM/fc7/">Fedora 7</a> (1.0.4) - binary packages for i386, x86-64, and ppc, and source RPMs.</p>
+
+</ul>
+
+<!--
 <p>If you have Fedora 7, copy <a href="/RPM/fc7/xapian.repo">xapian.repo</a>
 into <code>/etc/yum/repos.d/</code> and then you can install the packages
 using yum:</p>
@@ -238,12 +246,8 @@ using yum:</p>
 <span id="prompt">#</span> wget http://www.xapian.org/RPM/fc7/xapian.repo
 <span id="prompt">#</span> yum install xapian-omega xapian-bindings-csharp xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
 </pre></blockquote>
+-->
 
-<p>
-RPM packages of Xapian 1.0.0 are available for
-<a href="/RPM/fc6/">Fedora Core 6</a>, but these are no
-longer being updated for newer Xapian releases.
-</p>
 
 <h2 id="rhel">RedHat Enterprise Linux</h2>
 
@@ -305,7 +309,8 @@ be better tailored:
 <li>FrugalWare Linux has packaged <a href="http://www.frugalware.org/packages/14387">xapian-core</a>.
 </li>
 <li>Zenwalk Linux has packaged <a href="http://zur.zenwalk.org/view/package/name/xapian-core">xapian-core</a>.</li>
-<li>archlinux has packaged <a href="http://aur.archlinux.org/packages.php?ID=8701">xapian-core</a> and xapian-bindings (<a href="http://aur.archlinux.org/packages.php?ID=19033">Python</a> and <a href="http://aur.archlinux.org/packages.php?ID=14007">PHP</a>).</li>
+<li>archlinux has packaged <a href="http://aur.archlinux.org/packages.php?ID=8701">xapian-core</a>, xapian-bindings (<a href="http://aur.archlinux.org/packages.php?ID=19033">Python</a> and <a href="http://aur.archlinux.org/packages.php?ID=14007">PHP</a>),
+and <a href="http://aur.archlinux.org/packages.php?ID=21146">Perl Search::Xapian</a>.</li>
 </ul>
 
 <h1>FreeBSD Ports Collection</h1>
