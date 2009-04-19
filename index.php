@@ -38,7 +38,7 @@ an application we supply built upon
 Xapian.  Unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.</p>
 
-<p>The <a href="download.php">latest stable version is <?echo $version;?></a>,
+<p>The <a href="download">latest stable version is <?echo $version;?></a>,
 released on <?echo $release_date;?>.
 
 </div>
