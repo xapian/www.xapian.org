@@ -13,7 +13,7 @@
 
 <h1>Contacting Us</h1>
 
-<p>The xapian-discuss and xapian-devel <A HREF="lists.php">mailing lists</A>
+<p>The xapian-discuss and xapian-devel <A HREF="lists">mailing lists</A>
 are the primary point of contact for the project.  Please don't mail individual
 developers directly unless <B>explicitly</B> requested to.  Mailing just
 one developer means you've less chance of getting an answer than mailing all
@@ -24,7 +24,7 @@ you're getting free help and advice the least you can do is make sure the
 whole message thread is in the list archive to help others in the future!
 
 <p>If you want private one-to-one assistance and are prepared to pay for
-it, <A HREF="support.php">consultancy services</A> are available.
+it, <A HREF="support">consultancy services</A> are available.
 
 </div>
 
