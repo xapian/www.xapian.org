@@ -21,20 +21,25 @@
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.devel">Gmane</a>]
 <li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-commits">xapian-commits</a></tt> receives details of SVN commits (can be a <em>lot</em> of messages)
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.cvs">Gmane</a>]
+<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-tickets">xapian-tickets</a></tt> receives details of trac ticket changes (can be a <em>lot</em> of messages)
+<!-- FIXME: need to subscribe tickets list to gmane...
+[<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.cvs">Gmane</a>]
+-->
 </ul>
 
 <p>The [Gmane] links take you to the Gmane news gateway which allows you to
-read these list with a newsreader, or browse the archives on the web.</p>
+read these lists with a newsreader, or browse the archives on the web.</p>
 
 <p>Posts from non-subscribers currently require approval (we'd rather not
 have to impose this restriction, but we also want to avoid relaying spam
 to our subscribers).  So if you aren't subscribed, there's likely to be
-a delay before your message is approved and relayed to the list.
+a delay before your message is approved and relayed to the list.  Please
+be patient and don't resend a message just because it doesn't appear right
+away.
 
 <p>
 We don't currently have a dedicated announcements list.  If you just wish to
-hear when new versions become available, you can
-"<a href="http://freshmeat.net/subscribe/40427/">subscribe</a>" to
+hear when new versions become available, you can "subscribe" to
 release announcements via the
 <a href="http://freshmeat.net/projects/xapian/">Xapian project page on
 freshmeat</a>.
