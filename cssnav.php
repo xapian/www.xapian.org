@@ -26,15 +26,15 @@ function navlink(&$n, $f) {
   } else {
     if ($f == "index")
       $f = ".";
-    else if (!preg_match("!(\.\w+|/)$!", $f))
-      $f .= ".php";
+    #else if (!preg_match("!(\.\w+|/)$!", $f))
+      #$f .= ".php";
     $n = '<a href="'.$f.'">'.$n.'</a>';
   }
 }
 array_walk($pages, "navlink");
 print join("<br>\n", $pages);
 if ($current != "search") {
-print "<br>\n<form method=\"GET\" action=\"search.php\"><div><input name=\"P\" size=\"14\"></div></form>\n";
+print "<br>\n<form method=\"GET\" action=\"search\"><div><input name=\"P\" size=\"14\"></div></form>\n";
 }
 
 ?>

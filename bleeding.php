@@ -15,7 +15,7 @@
 
 <p>
 If you want a stable version of Xapian, we recommend using a
-<a href="download.php">released version</a>.  But if you're happy to cope
+<a href="download">released version</a>.  But if you're happy to cope
 with potential breakage and want to try the latest development code, or
 do development yourself, you can access our version control system
 which runs on Subversion (known as SVN for short.)
