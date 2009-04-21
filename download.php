@@ -344,9 +344,9 @@ those from
 <h1>Compiling on MS Windows with MSVC</h1>
 
 <p>You can download <a
-href="http://www.lemurconsulting.com/Products/Xapian/Overview.shtml">makefiles for
-compiling with MSVC</a>, originally put together by Ulrik Petersen, and further
-refined and currently maintained by Charlie Hull.</p>
+href="http://www.flax.co.uk/xapian_windows.shtml">windows binaries and
+makefiles for compiling with MSVC</a>, maintained by Lemur Consulting, based on
+original packages put together by Ulrik Petersen</p>
 
 <p>
 Alexandre Gauthier offers a <a href="http://www.raptorized.com/xapian-python-win32/">pre-built version of xapian-core and the Python bindings</a> for download.
