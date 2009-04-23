@@ -36,7 +36,13 @@ complete overview of the changes</a> in the 1.0 release.
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</a>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/Search-Xapian-<? echo $version ?>.0.tar.gz">Search::Xapian</a>: Perl bindings
 (<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version ?>.0/">on CPAN</a>)
-<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version ?>.0/Changes">[news]</a> <small>(CPAN mirrors may not update for a few days after a new release)</small>
+<a href="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/search-xapian/Changes">[news]</a>
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version ?>.0/Changes">on CPAN</a>)
+<? if (time() - strtotime($release_date) < 7*24*3600) {
+// Show this warning for 7 days after the release
+?>
+<small>(CPAN mirrors may not update for a few days after a new release)</small>
+<? } ?>
 </ul>
 
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
@@ -63,10 +69,10 @@ the rest of this section.
 </p>
 
 <p>
-Currently we supply packages for Debian stable (etch), and
-testing/unstable, and for Ubuntu dapper (6.06), feisty (7.04),
-gutsy (7.10), and hardy (8.04).  The repository is signed with a GPG key.
-The original key expired so 1.0.7 and later are signed by a
+Currently we supply packages for Debian oldstable (etch), stable (lenny), and
+testing/unstable, and for Ubuntu dapper (6.06), hardy (8.04), and intrepid
+(8.10).  The repository is signed with a GPG key.
+The original key has now expired, so 1.0.7 and later are signed by a
 <a href="/debian/archive_key.asc">new key</a> which has this fingerprint:
 <p>
 
@@ -131,26 +137,6 @@ If you're running Ubuntu dapper, add the following:
 <blockquote><code>
 deb http://www.xapian.org/debian dapper main<br>
 deb-src http://www.xapian.org/debian dapper main
-</code></blockquote>
-
-<p>
-Ubuntu feisty has packages based on 0.9.9 with some backported fixes from 0.9.10.
-To get newer packages, add the following to your sources.list:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian feisty main<br>
-deb-src http://www.xapian.org/debian feisty main
-</code></blockquote>
-
-<p>
-Ubuntu gutsy has 1.0.2 packages.
-To get newer packages, add the following to your sources.list:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian gutsy main<br>
-deb-src http://www.xapian.org/debian gutsy main
 </code></blockquote>
 
 <p>
