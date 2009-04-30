@@ -205,35 +205,28 @@ use sudo):
 
 <h1 id="RPM">RPM packages</h1>
 
+<!--
+If you don't want to try building packages for all the supported bindings,
+# you can disable particular bindings by passing these options to rpmbuild:
+#
+#       - -without csharp        Disable C# bindings
+#       - -without php           Disable PHP bindings
+#       - -without python        Disable Python bindings
+#       - -without tcl8          Disable Tcl8 bindings
+
+
+   ould you add the note at the top of the rpm spec in xapian-bindings
+   (- -without csharp etc.) to the download page - preferably with an example:
+
+   Building the bindings from source without mono:
+
+   $ rpmbuild -ta - -without csharp xapian-bindings-*.tar.gz
+   -->
+
 <h2 id="fedora">Fedora</h2>
 
 <p>Fedora 7 and newer have RPM packages for Xapian in their default
 repositories, though these may lag behind the latest releases a bit.</p>
-
-<p>Fabrice Colin used to build RPM packages for Fedora Core 6 and Fedora 7
-but these are no longer being updated for newer Xapian releases:</p>
-
-<ul>
-
-<li> <a href="/RPM/fc6/">Fedora Core 6</a> (1.0.1) - binary packages for x86-64 and source RPMs.
-
-<li> <a href="/RPM/fc7/">Fedora 7</a> (1.0.4) - binary packages for i386, x86-64, and ppc, and source RPMs.</p>
-
-</ul>
-
-<!--
-<p>If you have Fedora 7, copy <a href="/RPM/fc7/xapian.repo">xapian.repo</a>
-into <code>/etc/yum/repos.d/</code> and then you can install the packages
-using yum:</p>
-<blockquote><pre>
-<span id="prompt">$</span> su
-<i>enter your root password</i>
-<span id="prompt">#</span> cd /etc/yum/repos.d
-<span id="prompt">#</span> wget http://www.xapian.org/RPM/fc7/xapian.repo
-<span id="prompt">#</span> yum install xapian-omega xapian-bindings-csharp xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
-</pre></blockquote>
--->
-
 
 <h2 id="rhel">RedHat Enterprise Linux</h2>
 
@@ -327,16 +320,20 @@ those from
 <a href="http://rurban.xarch.at/software/cygwin/contrib/xapian/">Reini Urban's site</a>.
 </p>
 
-<h1>Compiling on MS Windows with MSVC</h1>
+<h1>Microsoft Windows</h1>
 
-<p>You can download <a
-href="http://www.flax.co.uk/xapian_windows.shtml">windows binaries and
-makefiles for compiling with MSVC</a>, maintained by Lemur Consulting, based on
-original packages put together by Ulrik Petersen</p>
+<p>There are two options for native Microsoft Windows support (not counting
+Cygwin):</p>
+	
+<p>The standard source tarball can be built using
+<a href="http://www.mingw.org/">MSYS+mingw</a>.</p>
 
-<p>
-Alexandre Gauthier offers a <a href="http://www.raptorized.com/xapian-python-win32/">pre-built version of xapian-core and the Python bindings</a> for download.
-</p>
+<p>Alternatively, Charlie Hull (building on earlier work by Ulrik Petersen)
+maintains a separate set of
+<a href="http://www.flax.co.uk/xapian_windows.shtml">makefiles for MSVC
+and pre-built binaries built with them</a>.  These include support for
+Python, PHP, Ruby, C#, and the experimental SWIG-based Java bindings.</p>
+
 </div>
 
 <?php
