@@ -52,156 +52,27 @@ relating to the latest release.
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
 <p>
-Packages of xapian-core, xapian-omega, and xapian-bindings are available from
-the Debian and Ubuntu archives (starting with Debian etch and Ubuntu feisty).
-For Debian stable, <a href="http://packages.debian.org/search?keywords=xapian&searchon=names&section=all&suite=etch-backports"
->backported versions of more recent packages</a> are also available for all
-Debian's supported architectures, courtesy of
+Packages of xapian-core, xapian-omega, and xapian-bindings (Python, PHP, Ruby,
+and Tcl) are available from the Debian and Ubuntu archives for all currently
+supported releases except Ubuntu 6.06 (dapper).  The Perl bindings are also
+available from the archives for everything except Debian etch and Ubuntu
+dapper.
+</p>
+
+<p>
+Backported Debian packages of newer versions are available from
 <a href="http://backports.org/">backports.org</a>.
 </p>
 
 <p>
-However, packages aren't available for older Debian or Ubuntu releases, and
-those which are available may not be fully up-to-date, so for your convenience
-we provide backported packages from our own repository on xapian.org.  If
-you're happy with the packages in the Debian or Ubuntu archive, you can ignore
-the rest of this section.
+Backported Ubuntu packages of newer versions are available from a
+<a href="https://launchpad.net/~xapian-backports/+archive/ppa">Personal
+Package Archive (PPA)</a> on Launchpad maintained by Olly Betts.  Follow
+the instructions on that link for how to make use of these.  Currently
+all packages are backported to all Ubuntu releases which are still supported,
+except that the Perl bindings aren't backported to Ubuntu 6.06 (dapper)
+(because the packaging relies heavily on newer features of debhelper).
 </p>
-
-<p>
-Currently we supply packages for Debian oldstable (etch), stable (lenny), and
-testing/unstable, and for Ubuntu dapper (6.06), hardy (8.04), and intrepid
-(8.10).  The repository is signed with a GPG key.
-The original key has now expired, so 1.0.7 and later are signed by a
-<a href="/debian/archive_key.asc">new key</a> which has this fingerprint:
-<p>
-
-<p><code>2F40 2DEE 23BE C7AD C665  CA99 C953 695C 3E84 0A52</code></p>
-
-<p>(Should you need to install a package signed by the
-<a href="/debian/archive_key_1.0.1-1.0.5.asc">old key</a>, its fingerprint
-was: <code>7E71 70B7 6A23 65C5 DB40  1AE8 52A4 ECB5 287B 9696</code>)</p>
-
-<p>
-You'll need to import the registry key so that apt can verify these signatures.
-You can do that like so on Debian:
-</p>
-
-<blockquote><code><pre>
-<span id="prompt">$</span> su -
-<i>enter your root password</i>
-<span id="prompt">#</span> wget -O- http://www.xapian.org/debian/archive_key.asc|apt-key add -
-<span id="prompt">#</span> exit
-</pre></code></blockquote>
-
-<p>And on Ubuntu:</p>
-
-<blockquote><code><pre>
-<span id="prompt">$</span> wget -O- http://www.xapian.org/debian/archive_key.asc|sudo apt-key add -
-<i>enter your root password</i>
-</pre></code></blockquote>
-
-<? /*
-<p>If you're running Debian oldstable add the following to your sources.list:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian oldstable main<br>
-deb-src http://www.xapian.org/debian oldstable main
-</code></blockquote>
-*/ ?>
-
-<p>If you're running Debian stable (etch) add the following to your
-sources.list:</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian stable main<br>
-deb-src http://www.xapian.org/debian stable main
-</code></blockquote>
-
-<p>
-If you're running Debian testing (and the packages haven't propagated in
-Debian yet) or unstable (and the packages haven't yet been uploaded to
-Debian), add the following to your sources.list:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian unstable main<br>
-deb-src http://www.xapian.org/debian unstable main
-</code></blockquote>
-
-<p>
-If you're running Ubuntu dapper, add the following:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian dapper main<br>
-deb-src http://www.xapian.org/debian dapper main
-</code></blockquote>
-
-<p>
-Ubuntu hardy has 1.0.5 packages, except for xapian-omega which is 1.0.4.
-To get newer packages, add the following to your sources.list:
-</p>
-
-<blockquote><code>
-deb http://www.xapian.org/debian hardy main<br>
-deb-src http://www.xapian.org/debian hardy main
-</code></blockquote>
-
-<!--
-based on 0.9.9 with some backported fixes from
-The development version of Ubuntu (gutsy) has all the xapian packages which
-should get regularly updated from those in Debian unstable, but if you're
-impatient, add the following to your sources.list:
--->
-
-<p>
-Currently the Python, PHP, Ruby, Tcl, and Perl bindings are packaged for
-Debian and Ubuntu.  The C# and Java bindings aren't yet packaged.
-</p>
-
-<p>
-Binary packages are currently built for i386 and amd64.  If you're on another
-architecture, you can build your own by adding the "deb-src" line above,
-then for Debian:
-</p>
-
-<blockquote><pre>
-<span id="prompt">$</span> su -
-<i>enter your root password</i>
-<span id="prompt">#</span> apt-get update
-<span id="prompt">#</span> apt-get build-dep xapian-core
-<span id="prompt">#</span> exit
-<span id="prompt">$</span> fakeroot apt-get source -b xapian-core
-<span id="prompt">$</span> su -
-<i>enter your root password</i>
-<span id="prompt">#</span> dpkg -i libxapian* xapian-doc* xapian-tools*
-<span id="prompt">#</span> apt-get build-dep xapian-bindings xapian-omega
-<span id="prompt">#</span> exit
-<span id="prompt">$</span> fakeroot apt-get source -b xapian-bindings xapian-omega
-<span id="prompt">$</span> su -
-<i>enter your root password</i>
-<span id="prompt">#</span> dpkg -i xapian-omega*.deb python-xapian*.deb
-<span id="prompt">#</span> exit
-</pre></blockquote>
-
-<p>
-Or for Ubuntu (Ubuntu doesn't have a root login by default, so you need to
-use sudo):
-</p>
-
-<blockquote><pre>
-<span id="prompt">$</span> sudo apt-get update
-<i>enter your root password</i>
-<span id="prompt">$</span> sudo apt-get install fakeroot
-<span id="prompt">$</span> sudo apt-get build-dep xapian-core
-<span id="prompt">$</span> fakeroot apt-get source -b xapian-core
-<span id="prompt">$</span> sudo dpkg -i libxapian* xapian-doc* xapian-tools*
-<span id="prompt">$</span> sudo apt-get build-dep xapian-bindings xapian-omega
-<span id="prompt">$</span> fakeroot apt-get source -b xapian-bindings xapian-omega
-<span id="prompt">$</span> sudo dpkg -i xapian-omega*.deb python-xapian*.deb
-</pre></blockquote>
 
 <h1 id="RPM">RPM packages</h1>
 
