@@ -180,17 +180,23 @@ Application: Official German Portal for Ubuntu Linux
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 65 million messages <small>(2009-03-14)</small>
+Database size: 67 million messages <small>(2009-05-18)</small>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="debian"><div class="orgname"><a href="http://www.debian.org/">Debian GNU/Linux</a></div>
+<!-- URLs checked 2009-05-18 -->
+<li id="debian"><div class="orgname"><a href="http://debian.org/">Debian GNU/Linux</a></div>
 Debian use Xapian for:
 <ul>
 <li> <a href="http://lists.debian.org/search.html">Debian Mailing List Archive Search</a><br>
 Languages: Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Portuguese, Romanian, Russian, Spanish, Swedish, and Turkish<br>
-Database size: 3.8 million messages <small>(2009-03-14)</small>
+Database size: 3.9 million messages <small>(2009-05-18)</small>
 </li>
+<li> <a href="http://wiki.debian.org/">Debian Wiki Search</a><br>
+Database size: over 6700 pages <small>(2009-05-18)</small>
+<!-- Runs moinmoin with Xapian support, see: http://wiki.debian.org/SystemInfo
+ Size from: http://wiki.debian.org/PageSize -->
+</li>
+
 <li> <a href="http://packages.debian.org/">Searching their archive of software packages</a><br>
 Database size: over 30000 packages <small>(2009-03-16)</small>
 </li>
