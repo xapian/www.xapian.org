@@ -34,10 +34,16 @@ complete overview of the changes</a> in the 1.0 release.
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</a>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</a>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</a>
-<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/Search-Xapian-<? echo $version ?>.0.tar.gz">Search::Xapian</a>: Perl bindings
-(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version ?>.0/">on CPAN</a>)
-<a href="http://svn.xapian.org/*checkout*/tags/<? echo $version ?>/search-xapian/Changes">[news]</a>
-(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version ?>.0/Changes">on CPAN</a>)
+<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/Search-Xapian-<? echo $version.$perl_minor ?>.tar.gz">Search::Xapian</a>: Perl bindings
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version.$perl_minor ?>/">on CPAN</a>)
+<a href="http://svn.xapian.org/*checkout*/tags/<?
+if ($perl_minor === ".0") {
+  echo "$version/search-xapian";
+} else {
+  echo "search-xapian-$version$perl_minor";
+}
+?>/Changes">[news]</a>
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version.$perl_minor ?>/Changes">on CPAN</a>)
 <? if (time() - strtotime($release_date) < 7*24*3600) {
 // Show this warning for 7 days after the release
 ?>
