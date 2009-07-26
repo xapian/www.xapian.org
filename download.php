@@ -13,6 +13,8 @@
 
 <h1>Downloads</h1>
 
+<h2>Stable release</h2>
+
 <? if (0) { ?>
 <p>The <? echo $branch ?> branch features substantial improvements.
 The <code>Xapian::Stem</code>, <code>Xapian::QueryParser</code>,
@@ -25,7 +27,8 @@ complete overview of the changes</a> in the 1.0 release.
 </p>
 <? } ?>
 
-<p id="<? echo $branch ?>">The latest release is <B><? echo $version ?></B>:</p>
+<p id="<? echo $branch ?>">The latest stable release is
+<B><? echo $version ?></B>:</p>
 
 <ul>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/xapian-core-<? echo $version ?>.tar.gz">xapian-core</a>: the Xapian library itself
@@ -54,6 +57,13 @@ if ($perl_minor === ".0") {
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
 relating to the latest release.
 </p>
+
+<?if ($version_d !== null) {?>
+<h2>Development release</h2>
+
+<p>The <a href="http://article.gmane.org/gmane.comp.search.xapian.general/7593"
+>latest development version is <?echo $version_d;?></a>.</p>
+<?}?>
 
 <h1 id="deb">Debian and Ubuntu packages</h1>
 

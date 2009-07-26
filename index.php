@@ -39,7 +39,13 @@ Xapian.  Unlike most other website search solutions, Xapian's
 versatility allows you to extend Omega to meet your needs as they grow.</p>
 
 <p>The <a href="download">latest stable version is <?echo $version;?></a>,
-released on <?echo $release_date;?>.
+released on <?echo $release_date;?>.</p>
+
+<?if ($version_d !== null) {?>
+<p>The <a href="http://article.gmane.org/gmane.comp.search.xapian.general/7593"
+>latest development version is <?echo $version_d;?></a>,
+released on <?echo $release_date_d;?>.</p>
+<?}?>
 
 </div>
 
