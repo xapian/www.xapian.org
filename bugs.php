@@ -13,8 +13,8 @@
 
 <H1>Bugs</H1>
 
-<p>We now use trac as our bug-tracker.  Bugs were migrated from the bugzilla
-installation which we previously used.</p>
+<p>We now use <a href="http://trac.xapian.org/">trac</a> as our bug-tracker.
+All bugs filed in the old bugzilla installation have been migrated.</p>
 
 <p>Please choose one of the following options:</p>
 
