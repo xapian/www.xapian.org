@@ -197,6 +197,10 @@ for xapian-core, xapian-omega, and Search::Xapian.</p>
 href="http://pdb.finkproject.org/pdb/browse.php?summary=xapian">packages</a>
 for xapian-core, the Python bindings, and omega.</p>
 
+<p>Alternatively, <a href="http://www.macports.org/">MacPorts</a> has <a
+href="http://www.macports.org/ports.php?by=name&substr=xapian">packages</a>
+for xapian-core.</p>
+
 <h1>Cygwin</h1>
 
 <p>
