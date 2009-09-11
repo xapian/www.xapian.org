@@ -191,6 +191,11 @@ xapian-core, xapian-omega, xapian-bindings (Python and PHP), and Search::Xapian.
 <a href="http://pkgsrc.se/search.php?so=xapian">packages</a>
 for xapian-core, xapian-omega, and Search::Xapian.</p>
 
+<h1>OpenBSD</h1>
+
+<p>OpenBSD Ports has <a href="http://openports.se/search.php?so=xapian">packages</a>
+for xapian-core and xapian-omega.</p>
+
 <h1>Mac OS X</h1>
 
 <p>The <a href="http://www.finkproject.org/">Fink project</a> has <a
