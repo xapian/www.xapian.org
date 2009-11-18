@@ -200,7 +200,7 @@ for xapian-core and xapian-omega.</p>
 
 <p>The <a href="http://www.finkproject.org/">Fink project</a> has <a
 href="http://pdb.finkproject.org/pdb/browse.php?summary=xapian">packages</a>
-for xapian-core, the Python bindings, and omega.</p>
+for xapian-core, Omega, and the Python and Ruby bindings.</p>
 
 <p>Alternatively, <a href="http://www.macports.org/">MacPorts</a> has <a
 href="http://www.macports.org/ports.php?by=name&substr=xapian">packages</a>
