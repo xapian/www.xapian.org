@@ -29,6 +29,7 @@
 
 <p>The [Gmane] links take you to the Gmane news gateway which allows you to
 read these lists with a newsreader, or browse the archives on the web.</p>
+</p>
 
 <p>Posts from non-subscribers currently require approval (we'd rather not
 have to impose this restriction, but we also want to avoid relaying spam
@@ -36,15 +37,19 @@ to our subscribers).  So if you aren't subscribed, there's likely to be
 a delay before your message is approved and relayed to the list.  Please
 be patient and don't resend a message just because it doesn't appear right
 away.
+</p>
 
 <p>
-We don't currently have a dedicated announcements list.  If you just wish to
-hear when new versions become available, you can "subscribe" to
-release announcements via the
-<a href="http://freshmeat.net/projects/xapian/">Xapian project page on
-freshmeat</a>.
-New releases are announced there and on xapian-discuss.
+There isn't (currently) a dedicated mailing list for announcements.  These
+are sent to xapian-discuss, but if you <b>only</b> want announcements, you can:
 </p>
+
+<ul>
+<li> Follow <a href="http://identi.ca/xapian">@xapian on identi.ca</a>
+<li> "Subscribe" to the
+<a href="http://freshmeat.net/projects/xapian/">Xapian project on
+freshmeat</a> (release announcements only)
+</ul>
 
 <h2>Searching the lists</h2>
 
@@ -54,6 +59,7 @@ Search
 <select name="group">
 <option value="gmane.comp.search.xapian.general">xapian-discuss</option>
 <option value="gmane.comp.search.xapian.devel">xapian-devel</option>
+<option value="gmane.comp.search.xapian.*">all xapian</option>
 </select>
 list archives for <input type="text" name="query">
 <input type="submit" value="Search">
