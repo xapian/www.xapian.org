@@ -72,7 +72,7 @@ Packages of xapian-core, xapian-omega, and xapian-bindings (Python, PHP, Ruby,
 and Tcl) are available from the Debian and Ubuntu archives for all currently
 supported releases except Ubuntu 6.06 (dapper).  The Perl bindings are also
 available from the archives for everything except Debian etch and Ubuntu
-dapper.
+dapper (the package name is libsearch-xapian-perl).
 </p>
 
 <p>
