@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /bugzilla
 Disallow: /cgi-bin
 Disallow: /omega.cgi
+Disallow: /*?
+Disallow: /*.php$
