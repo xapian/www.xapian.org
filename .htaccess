@@ -1,4 +1,2 @@
-RedirectPermanent /index.html http://www.xapian.org/
-RedirectPermanent /omega.conf http://www.xapian.org/omega.cgi
-RedirectPermanent /news.php http://www.xapian.org/download.php
-RedirectPermanent /cvs.php http://www.xapian.org/bleeding.php
+RedirectPermanent /index.html http://xapian.org/
+RedirectPermanent /omega.conf http://xapian.org/omega.cgi
