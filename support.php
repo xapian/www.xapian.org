@@ -21,6 +21,7 @@ for Xapian, and can also develop bespoke applications to meet your needs:</p>
 
 <li> <A HREF="http://oligarchy.co.uk/xapian.html">Oligarchy Ltd</A>
 <li> <A HREF="http://www.lemurconsulting.com/">Lemur Consulting Ltd</A>
+<li> <A HREF="http://cnav.co.uk/">Celestial Navigation Ltd</A>
 
 </ul>
 
