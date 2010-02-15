@@ -1,1 +1,1 @@
-<?php header('Location: http://www.xapian.org/bleeding'); ?>
+<?php header('Location: http://www.xapian.org/bleeding', true, 301); ?>
