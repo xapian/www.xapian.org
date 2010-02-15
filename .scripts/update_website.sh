@@ -167,7 +167,7 @@ rm -rf "${tmpdir}"
 # FIXME: sort out permissions so this'll work for other people too
 rm -rf /home/olly/omega/data/default.tmp /home/olly/omega/data/default.old
 
-/home/olly/install/bin/omindex --db /home/olly/omega/data/default.tmp --url / "$htmldir"
+/home/olly/install/bin/omindex --spelling --db /home/olly/omega/data/default.tmp --url / "$htmldir"
 
 if test -d /home/olly/omega/data/default ; then
   mv /home/olly/omega/data/default /home/olly/omega/data/default.old
