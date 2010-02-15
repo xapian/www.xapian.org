@@ -10,7 +10,7 @@ if ($url !== $redirect) {
 	$redirect .= '?';
 	$redirect .= $_SERVER['QUERY_STRING'];
     }
-    header('Location: ' . $redirect); 
+    header('Location: ' . $redirect, true, 301); 
     exit(0); 
 } 
 ?> 
