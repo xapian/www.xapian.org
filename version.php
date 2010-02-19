@@ -5,5 +5,5 @@ $announce = "http://article.gmane.org/gmane.comp.search.xapian.general/8145";
 
 $version_d = "1.1.4"; $release_date_d = "2010-02-15";
 $perl_minor_d = ".0";
-$announce_d = "http://article.gmane.org/gmane.comp.search.xapian.general/8146";
+$announce_d = "http://article.gmane.org/gmane.comp.search.xapian.general/8151";
 ?>
