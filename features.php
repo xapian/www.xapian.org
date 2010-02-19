@@ -67,7 +67,7 @@ categorise documents, etc.
 <li> Xapian can suggest spelling corrections for user supplied queries.  This
   is based on words which occur in the data being indexed, so works even for
   words which wouldn't be found in a dictionary (e.g. "xapian" would be
-  suggested as a correct for "xapain").
+  suggested as a correction for "xapain").
 
 <li> Supports database files &gt; 2GB - essential for
   <A HREF="docs/scalability.html">scaling to large document collections</A>.
