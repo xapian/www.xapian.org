@@ -62,7 +62,7 @@ relating to the latest release.
 <?if ($version_d !== null) {?>
 <h2>Development release</h2>
 
-<p>The <a href="http://article.gmane.org/gmane.comp.search.xapian.general/7593"
+<p>The <a href="<?echo $announce_d;?>"
 >latest development version is <?echo $version_d;?></a>.</p>
 <?}?>
 
