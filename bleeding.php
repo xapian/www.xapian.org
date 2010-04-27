@@ -40,8 +40,10 @@ it easier and quicker to
 (or <a href="http://svn.xapian.org/">using viewvc</a>).</p>
 
 <p>
-To get the very latest version of Xapian from our repository, follow these
-steps:
+To get the very latest version of Xapian (including the Search::Xapian Perl
+bindings) from our repository, follow these steps:
+</p>
+
 <ol>
 <li> <tt>svn co svn://svn.xapian.org/xapian/trunk xapian</tt>
 
@@ -58,9 +60,39 @@ steps:
     <tt>xapian-core/HACKING</tt> is recommended reading.
 </ol>
 
+<h3>Using Git</h3>
+
 <p>
-The latest Search::Xapian (Perl bindings for Xapian) development sources are
-now in the tree checked out by the above command.
+We have a read-only git mirror of the SVN repository.  This is updated
+automatically in response to commits to SVN, so should be at worst a
+minutes behind.
+<p>
+
+<p>
+Check out like so:
+</p>
+
+<ol>
+<li> <tt>git clone git://git.xapian.org/xapian</tt>
+
+<li> Read the "Building from SVN" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
+
+<li> In the newly created <tt>xapian</tt> directory, run the command
+    <tt>./bootstrap</tt> - this will run various developer tools to produce a
+    source tree like you'd get from unpacking release source tarballs.
+
+<li> <tt>bootstrap</tt> will create a top level <tt>configure</tt> script,
+    which you can use to configure the whole source tree together.
+
+<li> If you're looking to do development work on Xapian, then the rest of
+    <tt>xapian-core/HACKING</tt> is recommended reading.
+</ol>
+
+<p>
+There's one issue not currently resolved - the SVN tree use svn:externals
+properties for <tt>swig/</tt> and <tt>xapian-applications/omega/common/</tt>,
+but <tt>git&nbsp;svn</tt> currently ignores these so these directories are
+missing.  We don't currently have a good solution for this.
 </p>
 
 <?php if ($_SERVER['QUERY_STRING'] != "") { ?>
