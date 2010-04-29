@@ -41,12 +41,13 @@ away.
 </p>
 
 <p>
-There isn't (currently) a dedicated mailing list for announcements.  These
-are sent to xapian-discuss, but if you <b>only</b> want announcements, you can:
+If you only want announcements, you can:
 </p>
 
 <ul>
 <li> Follow <a href="http://identi.ca/xapian">@xapian on identi.ca</a>
+(also gatewayed to <a href="http://twitter.com/xapian">twitter</a>)
+<li> Join the <a href="http://identi.ca/group/xapian">!xapian identi.ca group</a>
 <li> "Subscribe" to the
 <a href="http://freshmeat.net/projects/xapian/">Xapian project on
 freshmeat</a> (release announcements only)
