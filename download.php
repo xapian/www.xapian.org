@@ -107,13 +107,16 @@ Backported Debian packages of newer versions are available from
 </p>
 
 <p>
-Backported Ubuntu packages of newer versions are available from a
-<a href="https://launchpad.net/~xapian-backports/+archive/ppa">Personal
-Package Archive (PPA)</a> on Launchpad maintained by Olly Betts.  Follow
-the instructions on that link for how to make use of these.  Currently
+Backported Ubuntu packages of newer versions are available from
+Launchpad Personal Package Archives (PPAs) maintained by Olly Betts for
+<a href="https://launchpad.net/~xapian-backports/+archive/ppa">1.0.x</a>
+and
+<a href="https://launchpad.net/~xapian-backports/+archive/xapian-1.2">1.2.x</a>.
+Follow the instructions on those links for how to make use of these.  Currently
 all packages are backported to all Ubuntu releases which are still supported,
 except that the Perl bindings aren't backported to Ubuntu 6.06 (dapper)
-(because the packaging relies heavily on newer features of debhelper).
+(because the packaging relies heavily on newer features of debhelper) and
+1.2.x isn't backported to dapper at all.
 </p>
 
 <h1 id="RPM">RPM packages</h1>
