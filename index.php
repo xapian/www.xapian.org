@@ -42,6 +42,12 @@ versatility allows you to extend Omega to meet your needs as they grow.</p>
 <p>The <a href="<?echo $announce;?>">latest stable version is <?echo $version;?></a>,
 released on <?echo $release_date;?>.</p>
 
+<?if ($version_o !== null) {?>
+<p>The <a href="<?echo $announce_o;?>"
+>latest <?echo $branch_o;?> release is <?echo $version_o;?></a>,
+released on <?echo $release_date_o;?>.</p>
+<?}?>
+
 <?if ($version_d !== null) {?>
 <p>The <a href="<?echo $announce_d;?>"
 >latest development version is <?echo $version_d;?></a>,

@@ -16,17 +16,13 @@
 
 <h2>Stable release</h2>
 
-<? if (0) { ?>
 <p>The <? echo $branch ?> branch features substantial improvements.
-The <code>Xapian::Stem</code>, <code>Xapian::QueryParser</code>,
-and <code>Xapian::TermGenerator</code> classes now all handle
-Unicode text encoded as UTF-8, as do Omega and xapian-bindings.
-The new <code>Xapian::TermGenerator</code>
-class provides indexing functionality.  If you wish, you can
+<i>[List to be written still, sorry!]</i>
+<!--  If you wish, you can
 read a <a href="http://wiki.xapian.org/ReleaseOverview/">more
 complete overview of the changes</a> in the 1.0 release.
+-->
 </p>
-<? } ?>
 
 <p id="<? echo $branch ?>">The latest stable release is
 <B><? echo $version ?></B>:</p>
@@ -58,6 +54,35 @@ if ($perl_minor === ".0") {
 <p>The wiki contains a <a href="http://wiki.xapian.org/ReleaseNotes">summary of bugs, patches, and workarounds</a>
 relating to the latest release.
 </p>
+
+<?if ($version_o !== null) {?>
+<p id="<? echo $branch_o ?>">The latest <? echo $branch_o;?> release is
+<B><? echo $version_o ?></B>:</p>
+
+<ul>
+<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version_o ?>/xapian-core-<? echo $version_o ?>.tar.gz">xapian-core</a>: the Xapian library itself
+<a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version_o ?>/xapian-core/NEWS">[news]</a>
+<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version_o ?>/xapian-omega-<? echo $version_o ?>.tar.gz">omega</a>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
+<a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version_o ?>/xapian-applications/omega/NEWS">[news]</a>
+<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version_o ?>/xapian-bindings-<? echo $version_o ?>.tar.gz">xapian-bindings</a>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
+<a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version_o ?>/xapian-bindings/NEWS">[news]</a>
+<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version_o ?>/Search-Xapian-<? echo $version_o.$perl_minor ?>.tar.gz">Search::Xapian</a>: Perl bindings
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version_o.$perl_minor ?>/">on CPAN</a>)
+<a href="http://svn.xapian.org/*checkout*/tags/<?
+if ($perl_minor === ".0") {
+  echo "$version/search-xapian";
+} else {
+  echo "search-xapian-$version$perl_minor";
+}
+?>/Changes">[news]</a>
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version_o.$perl_minor ?>/Changes">on CPAN</a>)
+<? if (time() - strtotime($release_date) < 7*24*3600) {
+// Show this warning for 7 days after the release
+?>
+<small>(CPAN mirrors may not update for a few days after a new release)</small>
+<? } ?>
+</ul>
+<?}?>
 
 <?if ($version_d !== null) {?>
 <h2>Development release</h2>
