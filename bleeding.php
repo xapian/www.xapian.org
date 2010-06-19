@@ -60,12 +60,12 @@ bindings) from our repository, follow these steps:
     <tt>xapian-core/HACKING</tt> is recommended reading.
 </ol>
 
-<h3>Using Git</h3>
+<h3 id="git">Using Git</h3>
 
 <p>
 We have a read-only git mirror of the SVN repository.  This is updated
-automatically in response to commits to SVN, so should be at worst a
-minutes behind.
+automatically in response to commits to SVN, so should be at most a
+few minutes behind.
 <p>
 
 <p>
@@ -89,10 +89,9 @@ Check out like so:
 </ol>
 
 <p>
-There's one issue not currently resolved - the SVN tree use svn:externals
-properties for <tt>swig/</tt> and <tt>xapian-applications/omega/common/</tt>,
-but <tt>git&nbsp;svn</tt> currently ignores these so these directories are
-missing.  We don't currently have a good solution for this.
+All branches should be available via git (you can list them with
+<code>git branch -r</code>) but new branches currently need to be added to git
+by hand - please let us know if you find a new branch which is missing.
 </p>
 
 <?php if ($_SERVER['QUERY_STRING'] != "") { ?>
