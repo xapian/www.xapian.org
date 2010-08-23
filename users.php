@@ -306,17 +306,17 @@ Application: Open source web application providing email management for customer
 Application: Wiki software with <a href="http://moinmo.in/HelpOnXapian">Xapian search</a> (as of version 1.6)
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-08-24 -->
 <li id="lxr"><div class="orgname"><a href="http://lxr.linux.no/">LXR</a></div>
-Application: Experimental version of LXR, the Linux Cross Referencer
+Application: LXR, the Linux Cross Referencer
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-08-24 -->
 <li id="ikiwiki"><div class="orgname"><a href="http://ikiwiki.info/">ikiwiki</a></div>
 Application: Wiki software with Xapian search (as of version 2.49)
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-08-24 -->
 <li id="automne"><div class="orgname"><a href="http://www.automne.ws/">automne</a></div>
 French Web content management software.  Xapian powers the <a href="http://www.automne.ws/web/168-rechercher.php">website search</a> and is available as a module version 4.0.0 (in beta as of 2009-03-06).
 </li>
