@@ -18,8 +18,10 @@
 If you want a stable version of Xapian, we recommend using a
 <a href="download">released version</a>.  But if you're happy to cope
 with potential breakage and want to try the latest development code, or
-do development yourself, you can access our version control system
-which runs on Subversion (known as SVN for short.)
+do development yourself, you can access our version control system.
+Currently this runs on <a href="http://subversion.apache.org/">Subversion</a>
+(known as SVN for short), with a read-only
+<a href="http://git-scm.com/">Git</a> mirror.
 </p>
 
 <p>
@@ -27,8 +29,9 @@ The Subversion repository includes
 a complete history of the code, including that from the original
 Open Muscat project (when converting to SVN we dropped old nightly snapshot
 tags and a few
-others which it seems highly unlikely anyone would find useful - these
-can still be used in the now frozen Xapian CVS tree - see below.)
+others which it seems highly unlikely anyone would find useful - if you
+really need these for some reason, contact us for a copy of the archived
+Xapian CVS tree.)
 Additionally, we've recreated copy and rename operations into the Subversion
 history (CVS doesn't support copy or rename directly.)</p>
 
@@ -38,6 +41,8 @@ history (CVS doesn't support copy or rename directly.)</p>
 it easier and quicker to 
 <a href="http://trac.xapian.org/browser">browse our SVN repository online (using trac)</a>
 (or <a href="http://svn.xapian.org/">using viewvc</a>).</p>
+
+<h3 id="svn">Using Subversion</h3>
 
 <p>
 To get the very latest version of Xapian (including the Search::Xapian Perl
