@@ -52,20 +52,20 @@ http://www.bivio.biz/f/bOP/README
 
 <ul>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-10-03 -->
 <li id="citebase"><div class="orgname"><a href="http://citebase.eprints.org/help/">Citebase</a></div>
 Application: <a href="http://citebase.eprints.org/">Searching academic papers</a><br>
 Languages: Mostly English<br>
 Database size: around 300,000 papers <small>(2006-02-06)</small><br>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-10-03 -->
 <li id="kug"><div class="orgname"><a href="http://kug.ub.uni-koeln.de/">Library of the University of Cologne</a></div>
 Xapian is used with <a href="http://www.openbib.org/">OpenBib</a> to search
 the library's OPAC (Online Public Access Catalogue)<br>
 Languages: German<br>
-Database size: over 7.3 million title entries split across 167 separate databases
-<small>(2008-03-14)</small><br>
+Database size: nearly 10 million title entries split across 186 separate databases
+<small>(2010-10-03)</small><br>
 </li>
 
 </ul>
@@ -76,14 +76,14 @@ Database size: over 7.3 million title entries split across 167 separate database
 
 <ul>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-10-03 -->
 <li id="diezeit"><div class="orgname"><a href="http://www.zeit.de/">Die Zeit</a> -
 German Newspaper</div>
 Application: <a href="http://suche.zeit.de/suche">Searching newspaper articles</a>; also powers internal search facilities for newspaper staff.<br>
 Languages: German<br>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-10-03 -->
 <li id="abcsok"><div class="orgname">ABC Startsiden</div>
 Application: Search through 3 years worth of Norwegian news<br>
 Location: <a href="http://nyheter.abcsok.no/">ABCSok</a> and <a href="http://overblikk.no/">Overblikk</a><br>
@@ -105,8 +105,8 @@ Languages: Italian, English, and others<br>
 
 <ul>
 
-<li id="delicious"><div class="orgname"><a href="http://del.icio.us/">del.icio.us</a> - social bookmarking site</div>
-Application: <a href="http://del.icio.us/search/?fr=del_icio_us&p=&type=all">searching bookmarks</a><br>
+<li id="delicious"><div class="orgname"><a href="http://www.delicious.com/">del.icio.us</a> - social bookmarking site</div>
+Application: <a href="http://www.delicious.com/search">searching bookmarks</a><br>
 Database size: More than 100 million bookmarked URLs<br>
 Note: Since delicious has now been bought by Yahoo, it seems likely that
 Yahoo have migrated it to use their own search technology.
@@ -177,11 +177,11 @@ Application: Official German Portal for Ubuntu Linux
 
 <ul>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2010-09-01 -->
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 67 million messages <small>(2009-05-18)</small>
+Database size: 80 million messages <small>(2010-09-01)</small>
 </li>
 
 <!-- URLs checked 2009-05-18 -->
