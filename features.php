@@ -23,7 +23,7 @@
 data in UTF-8.
 
 <li> <a
-HREF="http://svn.xapian.org/trunk/xapian-core/PLATFORMS?view=co">Highly
+HREF="http://trac.xapian.org/wiki/SupportedPlatforms">Highly
 portable</a> - runs on Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Solaris,
 HP-UX, Tru64, IRIX, and probably other Unix platforms, as well as
 Microsoft Windows.
