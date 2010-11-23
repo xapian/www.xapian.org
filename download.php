@@ -146,10 +146,8 @@ repositories, though these may lag behind the latest releases a bit.</p>
 
 <h2 id="rhel">RedHat Enterprise Linux</h2>
 
-<p>Tim Brody has built RPM packages for
-<a href="/RPM/rhel5/">RedHat Enterprise Linux 5</a>
+<p>Tim Brody has built RPM packages for RedHat Enterprise Linux 5
 - there are binary packages for i386 and x86_64, and source RPMs.</p>
-
 
 <p>
 For convenience you can install a package to pull in his package repository
