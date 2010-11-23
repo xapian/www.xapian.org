@@ -147,28 +147,22 @@ repositories, though these may lag behind the latest releases a bit.</p>
 <h2 id="rhel">RedHat Enterprise Linux</h2>
 
 <p>Tim Brody has built RPM packages for
-<a href="/RPM/rhel4/">RedHat Enterprise Linux 4</a> and
 <a href="/RPM/rhel5/">RedHat Enterprise Linux 5</a>
-- there are binary packages for i386 and source RPMs.</p>
+- there are binary packages for i386 and x86_64, and source RPMs.</p>
 
-<p>If you have RHEL 5, copy <a href="/RPM/rhel5/xapian.repo">xapian.repo</a>
-into <code>/etc/yum.repos.d/</code> and then you can install the packages
-using yum:</p>
+
+<p>
+For convenience you can install a package to pull in his package repository
+and then you can install the packages using yum:</p>
 <blockquote><pre>
 <span id="prompt">$</span> su
 <i>enter your root password</i>
-<span id="prompt">#</span> cd /etc/yum.repos.d
-<span id="prompt">#</span> rm -f xapian.repo
-<span id="prompt">#</span> wget http://www.xapian.org/RPM/rhel5/xapian.repo
+<span id="prompt">#</span> rpm -ivh http://rpm.eprints.org/xapian/5/noarch/rpm-eprints-org-xapian-5-1.noarch.rpm
+<span id="prompt">#</span> yum update
 <span id="prompt">#</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
 </pre></blockquote>
 
-<p>
-For RHEL 4, use this <a href="/RPM/rhel4/xapian.repo">xapian.repo</a> instead
-if you are using DAG's <code>yum</code>.  Otherwise
-you can download the <a href="/RPM/rhel4/">individual packages</a> and install
-them by hand.
-</p>
+<p>(or whatever Xapian packages you want to install).</p>
 
 <h2 id="srpm">Source RPMs</h2>
 
