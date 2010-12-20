@@ -165,7 +165,7 @@ and then you can install the packages using yum:</p>
 <h2 id="srpm">Source RPMs</h2>
 
 <p>
-The source RPMs (the three files that end in ".src.rpm") are
+The source RPMs (the files that end in ".src.rpm") are
 not distribution specific - you can build binary RPMs from those
 if binary packages aren't available for your architecture or
 distribution like so:
