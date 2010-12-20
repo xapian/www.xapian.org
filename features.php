@@ -25,14 +25,14 @@ data in UTF-8.
 <li> <a
 HREF="http://trac.xapian.org/wiki/SupportedPlatforms">Highly
 portable</a> - runs on Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Solaris,
-HP-UX, Tru64, IRIX, and probably other Unix platforms, as well as
-Microsoft Windows.
+HP-UX, Tru64, IRIX, and probably other Unix platforms; as well as
+Microsoft Windows and OS/2.
 
 <li> Written in C++.  Perl bindings are available in the module
   <a href="http://search.cpan.org/~olly/Search-Xapian/">Search::Xapian
   on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
   We also support <a href="http://www.swig.org/">SWIG</a> which can generate
-  bindings for many languages.  At present those for Python, PHP, TCL, C#,
+  bindings for many languages.  At present those for Python, PHP, Tcl, C#,
   and Ruby are working.
 
 <li> Ranked probabilistic search - important words get more weight than
@@ -44,7 +44,7 @@ most relevant index terms to expand a query, suggest related documents,
 categorise documents, etc.
 
 <li> Phrase and proximity searching - users can search for words
-  occuring in an exact phrase or within a specified number of words,
+  occurring in an exact phrase or within a specified number of words,
   either in a specified order, or in any order.
 
 <li> Full range of structured boolean search operators ("stock NOT market",
@@ -69,6 +69,8 @@ categorise documents, etc.
   words which wouldn't be found in a dictionary (e.g. "xapian" would be
   suggested as a correction for "xapain").
 
+<li> <a href="/docs/facets">Faceted search</a> is supported.
+
 <li> Supports database files &gt; 2GB - essential for
   <A HREF="docs/scalability.html">scaling to large document collections</A>.
 
@@ -87,7 +89,8 @@ a larger application - an indexing and CGI search application called Omega:</p>
 
 <li> The indexer supplied can index HTML, PHP, PDF, PostScript,
   OpenOffice/StarOffice, OpenDocument, Microsoft Word/Excel/Powerpoint/Works,
-  Word Perfect, AbiWord, RTF, DVI, Perl POD documentation, and plain text.
+  Word Perfect, AbiWord, RTF, DVI, Perl POD documentation, CSV, SVG, RPM
+  packages, Debian packages, and plain text.
   Adding support for indexing other formats is easy where conversion filters
   are available.  This indexer works using the
   filing system, but we also provide a script to allow the htdig web
