@@ -1,8 +1,8 @@
 <?
 $version_o = "1.0.23"; $branch_o = "1.0"; $release_date_o = "2011-01-14";
 $perl_minor_o = ".0";
-$announce_o = "http://article.gmane.org/gmane.comp.search.xapian.general/8502";
-$announce_o = "/download";
+$announce_o = "http://article.gmane.org/gmane.comp.search.xapian.general/8659";
+#$announce_o = "/download";
 
 $version = "1.2.4"; $branch = "1.2"; $release_date = "2010-12-19";
 $perl_minor = ".0";
