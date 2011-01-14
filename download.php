@@ -109,7 +109,7 @@ Backported Debian packages of newer versions are available from
 <p>
 Backported Ubuntu packages of newer versions are available from
 Launchpad Personal Package Archives (PPAs) maintained by Olly Betts for
-<a href="https://launchpad.net/~xapian-backports/+archive/ppa">1.0.x</a>
+<a href="https://launchpad.net/~xapian-backports/+archive/xapian-1.0">1.0.x</a>
 and
 <a href="https://launchpad.net/~xapian-backports/+archive/xapian-1.2">1.2.x</a>.
 Follow the instructions on those links for how to make use of these.  Currently
