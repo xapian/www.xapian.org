@@ -95,8 +95,8 @@ Check out like so:
 
 <p>
 All branches should be available via git (you can list them with
-<code>git branch -r</code>) but new branches currently need to be added to git
-by hand - please let us know if you find a new branch which is missing.
+<code>git branch -r</code>) and new branches and tags should get added
+automatically now.
 </p>
 
 <?php if ($_SERVER['QUERY_STRING'] != "") { ?>
