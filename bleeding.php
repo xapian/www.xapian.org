@@ -229,20 +229,19 @@ svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 <h2>Snapshots</h2>
 
 <p>
-We plan to set up an automatic snapshot system which will try to compile and
-run the library testsuite every night, and upload a snapshot if all tests pass.
-This is not currently operational, but you can
-<A HREF="http://oligarchy.co.uk/xapian/trunk/">download completely untested
-snapshots</A>,
-which are generated once an hour (so long as the code in SVN isn't too
-broken for even <tt>make dist</tt> to work).</p>
+You can
+<A HREF="http://oligarchy.co.uk/xapian/trunk/">automated snapshots</A>,
+which are generated once an hour, provided <tt>make distcheck</tt> passes
+on Linux.  This means that some breakages are avoided, but they may still
+fail to build for you if you're using a different platform, or even a
+different version of Linux.
+</p>
 
 <p>
-The snapshots are built automatically on various different platforms - you
-can view the results of these builds in our <a
-href="http://oligarchy.co.uk/tinderbox/xapian/status.html">tinderbox</a>
-and also MinGW and MSVC build in
-<a href="http://buildbot.enfoldsystems.com/xapian/">buildbot</a>.
+If you want to get a better idea of how healthy the tree is on various
+platforms, see the
+<a href="http://trac.xapian.org/wiki/AutomatedBuilds">automated builds</a>
+page on the wiki.
 </p>
 
 <h2>CVS</h2>
