@@ -105,15 +105,6 @@ Languages: Italian, English, and others<br>
 
 <ul>
 
-<li id="delicious"><div class="orgname"><a href="http://www.delicious.com/">del.icio.us</a> - social bookmarking site</div>
-Application: <a href="http://www.delicious.com/search">searching bookmarks</a><br>
-Database size: More than 100 million bookmarked URLs<br>
-Note: Since delicious has now been bought by Yahoo, it seems likely that
-Yahoo have migrated it to use their own search technology.
-<!-- Size taken from wikipedia - searching for OR combinations of common words
-reports 25315700 matches, so >100M total size is very plausible. -->
-</li>
-
 <!-- URLs checked 2009-03-14 -->
 <li id="tweakers"><div class="orgname"><a href="http://tweakers.net/">Tweakers.net</a> - the largest Dutch ICT-website</div>
 Application:
