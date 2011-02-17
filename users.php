@@ -91,8 +91,8 @@ Languages: Norwegian<br>
 Document types: News stories
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="balcani"><div class="orgname"><a href="http://www.osservatoriobalcani.org/">Osservatorio Balcani</a> (<a href="http://www.osservatoriobalcani.org/article/frontpage/161">The Observatory on the Balkans</a>)</div>
+<!-- URLs checked 2011-02-17 -->
+<li id="balcani"><div class="orgname"><a href="http://www.osservatoriobalcani.org/">Osservatorio Balcani</a> (<a href="http://www.balcanicaucaso.org/eng">The Observatory on the Balkans</a>)</div>
 Application: Searching articles about the Balkans<br>
 Languages: Italian, English, and others<br>
 </li>
@@ -105,7 +105,7 @@ Languages: Italian, English, and others<br>
 
 <ul>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="tweakers"><div class="orgname"><a href="http://tweakers.net/">Tweakers.net</a> - the largest Dutch ICT-website</div>
 Application:
 <a href="http://gathering.tweakers.net/forum/find">Forum search engine</a><br>
@@ -114,19 +114,19 @@ Document types: Complete forum discussions<br>
 Database size: Over 850,000 documents, about 15GB of uncompressed, 10GB compressed database size. <small>(2008-07-14)</small>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="theyworkforyou"><div class="orgname"><a href="http://www.theyworkforyou.com/" >TheyWorkForYou.com</a></div>
 Application: Searching Hansard, the UK House of Commons Official Report; also email alerts<br>
 Languages: English<br>
 Database size: around 500,000 documents; 0.5G of source data. <small>(2006-02-06)</small>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="react"><div class="orgname"><a href="http://www.react.nl/index.php">React</a> - Supplier of Forum Software</div>
+<!-- URLs checked 2011-02-17 -->
+<li id="react"><div class="orgname"><a href="http://www.react.nl/">React</a> - Supplier of Forum Software</div>
 Application: Searching discussion forums - sites include
 <a href="http://www.amsterdam.nl/">the city of Amsterdam</a>,
 the Dutch broadcasting organization <a href="http://www.vpro.nl/">VPRO</a>,
-<a href="http://www.webpiraat.nl/wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a Dutch interchurch organization)<br>
+<a href="http://webpiraat.nl/wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a Dutch interchurch organization)<br>
 Languages: Dutch<br>
 Document types: forum topics<br>
 Database size: around 900,000 topics <small>(2004-08-19)</small>
@@ -138,12 +138,12 @@ topics over all the boards that we monitor. We index 1 topic as 1 document.
 ?>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="gaze"><div class="orgname"><a href="http://www.mysociety.org/">mysociety.org</a></div>
 Application: <a href="http://www.mysociety.org/2005/09/15/gaze-web-service/">web api to gazetteer service</a>, built using Search::Xapian
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="spin"><div class="orgname"><a href="http://www.spin.de/">spin.de</a></div>
 Application: Free online community with profiles, chat, boards, blogs, games, and more<br>
 Languages: German<br>
@@ -151,12 +151,12 @@ Document types: User profiles, forums, mails, and help documents<br>
 Database size: 1.89 million documents <small>(2007-03-29)</small>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="whatdotheyknow"><div class="orgname"><a href="http://www.whatdotheyknow.com/">WhatDoTheyKnow.com</a></div>
 Application: Searching UK Freedom of Information Act requests and responses
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="ubuntuusersde"><div class="orgname"><a href="http://ubuntuusers.de/">UbuntuUsers.de</a></div>
 Application: Official German Portal for Ubuntu Linux
 </li>
@@ -201,32 +201,33 @@ and <a href="http://debtags.alioth.debian.org/edit.html">tag editor</a>.
 </ul>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
 Application: Searching online auctions<br>
 Languages: Dutch<br>
 Database size: around 1.2 million documents <small>(2009-03-14)</small>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2009-03-14
+  redirect loop on root page, 2011-02-17 -->
 <li id="procare"><div class="orgname"><a href="http://www.procarestores.com/">ProCare Stores</a></div>
 Application: <a href="http://www.procarestores.com/product/general_catalog/index.php">Product Search</a> for on-line store<br>
 Database size: 9000 products <small>(2006-04-08)</small>
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2009-03-14 internal server error 2011-02-17 -->
 <li id="grokbase"><div class="orgname"><a href="http://grokbase.com/">grokbase</a></div>
 Application: Searching mailing list archive
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="iusethis"><div class="orgname"><a href="http://osx.iusethis.com/">i use this</a></div>
 Provides a way to organise your Mac OS X applications and
 discover new ones (also available for iPhone and Microsoft Windows
 applications).
 </li>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2011-02-17 -->
 <li id="mydeco"><div class="orgname"><a href="http://mydeco.com/">mydeco</a></div>
 Application: Home decoration website
 </li>
