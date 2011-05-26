@@ -74,7 +74,15 @@ few minutes behind.
 <p>
 
 <p>
-Check out like so:
+There are also mirrors on <a href="https://gitorious.org/xapian/xapian/">gitorious.org</a>
+and <a href="https://github.com/xapian/xapian">github</a> which you will probably
+find more convenient to clone from if you use those sites.  The gitorious mirror
+is updated by the same system which updates git.xapian.org, so should be very current.
+The github mirror is currently on a polled update every five minutes.
+</p>
+
+<p>
+Check out like so (assuming you're using git.xapian.org):
 </p>
 
 <ol>
