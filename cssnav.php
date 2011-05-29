@@ -34,7 +34,7 @@ function navlink(&$n, $f) {
 array_walk($pages, "navlink");
 print join("<br>\n", $pages);
 if ($current != "search") {
-print "<br>\n<form method=\"GET\" action=\"search\"><div><input name=\"P\" size=\"14\"></div></form>\n";
+print "<br>\n<form method=\"GET\" action=\"search\"><div><input type=\"search\" name=\"P\" size=\"14\"></div></form>\n";
 }
 
 ?>
