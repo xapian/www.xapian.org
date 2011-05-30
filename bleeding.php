@@ -119,39 +119,45 @@ both).  There's a section describing how to set up for each below.
 <h3>WebDAV over https</h3>
 
 <p>
-If your username is <i>fred</i> then execute the following command:
+If your username is <i>ian</i> then execute the following command:
 </p>
 
 <blockquote><tt>
-svn --username fred ls https://svn-dav.xapian.org:8443/xapian/
+svn --username ian ls https://svn-dav.xapian.org:8443/xapian/
 </tt></blockquote>
 
 <p>
 The certificate we use for HTTPS is issued by <a href="http://www.cacert.org/"
->CAcert</a> so unless your subversion client is already configured to trust
-such certificates you will get the following warning:
+>CAcert</a> so unless your operating system or subversion client is already 
+configured to trust such certificates you will get the following warning:
 </p>
 
 <blockquote><pre>
-Error validating server certificate for 'https://svn.xapian.org:8443':
- - The certificate hostname does not match.
+Error validating server certificate for 'https://svn-dav.xapian.org:8443':
+ - The certificate is not issued by a trusted authority. Use the
+   fingerprint to validate the certificate manually!
 Certificate information:
  - Hostname: svn-dav.xapian.org
- - Valid: from Sun, 19 Apr 2009 03:48:43 GMT until Tue, 19 Apr 2011 03:48:43 GMT
+ - Valid: from Sat, 21 May 2011 03:37:43 GMT until Mon, 20 May 2013 03:37:43 GMT
  - Issuer: http://www.CAcert.org, CAcert Inc.
- - Fingerprint: 2a:72:69:71:fd:da:dc:97:0c:f5:de:2a:73:8b:f5:78:51:26:ba:72
+ - Fingerprint: 06:46:7a:a3:f6:11:2f:2a:41:63:e1:7e:e4:d3:07:15:4f:7d:4c:e6
 (R)eject, accept (t)emporarily or accept (p)ermanently?
 </pre></blockquote>
 
 <p>
-If you do, verify the fingerprint is as above.  If the fingerprint
-doesn't match, or you have other concerns, talk to the other developers
-and don't just accept the certificate.  If you're happy with it, you
+Since this site doesn't run on, https you should check the fingerprint is
+<a href="http://survex.com/~olly/svn-dav.xapian.org-fingerprint.gpg">as in this version GPG signed by Olly Betts</a> (using the same
+key which signs release announcements on the xapian-discuss list).
+</p>
+
+<p>
+If the fingerprint doesn't match, or you have other concerns, talk to the other 
+developers - don't just accept the certificate.  If you're happy with it, you
 can either accept it temporarily (and be asked to confirm it for every
 "session", though not every remote svn operation), or permanently.  We
-recommend you accept it permanently as otherwise you need to recheck
-the fingerprint repeatedly which makes it more likely you might accidentally
-accept a spoofed certificate (so press <i>p</i>).
+recommend you accept it permanently (so press <i>p</i>) as otherwise you need 
+to recheck the fingerprint repeatedly, which actually makes it more likely you 
+might accidentally accept a spoofed certificate.
 </p>
 
 <p>
@@ -159,8 +165,8 @@ You'll then be asked for your password:
 </p>
 
 <blockquote><pre>
-Authentication realm: &lt;https://svn.xapian.org:8443&gt; Xapian Subversion Repository
-Password for 'fred':
+Authentication realm: &lt;https://svn-dav.xapian.org:8443&gt; Xapian Subversion Repository
+Password for 'ian':
 </pre></blockquote>
 
 <p>
@@ -176,8 +182,8 @@ trunk/
 
 <p>
 Your password <b>may</b> be cached in plaintext in your home directory -
-if your machine isn't well secured, you should ensure that it is being
-encrypted, or disable this caching.  See the relevant <a
+you should ensure that it is being encrypted, or disable this caching.  See the 
+relevant <a
 href="http://subversion.tigris.org/faq.html#plaintext-passwords">Subversion
 FAQ entry</a> for more information.
 </p>
