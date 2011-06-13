@@ -33,7 +33,7 @@ Microsoft Windows and OS/2.
   on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
   We also support <a href="http://www.swig.org/">SWIG</a> which can generate
   bindings for many languages.  At present those for Python, PHP, Tcl, C#,
-  and Ruby are working.
+  Ruby and Lua are working.
 
 <li> Ranked probabilistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near

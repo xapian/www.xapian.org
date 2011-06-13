@@ -4,10 +4,10 @@ $perl_minor_o = ".0";
 $announce_o = "http://article.gmane.org/gmane.comp.search.xapian.general/8659";
 #$announce_o = "/download";
 
-$version = "1.2.5"; $branch = "1.2"; $release_date = "2011-04-04";
+$version = "1.2.6"; $branch = "1.2"; $release_date = "2011-06-12";
 $perl_minor = ".0";
 $announce = "http://article.gmane.org/gmane.comp.search.xapian.general/8766";
-#$announce = "/download";
+$announce = "/download";
 
 #$version_d = "1.1.5"; $release_date_d = "2010-04-17";
 #$perl_minor_d = ".0";

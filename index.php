@@ -25,8 +25,9 @@ with bindings to allow use from
 <a href="/docs/bindings/php/">PHP</a>,
 <a href="http://svn.xapian.org/trunk/xapian-bindings/java/README?revision=HEAD" xhref="/docs/bindings/java/">Java</a>,
 <a href="/docs/bindings/tcl8/">Tcl</a>,
-<a href="/docs/bindings/csharp/">C#</a> and
-<a href="/docs/bindings/ruby/">Ruby</a> (so far!)</p>
+<a href="/docs/bindings/csharp/">C#</a>,
+<a href="/docs/bindings/ruby/">Ruby</a> and
+<a href="/docs/bindings/lua/">Lua</a> (so far!)</p>
 
 <p>Xapian is a highly adaptable toolkit which allows developers
 to easily add advanced indexing and search facilities to their own
