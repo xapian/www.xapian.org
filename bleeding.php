@@ -145,7 +145,7 @@ Certificate information:
 </pre></blockquote>
 
 <p>
-Since this site doesn't run on, https you should check the fingerprint is
+Since this page isn't served via https, you should check the fingerprint is
 <a href="http://survex.com/~olly/svn-dav.xapian.org-fingerprint.gpg">as in this version GPG signed by Olly Betts</a> (using the same
 key which signs release announcements on the xapian-discuss list).
 </p>
@@ -242,7 +242,7 @@ svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 <h2>Snapshots</h2>
 
 <p>
-You can
+You can download
 <A HREF="http://oligarchy.co.uk/xapian/trunk/">automated snapshots</A>,
 which are generated once an hour, provided <tt>make distcheck</tt> passes
 on Linux.  This means that some breakages are avoided, but they may still
