@@ -76,7 +76,7 @@ if ($perl_minor === ".0") {
 }
 ?>/Changes">[news]</a>
 (<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version_o.$perl_minor ?>/Changes">on CPAN</a>)
-<? if (time() - strtotime($release_date) < 7*24*3600) {
+<? if (time() - strtotime($release_date_o) < 7*24*3600) {
 // Show this warning for 7 days after the release
 ?>
 <small>(CPAN mirrors may not update for a few days after a new release)</small>
