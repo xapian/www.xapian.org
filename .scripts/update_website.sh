@@ -117,7 +117,7 @@ if test "$tarball" -nt stamp-unpacked-bindings-tarball ; then
   touch stamp-unpacked-bindings-tarball
 fi
 mkdir "$tmpdir/$cvsmodule/docs/bindings"
-for l in python php ruby tcl8 csharp ; do
+for l in python php ruby tcl8 csharp lua ; do
   mkdir "$tmpdir/$cvsmodule/docs/bindings/$l"
   cp -a "$tardir/$l"/docs/* "$tmpdir/$cvsmodule/docs/bindings/$l"
 done
