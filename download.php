@@ -103,7 +103,7 @@ dapper (the package name is libsearch-xapian-perl).
 
 <p>
 Backported Debian packages of newer versions are available from
-<a href="http://backports.org/">backports.org</a>.
+<a href="http://backports.debian.org/">backports.debian.org</a>.
 </p>
 
 <p>
