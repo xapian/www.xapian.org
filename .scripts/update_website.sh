@@ -60,7 +60,7 @@ if ! test -r $tarball ; then
   exit 1
 fi
 
-mkdir "${cvsmodule}/docs"
+[ -d "${cvsmodule}/docs" ] || mkdir "${cvsmodule}/docs"
 tardir=`echo "$tarball"|sed 's!.*/!!;s/\.tar\.gz//'`
 cd "$projectdir"
 if test "$tarball" -nt stamp-unpacked-tarball ; then
@@ -116,10 +116,11 @@ if test "$tarball" -nt stamp-unpacked-bindings-tarball ; then
   chmod g+rws "$tardir"
   touch stamp-unpacked-bindings-tarball
 fi
-mkdir "$tmpdir/$cvsmodule/docs/bindings"
+bindings_dir=$tmpdir/$cvsmodule/docs/bindings
+[ -d "$bindings_dir" ] || mkdir "$bindings_dir"
 for l in python php ruby tcl8 csharp lua ; do
-  mkdir "$tmpdir/$cvsmodule/docs/bindings/$l"
-  cp -a "$tardir/$l"/docs/* "$tmpdir/$cvsmodule/docs/bindings/$l"
+  mkdir "$bindings_dir/$l"
+  cp -a "$tardir/$l"/docs/* "$bindings_dir/$l"
 done
 
 # FIXME: doesn't handle Search-Xapian-0.9.9.1.tar.gz
