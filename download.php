@@ -16,11 +16,13 @@
 
 <h2>Stable release</h2>
 
-<p>The <? echo $branch ?> branch features substantial improvements.
-<i>[List to be written still, sorry!]</i>
+<p>The <? echo $branch ?> branch is the current stable release branch.  We
+recommend you use this branch unless you have a particular need to use an older 
+version.
 <!--  If you wish, you can
 read a <a href="http://wiki.xapian.org/ReleaseOverview/">more
 complete overview of the changes</a> in the 1.0 release.
+<i>[List for 1.2.x to be written still, sorry!]</i>
 -->
 </p>
 
@@ -94,7 +96,7 @@ if ($perl_minor === ".0") {
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
 <p>
-Packages of xapian-core, xapian-omega, and xapian-bindings (Python, PHP, Ruby,
+Packages of xapian-core, xapian-omega, and xapian-bindings (Python, Ruby,
 and Tcl) are available from the Debian and Ubuntu archives for all currently
 supported releases except Ubuntu 6.06 (dapper).  The Perl bindings are also
 available from the archives for everything except Debian etch and Ubuntu
