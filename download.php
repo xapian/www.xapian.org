@@ -148,8 +148,9 @@ repositories, though these may lag behind the latest releases a bit.</p>
 
 <h2 id="rhel">RedHat Enterprise Linux</h2>
 
-<p>Tim Brody has built RPM packages for RedHat Enterprise Linux 5
-- there are binary packages for i386 and x86_64, and source RPMs.</p>
+<p>Tim Brody has built RPM packages for RedHat Enterprise Linux 5 and 6
+- there are binary packages for i386 and x86_64, and source RPMs (the
+RHEL5 packages are no longer updated, the latest are of Xapian 1.2.5).</p>
 
 <p>
 For convenience you can install a package to pull in his package repository
@@ -157,12 +158,22 @@ and then you can install the packages using yum:</p>
 <blockquote><pre>
 <span id="prompt">$</span> su
 <i>enter your root password</i>
-<span id="prompt">#</span> rpm -ivh http://rpm.eprints.org/xapian/5/noarch/rpm-eprints-org-xapian-5-1.noarch.rpm
+<span id="prompt">#</span> rpm -ivh http://rpm.eprints.org/rpm-eprints-org-key-1-1.noarch.rpm
+<span id="prompt">#</span> rpm -ivh http://rpm.eprints.org/xapian/6/noarch/rpm-eprints-org-xapian-6-1.noarch.rpm
 <span id="prompt">#</span> yum update
-<span id="prompt">#</span> yum install xapian-omega xapian-bindings-php xapian-bindings-python xapian-bindings-tcl8
+<span id="prompt">#</span> yum install xapian-omega xapian-bindings-{php,python,tcl8,perl,ruby}
 </pre></blockquote>
 
 <p>(or whatever Xapian packages you want to install).</p>
+
+<p>
+perl-Search-Xapian is available for those not using the SWIG bindings.
+</p>
+
+<p>
+If you want Xapian 1.0.x, then 1.0.20 is available from EPEL for RHEL 6:
+<a href="http://fedoraproject.org/wiki/EPEL">http://fedoraproject.org/wiki/EPEL</a>
+</p>
 
 <h2 id="srpm">Source RPMs</h2>
 
