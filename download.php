@@ -96,11 +96,10 @@ if ($perl_minor === ".0") {
 <h1 id="deb">Debian and Ubuntu packages</h1>
 
 <p>
-Packages of xapian-core, xapian-omega, and xapian-bindings (Python, Ruby,
-and Tcl) are available from the Debian and Ubuntu archives for all currently
-supported releases except Ubuntu 6.06 (dapper).  The Perl bindings are also
-available from the archives for everything except Debian etch and Ubuntu
-dapper (the package name is libsearch-xapian-perl).
+Packages of xapian-core, xapian-omega, xapian-bindings (Python, Ruby,
+and Tcl), and the perl bindings (the package name is libsearch-xapian-perl) are 
+available from the Debian and Ubuntu archives for all currently supported 
+releases.
 </p>
 
 <p>
@@ -115,10 +114,7 @@ Launchpad Personal Package Archives (PPAs) maintained by Olly Betts for
 and
 <a href="https://launchpad.net/~xapian-backports/+archive/xapian-1.2">1.2.x</a>.
 Follow the instructions on those links for how to make use of these.  Currently
-all packages are backported to all Ubuntu releases which are still supported,
-except that the Perl bindings aren't backported to Ubuntu 6.06 (dapper)
-(because the packaging relies heavily on newer features of debhelper) and
-1.2.x isn't backported to dapper at all.
+all packages are backported to all Ubuntu releases which are still supported.
 </p>
 
 <h1 id="RPM">RPM packages</h1>
