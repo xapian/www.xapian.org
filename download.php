@@ -256,7 +256,7 @@ Cygwin):</p>
 
 <p>Alternatively, Charlie Hull (building on earlier work by Ulrik Petersen)
 maintains a separate set of
-<a href="http://www.flax.co.uk/xapian_windows.shtml">makefiles for MSVC
+<a href="http://www.flax.co.uk/xapian_binaries">makefiles for MSVC
 and pre-built binaries built with them</a>.  These include support for
 Python, PHP, Ruby, C#, and the experimental SWIG-based Java bindings.</p>
 
