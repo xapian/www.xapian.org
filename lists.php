@@ -49,8 +49,8 @@ If you only want announcements, you can:
 (also gatewayed to <a href="http://twitter.com/xapian">twitter</a>)
 <li> Join the <a href="http://identi.ca/group/xapian">!xapian identi.ca group</a>
 <li> "Subscribe" to the
-<a href="http://freshmeat.net/projects/xapian/">Xapian project on
-freshmeat</a> (release announcements only)
+<a href="http://freecode.com/projects/xapian/">Xapian project on
+Freecode</a> (release announcements only)
 </ul>
 
 <h2>Searching the lists</h2>
