@@ -68,16 +68,16 @@ relating to the latest release.
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version_o ?>/xapian-applications/omega/NEWS">[news]</a>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version_o ?>/xapian-bindings-<? echo $version_o ?>.tar.gz">xapian-bindings</a>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
 <a HREF="http://svn.xapian.org/*checkout*/tags/<? echo $version_o ?>/xapian-bindings/NEWS">[news]</a>
-<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version_o ?>/Search-Xapian-<? echo $version_o.$perl_minor ?>.tar.gz">Search::Xapian</a>: Perl bindings
-(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version_o.$perl_minor ?>/">on CPAN</a>)
+<li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version_o ?>/Search-Xapian-<? echo $version_o.$perl_minor_o ?>.tar.gz">Search::Xapian</a>: Perl bindings
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version_o.$perl_minor_o ?>/">on CPAN</a>)
 <a href="http://svn.xapian.org/*checkout*/tags/<?
-if ($perl_minor === ".0") {
-  echo "$version/search-xapian";
+if ($perl_minor_o === ".0") {
+  echo "$version_o/search-xapian";
 } else {
-  echo "search-xapian-$version$perl_minor";
+  echo "search-xapian-$version_o$perl_minor_o";
 }
 ?>/Changes">[news]</a>
-(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version_o.$perl_minor ?>/Changes">on CPAN</a>)
+(<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version_o.$perl_minor_o ?>/Changes">on CPAN</a>)
 <? if (time() - strtotime($release_date_o) < 7*24*3600) {
 // Show this warning for 7 days after the release
 ?>
