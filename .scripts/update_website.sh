@@ -49,7 +49,7 @@ if ! cmp "$scriptpath_cvs" "$scriptpath_active" >/dev/null 2>&1 ; then
   exit 1
 fi
 
-version=`sed 's/.*version *= *"\([0-9.]*\)".*/\1/p;d' ${tmpdir}/${cvsmodule}/version.php`
+version=`sed 's/.*version *= *\(["'\'']\)\([0-9.]*\)\1.*/\2/p;d' ${tmpdir}/${cvsmodule}/version.php`
 
 echo "Latest Xapian release is $version"
 tarballdir="$tarballdir/$version"
