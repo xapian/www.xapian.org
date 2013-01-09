@@ -78,6 +78,8 @@ There are also mirrors on <a href="https://gitorious.org/xapian/xapian/">gitorio
 and <a href="https://github.com/xapian/xapian">github</a> which you will probably
 find more convenient to clone from if you use those sites.  These are updated
 by the same system which updates git.xapian.org, so should be very current.
+There's also a git mirror on <a href="http://repo.or.cz/w/xapian.git">repo.or.cz</a>
+which updates by polling.
 </p>
 
 <p>
