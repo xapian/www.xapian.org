@@ -14,6 +14,7 @@
 
 <ul>
 <li> <a href="csharp/">C#</a></li>
+<li> <a href="https://github.com/arcusfelis/xapian-erlang-bindings/#readme">Erlang</a></li>
 <li> <a href="http://svn.xapian.org/branches/1.2/xapian-bindings/java/README?revision=HEAD">Java</a></li>
 <li> <a href="lua/">Lua</a></li>
 <li> <a href="perl/Search/Xapian.html">Perl</a></li>

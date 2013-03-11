@@ -27,15 +27,18 @@
 <p>Xapian is an Open Source Search Engine Library, released under the
 <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.
 It's written in <a href="/docs/apidoc/html/annotated.html">C++</a>,
-with bindings to allow use from
+with <a href="/docs/bindings/">bindings</a> to allow use from
 <a href="/docs/bindings/perl/Search/Xapian.html">Perl</a>,
 <a href="/docs/bindings/python/">Python</a>,
 <a href="/docs/bindings/php/">PHP</a>,
 <a href="http://svn.xapian.org/trunk/xapian-bindings/java/README?revision=HEAD" xhref="/docs/bindings/java/">Java</a>,
 <a href="/docs/bindings/tcl8/">Tcl</a>,
 <a href="/docs/bindings/csharp/">C#</a>,
-<a href="/docs/bindings/ruby/">Ruby</a> and
-<a href="/docs/bindings/lua/">Lua</a> (so far!)</p>
+<a href="/docs/bindings/ruby/">Ruby</a>,
+<a href="/docs/bindings/lua/">Lua</a>
+and
+<a href="https://github.com/arcusfelis/xapian-erlang-bindings/#readme">Erlang</a>
+(so far!)</p>
 
 <p>Xapian is a highly adaptable toolkit which allows developers
 to easily add advanced indexing and search facilities to their own

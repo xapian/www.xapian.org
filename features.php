@@ -28,12 +28,8 @@ portable</a> - runs on Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Solaris,
 HP-UX, Tru64, IRIX, and probably other Unix platforms; as well as
 Microsoft Windows and OS/2.
 
-<li> Written in C++.  Perl bindings are available in the module
-  <a href="http://search.cpan.org/~olly/Search-Xapian/">Search::Xapian
-  on CPAN</a>.  Java JNI bindings are included in the xapian-bindings module.
-  We also support <a href="http://www.swig.org/">SWIG</a> which can generate
-  bindings for many languages.  At present those for Python, PHP, Tcl, C#,
-  Ruby and Lua are working.
+<li> Written in C++, with bindings allowing use from
+  <a href="/docs/bindings/">many other languages</a>.
 
 <li> Ranked probabilistic search - important words get more weight than
 unimportant words, so the most relevant documents are more likely to come near
