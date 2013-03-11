@@ -171,6 +171,12 @@ If you want Xapian 1.0.x, then 1.0.20 is available from EPEL for RHEL 6:
 <a href="http://fedoraproject.org/wiki/EPEL">http://fedoraproject.org/wiki/EPEL</a>
 </p>
 
+<h2 id="slackware">Slackware</h2>
+
+<p>
+Packages for slackware linux are available from <a href="http://slackbuilds.org/">slackbuilds</a>.
+</p>
+
 <h2 id="srpm">Source RPMs</h2>
 
 <p>
