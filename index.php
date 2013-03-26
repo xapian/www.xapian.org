@@ -31,7 +31,7 @@ with <a href="/docs/bindings/">bindings</a> to allow use from
 <a href="/docs/bindings/perl/Search/Xapian.html">Perl</a>,
 <a href="/docs/bindings/python/">Python</a>,
 <a href="/docs/bindings/php/">PHP</a>,
-<a href="http://svn.xapian.org/trunk/xapian-bindings/java/README?revision=HEAD" xhref="/docs/bindings/java/">Java</a>,
+<a href="http://svn.xapian.org/branches/1.2/xapian-bindings/java/README?revision=HEAD" xhref="/docs/bindings/java/">Java</a>,
 <a href="/docs/bindings/tcl8/">Tcl</a>,
 <a href="/docs/bindings/csharp/">C#</a>,
 <a href="/docs/bindings/ruby/">Ruby</a>,
