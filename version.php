@@ -10,6 +10,6 @@ $perl_minor = '.0';
 $announce = 'http://article.gmane.org/gmane.comp.search.xapian.general/9567';
 #$announce = '/download';
 
-$version_d = '1.3.0'; $release_date_d = '2012-03-14';
-$announce_d = 'http://article.gmane.org/gmane.comp.search.xapian.general/9318';
+$version_d = '1.3.1'; $release_date_d = '2013-05-03';
+$announce_d = 'http://article.gmane.org/gmane.comp.search.xapian.general/9594';
 ?>
