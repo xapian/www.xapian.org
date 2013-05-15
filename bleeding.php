@@ -19,58 +19,40 @@ If you want a stable version of Xapian, we recommend using a
 <a href="download">released version</a>.  But if you're happy to cope
 with potential breakage and want to try the latest development code, or
 do development yourself, you can access our version control system.
-Currently this runs on <a href="http://subversion.apache.org/">Subversion</a>
-(known as SVN for short), with a read-only
-<a href="http://git-scm.com/">Git</a> mirror.
+We're in the process of migrating to <a href="http://git-scm.com/">git</a>,
+but currently the master repo is hosted on
+<a href="http://subversion.apache.org/">subversion</a>
+(known as SVN for short), with a read-only git mirror.
 </p>
 
 <p>
-The Subversion repository includes
-a complete history of the code, including that from the original
-Open Muscat project (when converting to SVN we dropped old nightly snapshot
-tags and a few
-others which it seems highly unlikely anyone would find useful - if you
-really need these for some reason, contact us for a copy of the archived
-Xapian CVS tree.)
-Additionally, we've recreated copy and rename operations into the Subversion
-history (CVS doesn't support copy or rename directly.)</p>
+The repository includes a complete history of the code, including that from the 
+original Open Muscat project's CVS repository.  Additionally, we recreated copy 
+and rename operations for historic commits (CVS doesn't support copy or rename 
+directly).  We dropped CVS tags for the old nightly snapshots (and a few others 
+which it seems highly unlikely anyone would find useful) - if you really need 
+these for some reason, contact us for a copy of the archived CVS tree.
+</p>
 
 <h2>Access Details</h2>
 
 <p>Note: If you just want to look at the history of a few files, you may find
-it easier and quicker to 
-<a href="http://trac.xapian.org/browser">browse our SVN repository online (using trac)</a>
-(or <a href="http://svn.xapian.org/">using viewvc</a>).</p>
-
-<h3 id="svn">Using Subversion</h3>
-
-<p>
-To get the very latest version of Xapian (including the Search::Xapian Perl
-bindings) from our repository, follow these steps:
+it easier and quicker to browse the repository online:
 </p>
 
-<ol>
-<li> <tt>svn co svn://svn.xapian.org/xapian/trunk xapian</tt>
-
-<li> Read the "Building from SVN" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
-
-<li> In the newly created <tt>xapian</tt> directory, run the command
-    <tt>./bootstrap</tt> - this will run various developer tools to produce a
-    source tree like you'd get from unpacking release source tarballs.
-
-<li> <tt>bootstrap</tt> will create a top level <tt>configure</tt> script,
-    which you can use to configure the whole source tree together.
-
-<li> If you're looking to do development work on Xapian, then the rest of
-    <tt>xapian-core/HACKING</tt> is recommended reading.
-</ol>
+<ul>
+<li> <a href="http://gitorious.org/xapian/xapian">browse git (using gitorious)</a>
+<li> <a href="https://github.com/xapian/xapian">browse git (using github)</a>
+<li> <a href="http://trac.xapian.org/browser">browse SVN (using trac)</a>
+<li> <a href="http://svn.xapian.org/">browse SVN (using viewvc)</a>
+</ul>
 
 <h3 id="git">Using Git</h3>
 
 <p>
-We have a read-only git mirror of the SVN repository.  This is updated
-automatically in response to commits to SVN, so should be at most a
-few minutes behind.
+Currently this is a read-only mirror of our SVN repo, which is updated 
+automatically in response to commits to SVN, so should be at most a few minutes 
+behind.
 <p>
 
 <p>
@@ -89,7 +71,7 @@ Check out like so (assuming you're using git.xapian.org):
 <ol>
 <li> <tt>git clone git://git.xapian.org/xapian</tt>
 
-<li> Read the "Building from SVN" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
+<li> Read the "Building from git" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
 
 <li> In the newly created <tt>xapian</tt> directory, run the command
     <tt>./bootstrap</tt> - this will run various developer tools to produce a
@@ -104,9 +86,32 @@ Check out like so (assuming you're using git.xapian.org):
 
 <p>
 All branches should be available via git (you can list them with
-<code>git branch -r</code>) and new branches and tags should get added
-automatically now.
+<code>git branch -r</code>).  Note that SVN tags appears as branches in git.
 </p>
+
+<h3 id="svn">Using Subversion</h3>
+
+<p>
+We recommend using git now, as we're going to fully migrate away from SVN in 
+the near future, but should you need to work with SVN in the meanwhile, here
+are the details:
+</p>
+
+<ol>
+<li> <tt>svn co svn://svn.xapian.org/xapian/trunk xapian</tt>
+
+<li> Read the "Building from git" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
+
+<li> In the newly created <tt>xapian</tt> directory, run the command
+    <tt>./bootstrap</tt> - this will run various developer tools to produce a
+    source tree like you'd get from unpacking release source tarballs.
+
+<li> <tt>bootstrap</tt> will create a top level <tt>configure</tt> script,
+    which you can use to configure the whole source tree together.
+
+<li> If you're looking to do development work on Xapian, then the rest of
+    <tt>xapian-core/HACKING</tt> is recommended reading.
+</ol>
 
 <?php if ($_SERVER['QUERY_STRING'] != "") { ?>
 
@@ -246,9 +251,9 @@ svn co svn+ssh+userv://xapian-svn@svn.xapian.org/xapian/trunk xapian
 <p>
 You can download
 <A HREF="http://oligarchy.co.uk/xapian/trunk/">automated snapshots</A>,
-which are generated once an hour, provided <tt>make distcheck</tt> passes
-on Linux.  This means that some breakages are avoided, but they may still
-fail to build for you if you're using a different platform, or even a
+which are generated from git every 20 minutes, provided <tt>make distcheck</tt> 
+passes on Linux.  This means that some breakages are avoided, but they may 
+still fail to build for you if you're using a different platform, or even a
 different version of Linux.
 </p>
 
@@ -257,20 +262,6 @@ If you want to get a better idea of how healthy the tree is on various
 platforms, see the
 <a href="http://trac.xapian.org/wiki/AutomatedBuilds">automated builds</a>
 page on the wiki.
-</p>
-
-<h2>CVS</h2>
-
-<p>Prior to April 2005 we used CVS as our version control system.  The SVN tree
-contains the full history, except some useless really old tags weren't
-converted.  The (now frozen) Xapian CVS tree
-is preserved, but not currently accessible online.
-<!--can still be browsed online
-at http://cvs.xapian.org/xapian/ should you really want to (we've not
-made this a link, to try to avoid people browsing it without really reading
-this paragraph and getting confused - such people almost certainly want to
-<a href="http://svn.xapian.org/">browse our SVN repository online</a> instead!)
--->
 </p>
 
 </div>
