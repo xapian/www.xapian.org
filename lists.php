@@ -20,7 +20,7 @@
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.general">Gmane</a>]
 <li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-devel">xapian-devel</a></tt> for technical discussions about the development of Xapian 
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.devel">Gmane</a>]
-<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-commits">xapian-commits</a></tt> receives details of SVN commits (can be a <em>lot</em> of messages)
+<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-commits">xapian-commits</a></tt> receives details of commits (can be a <em>lot</em> of messages)
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.cvs">Gmane</a>]
 <li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-tickets">xapian-tickets</a></tt> receives details of trac ticket changes (can be a <em>lot</em> of messages)
 <!-- FIXME: need to subscribe tickets list to gmane...
