@@ -44,7 +44,9 @@ it easier and quicker to browse the repository online:
 <li> <a href="http://gitorious.org/xapian/xapian">browse git (using gitorious)</a>
 <li> <a href="https://github.com/xapian/xapian">browse git (using github)</a>
 <li> <a href="http://trac.xapian.org/browser">browse SVN (using trac)</a>
+<!-- No longer works
 <li> <a href="http://svn.xapian.org/">browse SVN (using viewvc)</a>
+-->
 </ul>
 
 <h3 id="git">Using Git</h3>
@@ -71,7 +73,7 @@ Check out like so (assuming you're using git.xapian.org):
 <ol>
 <li> <tt>git clone git://git.xapian.org/xapian</tt>
 
-<li> Read the "Building from git" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
+<li> Read the "Building from git" section in <a href="http://trac.xapian.org/export/HEAD/trunk/xapian-core/HACKING"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
 
 <li> In the newly created <tt>xapian</tt> directory, run the command
     <tt>./bootstrap</tt> - this will run various developer tools to produce a
@@ -100,7 +102,7 @@ are the details:
 <ol>
 <li> <tt>svn co svn://svn.xapian.org/xapian/trunk xapian</tt>
 
-<li> Read the "Building from git" section in <a href="http://svn.xapian.org/trunk/xapian-core/HACKING?view=co"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
+<li> Read the "Building from git" section in <a href="http://trac.xapian.org/export/HEAD/trunk/xapian-core/HACKING"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
 
 <li> In the newly created <tt>xapian</tt> directory, run the command
     <tt>./bootstrap</tt> - this will run various developer tools to produce a
