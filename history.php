@@ -14,7 +14,7 @@
 
 <h1>History</h1>
 
-<p>Xapian is a modern class library, but has evolved out of more than 25 years
+<p>Xapian is a modern class library, but has evolved out of more than 30 years
 of commercial and academic experience.</p>
 
 <p>
