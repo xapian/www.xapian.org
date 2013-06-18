@@ -122,6 +122,8 @@ for l in python php ruby tcl8 csharp lua ; do
   mkdir "$bindings_dir/$l"
   cp -a "$tardir/$l"/docs/* "$bindings_dir/$l"
 done
+mkdir "$bindings_dir/java"
+cp -a "$tardir/java/README" "$bindings_dir/java"
 
 # FIXME: doesn't handle Search-Xapian-0.9.9.1.tar.gz
 tarball="$tarballdir/Search-Xapian-$version.0.tar.gz"
