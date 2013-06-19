@@ -84,6 +84,8 @@ if test stamp-unpacked-tarball -nt stamp-built-sourcedoc ; then
 fi
 mkdir "$tmpdir/$cvsmodule/docs/sourcedoc" 2> /dev/null || :
 cp -a "$tardir"/docs/sourcedoc/html "$tmpdir/$cvsmodule/docs/sourcedoc"
+mkdir "$tmpdir/$cvsmodule/docs/xapian-core-$version"
+cp -a "$tardir"/NEWS "$tmpdir/$cvsmodule/docs/xapian-core-$version/NEWS"
 
 tarball="$tarballdir/xapian-omega-$version.tar.gz"
 if ! test -r $tarball ; then
@@ -101,6 +103,8 @@ if test "$tarball" -nt stamp-unpacked-omega-tarball ; then
 fi
 mkdir "$tmpdir/$cvsmodule/docs/omega"
 cp -a "$tardir"/docs/*.html "$tmpdir/$cvsmodule/docs/omega"
+mkdir "$tmpdir/$cvsmodule/docs/xapian-omega-$version"
+cp -a "$tardir"/NEWS "$tmpdir/$cvsmodule/docs/xapian-omega-$version/NEWS"
 
 tarball="$tarballdir/xapian-bindings-$version.tar.gz"
 if ! test -r $tarball ; then
@@ -124,6 +128,8 @@ for l in python php ruby tcl8 csharp lua ; do
 done
 mkdir "$bindings_dir/java"
 cp -a "$tardir/java/README" "$bindings_dir/java"
+mkdir "$tmpdir/$cvsmodule/docs/xapian-bindings-$version"
+cp -a "$tardir"/NEWS "$tmpdir/$cvsmodule/docs/xapian-bindings-$version/NEWS"
 
 # FIXME: doesn't handle Search-Xapian-0.9.9.1.tar.gz
 tarball="$tarballdir/Search-Xapian-$version.0.tar.gz"
@@ -145,6 +151,8 @@ if test "$tarball" -nt stamp-unpacked-perl-tarball ; then
 fi
 mkdir "$tmpdir/$cvsmodule/docs/bindings/perl"
 cp -a "$tardir"/html/* "$tardir"/README "$tmpdir/$cvsmodule/docs/bindings/perl"
+mkdir "$tmpdir/$cvsmodule/docs/search-xapian-$version.0"
+cp -a "$tardir"/Changes "$tmpdir/$cvsmodule/docs/search-xapian-$version.0/Changes"
 
 fi
 

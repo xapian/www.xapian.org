@@ -31,20 +31,14 @@ complete overview of the changes</a> in the 1.0 release.
 
 <ul>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/xapian-core-<? echo $version ?>.tar.gz">xapian-core</a>: the Xapian library itself
-<a HREF="http://trac.xapian.org/export/HEAD/tags/<? echo $version ?>/xapian-core/NEWS">[news]</a>
+<a HREF="/docs/xapian-core-<? echo $version ?>/NEWS">[news]</a>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/xapian-omega-<? echo $version ?>.tar.gz">omega</a>: Omega - an application built on Xapian, consisting of indexers and a CGI search frontend.
-<a HREF="http://trac.xapian.org/export/HEAD/tags/<? echo $version ?>/xapian-applications/omega/NEWS">[news]</a>
+<a HREF="/docs/xapian-omega-<? echo $version ?>/NEWS">[news]</a>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/xapian-bindings-<? echo $version ?>.tar.gz">xapian-bindings</a>: SWIG and JNI bindings allowing Xapian to be used from various other programming languages
-<a HREF="http://trac.xapian.org/export/HEAD/tags/<? echo $version ?>/xapian-bindings/NEWS">[news]</a>
+<a HREF="/docs/xapian-bindings-<? echo $version ?>/NEWS">[news]</a>
 <li> <a HREF="http://oligarchy.co.uk/xapian/<? echo $version ?>/Search-Xapian-<? echo $version.$perl_minor ?>.tar.gz">Search::Xapian</a>: Perl bindings
 (<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version.$perl_minor ?>/">on CPAN</a>)
-<a href="http://trac.xapian.org/export/HEAD/tags/<?
-if ($perl_minor === ".0") {
-  echo "$version/search-xapian";
-} else {
-  echo "search-xapian-$version$perl_minor";
-}
-?>/Changes">[news]</a>
+<a href="/docs/Search-Xapian-<? echo "$version$perl_minor" ?>/Changes">[news]</a>
 (<a HREF="http://search.cpan.org/~olly/Search-Xapian-<? echo $version.$perl_minor ?>/Changes">on CPAN</a>)
 <? if (time() - strtotime($release_date) < 7*24*3600) {
 // Show this warning for 7 days after the release
