@@ -1,0 +1,195 @@
+#!/bin/bash
+
+# This script rebuilds the website.
+#
+# We want to be able to run this script from cron (though we don't currently)
+# so it should not unconditionally involve any operations (such as building the
+# documentation) which are going to be fairly costly.
+#
+# To avoid this we implement such operations in a lazy way, only performing
+# them when the source data has changed.
+
+set -e
+
+projectdir="/home/olly/tmp/xapian-website-update"
+htmldir="/srv/www/xapian.org"
+tarballdir="/srv/www/oligarchy.co.uk/xapian"
+
+stagedir="${projectdir}/staging"
+
+###
+
+# Prepare temporary directory
+mkdir -p "$stagedir" "$stagedir"/docs
+chmod o=rx "$stagedir"
+chmod g=rws "$stagedir"
+
+./generate
+# Grab values from generate
+. ./version.sh
+
+umask 0002
+srcdir=`pwd`
+cd "$projectdir"
+
+echo "Latest Xapian release is $version"
+tarballdir=$tarballdir/$version
+
+tardir=xapian-core-$version
+tarball=$tarballdir/$tardir.$extension
+if ! test -r "$tarball" ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  exit 1
+fi
+
+cp -au "$srcdir"/*.css "$stagedir"
+cp -au "$srcdir"/*.html "$stagedir"
+cp -au "$srcdir"/*.ico "$stagedir"
+cp -au "$srcdir"/*.png "$stagedir"
+cp -au "$srcdir"/omega.conf "$stagedir"
+cp -au "$srcdir"/robots.txt "$stagedir"
+mkdir -p "$stagedir"/docs/bindings
+cp -au "$srcdir"/docs/bindings/index.html "$stagedir"/docs/bindings
+mkdir -p "$stagedir"/C
+cp -au "$srcdir"/C/index.php "$stagedir"/C
+# Not *.patch CVS/ generate news-to-html version.sh *.tt
+# Unsure:
+# flash template
+# cssnav.php cvs.php.php download)).php lists).php ll.php news.php.php niceurl.php ,.php ".php).php
+# search.php
+# styleandmeta.php
+# styleandmeta.txt
+
+if test "$tarball" -nt xapian-core/stamp-unpacked ; then
+  rm -rf "$tardir" xapian-core
+  tar xf "$tarball"
+  chmod go= "$tardir"
+  chmod g+rws "$tardir"
+  mv "$tardir" xapian-core
+  touch xapian-core/stamp-unpacked
+fi
+cp -au xapian-core/docs/*.html xapian-core/docs/apidoc.pdf "$stagedir/docs"
+mkdir -p "$stagedir/docs/apidoc/html"
+cp -au xapian-core/docs/apidoc/html/* "$stagedir/docs/apidoc/html"
+if test xapian-core/stamp-unpacked -nt xapian-core/stamp-built-sourcedoc ; then
+  cd xapian-core
+  ./configure --enable-maintainer-mode
+  make -C docs doxygen_source_docs
+  cd ..
+  touch xapian-core/stamp-built-sourcedoc
+fi
+mkdir -p "$stagedir/docs/sourcedoc"
+cp -au xapian-core/docs/sourcedoc/html "$stagedir/docs/sourcedoc"
+mkdir -p "$stagedir/docs/xapian-core-$version"
+cp -au xapian-core/NEWS "$stagedir/docs/xapian-core-$version/NEWS"
+
+tardir=xapian-omega-$version
+tarball=$tarballdir/$tardir.$extension
+if ! test -r "$tarball" ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  exit 1
+fi
+
+if test "$tarball" -nt xapian-omega/stamp-unpacked ; then
+  rm -rf "$tardir" xapian-omega
+  tar xf "$tarball"
+  chmod go= "$tardir"
+  chmod g+rws "$tardir"
+  mv "$tardir" xapian-omega
+  touch xapian-omega/stamp-unpacked
+fi
+mkdir -p "$stagedir/docs/omega"
+cp -au xapian-omega/docs/*.html "$stagedir/docs/omega"
+mkdir -p "$stagedir/docs/xapian-omega-$version"
+cp -au xapian-omega/NEWS "$stagedir/docs/xapian-omega-$version/NEWS"
+
+
+tardir=xapian-bindings-$version
+tarball=$tarballdir/$tardir.$extension
+if ! test -r "$tarball" ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  exit 1
+fi
+
+if test "$tarball" -nt xapian-bindings/stamp-unpacked ; then
+  rm -rf "$tardir" xapian-bindings
+  tar xf "$tarball"
+  chmod go= "$tardir"
+  chmod g+rws "$tardir"
+  mv "$tardir" xapian-bindings
+  touch xapian-bindings/stamp-unpacked
+fi
+bindings_dir=$stagedir/docs/bindings
+mkdir -p "$bindings_dir"
+for l in python php ruby tcl8 csharp lua ; do
+  mkdir -p "$bindings_dir/$l"
+  cp -au "xapian-bindings/$l"/docs/* "$bindings_dir/$l"
+done
+mkdir -p "$bindings_dir/java"
+cp -au "xapian-bindings/java/README" "$bindings_dir/java"
+mkdir -p "$stagedir/docs/xapian-bindings-$version"
+cp -au "xapian-bindings"/NEWS "$stagedir/docs/xapian-bindings-$version/NEWS"
+
+# FIXME: doesn't handle Search-Xapian-0.9.9.1.tar.gz
+tardir=Search-Xapian-$version.0
+tarball=$tarballdir/$tardir.tar.gz
+if ! test -r "$tarball" ; then
+  echo "$0: Latest release tarball doesn't exist: '$tarball'"
+  #exit 1
+else
+
+if test "$tarball" -nt Search-Xapian/stamp-unpacked ; then
+  rm -rf "$tardir" Search-Xapian
+  tar xf "$tarball"
+  chmod go= "$tardir"
+  chmod g+rws "$tardir"
+  mv "$tardir" Search-Xapian
+  cd Search-Xapian
+  ./makehtmldocs
+  cd ..
+  touch Search-Xapian/stamp-unpacked
+fi
+mkdir -p "$stagedir/docs/bindings/perl"
+cp -au "Search-Xapian"/html/* "Search-Xapian"/README "$stagedir/docs/bindings/perl"
+mkdir -p "$stagedir/docs/search-xapian-$version.0"
+cp -au "Search-Xapian"/Changes "$stagedir/docs/search-xapian-$version.0/Changes"
+
+fi
+
+chmod -R g+rw "${stagedir}"
+
+# update website with new image using rsync.
+# don't delete: we want to be able to upload files, and/or autogenerate
+# files.
+# FIXME: set it up to delete except for in certain directories which are
+# generated, 
+# --delete --delete-after
+rsync -a -C "${stagedir}/" --exclude=Makefile.am --exclude=Makefile.in --exclude='*.md5' --exclude='*.dot' "${htmldir}/"
+
+# rebuild omega's database
+# FIXME: sort out permissions so this'll work for other people too
+rm -rf /home/olly/omega/data/default.tmp /home/olly/omega/data/default.old
+
+omindex --spelling --db /home/olly/omega/data/default.tmp --url / \
+    -Mgif:ignore -Mico:ignore -Mpng:ignore \
+    -Mmap:ignore \
+    -Mgz:ignore -Mphp:ignore \
+    -Mconf:ignore -Mspec:ignore -Mxml:ignore \
+    -Mcs:text/plain \
+    -Mphp5:text/plain \
+    -Mpy:text/plain \
+    -Mrb:text/plain \
+    -Mtcl:text/plain \
+    -Mlua:text/plain \
+    "$htmldir"
+#xapian-compact /home/olly/omega/data/default.tmp /home/olly/omega/data/default.compact.tmp
+mv /home/olly/omega/data/default.tmp /home/olly/omega/data/default.compact.tmp
+
+if test -d /home/olly/omega/data/default ; then
+  mv /home/olly/omega/data/default /home/olly/omega/data/default.old
+fi
+mv /home/olly/omega/data/default.compact.tmp /home/olly/omega/data/default
+# keep it just in case! rm -rf /home/olly/omega/data/default.old
+
+# return successfully.
+exit 0
