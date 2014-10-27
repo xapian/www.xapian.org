@@ -198,8 +198,9 @@ for xapian-core and xapian-omega.</p>
 
 <p><a href="http://brew.sh/">Homebrew</a> has xapian-core and the bindings
 for several languages packaged.  For example, use
-<code>brew install xapian --with-python</code> to install the core library
-and the Python bindings.</p>
+<code>brew install --build-from-source xapian --with-python</code> to install
+the core library and the Python bindings (note that currently you need to have
+installed python from Homebrew first).</p>
 
 <p>The <a href="http://www.finkproject.org/">Fink project</a> has <a
 href="http://pdb.finkproject.org/pdb/browse.php?summary=xapian">packages</a>
