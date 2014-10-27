@@ -151,8 +151,8 @@ if test "$tarball" -nt Search-Xapian/stamp-unpacked ; then
 fi
 mkdir -p "$stagedir/docs/bindings/perl"
 cp -au "Search-Xapian"/html/* "Search-Xapian"/README "$stagedir/docs/bindings/perl"
-mkdir -p "$stagedir/docs/search-xapian-$version.0"
-cp -au "Search-Xapian"/Changes "$stagedir/docs/search-xapian-$version.0/Changes"
+mkdir -p "$stagedir/docs/Search-Xapian-$version.0"
+cp -au "Search-Xapian"/Changes "$stagedir/docs/Search-Xapian-$version.0/Changes"
 
 fi
 
