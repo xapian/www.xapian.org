@@ -13,12 +13,15 @@
 <img src="xapian-logo.png" alt="The Xapian Project">
 
 [%#
+<div style="padding:1em;background-color:#dff;border:1px solid #999;
+      font:13px/18px verdana, arial, helvetica, sans-serif;">
+Xapian is taking part in <a href="http://code.google.com/soc/">Google Summer of Code</a> this year - here's our <a href="http://trac.xapian.org/wiki/GSoCProjectIdeas">list of project ideas</a>.
+</div><br>
 %]
 <div style="padding:1em;background-color:#dff;border:1px solid #999;
       font:13px/18px verdana, arial, helvetica, sans-serif;">
-Xapian is taking part in <a href="http://code.google.com/soc/">Google's Summer of Code</a> this year - here's our <a href="http://trac.xapian.org/wiki/GSoCProjectIdeas">list of project ideas</a>.
-</div>
-<br>
+We are intending to apply to be a mentoring org in <a href="http://code.google.com/soc/">Google Summer of Code 2015</a> - here's our <a href="http://trac.xapian.org/wiki/GSoCProjectIdeas">list of project ideas</a>.
+</div><br>
 
 <p>Welcome to the Xapian project website.</p>
 
