@@ -40,7 +40,7 @@ it easier and quicker to browse the repository online:
 <li> <a href="http://trac.xapian.org/browser/git">browse (using trac)</a>
 <li> <a href="http://gitorious.org/xapian/xapian">browse gitorious mirror</a>
 <li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
-<li> <a href="http://trac.xapian.org/browser/git">browse the old SVN repo (using trac)</a>
+<li> <a href="http://trac.xapian.org/browser/svn">browse the old SVN repo (using trac)</a>
 <li> <a href="http://svn.xapian.org/Xapian/">browse the old SVN repo (using trac)</a>
 </ul>
 
@@ -71,7 +71,7 @@ All branches should be available via git (you can list them with
 <code>git branch -r</code>).  Note that SVN tags appears as branches in git.
 </p>
 
-<p?>
+<p>
 There are also mirrors on <a href="https://gitorious.org/xapian/xapian/">gitorious.org</a>
 and <a href="https://github.com/xapian/xapian">github</a> which you will probably
 find more convenient to clone from if you use those sites.  These are updated automatically
@@ -83,8 +83,8 @@ which updates by polling.
 <h3 id="svn">Using Subversion</h3>
 
 <p>
-The subversion repository is not longer updated, but should you need to work with it
-still here are the details:
+The subversion repository is not longer updated, but should you still need to
+work with it here are the details:
 </p>
 
 <ol>
