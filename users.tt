@@ -324,53 +324,35 @@ search functionality.
 
 <ul>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2015-03-05 (last release 2010-03-24) -->
 <li id="catalyst"><div class="orgname"><a href="http://www.catalystframework.org/">Catalyst</a></div>
 Catalyst is a Web Development Framework which includes
-<a href="http://search.cpan.org/~mramberg/Catalyst-Model-Xapian-0.03/lib/Catalyst/Model/Xapian.pm">support for using Xapian as a search engine</a>.
+<a href="http://search.cpan.org/~mramberg/Catalyst-Model-Xapian/">support for using Xapian as a search engine</a>.
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="synd"><div class="orgname"><a href="http://www.synd.info/">Synd</a></div>
-Synd is a software framework written in PHP, used primarily for building
-dynamic websites.  It allows Xapian to be used to provide an integrated search engine.
-</li>
-
-<!-- URLs checked 2009-03-14 -->
-<li id="djapian"><div class="orgname"><a href="http://code.google.com/p/djapian/">Djapian</a></div>
+<!-- URLs checked 2015-03-05 (last commit 2012-08-31) -->
+<li id="djapian"><div class="orgname"><a href="https://code.google.com/p/djapian/">Djapian</a></div>
 Djapian provides integration between Xapian and
-<a href="http://www.djangoproject.com/">Django</a> (a high-level Python Web
+<a href="https://www.djangoproject.com/">Django</a> (a high-level Python Web
 framework that encourages rapid development and clean, pragmatic design).
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="acts_as_xapian"><div class="orgname"><a href="http://github.com/frabcus/acts_as_xapian/wikis">acts_as_xapian</a></div>
+[%# checked 2015-03-05: Last signs of life were 2010: https://rubygems.org/gems/acts_as_xapian
+<li id="acts_as_xapian"><div class="orgname"><a href="https://github.com/frabcus/acts_as_xapian/wiki">acts_as_xapian</a></div>
 acts_as_xapian provides Xapian support for the <a href="http://www.rubyonrails.org/">Ruby on Rails</a> web framework.
 </li>
+%]
 
-<!-- URLs checked 2009-03-14 -->
-<li id="couchdb"><div class="orgname"><a href="http://gitorious.org/projects/couchdb-xapian">CouchDB Xapian</a></div>
+<!-- URLs checked 2015-03-05 -->
+<li id="couchdb"><div class="orgname"><a href="https://gitorious.org/couchdb-xapian">CouchDB Xapian</a></div>
 CouchDB Xapian is a search interface to CouchDB documents, that uses the Xapian Ruby bindings.
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="orexapian"><div class="orgname"><a href="http://pypi.python.org/pypi/ore.xapian/">ore.xapian</a></div>
+[%# checked 2015-03-05: Last updated 2008-11-11
+<li id="orexapian"><div class="orgname"><a href="https://pypi.python.org/pypi/ore.xapian/">ore.xapian</a></div>
 ore.xapian is a Xapian Content Indexing/Searching Framework for Zope3
 </li>
-
-
-
-<!--
-<li id="venda"><div class="orgname"><a href="http://www.venda.com/" rel="nofollow">Venda Ltd</a></div>
-Application: Searching products on numerous ecommerce sites including
-<a href="http://www.bbcshop.com/">The BBC Shop</a>,
-<a href="http://www.shop.bt.com/">British Telecom's Shop</a>,
-and
-<a href="http://www.mothercare.com/">Mothercare</a>.
-<br>
-Document types: SQL database records<br>
-</li>
--->
+%]
 
 </ul>
 
