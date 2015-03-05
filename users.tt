@@ -49,20 +49,22 @@ http://www.bivio.biz/f/bOP/README
 
 <ul>
 
+[%# Seems to be offline 2015-03-05
 <!-- URLs checked 2010-10-03 -->
 <li id="citebase"><div class="orgname"><a href="http://citebase.eprints.org/help/">Citebase</a></div>
 Application: <a href="http://citebase.eprints.org/">Searching academic papers</a><br>
 Languages: Mostly English<br>
 Database size: around 300,000 papers <small>(2006-02-06)</small><br>
 </li>
+%]
 
-<!-- URLs checked 2010-10-03 -->
+<!-- URLs checked 2015-03-05 -->
 <li id="kug"><div class="orgname"><a href="http://kug.ub.uni-koeln.de/">Library of the University of Cologne</a></div>
 Xapian is used with <a href="http://www.openbib.org/">OpenBib</a> to search
 the library's OPAC (Online Public Access Catalogue)<br>
 Languages: German<br>
-Database size: nearly 10 million title entries split across 186 separate databases
-<small>(2010-10-03)</small><br>
+Database size: 17 million title entries split across 213 separate databases
+<small>(2015-03-05)</small><br>
 </li>
 
 </ul>
@@ -73,10 +75,10 @@ Database size: nearly 10 million title entries split across 186 separate databas
 
 <ul>
 
-<!-- URLs checked 2010-10-03 -->
+<!-- URLs checked 2015-03-05 -->
 <li id="diezeit"><div class="orgname"><a href="http://www.zeit.de/">Die Zeit</a> -
 German Newspaper</div>
-Application: <a href="http://suche.zeit.de/suche">Searching newspaper articles</a>; also powers internal search facilities for newspaper staff.<br>
+Application: <a href="http://www.zeit.de/suche/index">Searching news articles</a>; also powers internal search facilities for newspaper staff.<br>
 Languages: German<br>
 </li>
 
