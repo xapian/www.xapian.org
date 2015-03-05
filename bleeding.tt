@@ -38,10 +38,10 @@ it easier and quicker to browse the repository online:
 
 <ul>
 <li> <a href="http://trac.xapian.org/browser/git">browse (using trac)</a>
-<li> <a href="http://gitorious.org/xapian/xapian">browse gitorious mirror</a>
+<li> <a href="http://repo.or.cz/w/xapian.git">browse repo.or.cz mirror</a>
 <li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
-<li> <a href="http://trac.xapian.org/browser/svn">browse the old SVN repo (using trac)</a>
-<li> <a href="http://svn.xapian.org/Xapian/">browse the old SVN repo (using trac)</a>
+<li> <i><a href="http://trac.xapian.org/browser/svn">browse the old SVN repo (using trac)</a></i>
+<li> <i><a href="http://svn.xapian.org/Xapian/">browse the old SVN repo (using trac)</a></i>
 </ul>
 
 <h3 id="git">Using Git</h3>
@@ -72,12 +72,10 @@ All branches should be available via git (you can list them with
 </p>
 
 <p>
-There are also mirrors on <a href="https://gitorious.org/xapian/xapian/">gitorious.org</a>
-and <a href="https://github.com/xapian/xapian">github</a> which you will probably
-find more convenient to clone from if you use those sites.  These are updated automatically
-when changes are pushed to the master repo, so should be very current.
-There's also a git mirror on <a href="http://repo.or.cz/w/xapian.git">repo.or.cz</a>
-which updates by polling.
+There are also mirrors on
+<a href="http://repo.or.cz/w/xapian.git">repo.or.cz</a> (which polls for updates) and 
+<a href="https://github.com/xapian/xapian">github</a> (updated by a hook).
+You may find these more convenient to clone from if you use those sites.
 </p>
 
 <h3 id="svn">Using Subversion</h3>
