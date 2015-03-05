@@ -173,65 +173,73 @@ Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
 Database size: 80 million messages <small>(2010-09-01)</small>
 </li>
 
-<!-- URLs checked 2009-05-18 -->
-<li id="debian"><div class="orgname"><a href="http://debian.org/">Debian GNU/Linux</a></div>
+<!-- URLs checked 2015-03-05 -->
+<li id="debian"><div class="orgname"><a href="https://debian.org/">Debian GNU/Linux</a></div>
 Debian use Xapian for:
 <ul>
-<li> <a href="http://lists.debian.org/search.html">Debian Mailing List Archive Search</a><br>
-Languages: Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Portuguese, Romanian, Russian, Spanish, Swedish, and Turkish<br>
-Database size: 3.9 million messages <small>(2009-05-18)</small>
+<li> <a href="https://search.debian.org/">Debian Website Search</a><br>
+Languages: 
+Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Finnish,
+French, German, Hungarian, Indonesian, Italian, Japanese, Korean, Lithuanian,
+Greek, Norwegian, Polish, Portuguese, Romanian, Russian, Slovak, Spanish,
+Swedish, Turkish, Ukrainian, Vietnamese<br>
+[%#
+Present but very few pages:
+Arabic, Armenian, Esperanto, Hebrew, Persian, Slovenian, Tamil
+%]
+Database size: 61 thousand pages <small>(2015-03-05)</small>
 </li>
-<li> <a href="http://wiki.debian.org/">Debian Wiki Search</a><br>
-Database size: over 6700 pages <small>(2009-05-18)</small>
+<li> <a href="https://lists.debian.org/search.html">Debian Mailing List Archive Search</a><br>
+Languages: Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Portuguese, Romanian, Russian, Spanish, Swedish, and Turkish<br>
+Database size: 5 million messages <small>(2015-03-05)</small>
+</li>
+<li> <a href="https://wiki.debian.org/">Debian Wiki Search</a><br>
+Database size: over 13600 pages <small>(2015-03-05)</small>
 <!-- Runs moinmoin with Xapian support, see: http://wiki.debian.org/SystemInfo
  Size from: http://wiki.debian.org/PageSize -->
 </li>
 
-<li> <a href="http://packages.debian.org/">Searching their archive of software packages</a><br>
-Database size: over 30000 packages <small>(2009-03-16)</small>
+<li> <a href="https://packages.debian.org/">Searching their archive of software packages</a><br>
+Database size: over 46000 packages <small>(2015-03-05)</small>
 </li>
-<li> <a href="http://debtags.alioth.debian.org/">Debtags Package Tagging</a> uses Xapian for its
-<a href="http://debtags.alioth.debian.org/fts.html">full text search</a>,
-<a href="http://debtags.alioth.debian.org/ssearch.html">smart search</a>,
-and <a href="http://debtags.alioth.debian.org/edit.html">tag editor</a>.
+<li> <a href="https://wiki.debian.org/Debtags">Debtags Package Tagging</a> uses Xapian for its
+<a href="http://debtags.debian.net/search">smart search</a> and <a href="http://debtags.debian.net/edit.html">tag editor</a>.
 </li>
 
 </ul>
 </li>
 
-<!-- URLs checked 2011-02-17 -->
+<!-- URLs checked 2015-03-05 -->
 <li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
 Application: Searching online auctions<br>
 Languages: Dutch<br>
-Database size: around 1.2 million documents <small>(2009-03-14)</small>
+Database size: around 1.3 million documents <small>(2015-03-05)</small>
 </li>
 
+[%#
 <!-- URLs checked 2009-03-14
   redirect loop on root page, 2011-02-17 -->
+  No DNS 2015-03-05
 <li id="procare"><div class="orgname"><a href="http://www.procarestores.com/">ProCare Stores</a></div>
 Application: <a href="http://www.procarestores.com/product/general_catalog/index.php">Product Search</a> for on-line store<br>
 Database size: 9000 products <small>(2006-04-08)</small>
 </li>
+%]
 
-<!-- URLs checked 2009-03-14 internal server error 2011-02-17 -->
+<!-- URLs checked 2015-03-05 -->
 <li id="grokbase"><div class="orgname"><a href="http://grokbase.com/">grokbase</a></div>
 Application: Searching mailing list archive
 </li>
 
-<!-- URLs checked 2011-02-17 -->
+<!-- URLs checked 2015-03-05 -->
 <li id="iusethis"><div class="orgname"><a href="http://osx.iusethis.com/">i use this</a></div>
 Provides a way to organise your Mac OS X applications and
 discover new ones (also available for iPhone and Microsoft Windows
 applications).
 </li>
 
-<!-- URLs checked 2011-02-17 -->
-<li id="mydeco"><div class="orgname"><a href="http://mydeco.com/">mydeco</a></div>
-Application: Home decoration website
-</li>
-
-<!-- URLs checked 2009-03-15 -->
-<li id="whosaid"><div class="orgname"><a href="http://sandwich.ukcod.org.uk/~matthew/subtitles/">Who Said...</a></div>
+<!-- URLs checked 2015-03-05 -->
+<li id="whosaid"><div class="orgname"><a href="http://whosaid.dracos.co.uk/">Who Said...</a></div>
 Application: Subtitle search for Doctor Who episodes.
 </li>
 
