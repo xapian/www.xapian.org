@@ -82,19 +82,25 @@ Application: <a href="http://www.zeit.de/suche/index">Searching news articles</a
 Languages: German<br>
 </li>
 
-<!-- URLs checked 2010-10-03 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="abcsok"><div class="orgname">ABC Startsiden</div>
 Application: Search through 3 years worth of Norwegian news<br>
-Location: <a href="http://nyheter.abcsok.no/">ABCSok</a> and <a href="http://overblikk.no/">Overblikk</a><br>
+Location: <a href="http://www.startsiden.no/sok/nyheter/">ABCSok</a>
+[%# connection reset every time 2015-03-19
+and <a href="http://overblikk.no/">Overblikk</a>
+%]
+<br>
 Languages: Norwegian<br>
 Document types: News stories
 </li>
 
+[%#First URL fails to load 2015-03-19
 <!-- URLs checked 2011-02-17 -->
 <li id="balcani"><div class="orgname"><a href="http://www.osservatoriobalcani.org/">Osservatorio Balcani</a> (<a href="http://www.balcanicaucaso.org/eng">The Observatory on the Balkans</a>)</div>
 Application: Searching articles about the Balkans<br>
 Languages: Italian, English, and others<br>
 </li>
+%]
 
 </ul>
 
@@ -104,7 +110,7 @@ Languages: Italian, English, and others<br>
 
 <ul>
 
-<!-- URLs checked 2011-02-17 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="tweakers"><div class="orgname"><a href="http://tweakers.net/">Tweakers.net</a> - the largest Dutch ICT-website</div>
 Application:
 <a href="http://gathering.tweakers.net/forum/find">Forum search engine</a><br>
@@ -113,35 +119,37 @@ Document types: Complete forum discussions<br>
 Database size: Over 850,000 documents, about 15GB of uncompressed, 10GB compressed database size. <small>(2008-07-14)</small>
 </li>
 
-<!-- URLs checked 2011-02-17 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="theyworkforyou"><div class="orgname"><a href="http://www.theyworkforyou.com/" >TheyWorkForYou.com</a></div>
 Application: Searching Hansard, the UK House of Commons Official Report; also email alerts<br>
 Languages: English<br>
 Database size: around 500,000 documents; 0.5G of source data. <small>(2006-02-06)</small>
 </li>
 
-<!-- URLs checked 2011-02-17 -->
+[%# No obvious sign they still use Xapian
+<!-- URLs checked 2015-03-19 -->
 <li id="react"><div class="orgname"><a href="http://www.react.nl/">React</a> - Supplier of Forum Software</div>
 Application: Searching discussion forums - sites include
 <a href="http://www.amsterdam.nl/">the city of Amsterdam</a>,
 the Dutch broadcasting organization <a href="http://www.vpro.nl/">VPRO</a>,
-<a href="http://webpiraat.nl/wp/find/">Webpiraat</a>, and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a Dutch interchurch organization)<br>
+and <a href="http://forum.gkv.nl/forum/find">GKV</a> (a Dutch interchurch organization)<br>
 Languages: Dutch<br>
 Document types: forum topics<br>
 Database size: around 900,000 topics <small>(2004-08-19)</small>
+</li>
+%]
 [%#
 Together there are 12.994.235 messages which are packed in 872.202
 topics over all the boards that we monitor. We index 1 topic as 1 document.
 */
 %]
+
+<!-- URLs checked 2015-03-19 -->
+<li id="gaze"><div class="orgname"><a href="https://www.mysociety.org/">mysociety.org</a></div>
+Application: <a href="https://www.mysociety.org/2005/09/15/gaze-web-service/">web api to gazetteer service</a>, built using Search::Xapian
 </li>
 
-<!-- URLs checked 2011-02-17 -->
-<li id="gaze"><div class="orgname"><a href="http://www.mysociety.org/">mysociety.org</a></div>
-Application: <a href="http://www.mysociety.org/2005/09/15/gaze-web-service/">web api to gazetteer service</a>, built using Search::Xapian
-</li>
-
-<!-- URLs checked 2011-02-17 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="spin"><div class="orgname"><a href="http://www.spin.de/">spin.de</a></div>
 Application: Free online community with profiles, chat, boards, blogs, games, and more<br>
 Languages: German<br>
@@ -149,14 +157,17 @@ Document types: User profiles, forums, mails, and help documents<br>
 Database size: 1.89 million documents <small>(2007-03-29)</small>
 </li>
 
-<!-- URLs checked 2011-02-17 -->
-<li id="whatdotheyknow"><div class="orgname"><a href="http://www.whatdotheyknow.com/">WhatDoTheyKnow.com</a></div>
+<!-- URLs checked 2015-03-19 -->
+<li id="whatdotheyknow"><div class="orgname"><a href="https://www.whatdotheyknow.com/">WhatDoTheyKnow.com</a></div>
 Application: Searching UK Freedom of Information Act requests and responses
 </li>
 
-<!-- URLs checked 2011-02-17 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="ubuntuusersde"><div class="orgname"><a href="http://ubuntuusers.de/">UbuntuUsers.de</a></div>
-Application: Official German Portal for Ubuntu Linux
+Application: Official German Portal for Ubuntu Linux<br>
+Document Types: forum posts, wiki articles, blog entries, planet entries<br>
+Language: German<br>
+Database size: 6.8G, around 2.2M documents, average length 250 <small>(2009-11-28)</small>
 </li>
 </ul>
 
@@ -166,11 +177,11 @@ Application: Official German Portal for Ubuntu Linux
 
 <ul>
 
-<!-- URLs checked 2010-09-01 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
 Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
 Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 80 million messages <small>(2010-09-01)</small>
+Database size: 120 million messages <small>(2015-03-19)</small>
 </li>
 
 <!-- URLs checked 2015-03-05 -->
@@ -216,16 +227,6 @@ Languages: Dutch<br>
 Database size: around 1.3 million documents <small>(2015-03-05)</small>
 </li>
 
-[%#
-<!-- URLs checked 2009-03-14
-  redirect loop on root page, 2011-02-17 -->
-  No DNS 2015-03-05
-<li id="procare"><div class="orgname"><a href="http://www.procarestores.com/">ProCare Stores</a></div>
-Application: <a href="http://www.procarestores.com/product/general_catalog/index.php">Product Search</a> for on-line store<br>
-Database size: 9000 products <small>(2006-04-08)</small>
-</li>
-%]
-
 <!-- URLs checked 2015-03-05 -->
 <li id="grokbase"><div class="orgname"><a href="http://grokbase.com/">grokbase</a></div>
 Application: Searching mailing list archive
@@ -251,18 +252,18 @@ Application: Subtitle search for Doctor Who episodes.
 
 <ul>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="recoll"><div class="orgname"><a href="http://www.recoll.org/">Recoll</a></div>
 Application: Recoll is a personal full text search tool
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="pinot"><div class="orgname"><a href="http://pinot.berlios.de/">Pinot</a></div>
+<!-- URLs checked 2015-03-19 -->
+<li id="pinot"><div class="orgname"><a href="https://code.google.com/p/pinot-search/">Pinot</a></div>
 Application: Pinot is a personal search and metasearch tool for the Free Desktop
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="olpc"><div class="orgname"><a href="http://laptop.org/">one laptop per child</a></div>
+<!-- URLs checked 2015-03-19 -->
+<li id="olpc"><div class="orgname"><a href="http://one.laptop.org/">one laptop per child</a></div>
 Application: The One Laptop Per Child (OLPC) project is building a low-cost laptop for the world's poorest children.  The datastore search is implemented using
 Xapian.<br>
 </li>
@@ -275,51 +276,27 @@ Xapian.<br>
 
 <ul>
 
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="roundup"><div class="orgname"><a href="http://roundup.sourceforge.net/">Roundup</a></div>
 Application: Roundup is an Issue Tracker which can use Xapian for searching
 </li>
 
-<!-- URLs checked 2009-03-14 -->
-<li id="sycamore"><div class="orgname"><a href="http://www.projectsycamore.org/">Sycamore Wiki Engine</a></div>
-Application: Wiki Engine with built in Xapian-powered search<br>
-Example deployments:
-<ul>
-<li> <a href="http://wikispot.org/">Wiki Spot</a> - searching across hundreds of wikis - around 25,000 pages <small>(2007-08-23)</small>
-</li>
-<li> <a href="http://daviswiki.org/">Davis, California, USA</a>: 13,290 pages <small>(2009-03-14)</small><!-- size from http://daviswiki.org/Recent_Changes -->
-</li>
-<li> <a href="http://rocwiki.org/">Rochester, NY, USA</a>: 8,929 pages <small>(2009-03-13)</small><!-- size from http://rocwiki.org/System_Info -->
-</li>
-</ul>
-</li>
-
-<!-- URLs checked 2009-03-14 -->
-<li id="mailmanager"><div class="orgname"><a href="http://sourceforge.net/projects/mailmanager">MailManager</a></div>
-Application: Open source web application providing email management for customer service, help desk, etc.
-</li>
-
-<!-- URLs checked 2009-03-14 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="moinmoin"><div class="orgname"><a href="http://moinmo.in/">MoinMoin</a></div>
-Application: Wiki software with <a href="http://moinmo.in/HelpOnXapian">Xapian search</a> (as of version 1.6)
+Application: Wiki software with <a href="http://moinmo.in/HelpOnXapian">Xapian search</a>.
 </li>
 
-<!-- URLs checked 2010-08-24 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="lxr"><div class="orgname"><a href="http://lxr.linux.no/">LXR</a></div>
-Application: LXR, the Linux Cross Referencer
+Application: LXR, the Linux Cross Referencer.
 </li>
 
-<!-- URLs checked 2010-08-24 -->
+<!-- URLs checked 2015-03-19 -->
 <li id="ikiwiki"><div class="orgname"><a href="http://ikiwiki.info/">ikiwiki</a></div>
-Application: Wiki software with Xapian search (as of version 2.49)
+Application: Wiki software with Xapian search.
 </li>
 
-<!-- URLs checked 2010-08-24 -->
-<li id="automne"><div class="orgname"><a href="http://www.automne.ws/">automne</a></div>
-French Web content management software.  Xapian powers the <a href="http://www.automne.ws/web/168-rechercher.php">website search</a> and is available as a module version 4.0.0 (in beta as of 2009-03-06).
-</li>
-
-<!-- URLs checked 2009-03-16 -->
+<!-- URLs checked 2015-03-16 -->
 <li id="ovirt"><div class="orgname"><a href="http://ovirt.org/">oVirt</a></div>
 oVirt provides management of virtual machines via a
 web-based virtual machine management console, and uses Xapian to provide
