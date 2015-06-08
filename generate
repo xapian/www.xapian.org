@@ -1,0 +1,95 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use Template;
+
+# some useful options (see below for full list)
+my $config = {
+#    INCLUDE_PATH => '/search/path',  # or list ref
+#	INTERPOLATE  => 1,               # expand "$var" in plain text
+	POST_CHOMP   => 1,               # cleanup whitespace
+#	PRE_PROCESS  => 'header',        # prefix each template
+	EVAL_PERL    => 1,               # evaluate Perl code blocks
+};
+
+my $template = Template->new($config);
+
+1;
+# define template variables for replacement
+my $vars = {
+    #announce => '/download',
+    releases => [
+	{
+	    branch => '1.2',
+	    status => 'stable',
+	    version => '1.2.21',
+	    release_date => '2015-05-20',
+	    perl_minor => '.0',
+	    extension => 'tar.xz', # Search::Xapian hardcoded as tar.gz currently
+	    #announce => '/download',
+	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/9826'
+	},
+#	{
+#	    branch => '1.0',
+#	    status => '1.0',
+#	    version => '1.0.23',
+#	    release_date => '2011-01-14',
+#	    perl_minor => '.0',
+#	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/8659'
+#	},
+	{
+	    branch => '1.3',
+	    status => 'development',
+	    version => '1.3.3',
+	    release_date => '2015-06-01',
+	    extension => 'tar.xz',
+	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/9827'
+	}
+    ],
+};
+
+open O, '>', 'version.sh' or die $!;
+for (qw(version extension)) {
+    print O "$_='${$vars->{releases}}[0]->{$_}'\n";
+}
+close O or die $!;
+
+my @pages = (
+    [ "index" => "home" ],
+    [ "features" => "features" ],
+    [ "history" => "history" ],
+    [ "lists" => "mailing lists" ],
+    [ "docs/" => "docs" ],
+    [ "users" => "current users" ],
+    [ "support" => "commercial support" ],
+    [ "download" => "download" ],
+    [ "bleeding" => "bleeding edge" ],
+    [ "bugs" => "bugs" ],
+    [ "contact" => "contact us" ],
+    [ "search" => "search this website" ]
+);
+
+# specify input filename, or file handle, text reference, etc.
+for my $in (<*.tt>) {
+    ((my $page = $in) =~ s/\.tt$//) or next;
+    my $out = "$page.html";
+my $cssnav = <<__END__;   
+<div id="Menu">
+__END__
+    for (@pages) {
+	my ($link, $desc) = @{$_};
+	if ($link eq $page) {
+	    $cssnav .= "<span id=\"current\">$desc</span>";
+	} else {
+	    $link eq "index" and $link = '.';
+	    $cssnav .= '<a href="'.$link.'">'.$desc.'</a>';
+	}
+	$cssnav .= "<br>\n";
+    }
+    if ($page ne "search") {
+	$cssnav .= "<form method=\"GET\" action=\"search\"><div><input type=\"search\" name=\"P\" size=\"14\"></div></form>\n";
+    }
+    $cssnav .= "</div>\n";
+    $$vars{cssnav} = $cssnav;
+    $template->process($in, $vars, $out) || die $template->error();
+}
