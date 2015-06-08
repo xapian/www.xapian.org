@@ -49,17 +49,16 @@ cp -au "$srcdir"/*.ico "$stagedir"
 cp -au "$srcdir"/*.png "$stagedir"
 cp -au "$srcdir"/omega.conf "$stagedir"
 cp -au "$srcdir"/robots.txt "$stagedir"
+# Runs omega CGI so needs to be dynamic:
+mv "$stagedir/search.html" "$stagedir/search.php"
 mkdir -p "$stagedir"/docs/bindings
 cp -au "$srcdir"/docs/bindings/index.html "$stagedir"/docs/bindings
 mkdir -p "$stagedir"/C
 cp -au "$srcdir"/C/index.php "$stagedir"/C
-# Not *.patch CVS/ generate news-to-html version.sh *.tt
+# Not *.patch *.tt .git generate news-to-html styleandmeta.txt update_website
 # Unsure:
 # flash template
-# cssnav.php cvs.php.php download)).php lists).php ll.php news.php.php niceurl.php ,.php ".php).php
-# search.php
-# styleandmeta.php
-# styleandmeta.txt
+# cvs.php.php download)).php lists).php ll.php news.php.php ,.php ".php).php
 
 if test "$tarball" -nt xapian-core/stamp-unpacked ; then
   rm -rf "$tardir" xapian-core
