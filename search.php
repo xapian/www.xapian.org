@@ -5,7 +5,7 @@
 
 <head>
 <title>The Xapian Project : Search</title>
-<? include "styleandmeta.php"; ?>
+<? include "styleandmeta.txt"; ?>
 </head>
 
 <body>
