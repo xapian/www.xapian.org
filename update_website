@@ -27,6 +27,7 @@ chmod g=rws "$stagedir"
 ./generate
 # Grab values from generate
 . ./version.sh
+rm -f ./version.sh
 
 umask 0002
 srcdir=`pwd`
