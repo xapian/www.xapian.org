@@ -24,10 +24,11 @@ mkdir -p "$stagedir" "$stagedir"/docs
 chmod o=rx "$stagedir"
 chmod g=rws "$stagedir"
 
-./generate
-# Grab values from generate
-. ./version.sh
-rm -f ./version.sh
+out=`./generate`
+# Grab values from generate, e.g.:
+# version='1.2.21'
+# extension='tar.xz'
+eval "$out"
 
 umask 0002
 srcdir=`pwd`

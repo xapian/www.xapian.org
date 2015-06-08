@@ -48,11 +48,9 @@ my $vars = {
     ],
 };
 
-open O, '>', 'version.sh' or die $!;
 for (qw(version extension)) {
-    print O "$_='${$vars->{releases}}[0]->{$_}'\n";
+    print "$_='${$vars->{releases}}[0]->{$_}'\n";
 }
-close O or die $!;
 
 my @pages = (
     [ "index" => "home" ],
