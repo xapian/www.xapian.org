@@ -6,4 +6,3 @@
 @import "layout2.css";
 //-->
 </style>
-<meta name="MSSmartTagsPreventParsing" content="true" />
