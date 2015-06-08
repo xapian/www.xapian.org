@@ -59,7 +59,6 @@ cp -au "$srcdir"/C/index.php "$stagedir"/C
 # Not *.patch *.tt .git generate news-to-html styleandmeta.txt update_website
 # Unsure:
 # flash template
-# cvs.php.php download)).php lists).php ll.php news.php.php ,.php ".php).php
 
 if test "$tarball" -nt xapian-core/stamp-unpacked ; then
   rm -rf "$tardir" xapian-core

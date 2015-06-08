@@ -1,2 +1,9 @@
 RedirectPermanent /index.html http://xapian.org/
 RedirectPermanent /omega.conf http://xapian.org/omega.cgi
+RedirectPermanent /cvs.php Location: http://www.xapian.org/bleeding
+RedirectPermanent /download)) Location: http://www.xapian.org/download
+RedirectPermanent /lists) Location: http://www.xapian.org/lists
+RedirectPermanent /news.php Location: http://www.xapian.org/download
+RedirectPermanent /, Location: http://www.xapian.org/
+RedirectPermanent /" Location: http://www.xapian.org/
+RedirectPermanent /) Location: http://www.xapian.org/
