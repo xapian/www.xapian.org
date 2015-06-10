@@ -46,12 +46,14 @@ fi
 
 cp -au "$srcdir"/*.css "$stagedir"
 cp -au "$srcdir"/*.html "$stagedir"
+# But not this - it's actually the template for omega.
+rm -f "$stagedir"/search.html
 cp -au "$srcdir"/*.ico "$stagedir"
 cp -au "$srcdir"/*.png "$stagedir"
 cp -au "$srcdir"/omega.conf "$stagedir"
 cp -au "$srcdir"/robots.txt "$stagedir"
-# Runs omega CGI so needs to be dynamic:
-mv "$stagedir/search.html" "$stagedir/search.php"
+# We should be able to get rid of this by making /search -> the CGI.
+cp -au "$srcdir"/search.php "$stagedir"
 mkdir -p "$stagedir"/docs/bindings
 cp -au "$srcdir"/docs/bindings/index.html "$stagedir"/docs/bindings
 mkdir -p "$stagedir"/C
@@ -165,6 +167,7 @@ chmod -R g+rw "${stagedir}"
 # generated, 
 # --delete --delete-after
 rsync -a -C "${stagedir}/" --exclude=Makefile.am --exclude=Makefile.in --exclude='*.md5' --exclude='*.dot' "${htmldir}/"
+cp -a "$srcdir/"search.html /home/olly/omega/templates/xapian.org
 
 # rebuild omega's database
 # FIXME: sort out permissions so this'll work for other people too
