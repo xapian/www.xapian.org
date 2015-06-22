@@ -52,12 +52,10 @@ cp -au "$srcdir"/*.ico "$stagedir"
 cp -au "$srcdir"/*.png "$stagedir"
 cp -au "$srcdir"/omega.conf "$stagedir"
 cp -au "$srcdir"/robots.txt "$stagedir"
-# We should be able to get rid of this by making /search -> the CGI.
-cp -au "$srcdir"/search.php "$stagedir"
+cp -au "$srcdir"/404handler.cgi "$stagedir"
 mkdir -p "$stagedir"/docs/bindings
 cp -au "$srcdir"/docs/bindings/index.html "$stagedir"/docs/bindings
-mkdir -p "$stagedir"/C
-cp -au "$srcdir"/C/index.php "$stagedir"/C
+ln -s /usr/lib/cgi-bin/omega/omega "$stagedir"/search.cgi
 # Not *.patch *.tt .git generate news-to-html styleandmeta.txt update_website
 # Unsure:
 # flash template
