@@ -49,10 +49,11 @@ categorise documents, etc.
 
 <li> Supports stemming of search terms (e.g. a search for "football" would
   match documents which mention "footballs" or "footballer").  This helps
-  to find relevant documents which might otherwise be missed.  Stemmers
-  are currently included for Danish, Dutch, English, Finnish, French,
-  German, Hungarian, Italian, Norwegian, Portuguese, Romanian, Russian,
-  Spanish, Swedish, and Turkish.
+  to find relevant documents which might otherwise be missed.
+  <a href="http://snowballstem.org/">Snowball stemmers</a> are currently
+  included for Danish, Dutch, English, Finnish, French, German, Hungarian,
+  Italian, Norwegian, Portuguese, Romanian, Russian, Spanish, Swedish, and
+  Turkish.
 
 <li> Wildcard search is supported (e.g. "xap*").
   
