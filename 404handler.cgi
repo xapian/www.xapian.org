@@ -58,15 +58,23 @@ if ($path eq '/C') {
     redirect($redirect);
 }
 
-# Trim off any bogus parameters in the path part of the URL.
-$path =~ s/\&.*//;
+if ($path =~ /\.\./) {
+    fail();
+}
 
 # Drop trailing punctuations sometimes seen on URLs parsed from text.
 # Also drop trailing / so the patterns below can work in that case too.
-$path =~ s@[])>"',.*/]+$@@;
-
-if ($path =~ /\.\./) {
-    fail();
+# And remove any bogus query or fragment in the path part of the URL.
+if ($path =~ s@[])>"',.*/]+$@@ || $path =~ s/[#&].*//) {
+    if ($path eq '/search' || -f "$docroot$path.html") {
+	redirect("http://xapian.org$path");
+    }
+    if (-d "$docroot$path") {
+	redirect("http://xapian.org$path/");
+    }
+    if (-f _ && $path =~ /(.*)\.html$/) {
+	redirect("http://xapian.org$1");
+    }
 }
 
 if ($path eq '' || $path eq 'http://xapian.org') {
@@ -78,11 +86,11 @@ if ($path eq '/docs/bindings/tcl') {
 }
 
 if ($path eq '/docs/bm') {
-    redirect("http://xapian.org/docs/bm25.html");
+    redirect("http://xapian.org/docs/bm25");
 }
 
-if ($path eq 'docs/serialistion.html') {
-    redirect("http://xapian.org/docs/serialisation.html");
+if ($path eq '/docs/serialistion.html') {
+    redirect("http://xapian.org/docs/serialisation");
 }
 
 # Redirect old URLs somewhere helpful.
@@ -148,10 +156,10 @@ sub fail {
     $query =~ s,[/".]+, ,g;
 
     # Escape suitably.
+    $query =~ s/&/&amp;/g;
     $query =~ s/</&lt;/g;
     $query =~ s/>/&gt;/g;
     $query =~ s/"/&quot;/g;
-    $query =~ s/&/&amp;/g;
 
     print <<"END";
 Status: 404 Not Found
