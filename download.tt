@@ -134,7 +134,7 @@ perl-Search-Xapian is available for those not using the SWIG bindings.
 
 <p>
 EPEL has older 1.2.x packages for RHEL 6:
-<a href="http://fedoraproject.org/wiki/EPEL">http://fedoraproject.org/wiki/EPEL</a>
+<a href="https://fedoraproject.org/wiki/EPEL">https://fedoraproject.org/wiki/EPEL</a>
 </p>
 
 <h2 id="slackware">Slackware</h2>
@@ -163,7 +163,7 @@ be better tailored:
 
 <ul>
 <li><a href="http://packages.altlinux.org/en/search?query=&quot;xapian.org&quot;">ALT Linux RPMs</a> of xapian-core, omega, and the python and ruby bindings</li>
-<li><a href="http://software.opensuse.org/search?q=xapian">SuSE RPMs</a> of xapian-core, omega, and most of the bindings</li>
+<li><a href="https://software.opensuse.org/search?q=xapian">SuSE RPMs</a> of xapian-core, omega, and most of the bindings</li>
 </ul>
 
 <h1>Other Linux Distributions</h1>
@@ -174,14 +174,14 @@ be better tailored:
 <a href="https://packages.gentoo.org/packages/dev-libs/xapian-bindings">xapian-bindings</a> and
 <a href="https://packages.gentoo.org/packages/app-text/xapian-omega">xapian-omega</a>.
 </li>
-<li>FrugalWare Linux has <a href="http://www.frugalware.org/packages/?op=pkg&srch=xapian&arch=all&ver=current">packages of xapian-core and the bindings</a>.</li>
+<li>FrugalWare Linux has <a href="https://www.frugalware.org/packages/?op=pkg&srch=xapian&arch=all&ver=current">packages of xapian-core and the bindings</a>.</li>
 <li>archlinux has <a href="https://aur.archlinux.org/packages/?SeB=n&K=xapian">packages of xapian-core, omega, and most of the bindings</a>.</li>
 </ul>
 
 <h1>FreeBSD Ports Collection</h1>
 
 <p>The FreeBSD Ports Collection has
-<a href="http://www.freshports.org/search.php?query=xapian">packages</a> for 
+<a href="https://www.freshports.org/search.php?query=xapian">packages</a> for
 xapian-core, xapian-omega, xapian-bindings (Python, Ruby and PHP), and Search::Xapian.</p>
 
 <h1>NetBSD pkgsrc</h1>

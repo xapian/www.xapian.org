@@ -22,13 +22,13 @@ PLC and released under the
 <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GPL v2+</a>.
 Open Muscat was built to be a replacement for
 the proprietary Muscat 3.6 information retrieval system, which was written
-almost entirely in <a href="http://en.wikipedia.org/wiki/BCPL">BCPL</a>,
+almost entirely in <a href="https://en.wikipedia.org/wiki/BCPL">BCPL</a>,
 and becoming hard to extend in the ways they wanted.
 </p>
 
 <p>
 Muscat was originally written by
-<a href="http://en.wikipedia.org/wiki/Martin_Porter">Dr. Martin Porter</a>
+<a href="https://en.wikipedia.org/wiki/Martin_Porter">Dr. Martin Porter</a>
 at Cambridge University.  In 1984, Martin and John Snyder founded Cambridge CD
 Publishing to commercially exploit the technology; the company was soon renamed
 Muscat Ltd when the focus shifted from CDs to the web.  Muscat Ltd was
@@ -60,7 +60,7 @@ was 0.5.0.
 
 <p>Back in 2000, Open Muscat (using the muscat36 backend) was the retrieval
 engine which powered BrightStation's Webtop search engine
-(<a href="http://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>),
+(<a href="https://web.archive.org/web/20000708023501/http://www.webtop.com/index.html">archive.org snapshot</a>),
 which offered a sub-second search over around
 500 million web pages (around 1.5 terabytes of database files).
 The whole search engine, including the web crawlers
