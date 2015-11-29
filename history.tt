@@ -19,7 +19,7 @@ of commercial and academic experience.</p>
 <p>
 Xapian is partly derived from the Open Muscat engine, developed by BrightStation
 PLC and released under the
-<a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GPL v2+</a>.
 Open Muscat was built to be a replacement for
 the proprietary Muscat 3.6 information retrieval system, which was written
 almost entirely in <a href="http://en.wikipedia.org/wiki/BCPL">BCPL</a>,

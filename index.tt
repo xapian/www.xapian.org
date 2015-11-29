@@ -15,18 +15,18 @@
 [%#
 <div style="padding:1em;background-color:#dff;border:1px solid #999;
       font:13px/18px verdana, arial, helvetica, sans-serif;">
-Xapian is taking part in <a href="http://code.google.com/soc/">Google Summer of Code</a> this year - here's our <a href="http://trac.xapian.org/wiki/GSoCProjectIdeas">list of project ideas</a>.
+Xapian is taking part in <a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code</a> this year - here's our <a href="http://trac.xapian.org/wiki/GSoCProjectIdeas">list of project ideas</a>.
 </div><br>
 
 <div style="padding:1em;background-color:#dff;border:1px solid #999;
       font:13px/18px verdana, arial, helvetica, sans-serif;">
-We are intending to apply to be a mentoring org in <a href="http://code.google.com/soc/">Google Summer of Code 2015</a> - here's our <a href="http://trac.xapian.org/wiki/GSoCProjectIdeas">list of project ideas</a>.
+We are intending to apply to be a mentoring org in <a href="https://developers.google.com/open-source/gsoc/">Google Summer of Code 2015</a> - here's our <a href="http://trac.xapian.org/wiki/GSoCProjectIdeas">list of project ideas</a>.
 </div><br>
 %]
 <p>Welcome to the Xapian project website.</p>
 
 <p>Xapian is an Open Source Search Engine Library, released under the
-<a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GPL v2+</a>.
 It's written in <a href="/docs/apidoc/html/annotated.html">C++</a>,
 with <a href="/docs/bindings/">bindings</a> to allow use from
 <a href="/docs/bindings/perl/Search/Xapian.html">Perl</a>,
