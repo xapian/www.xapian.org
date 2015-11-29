@@ -169,9 +169,10 @@ be better tailored:
 <h1>Other Linux Distributions</h1>
 
 <ul>
-<li>Gentoo Portage has ebuilds for
-<a HREF="http://gentoo-portage.com/dev-libs/xapian">xapian-core</a> and
-<a HREF="http://gentoo-portage.com/dev-libs/xapian-bindings">xapian-bindings</a>
+<li>Gentoo has packages for
+<a href="https://packages.gentoo.org/packages/dev-libs/xapian">xapian-core</a>,
+<a href="https://packages.gentoo.org/packages/dev-libs/xapian-bindings">xapian-bindings</a> and
+<a href="https://packages.gentoo.org/packages/app-text/xapian-omega">xapian-omega</a>.
 </li>
 <li>FrugalWare Linux has <a href="http://www.frugalware.org/packages/?op=pkg&srch=xapian&arch=all&ver=current">packages of xapian-core and the bindings</a>.</li>
 <li>archlinux has <a href="https://aur.archlinux.org/packages/?SeB=n&K=xapian">packages of xapian-core, omega, and most of the bindings</a>.</li>
