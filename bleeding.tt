@@ -106,7 +106,7 @@ work with it here are the details:
 <p>
 You can download
 <A HREF="http://oligarchy.co.uk/xapian/trunk/">automated snapshots</A>,
-which are generated from git every 20 minutes, provided <tt>make distcheck</tt> 
+which are generated from git once a day, provided <tt>make distcheck</tt>
 passes on Linux.  This means that some breakages are avoided, but they may 
 still fail to build for you if you're using a different platform, or even a
 different version of Linux.
