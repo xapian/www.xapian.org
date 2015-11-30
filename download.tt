@@ -226,13 +226,13 @@ those from
 <p>There are two options for native Microsoft Windows support (not counting
 Cygwin):</p>
 
-<ul
+<ul>
 <li>The standard source tarball can be built using <a href="http://www.mingw.org/">MSYS+mingw</a>.
 
-<li>A <a href="http://trac.xapian.org/browser/svn/branches/1.2/xapian-maintainer-tools/win32msvc">separate build system of nmake makefile</a>
-put together by Ulrik Petersen and Charlie Hull allow building with MSVC.
-These are currently lacking a maintainer, but apparently still work for recent
-releases.  They include support for Python, PHP, Ruby, C#, and the experimental
+<li>A <a href="http://trac.xapian.org/browser/svn/branches/1.2/xapian-maintainer-tools/win32msvc">separate build system using nmake</a>
+put together by Ulrik Petersen and Charlie Hull allows building with MSVC.
+This currently lacks a maintainer, but apparently still works for recent
+releases.  Includes support for Python, PHP, Ruby, C#, and the experimental
 SWIG-based Java bindings.
 </ul>
 
