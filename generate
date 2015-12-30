@@ -22,12 +22,12 @@ my $vars = {
 	{
 	    branch => '1.2',
 	    status => 'stable',
-	    version => '1.2.21',
-	    release_date => '2015-05-20',
+	    version => '1.2.22',
+	    release_date => '2015-12-29',
 	    perl_minor => '.0',
 	    extension => 'tar.xz', # Search::Xapian hardcoded as tar.gz currently
 	    #announce => '/download',
-	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/9826'
+	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/9902'
 	},
 #	{
 #	    branch => '1.0',
