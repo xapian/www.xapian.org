@@ -50,6 +50,7 @@ my $vars = {
 
 for (qw(version extension)) {
     print "$_='${$vars->{releases}}[0]->{$_}'\n";
+    print "dev_$_='${$vars->{releases}}[1]->{$_}'\n";
 }
 
 my @pages = (

@@ -13,7 +13,7 @@ set -e
 
 projectdir="/home/olly/tmp/xapian-website-update"
 htmldir="/srv/www/xapian.org"
-tarballdir="/srv/www/oligarchy.co.uk/xapian"
+basetarballdir="/srv/www/oligarchy.co.uk/xapian"
 
 stagedir="${projectdir}/staging"
 
@@ -35,7 +35,8 @@ srcdir=`pwd`
 cd "$projectdir"
 
 echo "Latest Xapian release is $version"
-tarballdir=$tarballdir/$version
+tarballdir=$basetarballdir/$version
+dev_tarballdir=$basetarballdir/$dev_version
 
 tardir=xapian-core-$version
 tarball=$tarballdir/$tardir.$extension
@@ -155,6 +156,16 @@ mkdir -p "$stagedir/docs/Search-Xapian-$version.0"
 cp -au "Search-Xapian"/Changes "$stagedir/docs/Search-Xapian-$version.0/Changes"
 
 fi
+
+for b in xapian-core xapian-bindings xapian-omega ; do
+  td=$b-$dev_version
+  d=$stagedir/docs/$td
+  if [ ! -f "$d/NEWS" ] ; then
+    mkdir -p "$d"
+    t=$dev_tarballdir/$td.$dev_extension
+    tar -O -xf "$t" $td/NEWS > "$d/NEWS"
+  fi
+done
 
 chmod -R g+rw "${stagedir}"
 
