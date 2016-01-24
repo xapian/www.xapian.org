@@ -5,6 +5,8 @@ use warnings;
 my $docroot = '/srv/www/xapian.org';
 my $path = $ENV{REDIRECT_URL};
 
+my $trac_root_url = 'https://trac.xapian.org/'
+
 if (!defined $path) {
     print <<"END";
 Status: 404 Not Found
@@ -34,7 +36,7 @@ if ($path eq '/C') {
 	# This is a redirect to SVN - luckily CVS Xapian had no files with
 	# entirely numeric names!
 	($file, $rev) = ($rev, $file);
-	$redirect = 'http://trac.xapian.org/';
+	$redirect = $trac_root_url;
 	if ($rev2 ne '' && $file ne '') {
 	    $redirect .= 'browser/' . $file . '?rev=' . $rev;
 	} elsif ($file ne '') {
@@ -130,14 +132,14 @@ if ($path =~ /(.*)\.htm$/)  {
 if ($path eq '/cgi-bin/bugzilla/show_bug.cgi') {
     if (exists $ENV{REDIRECT_QUERY_STRING} &&
 	$ENV{REDIRECT_QUERY_STRING} =~ /\bid=(\d+)\b/) {
-	redirect("http://trac.xapian.org/ticket/$1");
+	redirect($trac_root_url. "ticket/$1");
     }
     fail();
 }
 
 if ($path =~ m,/cgi-bin/bugzilla, ||
     $path =~ m,/bugzilla,) {
-    redirect("http://trac.xapian.org/report/1");
+    redirect($trac_root_url . "report/1");
 }
 
 # These won't work as they are valid URLs so won't reach the 404 handler:
