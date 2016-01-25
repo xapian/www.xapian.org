@@ -15,13 +15,13 @@
 
 <p>There are four mailing lists relating to Xapian:</p>
 <ul>
-<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-discuss">xapian-discuss</a></tt> for general discussions about the Xapian project
+<li> <tt><a href="https://lists.xapian.org/mailman/listinfo/xapian-discuss">xapian-discuss</a></tt> for general discussions about the Xapian project
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.general">Gmane</a>]
-<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-devel">xapian-devel</a></tt> for technical discussions about the development of Xapian 
+<li> <tt><a href="https://lists.xapian.org/mailman/listinfo/xapian-devel">xapian-devel</a></tt> for technical discussions about the development of Xapian
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.devel">Gmane</a>]
-<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-commits">xapian-commits</a></tt> used to receive details of CVS/SVN commits (now inactive)
+<li> <tt><a href="https://lists.xapian.org/mailman/listinfo/xapian-commits">xapian-commits</a></tt> used to receive details of CVS/SVN commits (now inactive)
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.cvs">Gmane</a>]
-<li> <tt><a href="http://lists.xapian.org/mailman/listinfo/xapian-tickets">xapian-tickets</a></tt> receives details of trac ticket changes (can be a <em>lot</em> of messages)
+<li> <tt><a href="https://lists.xapian.org/mailman/listinfo/xapian-tickets">xapian-tickets</a></tt> receives details of trac ticket changes (can be a <em>lot</em> of messages)
 <!-- FIXME: need to subscribe tickets list to gmane...
 [<a href="http://gmane.org/info.php?group=gmane.comp.search.xapian.cvs">Gmane</a>]
 -->
