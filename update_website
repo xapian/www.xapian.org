@@ -19,6 +19,16 @@ stagedir="${projectdir}/staging"
 
 ###
 
+# Avoid repeats of having a broken 404 handler
+for perl_script in \
+	    404handler.cgi \
+	; do
+    if ! perl -wc -f "$perl_script" ; then
+	echo "Syntax error(s) in '$perl_script'" 1>&2
+	exit 1
+    fi
+done
+
 # Prepare temporary directory
 mkdir -p "$stagedir" "$stagedir"/docs
 chmod o=rx "$stagedir"

@@ -5,7 +5,7 @@ use warnings;
 my $docroot = '/srv/www/xapian.org';
 my $path = $ENV{REDIRECT_URL};
 
-my $trac_root_url = 'https://trac.xapian.org/'
+my $trac_root_url = 'https://trac.xapian.org/';
 
 if (!defined $path) {
     print <<"END";
