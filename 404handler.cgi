@@ -172,7 +172,7 @@ Content-Type: text/html; charset=utf-8
 <html>
 <head>
 <title>Page not found</title>
-<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/print.css" />
 <link rel="icon" href="/apple-touch-icon-precomposed.png" sizes="180x180">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -187,13 +187,13 @@ Content-Type: text/html; charset=utf-8
 
 <div id="Content">
 
-<img src="xapian-logo.png" alt="The Xapian Project">
+<img src="/xapian-logo.png" alt="The Xapian Project">
 
 <p>The page you requested couldn't be found on the Xapian project website.</p>
 
 <p>You can try searching for it using the form below:</p>
 
-<form method="GET" action="search">
+<form method="GET" action="/search">
 <input type="search" name="P" value="$query" size="20">
 <input type="submit" value="Search">
 </form>
