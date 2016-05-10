@@ -40,10 +40,11 @@ my $vars = {
 	{
 	    branch => '1.3',
 	    status => 'development',
-	    version => '1.3.5',
-	    release_date => '2016-04-01',
+	    version => '1.3.6',
+	    release_date => '2016-05-09',
 	    extension => 'tar.xz',
-	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/9985'
+	    #announce => 'http://oligarchy.co.uk/xapian/1.3.6/',
+	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/10009'
 	}
     ],
 };
