@@ -79,7 +79,7 @@ if test "$tarball" -nt xapian-core/stamp-unpacked ; then
   mv "$tardir" xapian-core
   touch xapian-core/stamp-unpacked
 fi
-cp -au xapian-core/docs/*.html xapian-core/docs/apidoc.pdf "$stagedir/docs"
+cp -au xapian-core/docs/*.html xapian-core/docs/apidoc.pdf "$stagedir/docs" || true
 mkdir -p "$stagedir/docs/apidoc/html"
 cp -au xapian-core/docs/apidoc/html/* "$stagedir/docs/apidoc/html"
 if test xapian-core/stamp-unpacked -nt xapian-core/stamp-built-sourcedoc ; then
@@ -137,7 +137,7 @@ for l in python php ruby tcl8 csharp lua ; do
   cp -au "xapian-bindings/$l"/docs/* "$bindings_dir/$l"
 done
 mkdir -p "$bindings_dir/java"
-cp -au "xapian-bindings/java/README" "$bindings_dir/java"
+cp -au "xapian-bindings/java/README" "$bindings_dir/java" || true
 mkdir -p "$stagedir/docs/xapian-bindings-$version"
 cp -au "xapian-bindings"/NEWS "$stagedir/docs/xapian-bindings-$version/NEWS"
 
