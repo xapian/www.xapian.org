@@ -177,13 +177,6 @@ Database size: 6.8G, around 2.2M documents, average length 250 <small>(2009-11-2
 
 <ul>
 
-<!-- URLs checked 2015-03-19 -->
-<li id="gmane"><div class="orgname"><a href="http://www.gmane.org/">Gmane</a></div>
-Application: Searching archives of mailing lists (Gmane allows these to be viewed as newsgroups, or on the web)<br>
-Location: <a href="http://search.gmane.org/">search.gmane.org</a><br>
-Database size: 120 million messages <small>(2015-03-19)</small>
-</li>
-
 <!-- URLs checked 2015-03-05 -->
 <li id="debian"><div class="orgname"><a href="https://debian.org/">Debian GNU/Linux</a></div>
 Debian use Xapian for:
