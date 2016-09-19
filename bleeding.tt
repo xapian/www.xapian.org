@@ -40,8 +40,6 @@ it easier and quicker to browse the repository online:
 <li> <a href="//trac.xapian.org/browser/git">browse (using trac)</a>
 <li> <a href="http://repo.or.cz/w/xapian.git">browse repo.or.cz mirror</a>
 <li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
-<li> <i><a href="//trac.xapian.org/browser/svn">browse the old SVN repo (using trac)</a></i>
-<li> <i><a href="http://svn.xapian.org/Xapian/">browse the old SVN repo (using trac)</a></i>
 </ul>
 
 <h3 id="git">Using Git</h3>
@@ -81,25 +79,20 @@ You may find these more convenient to clone from if you use those sites.
 <h3 id="svn">Using Subversion</h3>
 
 <p>
-The subversion repository is not longer updated, but should you still need to
-work with it here are the details:
+The subversion repository is no longer available online, but if you have a
+revision id you can easily locate it in git - say you want to find SVN
+revision 12345, then in your local clone of the git repo you can run:
 </p>
 
-<ol>
-<li> <tt>svn co svn://svn.xapian.org/xapian/trunk xapian</tt>
+<blockquote><code>
+git log --grep '^git-svn-id: .*@12345 ' `git branch --list -r 'origin/svn/*'`
+</code></blockquote>
 
-<li> Read the "Building from git" section in <a href="//trac.xapian.org/export/HEAD/trunk/xapian-core/HACKING"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
-
-<li> In the newly created <tt>xapian</tt> directory, run the command
-    <tt>./bootstrap</tt> - this will run various developer tools to produce a
-    source tree like you'd get from unpacking release source tarballs.
-
-<li> <tt>bootstrap</tt> will create a top level <tt>configure</tt> script,
-    which you can use to configure the whole source tree together.
-
-<li> If you're looking to do development work on Xapian, then the rest of
-    <tt>xapian-core/HACKING</tt> is recommended reading.
-</ol>
+<p>
+This searches the log messages of the history of all git branches which were
+imported from SVN for a commit with the requested SVN revision id in the
+mapping line added by git-svn.
+</p>
 
 <h2>Snapshots</h2>
 
