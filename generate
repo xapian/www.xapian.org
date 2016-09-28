@@ -17,7 +17,6 @@ my $template = Template->new($config);
 1;
 # define template variables for replacement
 my $vars = {
-    #announce => '/download',
     releases => [
 	{
 	    branch => '1.4',
@@ -30,11 +29,11 @@ my $vars = {
 	{
 	    branch => '1.2',
 	    status => 'old stable',
-	    version => '1.2.23',
-	    release_date => '2016-03-28',
+	    version => '1.2.24',
+	    release_date => '2016-09-16',
 	    perl_minor => '.0',
 	    extension => 'tar.xz', # Search::Xapian hardcoded as tar.gz currently
-	    announce => 'http://article.gmane.org/gmane.comp.search.xapian.general/9984'
+	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2016-September/009435.html'
 	},
 #	{
 #	    branch => '1.0',
@@ -66,9 +65,17 @@ for my $rel (@{$vars->{releases}}) {
     }
 }
 
-for (qw(version extension)) {
-    print "$_='${$vars->{releases}}[0]->{$_}'\n";
-    print "dev_$_='${$vars->{releases}}[1]->{$_}'\n";
+for my $r (@{$vars->{releases}}) {
+    my $prefix = $r->{status};
+    $prefix =~ s/\s*\bstable$//;
+    $prefix =~ s/\bdevelopment\b/dev/;
+    if ($prefix ne '') {
+	$prefix =~ s/ /_/g;
+	$prefix .= '_';
+    }
+    for (qw(version extension)) {
+	print "$prefix$_='$r->{$_}'\n";
+    }
 }
 
 my @pages = (
