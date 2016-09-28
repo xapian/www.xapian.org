@@ -67,7 +67,7 @@ if ($path =~ /\.\./) {
 # Drop trailing punctuations sometimes seen on URLs parsed from text.
 # Also drop trailing / so the patterns below can work in that case too.
 # And remove any bogus query or fragment in the path part of the URL.
-if ($path =~ s@[])>"',.*/]+$@@ || $path =~ s/[#&].*//) {
+if ($path =~ s@[])>"',.*/]+$@@ || $path =~ s@/*[#&|].*@@) {
     if ($path eq '/search' || -f "$docroot$path.html") {
 	redirect("http://xapian.org$path");
     }
