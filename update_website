@@ -231,9 +231,10 @@ cp -a "$srcdir/"search.html "${templatedir}/query"
 # rebuild omega's database
 # FIXME: sort out permissions so this'll work for other people too
 mkdir -p "${dbdir}"
-rm -rf "${dbdir}/default.tmp" "${dbdir}/default.old"
-
-"${bindir}"/omindex --spelling --db "${dbdir}/default.tmp" --url / \
+rm -rf "${dbdir}/tmp" "${dbdir}/default.old"
+tocull=`cd "${dbdir}" && echo default.*`
+timestamp=`date +%s.%N`
+"${bindir}"/omindex --spelling --db "${dbdir}/tmp" --url / \
     -Mgif:ignore -Mico:ignore -Mpng:ignore \
     -Mmap:ignore \
     -Mgz:ignore -Mphp:ignore \
@@ -245,14 +246,16 @@ rm -rf "${dbdir}/default.tmp" "${dbdir}/default.old"
     -Mtcl:text/plain \
     -Mlua:text/plain \
     "$htmldir"
-"${bindir}"/xapian-compact "${dbdir}"/default.tmp "${dbdir}"/default.compact.tmp
-#mv "${dbdir}"/default.tmp "${dbdir}"/default.compact.tmp
+"${bindir}"/xapian-compact "${dbdir}/tmp" "${dbdir}/default.$timestamp"
+mv "${dbdir}/tmp" "${dbdir}/default.$timestamp"
 
+echo "auto default.$timestamp" >> "${dbdir}"/tmp
 if test -d "${dbdir}"/default ; then
+  # migration from old version
   mv "${dbdir}"/default "${dbdir}"/default.old
 fi
-mv "${dbdir}"/default.compact.tmp "${dbdir}"/default
-# keep it just in case! rm -rf "${dbdir}"/default.old
+mv -f "${dbdir}"/tmp "${dbdir}"/default
+[ "$tocull" == "default.*" ] || ( cd "${dbdir}" && rm -rf $tocull )
 
 # return successfully.
 exit 0
