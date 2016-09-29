@@ -37,7 +37,7 @@ it easier and quicker to browse the repository online:
 </p>
 
 <ul>
-<li> <a href="//trac.xapian.org/browser/git">browse (using trac)</a>
+<li> <a href="https://trac.xapian.org/browser/git">browse (using trac)</a>
 <li> <a href="http://repo.or.cz/w/xapian.git">browse repo.or.cz mirror</a>
 <li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
 </ul>
@@ -51,7 +51,7 @@ You can check out code from the master git repo at git.xapian.org like so:
 <ol>
 <li> <tt>git clone git://git.xapian.org/xapian</tt>
 
-<li> Read the "Building from git" section in <a href="//trac.xapian.org/export/HEAD/trunk/xapian-core/HACKING"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
+<li> Read the "Building from git" section in <a href="https://trac.xapian.org/export/HEAD/trunk/xapian-core/HACKING"><tt>xapian-core/HACKING</tt></a> - in particular make sure you have the required tools installed.
 
 <li> In the newly created <tt>xapian</tt> directory, run the command
     <tt>./bootstrap</tt> - this will run various developer tools to produce a
@@ -108,7 +108,7 @@ different version of Linux.
 <p>
 If you want to get a better idea of how healthy the tree is on various
 platforms, see the
-<a href="//trac.xapian.org/wiki/AutomatedBuilds">automated builds</a>
+<a href="https://trac.xapian.org/wiki/AutomatedBuilds">automated builds</a>
 page on the wiki.
 </p>
 

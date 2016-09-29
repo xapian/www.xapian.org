@@ -12,15 +12,15 @@
 
 <H1>Bugs</H1>
 
-<p>We now use <a href="//trac.xapian.org/">trac</a> as our bug-tracker.
+<p>We now use <a href="https://trac.xapian.org/">trac</a> as our bug-tracker.
 All bugs filed in the old bugzilla installation have been migrated.</p>
 
 <p>Please choose one of the following options:</p>
 
 <ul>
-<li> <a href="//trac.xapian.org/report">View existing bug reports</a>
-<li> <a href="//trac.xapian.org/newticket">Create a new bug report</a>
-<li> <a href="//trac.xapian.org/register">Create a new trac account</a>
+<li> <a href="https://trac.xapian.org/report">View existing bug reports</a>
+<li> <a href="https://trac.xapian.org/newticket">Create a new bug report</a>
+<li> <a href="https://trac.xapian.org/register">Create a new trac account</a>
 </ul>
 
 </div>

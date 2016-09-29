@@ -21,7 +21,7 @@
 recommend you use this branch unless you have a particular need to use an older 
 version.
 <!--  If you wish, you can
-read a <a href="//trac.xapian.org/wiki/ReleaseOverview">more
+read a <a href="https://trac.xapian.org/wiki/ReleaseOverview">more
 complete overview of the changes</a> in the 1.0 release.
 <i>[List for 1.2.x to be written still, sorry!]</i>
 -->
@@ -55,7 +55,7 @@ complete overview of the changes</a> in the 1.0 release.
 
 [% SWITCH r.status %]
 [% CASE 'stable' %]
-<p>The wiki contains a <a href="//trac.xapian.org/wiki/ReleaseNotes">summary of bugs, patches, and workarounds</a>
+<p>The wiki contains a <a href="https://trac.xapian.org/wiki/ReleaseNotes">summary of bugs, patches, and workarounds</a>
 relating to the latest release.
 </p>
 [% END %]
@@ -226,7 +226,7 @@ Cygwin):</p>
 <ul>
 <li>The standard source tarball can be built using <a href="http://www.mingw.org/">MSYS+mingw</a>.
 
-<li>A <a href="//trac.xapian.org/browser/svn/branches/1.2/xapian-maintainer-tools/win32msvc">separate build system using nmake</a>
+<li>A <a href="https://trac.xapian.org/browser/svn/branches/1.2/xapian-maintainer-tools/win32msvc">separate build system using nmake</a>
 put together by Ulrik Petersen and Charlie Hull allows building with MSVC.
 This currently lacks a maintainer, but apparently still works for recent
 releases.  Includes support for Python, PHP, Ruby, C#, and the experimental
