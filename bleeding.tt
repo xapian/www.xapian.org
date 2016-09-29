@@ -30,20 +30,7 @@ find useful) - if you really need these for some reason, contact us for a copy
 of the archived CVS tree.
 </p>
 
-<h2>Access Details</h2>
-
-<p>Note: If you just want to look at the history of a few files, you may find
-it easier and quicker to browse the repository online:
-</p>
-
-<ul>
-<li> <a href="http://git.xapian.org/?p=xapian;a=summary">browser (using gitweb)</a>
-<li> <a href="https://trac.xapian.org/browser/git">browse (using trac)</a>
-<li> <a href="http://repo.or.cz/w/xapian.git">browse repo.or.cz mirror</a>
-<li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
-</ul>
-
-<h3 id="git">Using Git</h3>
+<h2 id="git">Git</h2>
 
 <p>
 You can check out code from the master git repo at git.xapian.org like so:
@@ -77,7 +64,20 @@ There are also mirrors on
 You may find these more convenient to clone from if you use those sites.
 </p>
 
-<h3 id="svn">Using Subversion</h3>
+<h3>Browsable git repos</h3>
+
+<p>If you just want to look at the history of a few files, you may find
+it easier and quicker to browse the repository online:
+</p>
+
+<ul>
+<li> <a href="http://git.xapian.org/?p=xapian;a=summary">browse (using gitweb)</a>
+<li> <a href="https://trac.xapian.org/browser/git">browse (using trac)</a>
+<li> <a href="http://repo.or.cz/w/xapian.git">browse repo.or.cz mirror</a>
+<li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
+</ul>
+
+<h3 id="svn">Subversion</h3>
 
 <p>
 The subversion repository is no longer available online, but if you have a
