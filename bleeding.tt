@@ -53,6 +53,19 @@ You can check out code from the master git repo at git.xapian.org like so:
 </ol>
 
 <p>
+Note: Before later September 2016, git.xapian.org supported the git protocol
+instead of https - when we added https support, we decided to remove git as
+it seems to have no advantages and some disadvantages compared to https.  If
+you have an existing clone of the repo, you can update the remote URL like so
+(assuming your remote uses the default name "origin" - if not, specify the
+appropriate remote name instead):
+</p>
+
+<pre>
+git remote set-url origin https://git.xapian.org/xapian
+</pre>
+
+<p>
 All branches should be available via git (you can list them with
 <code>git branch -r</code>).  Note that SVN tags appears as branches in git.
 </p>
