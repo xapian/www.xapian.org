@@ -37,9 +37,10 @@ with <a href="/docs/bindings/">bindings</a> to allow use from
 <a href="/docs/bindings/csharp/">C#</a>,
 <a href="/docs/bindings/ruby/">Ruby</a>,
 <a href="/docs/bindings/lua/">Lua</a>,
-<a href="https://github.com/arcusfelis/xapian-erlang-bindings#readme">Erlang</a>
-and
+<a href="https://github.com/arcusfelis/xapian-erlang-bindings#readme">Erlang</a>,
 <a href="https://github.com/mtibeica/node-xapian#readme">Node.js</a>
+and
+<a href="https://github.com/amandaJayanetti/RXapian#readme">R</a>
 (so far!)</p>
 
 <p>Xapian is a highly adaptable toolkit which allows developers
