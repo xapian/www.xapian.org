@@ -18,13 +18,13 @@
 
 <li> Free Software/Open Source - licensed under the GPL.
 
-<li> Supports Unicode (including codepoints beyond the BMP), and stores indexed
-data in UTF-8.
+<li> Supports Unicode 9.0 (including codepoints beyond the BMP), and stores
+indexed text in UTF-8.
 
 <li> <a
 HREF="https://trac.xapian.org/wiki/SupportedPlatforms">Highly
 portable</a> - runs on Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD, Solaris,
-HP-UX, Tru64, IRIX, and probably other Unix platforms; as well as
+HP-UX, AIX and probably other Unix platforms; as well as
 Microsoft Windows and OS/2.
 
 <li> Written in C++, with bindings allowing use from
@@ -51,7 +51,8 @@ categorise documents, etc.
   match documents which mention "footballs" or "footballer").  This helps
   to find relevant documents which might otherwise be missed.
   <a href="http://snowballstem.org/">Snowball stemmers</a> are currently
-  included for Danish, Dutch, English, Finnish, French, German, Hungarian,
+  included for Arabic, Armenian, Basque, Catalan,
+  Danish, Dutch, English, Finnish, French, German, Hungarian,
   Italian, Norwegian, Portuguese, Romanian, Russian, Spanish, Swedish, and
   Turkish.
 
@@ -59,6 +60,9 @@ categorise documents, etc.
   
 <li> Synonyms are supported, both explicitly (e.g. "~cash") and as an automatic
   form of query expansion.
+
+<li> Dynamically generated snippets from matching documents can be generated,
+  with matching words, phrases and wildcards highlighted.
 
 <li> Xapian can suggest spelling corrections for user supplied queries.  This
   is based on words which occur in the data being indexed, so works even for
@@ -84,9 +88,12 @@ a larger application - an indexing and CGI search application called Omega:</p>
 <ul>
 
 <li> The indexer supplied can index HTML, PHP, PDF, PostScript,
-  OpenOffice/StarOffice, OpenDocument, Microsoft Word/Excel/Powerpoint/Works,
-  Word Perfect, AbiWord, RTF, DVI, Perl POD documentation, CSV, SVG, RPM
-  packages, Debian packages, and plain text.
+  OpenOffice/StarOffice, OpenDocument,
+  Microsoft Word/Excel/Powerpoint/Publisher/Works/XPS,
+  Microsoft Outlook saved messages,
+  Word Perfect, AbiWord, RTF, DVI, Perl POD documentation, CSV, SVG,
+  reStructured text, markdown, MAFF, MHTML, ATOM feeds, dejavu, RFC822 mail
+  messages (.eml), RPM packages, Debian packages, and plain text.
   Adding support for indexing other formats is easy where conversion filters
   are available.  This indexer works using the
   filing system, but we also provide a script to allow the htdig web
@@ -97,10 +104,10 @@ a larger application - an indexing and CGI search application called Omega:</p>
 That includes MySQL, PostgreSQL, SQLite, Oracle, DB2, MS SQL, LDAP, and ODBC.
 
 <li> CGI search front-end supplied with highly customisable appearance.  This
-can also be customised to output results in XML or CSV, which is useful if you
-just want raw search results which you can process in your own page layout code
-for dynamically generated pages, or for integrating search into an AJAX
-front-end.
+can also be customised to output results in JSON, XML or CSV, which is useful
+if you just want raw search results which you can process in your own page
+layout code for dynamically generated pages, or for integrating search into an
+AJAX front-end.
 
 </ul>
 
