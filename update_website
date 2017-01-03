@@ -100,6 +100,7 @@ if test xapian-core/stamp-unpacked -nt xapian-core/stamp-built ; then
   cd ..
   touch xapian-core/stamp-built
 fi
+cp -au xapian-core/docs/*.html "$stagedir/docs"
 mkdir -p "$stagedir/docs/apidoc/html"
 cp -au xapian-core/docs/apidoc/html/* "$stagedir/docs/apidoc/html"
 if test xapian-core/stamp-unpacked -nt xapian-core/stamp-built-sourcedoc ; then
