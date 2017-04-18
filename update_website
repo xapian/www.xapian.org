@@ -234,7 +234,7 @@ mkdir -p "${dbdir}"
 rm -rf "${dbdir}/tmp" "${dbdir}/default.old"
 tocull=`cd "${dbdir}" && echo default.*`
 timestamp=`date +%s.%N`
-"${bindir}"/omindex --spelling --db "${dbdir}/tmp" --url / \
+"${bindir}"/omindex --sample-size=100K--spelling --db "${dbdir}/tmp" --url / \
     -Mgif:ignore -Mico:ignore -Mpng:ignore \
     -Mmap:ignore \
     -Mgz:ignore -Mphp:ignore \
