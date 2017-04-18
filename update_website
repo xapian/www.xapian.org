@@ -246,7 +246,7 @@ timestamp=`date +%s.%N`
     -Mtcl:text/plain \
     -Mlua:text/plain \
     "$htmldir"
-"${bindir}"/xapian-compact "${dbdir}/tmp" "${dbdir}/default.$timestamp"
+"${bindir}"/xapian-compact -s "${dbdir}/tmp" "${dbdir}/default.$timestamp"
 mv "${dbdir}/tmp" "${dbdir}/default.$timestamp"
 
 echo "auto default.$timestamp" >> "${dbdir}"/tmp
