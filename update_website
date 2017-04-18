@@ -231,7 +231,7 @@ cp -a "$srcdir/"search.html "${templatedir}/query"
 # rebuild omega's database
 # FIXME: sort out permissions so this'll work for other people too
 mkdir -p "${dbdir}"
-rm -rf "${dbdir}/tmp" "${dbdir}/default.old"
+rm -rf "${dbdir}/tmp" "${dbdir}/tmp.compact" "${dbdir}/default.old"
 tocull=`cd "${dbdir}" && echo default.*`
 timestamp=`date +%s.%N`
 "${bindir}"/omindex --sample-size=100K --spelling --db "${dbdir}/tmp" --url / \
@@ -246,15 +246,14 @@ timestamp=`date +%s.%N`
     -Mtcl:text/plain \
     -Mlua:text/plain \
     "$htmldir"
-"${bindir}"/xapian-compact -s "${dbdir}/tmp" "${dbdir}/default.$timestamp"
-mv "${dbdir}/tmp" "${dbdir}/default.$timestamp"
+"${bindir}"/xapian-compact -s "${dbdir}/tmp" "${dbdir}/tmp.compact"
+rm -rf "${dbdir}/tmp"
 
-echo "auto default.$timestamp" >> "${dbdir}"/tmp
 if test -d "${dbdir}"/default ; then
   # migration from old version
   mv "${dbdir}"/default "${dbdir}"/default.old
 fi
-mv -f "${dbdir}"/tmp "${dbdir}"/default
+mv -f "${dbdir}"/tmp.compact "${dbdir}"/default
 [ "$tocull" == "default.*" ] || ( cd "${dbdir}" && rm -rf $tocull )
 
 # return successfully.
