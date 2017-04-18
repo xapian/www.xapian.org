@@ -234,7 +234,7 @@ mkdir -p "${dbdir}"
 rm -rf "${dbdir}/tmp" "${dbdir}/default.old"
 tocull=`cd "${dbdir}" && echo default.*`
 timestamp=`date +%s.%N`
-"${bindir}"/omindex --spelling --db "${dbdir}/tmp" --url / \
+"${bindir}"/omindex --sample-size=100K--spelling --db "${dbdir}/tmp" --url / \
     -Mgif:ignore -Mico:ignore -Mpng:ignore \
     -Mmap:ignore \
     -Mgz:ignore -Mphp:ignore \
@@ -246,7 +246,7 @@ timestamp=`date +%s.%N`
     -Mtcl:text/plain \
     -Mlua:text/plain \
     "$htmldir"
-"${bindir}"/xapian-compact "${dbdir}/tmp" "${dbdir}/default.$timestamp"
+"${bindir}"/xapian-compact -s "${dbdir}/tmp" "${dbdir}/default.$timestamp"
 mv "${dbdir}/tmp" "${dbdir}/default.$timestamp"
 
 echo "auto default.$timestamp" >> "${dbdir}"/tmp
