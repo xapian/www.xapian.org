@@ -220,18 +220,10 @@ from <a href="http://sourceware.org/cygwinports/">Cygwin Ports</a>.
 
 <h1>Microsoft Windows</h1>
 
-<p>There are two options for native Microsoft Windows support (not counting
-Cygwin):</p>
-
-<ul>
-<li>The standard source tarball can be built using <a href="http://www.mingw.org/">MSYS+mingw</a>.
-
-<li>A <a href="https://trac.xapian.org/browser/svn/branches/1.2/xapian-maintainer-tools/win32msvc">separate build system using nmake</a>
-put together by Ulrik Petersen and Charlie Hull allows building with MSVC.
-This currently lacks a maintainer, but apparently still works for recent
-releases.  Includes support for Python, PHP, Ruby, C#, and the experimental
-SWIG-based Java bindings.
-</ul>
+<p>
+To build for native Microsoft Windows (not using Cygwin) the standard source
+tarball can be built using <a href="http://www.mingw.org/">MSYS+mingw</a>.
+</p>
 
 </div>
 
