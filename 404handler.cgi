@@ -172,10 +172,10 @@ Content-Type: text/html; charset=utf-8
 <html>
 <head>
 <title>Page not found</title>
-<link rel="stylesheet" type="text/css" media="print" href="/print.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/print.css">
 <link rel="icon" href="/apple-touch-icon-precomposed.png" sizes="180x180">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <style type="text/css" media="screen">
 <!--
 \@import "layout2.css";
