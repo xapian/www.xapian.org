@@ -187,7 +187,7 @@ Content-Type: text/html; charset=utf-8
 
 <div id="Content">
 
-<img src="/xapian-logo.png" alt="The Xapian Project">
+<a href="/"><img src="/xapian-logo.png" alt="The Xapian Project"></a>
 
 <p>The page you requested couldn't be found on the Xapian project website.</p>
 
