@@ -198,6 +198,8 @@ Content-Type: text/html; charset=utf-8
 <input type="submit" value="Search">
 </form>
 
+</div>
+
 </body>
 </html>
 END
