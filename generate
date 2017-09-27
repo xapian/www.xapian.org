@@ -33,7 +33,7 @@ my $vars = {
 	    release_date => '2017-09-26',
 	    perl_minor => '.0',
 	    extension => 'tar.xz', # Search::Xapian hardcoded as tar.gz currently
-	    # announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2016-September/009435.html'
+	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2017-September/009553.html'
 	},
 #	{
 #	    branch => '1.0',
