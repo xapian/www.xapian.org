@@ -29,11 +29,11 @@ my $vars = {
 	{
 	    branch => '1.2',
 	    status => 'old stable',
-	    version => '1.2.24',
-	    release_date => '2016-09-16',
+	    version => '1.2.25',
+	    release_date => '2017-09-26',
 	    perl_minor => '.0',
 	    extension => 'tar.xz', # Search::Xapian hardcoded as tar.gz currently
-	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2016-September/009435.html'
+	    # announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2016-September/009435.html'
 	},
 #	{
 #	    branch => '1.0',
