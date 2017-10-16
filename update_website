@@ -94,7 +94,8 @@ if test "$tarball" -nt xapian-core/stamp-unpacked ; then
 fi
 if test xapian-core/stamp-unpacked -nt xapian-core/stamp-built ; then
   cd xapian-core
-  ./configure --prefix="${prefix}" --disable-shared --disable-backend-chert --enable-silent-rules
+  # Build with -fPIC so bindings can be built.
+  ./configure --prefix="${prefix}" --disable-shared --disable-backend-chert --enable-silent-rules CXXFLAGS='-fPIC -g -O2'
   make
   make install
   cd ..
@@ -162,21 +163,26 @@ if test "$tarball" -nt xapian-bindings/stamp-unpacked ; then
 fi
 if test xapian-bindings/stamp-unpacked -nt xapian-bindings/stamp-built-docs ; then
   cd xapian-bindings
-  ./configure
+  ./configure XAPIAN_CONFIG="${bindir}"/xapian-config
   make -C python
   make -C python3
   make -C ruby
+  cd ..
   touch xapian-bindings/stamp-built-docs
 fi
 bindings_dir=$stagedir/docs/bindings
 mkdir -p "$bindings_dir"
-for l in python python3 php php7 ruby tcl8 csharp java lua ; do
+for l in python python3 ; do
+  mkdir -p "$bindings_dir/$l"
+  cp -au "xapian-bindings/$l"/docs/{examples,html/*} "$bindings_dir/$l"
+done
+for l in php php7 ruby tcl8 csharp java lua ; do
   mkdir -p "$bindings_dir/$l"
   cp -au "xapian-bindings/$l"/docs/* "$bindings_dir/$l"
 done
 find "$bindings_dir" -name '*.rst' -delete
-find "$bindings_dir" -name '*.in' -delete
-find "$bindings_dir/ruby" -name '*.rb' -delete
+rm -f "$bindings_dir"/python*/*.{inv,py}
+rm -f "$bindings_dir"/ruby/*.rb
 mkdir -p "$stagedir/docs/xapian-bindings-$version"
 cp -au "xapian-bindings"/NEWS "$stagedir/docs/xapian-bindings-$version/NEWS"
 
