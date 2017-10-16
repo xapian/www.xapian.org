@@ -59,7 +59,7 @@ for my $rel (@{$vars->{releases}}) {
     my $version = $rel->{version};
     if ($version =~ /^\d+\.\d*[13579]\./) {
 	# dev snapshot
-	$rel->{announce} = 'http://oligarchy.co.uk/xapian/' . $version;
+	$rel->{announce} = 'https://oligarchy.co.uk/xapian/' . $version;
     } else {
 	$rel->{announce} = '/download';
     }
