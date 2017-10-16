@@ -80,8 +80,6 @@ cp -au "$srcdir"/404handler.cgi "$stagedir"
 mkdir -p "$stagedir"/docs/bindings
 cp -au "$srcdir"/docs/bindings/index.html "$stagedir"/docs/bindings
 ln -sf "$prefix"/lib/xapian-omega/bin/omega "$stagedir"/search.cgi
-# For google webmaster tools
-touch -a "$stagedir"/googleed339d65da31fa81.html
 # Not *.tt .git generate news-to-html styleandmeta.txt update_website
 
 if test "$tarball" -nt xapian-core/stamp-unpacked ; then
