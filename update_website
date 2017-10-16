@@ -162,7 +162,7 @@ if test "$tarball" -nt xapian-bindings/stamp-unpacked ; then
 fi
 bindings_dir=$stagedir/docs/bindings
 mkdir -p "$bindings_dir"
-for l in python python3 php ruby tcl8 csharp java lua ; do
+for l in python python3 php php7 ruby tcl8 csharp java lua ; do
   mkdir -p "$bindings_dir/$l"
   cp -au "xapian-bindings/$l"/docs/* "$bindings_dir/$l"
 done
@@ -241,6 +241,7 @@ timestamp=`date +%s.%N`
     -Mconf:ignore -Mspec:ignore -Mxml:ignore \
     -Mcs:text/plain \
     -Mphp5:text/plain \
+    -Mphp7:text/plain \
     -Mpy:text/plain \
     -Mrb:text/plain \
     -Mtcl:text/plain \
