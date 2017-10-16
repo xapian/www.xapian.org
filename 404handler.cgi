@@ -122,6 +122,17 @@ if ($path =~ /(.*)\.php$/)  {
     fail();
 }
 
+# We were installing the .rst sources for Python and Python3 docs instead of
+# generated HTML for a while.
+if ($path =~ m!(.*/)([^/]*)\.rst$!) {
+    if (-f "$docroot$1$2.html") {
+	redirect("http://xapian.org$1$2.html");
+    }
+    if (-f "$docroot$1html/$2.html") {
+	redirect("http://xapian.org$1html/$2.html");
+    }
+}
+
 if ($path =~ /(.*)\.htm$/)  {
     if (-f "$docroot$1.html") {
 	redirect("http://xapian.org$1");
