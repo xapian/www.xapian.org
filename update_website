@@ -251,11 +251,12 @@ rm -rf "${dbdir}/tmp" "${dbdir}/tmp.compact" "${dbdir}/default.old"
 tocull=`cd "${dbdir}" && echo default.*`
 timestamp=`date +%s.%N`
 "${bindir}"/omindex --sample-size=100K --spelling --db "${dbdir}/tmp" --url / \
-    -Mgif:ignore -Mico:ignore -Mpng:ignore \
+    -Mcgi:ignore -Mgif:ignore -Mico:ignore -Mpng:ignore \
     -Mmap:ignore \
     -Mgz:ignore -Mphp:ignore \
     -Mconf:ignore -Mspec:ignore -Mxml:ignore \
     -Mcs:text/plain \
+    -Mjava:text/plain \
     -Mphp5:text/plain \
     -Mphp7:text/plain \
     -Mpy:text/plain \
