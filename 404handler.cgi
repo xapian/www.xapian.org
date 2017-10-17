@@ -66,7 +66,7 @@ END
 	redirect($redirect);
     } else {
 	# CVS
-	$redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
+	my $redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
 	if ($rev eq '') {
 	    # deleted file
 	} elsif ($rev2 eq '') {
