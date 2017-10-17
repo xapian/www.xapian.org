@@ -69,55 +69,55 @@ if ($path =~ /\.\./) {
 # And remove any bogus query or fragment in the path part of the URL.
 if ($path =~ s@[])>"',.*/]+$@@ || $path =~ s@/*[#&|].*@@) {
     if ($path eq '/search' || -f "$docroot$path.html") {
-	redirect("http://xapian.org$path");
+	redirect("https://xapian.org$path");
     }
     if (-d "$docroot$path") {
-	redirect("http://xapian.org$path/");
+	redirect("https://xapian.org$path/");
     }
     if (-f _ && $path =~ /(.*)\.html$/) {
-	redirect("http://xapian.org$1");
+	redirect("https://xapian.org$1");
     }
 }
 
-if ($path eq '' || $path eq 'http://xapian.org') {
-    redirect("http://xapian.org/");
+if ($path eq '' || $path eq 'http://xapian.org' || $path eq 'https://xapian.org') {
+    redirect("https://xapian.org/");
 }
 
 if ($path eq '/docs/bindings/tcl') {
-    redirect("http://xapian.org/docs/bindings/tcl8/");
+    redirect("https://xapian.org/docs/bindings/tcl8/");
 }
 
 if ($path eq '/docs/bm') {
-    redirect("http://xapian.org/docs/bm25");
+    redirect("https://xapian.org/docs/bm25");
 }
 
 if ($path eq '/docs/serialistion.html') {
-    redirect("http://xapian.org/docs/serialisation");
+    redirect("https://xapian.org/docs/serialisation");
 }
 
 # Redirect old URLs somewhere helpful.
 if ($path eq '/omega.cgi') {
-    redirect("http://xapian.org/search?$ENV{REDIRECT_QUERY_STRING}");
+    redirect("https://xapian.org/search?$ENV{REDIRECT_QUERY_STRING}");
 }
 if ($path =~ /(.*)\.php$/)  {
     my $p = $1;
     if ($p eq '/bugs/index') {
-	redirect("http://xapian.org/bugs");
+	redirect("https://xapian.org/bugs");
     }
     if ($p eq '/cvs') {
-	redirect("http://xapian.org/bleeding");
+	redirect("https://xapian.org/bleeding");
     }
     if ($p eq '/index') {
-	redirect("http://xapian.org/");
+	redirect("https://xapian.org/");
     }
     if ($p eq '/news') {
-	redirect("http://xapian.org/download");
+	redirect("https://xapian.org/download");
     }
     if ($p eq '/search') {
-	redirect("http://xapian.org$p?$ENV{REDIRECT_QUERY_STRING}");
+	redirect("https://xapian.org$p?$ENV{REDIRECT_QUERY_STRING}");
     }
     if (-f "$docroot$p.html") {
-	redirect("http://xapian.org$p");
+	redirect("https://xapian.org$p");
     }
     fail();
 }
@@ -135,7 +135,7 @@ if ($path =~ m!(.*/)([^/]*)\.rst$!) {
 
 if ($path =~ /(.*)\.htm$/)  {
     if (-f "$docroot$1.html") {
-	redirect("http://xapian.org$1");
+	redirect("https://xapian.org$1");
     }
     fail();
 }
@@ -154,8 +154,8 @@ if ($path =~ m,/cgi-bin/bugzilla, ||
 }
 
 # These won't work as they are valid URLs so won't reach the 404 handler:
-# RedirectPermanent /index.html http://xapian.org/
-# RedirectPermanent /omega.conf http://xapian.org/omega.cgi
+# RedirectPermanent /index.html https://xapian.org/
+# RedirectPermanent /omega.conf https://xapian.org/omega.cgi
 
 fail();
 
