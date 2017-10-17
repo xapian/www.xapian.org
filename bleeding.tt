@@ -112,7 +112,7 @@ mapping line added by git-svn.
 
 <p>
 You can download
-<A HREF="http://oligarchy.co.uk/xapian/trunk/">automated snapshots</A>,
+<A HREF="https://oligarchy.co.uk/xapian/master/">automated snapshots</A>,
 which are generated from git once a day, provided <tt>make distcheck</tt>
 passes on Linux.  This means that some breakages are avoided, but they may 
 still fail to build for you if you're using a different platform, or even a
