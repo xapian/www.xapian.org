@@ -17,6 +17,15 @@ END
     exit 0;
 }
 
+sub svn2git {
+    my $rev = shift @_;
+    sysopen SVN2GIT, '<', "svn2git41.map" or return "";
+    sysseek SVN2GIT, ($rev - 1) * 41, 0 or return "";
+    sysread SVN2GIT, $rev, 40;
+    close SVN2GIT;
+    return $rev;
+}
+
 sub redirect {
     print <<"END";
 Location: $_[0]
@@ -31,12 +40,22 @@ END
 if ($path eq '/C') {
     # Shortened URL from CVS or SVN commit email.
     my ($file, $rev, $rev2) = split /\?/, $ENV{REDIRECT_QUERY_STRING};
-    my $redirect;
     if ($file =~ /^[0-9]+$/) {
 	# This is a redirect to SVN - luckily CVS Xapian had no files with
 	# entirely numeric names!
-	($file, $rev) = ($rev, $file);
-	$redirect = $trac_root_url;
+	my $svnrev = $file;
+	$file = $rev;
+	$rev = svn2git($svnrev);
+	if ($rev !~ /^[0-9a-f]{40}$/) {
+	    print <<"END";
+Status: 404 Not Found
+Content-Type: text/plain
+
+Sorry, no known git commit hash for SVN revision r$svnrev.
+END
+    exit 0;
+	}
+	my $redirect = $trac_root_url;
 	if ($rev2 ne '' && $file ne '') {
 	    $redirect .= 'browser/' . $file . '?rev=' . $rev;
 	} elsif ($file ne '') {
@@ -44,6 +63,7 @@ if ($path eq '/C') {
 	} else {
 	    $redirect .= 'changeset/' . $rev;
 	}
+	redirect($redirect);
     } else {
 	# CVS
 	$redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
@@ -57,7 +77,6 @@ if ($path eq '/C') {
 	    $redirect .= '&r1=' . $rev . '&r2=' . $rev2;
 	}
     }
-    redirect($redirect);
 }
 
 if ($path =~ /\.\./) {

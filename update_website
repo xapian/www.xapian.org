@@ -77,6 +77,7 @@ log_dir $logdir
 __END__
 cp -au "$srcdir"/robots.txt "$stagedir"
 cp -au "$srcdir"/404handler.cgi "$stagedir"
+cp -au "$srcdir"/svn2git41.map "$stagedir"
 mkdir -p "$stagedir"/docs/bindings
 cp -au "$srcdir"/docs/bindings/index.html "$stagedir"/docs/bindings
 ln -sf "$prefix"/lib/xapian-omega/bin/omega "$stagedir"/search.cgi
