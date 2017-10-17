@@ -19,9 +19,10 @@ END
 
 sub svn2git {
     my $rev = shift @_;
-    sysopen SVN2GIT, '<', "svn2git41.map" or return "";
-    sysseek SVN2GIT, ($rev - 1) * 41, 0 or return "";
-    sysread SVN2GIT, $rev, 40;
+    open SVN2GIT, '<', "$docroot/svn2git41.map" or return "";
+    my $off = ($rev - 1) * 41;
+    seek SVN2GIT, $off, 0 or return "";
+    read SVN2GIT, $rev, 40;
     close SVN2GIT;
     return $rev;
 }
@@ -57,10 +58,13 @@ END
 	}
 	my $redirect = $trac_root_url;
 	if ($rev2 ne '' && $file ne '') {
+	    # /C?SVNREV?FILE?SVNOLDREV
 	    $redirect .= 'browser/' . $file . '?rev=' . $rev;
 	} elsif ($file ne '') {
+	    # /C?SVNREV?FILE
 	    $redirect .= 'changeset/' . $rev . '/' . $file . '#file0';
 	} else {
+	    # /C?SVNREV
 	    $redirect .= 'changeset/' . $rev;
 	}
 	redirect($redirect);
