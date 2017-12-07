@@ -72,7 +72,7 @@ available from the Debian and Ubuntu repositories.
 
 <p>
 Backported Debian packages of newer versions are available from
-<a href="http://backports.debian.org/">backports.debian.org</a>.
+<a href="https://backports.debian.org/">backports.debian.org</a>.
 </p>
 
 <p>
@@ -140,7 +140,7 @@ EPEL has older 1.2.x packages for RHEL 6:
 <h2 id="slackware">Slackware</h2>
 
 <p>
-Packages for slackware linux are available from <a href="http://slackbuilds.org/result/?search=xapian">slackbuilds</a>.
+Packages for slackware linux are available from <a href="https://slackbuilds.org/result/?search=xapian">slackbuilds</a>.
 </p>
 
 <h2 id="srpm">Source RPMs</h2>
@@ -162,7 +162,7 @@ be better tailored:
 </p>
 
 <ul>
-<li><a href="http://packages.altlinux.org/en/search?query=&quot;xapian.org&quot;">ALT Linux RPMs</a> of xapian-core, omega, and the python and ruby bindings</li>
+<li><a href="https://packages.altlinux.org/en/search?query=&quot;xapian.org&quot;">ALT Linux RPMs</a> of xapian-core, omega, and the python and ruby bindings</li>
 <li><a href="https://software.opensuse.org/search?q=xapian">SuSE RPMs</a> of xapian-core, omega, and most of the bindings</li>
 </ul>
 
@@ -176,7 +176,7 @@ be better tailored:
 </li>
 <li>FrugalWare Linux has <a href="https://www.frugalware.org/packages/?op=pkg&srch=xapian&arch=all&ver=current">packages of xapian-core and the bindings</a>.</li>
 <li>archlinux has <a href="https://aur.archlinux.org/packages/?SeB=n&K=xapian">packages of xapian-core, omega, and most of the bindings</a>.</li>
-<li>alpine Linux has <a href="http://pkgs.alpinelinux.org/packages?name=xapian-*&branch=&repo=&arch=&maintainer=">packages of xapian-core, omega, and most bindings</a>.</li>
+<li>alpine Linux has <a href="https://pkgs.alpinelinux.org/packages?name=xapian-*&branch=&repo=&arch=&maintainer=">packages of xapian-core, omega, and most bindings</a>.</li>
 </ul>
 
 <h1>FreeBSD Ports Collection</h1>
@@ -216,7 +216,7 @@ for xapian-core.</p>
 
 <p>
 Packages for xapian-core, xapian-bindings, and Search::Xapian are available
-from <a href="http://sourceware.org/cygwinports/">Cygwin Ports</a>.
+from <a href="https://sourceware.org/cygwinports/">Cygwin Ports</a>.
 </p>
 
 <h1>Microsoft Windows</h1>
