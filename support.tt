@@ -13,16 +13,25 @@
 
 <h1>Commercial Support</h1>
 
-<p>The following companies offer support contracts and consultancy services
-for Xapian, and can also develop bespoke applications to meet your needs:</p>
+<p>The following companies and/or individuals offer support contracts and/or
+consultancy services for Xapian, and may also be able to develop bespoke
+applications to meet your needs:</p>
 
 <ul>
 
-<li> <A HREF="https://oligarchy.co.uk/xapian.html">Oligarchy Ltd</A>
+<li> <a HREF="https://oligarchy.co.uk/xapian.html">Oligarchy Ltd</a>
+<li> <a href="http://pnplab.in/index.php/xapian/">PNP LAB</a>
 
 </ul>
 
 <p>Please visit their websites for more information and contact details.</p>
+
+<p>Being listed above should not be taken as any sort of endorsement by the
+project - the only requirement to be listed is that they've contributed
+to Xapian.</p>
+
+<p>If you have contributed to Xapian and wish to be listed above, please
+contact us via the <a href="lists">mailing list or IRC</a>.</p>
 
 </div>
 

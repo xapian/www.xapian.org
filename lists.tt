@@ -39,14 +39,11 @@ away.
 </p>
 
 <p>
-If you only want announcements, you can:
+If you only want announcements, you can follow <a
+href="https://twitter.com/xapian">@xapian on twitter</a>.
 </p>
 
-<ul>
-<li> Follow <a href="https://identi.ca/xapian">@xapian on identi.ca</a>
-<li> Follow <a href="https://twitter.com/xapian">@xapian on twitter</a>
-</ul>
-
+<!-- Gmane search is dead...
 <h2>Searching the lists</h2>
 
 <form method="get" action="http://search.gmane.org/">
@@ -61,6 +58,22 @@ list archives for <input type="text" name="query">
 <input type="submit" value="Search">
 </p>
 </form>
+-->
+
+<h1>IRC</h1>
+
+<p>We have an active IRC channel - #xapian on irc.freenode.net:</p>
+
+<ul>
+<li> <a href="irc://irc.freenode.net/xapian">irc: link</a>
+<li> <a href="https://webchat.freenode.net/?channels=%23xapian">web interface</a>
+</ul>
+
+<p>The users of the channel are in many different timezones, so you won't
+necessarily get an instant response.  This doesn't mean we're ignoring you,
+just that none of us are at our computers right now, so please hang on for a
+reply, or use the mailing lists above if you're not able to stay online.
+</p>
 
 </div>
 
