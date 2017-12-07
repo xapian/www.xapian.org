@@ -176,6 +176,7 @@ be better tailored:
 </li>
 <li>FrugalWare Linux has <a href="https://www.frugalware.org/packages/?op=pkg&srch=xapian&arch=all&ver=current">packages of xapian-core and the bindings</a>.</li>
 <li>archlinux has <a href="https://aur.archlinux.org/packages/?SeB=n&K=xapian">packages of xapian-core, omega, and most of the bindings</a>.</li>
+<li>alpine Linux has <a href="http://pkgs.alpinelinux.org/packages?name=xapian-*&branch=&repo=&arch=&maintainer=">packages of xapian-core, omega, and most bindings</a>.</li>
 </ul>
 
 <h1>FreeBSD Ports Collection</h1>
