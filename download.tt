@@ -110,31 +110,10 @@ repositories, though these may lag behind the latest releases a bit.</p>
 
 <h2 id="rhel">RedHat Enterprise Linux</h2>
 
-<p>Tim Brody has built RPM packages for RedHat Enterprise Linux 5 and 6
-- there are binary packages for i386 and x86_64, and source RPMs (the
-RHEL5 packages are no longer updated, the latest are of Xapian 1.2.5).</p>
-
 <p>
-For convenience you can install a package to pull in his package repository
-and then you can install the packages using yum:</p>
-<blockquote><pre>
-<span id="prompt">$</span> su
-<i>enter your root password</i>
-<span id="prompt">#</span> rpm -ivh http://rpm.eprints.org/rpm-eprints-org-key-1-1.noarch.rpm
-<span id="prompt">#</span> rpm -ivh http://rpm.eprints.org/xapian/6/noarch/rpm-eprints-org-xapian-6-1.noarch.rpm
-<span id="prompt">#</span> yum update
-<span id="prompt">#</span> yum install xapian-omega xapian-bindings-{php,python,tcl8,perl,ruby}
-</pre></blockquote>
-
-<p>(or whatever Xapian packages you want to install).</p>
-
-<p>
-perl-Search-Xapian is available for those not using the SWIG bindings.
-</p>
-
-<p>
-EPEL has older 1.2.x packages for RHEL 6:
-<a href="https://fedoraproject.org/wiki/EPEL">https://fedoraproject.org/wiki/EPEL</a>
+If you want a recent release, you'll probably need to build it yourself.
+<a href="https://fedoraproject.org/wiki/EPEL">EPEL</a> has some older 1.2.x
+packages for RHEL 6 and RHEL 7, but not that we no longer support 1.2.x.
 </p>
 
 <h2 id="slackware">Slackware</h2>
