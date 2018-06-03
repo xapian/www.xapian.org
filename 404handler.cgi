@@ -69,17 +69,17 @@ END
 	}
 	redirect($redirect);
     } else {
-	# CVS
-	my $redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
-	if ($rev eq '') {
-	    # deleted file
-	} elsif ($rev2 eq '') {
-	    # added file
-	    $redirect .= '&rev=' . $rev . '&content-type=text/vnd.viewcvs-markup';
-	} else {
-	    # updated file
-	    $redirect .= '&r1=' . $rev . '&r2=' . $rev2;
-	}
+	# CVS - nowhere to redirect to now.
+	# my $redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
+	# if ($rev eq '') {
+	#     # deleted file
+	# } elsif ($rev2 eq '') {
+	#     # added file
+	#     $redirect .= '&rev=' . $rev . '&content-type=text/vnd.viewcvs-markup';
+	# } else {
+	#     # updated file
+	#     $redirect .= '&r1=' . $rev . '&r2=' . $rev2;
+	# }
     }
 }
 
