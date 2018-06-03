@@ -4,7 +4,7 @@
 
 <head>
 <title>Xapian Users</title>
-[% INSERT styleandmeta.txt %]
+[% styleandmeta %]
 </head>
 
 <body>

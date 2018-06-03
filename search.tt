@@ -4,7 +4,7 @@ $httpheader{Content-Type,text/html; charset=utf-8}<!DOCTYPE HTML PUBLIC "-//W3C/
 
 <head>
 <title>The Xapian Project : Search</title>
-[% INSERT styleandmeta.txt %]
+[% styleandmeta %]
 </head>
 
 <body>

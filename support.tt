@@ -4,7 +4,7 @@
 
 <head>
 <title>The Xapian Project : Commercial Support</title>
-[% INSERT styleandmeta.txt %]
+[% styleandmeta %]
 </head>
 
 <body>

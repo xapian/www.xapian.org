@@ -93,10 +93,19 @@ my @pages = (
     [ "search" => "search this website" ]
 );
 
+my $styleandmeta;
+{
+    open STYLEANDMETA, '<', 'styleandmeta.txt' or die $!;
+    local $/ = undef;
+    $styleandmeta = <STYLEANDMETA>;
+    close STYLEANDMETA;
+}
+
 # specify input filename, or file handle, text reference, etc.
 for my $in (<*.tt>) {
     ((my $page = $in) =~ s/\.tt$//) or next;
     my $out = "$page.html";
+    my $canonical = $page eq 'index' ? '' : $page;
 my $cssnav = <<__END__;   
 <div id="Menu">
 __END__
@@ -115,5 +124,6 @@ __END__
     }
     $cssnav .= "</div>\n";
     $$vars{cssnav} = $cssnav;
+    $$vars{styleandmeta} = $styleandmeta . "<link rel=\"canonical\" href=\"https://xapian.org/$canonical\">\n";
     $template->process($in, $vars, $out) || die $template->error();
 }

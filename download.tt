@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>The Xapian Project : Downloads</title>
-[% INSERT styleandmeta.txt %]
+[% styleandmeta %]
 </head>
 
 <body>
