@@ -94,9 +94,14 @@ it easier and quicker to browse the repository online:
 
 <p>
 The subversion repository is no longer available online, but if you have a
-revision id you can easily locate it in git - say you want to find SVN
-revision 12345, then in your local clone of the git repo you can run:
+subversion revision number it's usually not hard to find the corresponding
+git commit.  Say you want to find SVN revision 12345 - there are two ways:
 </p>
+
+<ul>
+<li> Enter the URL <code>https://xapian.org/C?12345</code> which will redirect
+you to the corresponding git commit in trac.
+<li> <p>In your local clone of the git repo you can run:</p>
 
 <blockquote><code>
 git log --grep '^git-svn-id: .*@12345 ' `git branch --list -r 'origin/svn/*'`
@@ -107,6 +112,9 @@ This searches the log messages of the history of all git branches which were
 imported from SVN for a commit with the requested SVN revision id in the
 mapping line added by git-svn.
 </p>
+</ul>
+
+<p>However, note that there are a small number of SVN revisions which aren't present in the git tree.</p>
 
 <h2>Snapshots</h2>
 
