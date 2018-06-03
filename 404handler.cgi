@@ -191,6 +191,12 @@ sub fail {
     $query =~ s,\.\w+$,,;
     $query =~ s,[/".]+, ,g;
 
+    if (exists $ENV{REDIRECT_QUERY_STRING}) {
+	my $q = $ENV{REDIRECT_QUERY_STRING};
+	$q =~ s,["&?]+, ,g;
+	$query .= " $q";
+    }
+
     # Escape suitably.
     $query =~ s/&/&amp;/g;
     $query =~ s/</&lt;/g;
