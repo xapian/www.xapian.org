@@ -49,7 +49,7 @@ http://www.bivio.biz/f/bOP/README
 
 <ul>
 
-[%# Seems to be offline 2015-03-05
+[%# Seems to be offline 2018-06-25
 <!-- URLs checked 2010-10-03 -->
 <li id="citebase"><div class="orgname"><a href="http://citebase.eprints.org/help/">Citebase</a></div>
 Application: <a href="http://citebase.eprints.org/">Searching academic papers</a><br>
@@ -58,9 +58,9 @@ Database size: around 300,000 papers <small>(2006-02-06)</small><br>
 </li>
 %]
 
-<!-- URLs checked 2015-03-05 -->
+<!-- URLs checked 2018-06-25 | reciprocal-link | http://www.openbib.org/ offline -->
 <li id="kug"><div class="orgname"><a href="http://kug.ub.uni-koeln.de/">Library of the University of Cologne</a></div>
-Xapian is used with <a href="http://www.openbib.org/">OpenBib</a> to search
+Xapian is used with <a href="https://github.com/oflimm/openbib">OpenBib</a> to search
 the library's OPAC (Online Public Access Catalogue)<br>
 Languages: German<br>
 Database size: 17 million title entries split across 213 separate databases
@@ -75,10 +75,10 @@ Database size: 17 million title entries split across 213 separate databases
 
 <ul>
 
-<!-- URLs checked 2015-03-05 -->
-<li id="diezeit"><div class="orgname"><a href="http://www.zeit.de/">Die Zeit</a> -
+<!-- URLs checked 2018-06-25 | no-reciprocal-link -->
+<li id="diezeit"><div class="orgname"><a href="https://www.zeit.de/">Die Zeit</a> -
 German Newspaper</div>
-Application: <a href="http://www.zeit.de/suche/index">Searching news articles</a>; also powers internal search facilities for newspaper staff.<br>
+Application: <a href="https://www.zeit.de/suche/index">Searching news articles</a>; also powers internal search facilities for newspaper staff.<br>
 Languages: German<br>
 </li>
 
@@ -94,9 +94,8 @@ Languages: Norwegian<br>
 Document types: News stories
 </li>
 
-[%#First URL fails to load 2015-03-19
-<!-- URLs checked 2011-02-17 -->
-<li id="balcani"><div class="orgname"><a href="http://www.osservatoriobalcani.org/">Osservatorio Balcani</a> (<a href="http://www.balcanicaucaso.org/eng">The Observatory on the Balkans</a>)</div>
+[%# No obvious evidence of Xapian use 2018-06-25
+<li id="balcani"><div class="orgname"><a href="https://www.balcanicaucaso.org/">Osservatorio Balcani</a> (<a href="http://www.balcanicaucaso.org/eng">The Observatory on the Balkans</a>)</div>
 Application: Searching articles about the Balkans<br>
 Languages: Italian, English, and others<br>
 </li>
@@ -213,27 +212,28 @@ Database size: over 46000 packages <small>(2015-03-05)</small>
 </ul>
 </li>
 
-<!-- URLs checked 2015-03-05 -->
-<li id="qoop"><div class="orgname"><a href="http://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
+<!-- URLs checked 2018-06-25 -->
+<li id="qoop"><div class="orgname"><a href="https://www.qoop.nl/">Qoop</a> - Online Auction Site</div>
 Application: Searching online auctions<br>
 Languages: Dutch<br>
 Database size: around 1.3 million documents <small>(2015-03-05)</small>
 </li>
 
-<!-- URLs checked 2015-03-05 -->
+<!-- URLs checked 2018-06-25 -->
 <li id="grokbase"><div class="orgname"><a href="http://grokbase.com/">grokbase</a></div>
 Application: Searching mailing list archive
 </li>
 
-<!-- URLs checked 2015-03-05 -->
+[%# URLs checked 2018-06-25 and gave 522 from cloudflare
 <li id="iusethis"><div class="orgname"><a href="http://osx.iusethis.com/">i use this</a></div>
 Provides a way to organise your macOS applications and
 discover new ones (also available for iPhone and Microsoft Windows
 applications).
 </li>
+%]
 
-<!-- URLs checked 2015-03-05 -->
-<li id="whosaid"><div class="orgname"><a href="http://whosaid.dracos.co.uk/">Who Said...</a></div>
+<!-- URLs checked 2018-06-25 -->
+<li id="whosaid"><div class="orgname"><a href="https://whosaid.dracos.co.uk/">Who Said...</a></div>
 Application: Subtitle search for Doctor Who episodes.
 </li>
 
@@ -304,31 +304,34 @@ search functionality.
 
 <ul>
 
-<!-- URLs checked 2015-03-05 (last release 2010-03-24) -->
+[%# URLs checked 2018-06-25 (last release 2010-03-24)
 <li id="catalyst"><div class="orgname"><a href="http://www.catalystframework.org/">Catalyst</a></div>
 Catalyst is a Web Development Framework which includes
 <a href="http://search.cpan.org/~mramberg/Catalyst-Model-Xapian/">support for using Xapian as a search engine</a>.
 </li>
+%]
 
-<!-- URLs checked 2015-03-05 (last commit 2012-08-31) -->
+[%# URLs checked 2018-06-25 (last commit 2012-09-01 except for adding README.md in 2015) -->
 <li id="djapian"><div class="orgname"><a href="https://code.google.com/p/djapian/">Djapian</a></div>
 Djapian provides integration between Xapian and
 <a href="https://www.djangoproject.com/">Django</a> (a high-level Python Web
 framework that encourages rapid development and clean, pragmatic design).
 </li>
+%]
 
-[%# checked 2015-03-05: Last signs of life were 2010: https://rubygems.org/gems/acts_as_xapian
+[%# checked 2018-06-25: Last signs of life were 2010: https://rubygems.org/gems/acts_as_xapian
 <li id="acts_as_xapian"><div class="orgname"><a href="https://github.com/frabcus/acts_as_xapian/wiki">acts_as_xapian</a></div>
 acts_as_xapian provides Xapian support for the <a href="http://www.rubyonrails.org/">Ruby on Rails</a> web framework.
 </li>
 %]
 
-<!-- URLs checked 2015-03-05 -->
+[%# URLs checked 2018-06-25 URL 404
 <li id="couchdb"><div class="orgname"><a href="https://gitorious.org/couchdb-xapian">CouchDB Xapian</a></div>
 CouchDB Xapian is a search interface to CouchDB documents, that uses the Xapian Ruby bindings.
 </li>
+%]
 
-[%# checked 2015-03-05: Last updated 2008-11-11
+[%# checked 2018-06-25: Last updated 2008-11-11
 <li id="orexapian"><div class="orgname"><a href="https://pypi.python.org/pypi/ore.xapian/">ore.xapian</a></div>
 ore.xapian is a Xapian Content Indexing/Searching Framework for Zope3
 </li>
