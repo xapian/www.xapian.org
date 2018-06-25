@@ -90,7 +90,7 @@ a larger application - an indexing and CGI search application called Omega:</p>
 <ul>
 
 <li> The indexer supplied can index HTML, PHP, PDF, PostScript,
-  OpenOffice/StarOffice, OpenDocument,
+  LibreOffice/OpenOffice/StarOffice, OpenDocument,
   Microsoft Word/Excel/Powerpoint/Publisher/Works/XPS,
   Microsoft Outlook saved messages,
   Word Perfect, AbiWord, RTF, DVI, Perl POD documentation, CSV, SVG,
