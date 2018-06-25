@@ -175,7 +175,7 @@ for xapian-core, xapian-omega, and Search::Xapian.</p>
 <p>OpenBSD Ports has <a href="http://openports.se/search.php?so=xapian">packages</a>
 for xapian-core and xapian-omega.</p>
 
-<h1>Mac OS X</h1>
+<h1>macOS</h1>
 
 <p><a href="https://brew.sh/">Homebrew</a> has xapian-core and the bindings
 for several languages packaged.  For example, use

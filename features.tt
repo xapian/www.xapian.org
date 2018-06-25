@@ -23,7 +23,7 @@ indexed text in UTF-8.
 
 <li> <a
 HREF="https://trac.xapian.org/wiki/SupportedPlatforms">Highly
-portable</a> - runs on Android, Linux, Mac OS X, FreeBSD, NetBSD, OpenBSD,
+portable</a> - runs on Android, Linux, macOS, FreeBSD, NetBSD, OpenBSD,
 Solaris, HP-UX, AIX and probably other Unix platforms; as well as
 Microsoft Windows and OS/2.
 
