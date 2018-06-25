@@ -30,9 +30,11 @@ Microsoft Windows and OS/2.
 <li> Written in C++, with bindings allowing use from
   <a href="/docs/bindings/">many other languages</a>.
 
-<li> Ranked probabilistic search - important words get more weight than
-unimportant words, so the most relevant documents are more likely to come near
-the top of the results list.
+<li> Ranked search (so the most relevant documents are more likely to come near
+the top of the results list) with built-in support for multiple models
+from the Probabilistic, Divergence from Randomness, and Language Modelling
+families of weighting models.  Custom user-supplied weighting models are
+also supported.
 
 <li> Relevance feedback - given one or more documents, Xapian can suggest the
 most relevant index terms to expand a query, suggest related documents,
