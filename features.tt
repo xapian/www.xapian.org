@@ -45,16 +45,16 @@ categorise documents, etc.
   either in a specified order, or in any order.
 
 <li> Full range of structured boolean search operators ("stock NOT market",
-  etc).  The results of the boolean search are ranked by the probabilistic
-  weights.  Boolean filters can also be applied to restrict a probabilistic
-  search.
+  etc).  The results of the boolean search are ranked by the weighting
+  model, and boolean filters can also be applied (which don't themselves
+  contribute to a document's weight).
 
 <li> Supports stemming of search terms (e.g. a search for "football" would
   match documents which mention "footballs" or "footballer").  This helps
   to find relevant documents which might otherwise be missed.
   <a href="http://snowballstem.org/">Snowball stemmers</a> are currently
   included for Arabic, Armenian, Basque, Catalan,
-  Danish, Dutch, English, Finnish, French, German, Hungarian,
+  Danish, Dutch, English, Finnish, French, German, Hungarian, Indonesian,
   Italian, Norwegian, Portuguese, Romanian, Russian, Spanish, Swedish, and
   Turkish.
 
