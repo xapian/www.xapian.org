@@ -55,8 +55,8 @@ categorise documents, etc.
   <a href="http://snowballstem.org/">Snowball stemmers</a> are currently
   included for Arabic, Armenian, Basque, Catalan,
   Danish, Dutch, English, Finnish, French, German, Hungarian, Indonesian,
-  Italian, Norwegian, Portuguese, Romanian, Russian, Spanish, Swedish, and
-  Turkish.
+  Irish, Italian, Lithuanian, Nepali, Norwegian, Portuguese, Romanian,
+  Russian, Spanish, Swedish, Tamil and Turkish.
 
 <li> Wildcard search is supported (e.g. "xap*").
   
