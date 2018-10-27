@@ -91,11 +91,12 @@ a larger application - an indexing and CGI search application called Omega:</p>
 
 <li> The indexer supplied can index HTML, PHP, PDF, PostScript,
   LibreOffice/OpenOffice/StarOffice, OpenDocument,
-  Microsoft Word/Excel/Powerpoint/Publisher/Works/XPS,
+  Microsoft Word/Excel/Powerpoint/Publisher/Visio/Works/XPS,
   Microsoft Outlook saved messages,
+  Apple iWork,
   Word Perfect, AbiWord, RTF, DVI, Perl POD documentation, CSV, SVG,
   reStructured text, markdown, MAFF, MHTML, ATOM feeds, dejavu, RFC822 mail
-  messages (.eml), RPM packages, Debian packages, and plain text.
+  messages (.eml), vCard, RPM packages, Debian packages, and plain text.
   Adding support for indexing other formats is easy where conversion filters
   are available.  This indexer works using the
   filing system, but we also provide a script to allow the htdig web
