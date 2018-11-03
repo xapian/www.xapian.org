@@ -263,6 +263,7 @@ timestamp=`date +%s.%N`
     -Mrb:text/plain \
     -Mtcl:text/plain \
     -Mlua:text/plain \
+    --mime-type-match=NEWS:text/plain \
     "$htmldir"
 "${bindir}"/xapian-compact -s "${dbdir}/tmp" "${dbdir}/tmp.compact"
 rm -rf "${dbdir}/tmp"
