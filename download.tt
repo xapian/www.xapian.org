@@ -113,7 +113,7 @@ repositories, though these may lag behind the latest releases a bit.</p>
 <p>
 If you want a recent release, you'll probably need to build it yourself.
 <a href="https://fedoraproject.org/wiki/EPEL">EPEL</a> has some older 1.2.x
-packages for RHEL 6 and RHEL 7, but not that we no longer support 1.2.x.
+packages for RHEL 6 and RHEL 7, but note that we no longer support 1.2.x.
 </p>
 
 <h2 id="slackware">Slackware</h2>
