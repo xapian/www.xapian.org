@@ -27,6 +27,7 @@ Xapian or know someone who is, please add an entry to
 <li><a href="#commweb">Community Websites</a></li>
 <li><a href="#otherweb">Other Websites</a></li>
 <li><a href="#desktop">Desktop Search Applications</a></li>
+<li><a href="#email">Email Search Applications</a></li>
 <li><a href="#webapps">Web Based Applications</a></li>
 [%#
 <li><a href="#frameworks">Software Frameworks</a></li>
@@ -44,6 +45,8 @@ etc...generally anything that says something about performance.
 %]
 
 <img align=right src="xapian-powered.png"><br><hr>
+
+[%# URLs checked 2019-02-14 unless stated otherwise %]
 
 <h2 id="searchweb">Search Websites</h2>
 
@@ -81,19 +84,16 @@ Languages: German<br>
 
 <ul>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="theyworkforyou"><div class="orgname"><a href="https://www.theyworkforyou.com/" >TheyWorkForYou.com</a></div>
 Application: Searching Hansard, the UK House of Commons Official Report; also email alerts<br>
 Languages: English<br>
 Database size: around 500,000 documents; 0.5G of source data. <small>(2006-02-06)</small>
 </li>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="gaze"><div class="orgname"><a href="https://www.mysociety.org/">mysociety.org</a></div>
 Application: <a href="https://www.mysociety.org/2005/09/15/gaze-web-service/">web api to gazetteer service</a>, built using Search::Xapian
 </li>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="whatdotheyknow"><div class="orgname"><a href="https://www.whatdotheyknow.com/">WhatDoTheyKnow.com</a></div>
 Application: Searching UK Freedom of Information Act requests and responses
 </li>
@@ -106,7 +106,6 @@ Application: Searching UK Freedom of Information Act requests and responses
 
 <ul>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="debian"><div class="orgname"><a href="https://debian.org/">Debian GNU/Linux</a></div>
 Debian use Xapian for:
 <ul>
@@ -162,9 +161,16 @@ applications).
 </li>
 %]
 
-<!-- URLs checked 2019-02-14 -->
 <li id="whosaid"><div class="orgname"><a href="https://whosaid.dracos.co.uk/">Who Said...</a></div>
 Application: Subtitle search for Doctor Who episodes.
+</li>
+
+<li id="spacelog"><div class="orgname"><a href="https://spacelog.org">Spacelog</a></div>
+Application: Allows you to explore transcripts from early manned space missions. The <a href="https://github.com/Spacelog">code is available on github</a>.
+</li>
+
+<li id="runbox"><div class="orgname"><a href="https://runbox.com">rubbox</a></div>
+Application: Secure and Private Email Hosting Services.  <a href="https://blog.runbox.com/2019/01/the-secret-behind-runbox-7s-speed/">Uses Xapian compiled with emscripten and running in the browser</a>.
 </li>
 
 </ul>
@@ -175,20 +181,37 @@ Application: Subtitle search for Doctor Who episodes.
 
 <ul>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="recoll"><div class="orgname"><a href="http://www.recoll.org/">Recoll</a></div>
 Application: Recoll is a desktop full text search tool
 </li>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="pinot"><div class="orgname"><a href="https://github.com/FabriceColin/pinot">Pinot</a></div>
 Application: Pinot is a personal search and metasearch tool for the Free Desktop
 </li>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="olpc"><div class="orgname"><a href="http://one.laptop.org/">one laptop per child</a></div>
 Application: The One Laptop Per Child (OLPC) project is building a low-cost laptop for the world's poorest children.  The datastore search is implemented using
 Xapian.<br>
+</li>
+
+</ul>
+
+<hr>
+
+<h2 id="email">Email Search Applications</h2>
+
+<ul>
+
+<li id="notmuch"><div class="orgname"><a href="https://notmuchmail.org/">Notmuch</a></div>
+Application: Fast, global-search and tag-based email system.
+</li>
+
+<li id="mu"><div class="orgname"><a href="https://www.djcbsoftware.nl/code/mu/">mu</a></div>
+Application: Mail archive search
+</li>
+
+<li id="sup"><div class="orgname"><a href="https://sup-heliotrope.github.io/">sup</a></div>
+Application: A curses threads-with-tags style email client
 </li>
 
 </ul>
@@ -199,26 +222,24 @@ Xapian.<br>
 
 <ul>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="roundup"><div class="orgname"><a href="http://roundup.sourceforge.net/">Roundup</a></div>
 Application: Roundup is an Issue Tracker which can use Xapian for searching
 </li>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="moinmoin"><div class="orgname"><a href="https://moinmo.in/">MoinMoin</a></div>
 Application: Wiki software with <a href="https://moinmo.in/HelpOnXapian">Xapian search</a>.
 </li>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="lxr"><div class="orgname"><a href="http://lxr.linux.no/">LXR</a></div>
 Application: LXR, the Linux Cross Referencer.
 </li>
 
-<!-- URLs checked 2019-02-14 -->
 <li id="ikiwiki"><div class="orgname"><a href="https://ikiwiki.info/">ikiwiki</a></div>
 Application: Wiki software with Xapian search.
 </li>
 
+<li id="amuse"><div class="orgname"><a href="https://amusewiki.org/">amusewiki</a></div>
+Application: A library-oriented wiki engine which uses Xapian for its search.
 </ul>
 
 <hr>
