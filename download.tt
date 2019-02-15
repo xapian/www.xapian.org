@@ -185,8 +185,7 @@ installed python from Homebrew first).</p>
 
 <p>The <a href="http://www.finkproject.org/">Fink project</a> has <a
 href="http://pdb.finkproject.org/pdb/browse.php?summary=xapian">packages</a>
-for xapian-core, Omega, and the Python and Ruby bindings, but last time we
-checked only for the old 1.2.x release branch.</p>
+for xapian-core, and the Python bindings.</p>
 
 <p>Alternatively, <a href="https://www.macports.org/">MacPorts</a> has <a
 href="https://www.macports.org/ports.php?by=name&substr=xapian">packages</a>
