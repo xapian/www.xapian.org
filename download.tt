@@ -20,11 +20,13 @@
 <p>The [% r.branch | html %] branch is the current stable release branch.  We
 recommend you use this branch unless you have a particular need to use an older 
 version.
-<!--  If you wish, you can
-read a <a href="https://trac.xapian.org/wiki/ReleaseOverview">more
-complete overview of the changes</a> in the 1.0 release.
-<i>[List for 1.2.x to be written still, sorry!]</i>
--->
+</p>
+
+<h2>Old stable release</h2>
+
+<p>The [% r.branch | html %] branch is the previous stable release branch.
+We no longer provide support for this, and recommend upgrading to the current
+stable release series.
 </p>
 [% CASE 'development' %]
 <h2>Development release</h2>
