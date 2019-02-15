@@ -250,13 +250,6 @@ Application: A library-oriented wiki engine which uses Xapian for its search.
 <ul>
 %]
 
-[%# URLs worked 2018-06-25; not responding 2019-02-14 but in google cache (last release 2010-03-24)
-<li id="catalyst"><div class="orgname"><a href="http://www.catalystframework.org/">Catalyst</a></div>
-Catalyst is a Web Development Framework which includes
-al.
-</li>
-%]
-
 [%# URLs checked 2018-06-25 (last commit 2012-09-01 except for adding README.md in 2015) -->
 <li id="djapian"><div class="orgname"><a href="https://github.com/daevaorn/djapian">Djapian</a></div>
 Djapian provides integration between Xapian and
