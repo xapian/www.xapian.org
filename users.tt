@@ -29,6 +29,7 @@ Xapian or know someone who is, please add an entry to
 <li><a href="#desktop">Desktop Search Applications</a></li>
 <li><a href="#email">Email Search Applications</a></li>
 <li><a href="#webapps">Web Based Applications</a></li>
+<li><a href="#other">Other Software</a></li>
 [%#
 <li><a href="#frameworks">Software Frameworks</a></li>
 %]
@@ -240,6 +241,22 @@ Application: Wiki software with Xapian search.
 
 <li id="amuse"><div class="orgname"><a href="https://amusewiki.org/">amusewiki</a></div>
 Application: A library-oriented wiki engine which uses Xapian for its search.
+</ul>
+
+<hr>
+
+<h2 id="other">Other Software</h2>
+
+<ul>
+
+<li id="doxygen"><div class="orgname"><a href="http://www.doxygen.org/">Doxygen</a></div>
+Application: Doxygen is a tool for generating documentation from annotated sources.
+It <a href="http://www.doxygen.nl/manual/searching.html">includes support</a> for
+making that documentation searchable using Xapian.
+</li>
+
+<li id="kiwix"><div class="orgname"><a href="https://www.kiwix.org/">kiwix</a></div>
+Application: Offline wikipedia reader
 </ul>
 
 <hr>
