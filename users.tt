@@ -243,6 +243,10 @@ Application: Wiki software with Xapian search.
 Application: A library-oriented wiki engine which uses Xapian for its search.
 </li>
 
+<li id="chamilo"><div class="orgname"><a href="https://chamilo.org/">Chamilo</a></div>
+Application: A learning management system focused on ease of use and accessibility.
+</li>
+
 </ul>
 
 <hr>
