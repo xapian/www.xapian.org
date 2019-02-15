@@ -22,6 +22,7 @@ recommend you use this branch unless you have a particular need to use an older
 version.
 </p>
 
+[% CASE 'old stable' %]
 <h2>Old stable release</h2>
 
 <p>The [% r.branch | html %] branch is the previous stable release branch.
