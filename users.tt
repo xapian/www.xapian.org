@@ -170,7 +170,7 @@ Application: Subtitle search for Doctor Who episodes.
 Application: Allows you to explore transcripts from early manned space missions. The <a href="https://github.com/Spacelog">code is available on github</a>.
 </li>
 
-<li id="runbox"><div class="orgname"><a href="https://runbox.com">rubbox</a></div>
+<li id="runbox"><div class="orgname"><a href="https://runbox.com">runbox</a></div>
 Application: Secure and Private Email Hosting Services.  <a href="https://blog.runbox.com/2019/01/the-secret-behind-runbox-7s-speed/">Uses Xapian compiled with emscripten and running in the browser</a>.
 </li>
 
@@ -241,6 +241,8 @@ Application: Wiki software with Xapian search.
 
 <li id="amuse"><div class="orgname"><a href="https://amusewiki.org/">amusewiki</a></div>
 Application: A library-oriented wiki engine which uses Xapian for its search.
+</li>
+
 </ul>
 
 <hr>
@@ -257,6 +259,12 @@ making that documentation searchable using Xapian.
 
 <li id="kiwix"><div class="orgname"><a href="https://www.kiwix.org/">kiwix</a></div>
 Application: Offline wikipedia reader
+</li>
+
+<li id="xapiand"><div class="orgname"><a href="https://kronuz.io/Xapiand/">Xapiand</a></div>
+Application: A fast, simple and modern search and storage server built for the cloud.
+</li>
+
 </ul>
 
 <hr>
