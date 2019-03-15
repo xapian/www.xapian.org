@@ -85,6 +85,7 @@ my @pages = (
     [ "lists" => "mailing lists" ],
     [ "docs/" => "docs" ],
     [ "users" => "current users" ],
+    [ "sponsors" => "sponsors" ],
     [ "support" => "commercial support" ],
     [ "download" => "download" ],
     [ "bleeding" => "bleeding edge" ],
