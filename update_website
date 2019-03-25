@@ -70,6 +70,7 @@ cp -au "$srcdir"/*.html "$stagedir"
 rm -f "$stagedir"/search.html
 cp -au "$srcdir"/*.ico "$stagedir"
 cp -au "$srcdir"/*.png "$stagedir"
+cp -au "$srcdir"/images "$stagedir"
 cat <<__END__ > "$stagedir/omega.conf"
 database_dir $dbdir
 template_dir $templatedir
