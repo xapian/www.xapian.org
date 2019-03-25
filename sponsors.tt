@@ -11,22 +11,35 @@
 
 <div id="Content">
 
-<h1>Sponsors</h1>
+<h1>Financial Sponsors</h1>
 
-<p></p>
+<p>The following sponsors have donated money to the Xapian project in
+the last year.  We thank them for their generous support.</p>
 
-<ul>
+<ul style="list-style-type:none;">
 
-<li> <a href=""></a>
+<li> <a href="https://runbox.com/" rel="nofollow"><img src="images/runbox-logo.png" alt="runbox"></a>
 
 </ul>
 
-<p>Being listed above should not be taken as any sort of endorsement by the
-project - the only requirement to be listed is that they've donated
-to Xapian.</p>
+<h1>Infrastructure Sponsors</h1>
 
+<ul style="list-style-type:none;">
+
+<li> <a href="https://sfconservancy.org/"><img src="images/conservancy-logo.png" alt="Software Freedom Conservancy"></a>
+     <div>Software Freedom Conservancy act as our fiscal sponsor.</div>
+
+</ul>
+
+<h1>Disclaimer</h1>
+
+<p>Being listed on this page should not be taken as any sort of endorsement by
+the project.</p>
+
+<!-- FIXME how to contact?
 <p>If you have donated to Xapian and wish to be listed above, please
-contact us via the <a href="lists">mailing list or IRC</a>.</p>
+contact us.</p>
+-->
 
 </div>
 
