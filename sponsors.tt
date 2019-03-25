@@ -22,6 +22,23 @@ the last year.  We thank them for their generous support.</p>
 
 </ul>
 
+<h2>Donating</h2>
+
+<!-- FIXME Add details of donating by bank transfer or cheque
+    <p>We can accept donations in several ways:</p>
+-->
+
+<ul style="list-style-type:none;">
+
+<li>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="Y8WL47RVZJ3LQ">
+<button type="submit" style="font-weight:bold;padding:4px 21px;background-color:#ffc439;border:0px;border-radius:12px;text-size:12px;">Donate</button> with PayPal.  You can use a credit card or PayPal balance, and make a one-off or monthly donation.
+</form>
+
+</ul>
+
 <h1>Infrastructure Sponsors</h1>
 
 <ul style="list-style-type:none;">
