@@ -144,7 +144,7 @@ be better tailored:
 </p>
 
 <ul>
-<li><a href="https://packages.altlinux.org/en/search?query=&quot;xapian.org&quot;">ALT Linux RPMs</a> of xapian-core, omega, and the python and ruby bindings</li>
+<li><a href="https://packages.altlinux.org/en/search?query=xapian">ALT Linux RPMs</a> of xapian-core, omega, and the python and ruby bindings</li>
 <li><a href="https://software.opensuse.org/search?q=xapian">SuSE RPMs</a> of xapian-core, omega, and most of the bindings</li>
 </ul>
 
