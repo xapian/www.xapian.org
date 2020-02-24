@@ -24,7 +24,7 @@ my $vars = {
 	    version => '1.4.15',
 	    release_date => '2020-02-24',
 	    extension => 'tar.xz',
-	    #	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2019-November/009774.html'
+	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2020-February/009792.html'
 	},
 	{
 	    branch => '1.2',
