@@ -67,8 +67,8 @@ ALT="$percentage%" HEIGHT=16 WIDTH=32>}
 <div style='width:$div{$mul{$percentage,6},10}px; height:10px; background-color: red;'>
 </div></div>
 <div style='float:left;margin-top:2px;font-size:x-small;'>
-<span title="$html{$date{$field{modtime},%Y-%m-%d %H:%M:%S}}">
-Modified: <b>$html{$date{$field{modtime},%Y-%m-%d}}</b></span><br>
+<time datetime="$html{$date{$field{modtime},%Y-%m-%d %H:%M:%S}}Z" title="$html{$date{$field{modtime},%Y-%m-%d %H:%M:%S}}">
+Modified: <b>$html{$date{$field{modtime},%Y-%m-%d}}</b></time><br>
 $if{$field{language},Language: <b>$html{$field{language}}</b><br>}
 $if{$field{size},<span title="$html{$field{size}} bytes">Size: <b>$html{$filesize{$field{size}}}</b></span><br>}
 <div title="Mark this document as relevant" style="float:left;background-color:#cfc;border:1px solid green;margin-top:2px;">
