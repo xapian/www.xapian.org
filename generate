@@ -31,7 +31,7 @@ my $vars = {
 	    status => 'old stable',
 	    version => '1.2.25',
 	    release_date => '2017-09-26',
-	    perl_minor => '.3',
+	    perl_minor => '.4',
 	    extension => 'tar.xz', # Search::Xapian hardcoded as tar.gz currently
 	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2017-September/009553.html'
 	},
