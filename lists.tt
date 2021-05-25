@@ -60,13 +60,29 @@ list archives for <input type="text" name="query">
 </form>
 -->
 
+<h1>Matrix Chat</h1>
+
+<p>Our Matrix room is #xapian:matrix.org, which is bridged to our IRC channel
+so messages sent to either should be visible to both.
+</p>
+
+<p>
+<a href"https://app.element.io/#/room/#xapian:matrix.org">Element</a> is a web
+application which allows you to access the matrix room which is bridged to the
+#xapian IRC channel.  Use requires registration (free), but the big advantage
+is you stay in the room while disconnected, and then can catch up on the
+discussion when you connect again.  There are also
+<a href="https://element.io/get-started">mobile apps for Android and iOS and
+desktop apps for various platforms</a>.
+</p>
+
 <h1>IRC</h1>
 
-<p>We have an active IRC channel - #xapian on irc.freenode.net:</p>
+<p>We have an active IRC channel - #xapian on libera.chat (we're in the process of migrating off Freenode):</p>
 
 <ul>
-<li> <a href="irc://irc.freenode.net/xapian">irc: link</a>
-<li> <a href="https://webchat.freenode.net/?channels=%23xapian">web interface</a>
+<li> <a href="irc://irc.libera.chat/xapian">irc: link</a> if you have a desktop or mobile IRC client installed
+<li> <a href="https://kiwiirc.com/client/irc.libera.chat/#xapian">web interface</a> (OK for casual use, but you'll disconnect from IRC when you aren't online)
 </ul>
 
 <p>The users of the channel are in many different timezones, so you won't
