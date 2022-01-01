@@ -21,10 +21,10 @@ my $vars = {
 	{
 	    branch => '1.4',
 	    status => 'stable',
-	    version => '1.4.18',
-	    release_date => '2021-01-14',
+	    version => '1.4.19',
+	    release_date => '2021-12-31',
 	    extension => 'tar.xz',
-	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2021-January/009856.html'
+	    #	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2021-January/009856.html'
 	},
 	{
 	    branch => '1.2',
