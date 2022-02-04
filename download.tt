@@ -208,7 +208,7 @@ from <a href="https://sourceware.org/cygwinports/">Cygwin Ports</a>.
 
 <p>
 To build for native Microsoft Windows (not using Cygwin) the standard source
-tarball can be built using <a href="http://www.mingw.org/">MSYS+mingw</a>.
+tarball can be built using <a href="https://www.mingw-w64.org/">MSYS+mingw</a>.
 </p>
 
 </div>
