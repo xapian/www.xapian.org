@@ -67,18 +67,18 @@ so messages sent to either should be visible to both.
 </p>
 
 <p>
-<a href"https://app.element.io/#/room/#xapian:matrix.org">Element</a> is a web
+<a href="https://app.element.io/#/room/#xapian:matrix.org">Element</a> is a web
 application which allows you to access the matrix room which is bridged to the
 #xapian IRC channel.  Use requires registration (free), but the big advantage
 is you stay in the room while disconnected, and then can catch up on the
 discussion when you connect again.  There are also
-<a href="https://element.io/get-started">mobile apps for Android and iOS and
-desktop apps for various platforms</a>.
+<a href="https://matrix.org/docs/projects/try-matrix-now/">mobile, desktop and
+command line apps</a> available.
 </p>
 
 <h1>IRC</h1>
 
-<p>We have an active IRC channel - #xapian on libera.chat (we're in the process of migrating off Freenode):</p>
+<p>We have an active IRC channel - #xapian on libera.chat:</p>
 
 <ul>
 <li> <a href="irc://irc.libera.chat/xapian">irc: link</a> if you have a desktop or mobile IRC client installed
