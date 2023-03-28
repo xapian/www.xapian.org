@@ -176,7 +176,7 @@ for l in python python3 ; do
   mkdir -p "$bindings_dir/$l"
   cp -au "xapian-bindings/$l"/docs/{examples,html/*} "$bindings_dir/$l"
 done
-for l in php ruby tcl8 csharp java lua ; do
+for l in perl php ruby tcl8 csharp java lua ; do
   mkdir -p "$bindings_dir/$l"
   cp -au "xapian-bindings/$l"/docs/* "$bindings_dir/$l"
 done

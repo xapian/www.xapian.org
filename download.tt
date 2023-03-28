@@ -69,8 +69,8 @@ relating to the latest release.
 
 <p>
 Packages of xapian-core, xapian-omega, xapian-bindings (Java, Python, Ruby,
-and Tcl), and the perl bindings (the package name is libsearch-xapian-perl) are 
-available from the Debian and Ubuntu repositories.
+and Tcl), and the perl Search::Xapian module (the package name is
+libsearch-xapian-perl) are available from the Debian and Ubuntu repositories.
 </p>
 
 <p>
