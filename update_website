@@ -164,6 +164,7 @@ fi
 if test xapian-bindings/stamp-unpacked -nt xapian-bindings/stamp-built-docs ; then
   cd xapian-bindings
   ./configure XAPIAN_CONFIG="${bindir}"/xapian-config
+  make -C perl
   make -C python
   make -C python3
   make -C ruby
