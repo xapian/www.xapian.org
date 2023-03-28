@@ -196,8 +196,7 @@ if [ -n "$old_version" ] ; then
       tar -O -xf "$t" $td/NEWS > "$d/NEWS"
     fi
   done
-  # FIXME: doesn't handle Search-Xapian-0.9.9.1.tar.gz
-  tardir=Search-Xapian-$old_version.0
+  tardir=Search-Xapian-$old_version$old_perl_minor
   tarball=$old_tarballdir/$tardir.tar.gz
   if ! test -r "$tarball" ; then
     echo "$0: Latest release tarball doesn't exist: '$tarball'"

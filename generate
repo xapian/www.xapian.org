@@ -73,8 +73,8 @@ for my $r (@{$vars->{releases}}) {
 	$prefix =~ s/ /_/g;
 	$prefix .= '_';
     }
-    for (qw(version extension)) {
-	print "$prefix$_='$r->{$_}'\n";
+    for (qw(version extension perl_minor)) {
+	print "$prefix$_='".($r->{$_}//'')."'\n";
     }
 }
 
