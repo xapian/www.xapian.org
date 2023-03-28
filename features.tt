@@ -98,9 +98,7 @@ a larger application - an indexing and CGI search application called Omega:</p>
   reStructured text, markdown, MAFF, MHTML, ATOM feeds, dejavu, RFC822 mail
   messages (.eml), vCard, RPM packages, Debian packages, and plain text.
   Adding support for indexing other formats is easy where conversion filters
-  are available.  This indexer works using the
-  filing system, but we also provide a script to allow the htdig web
-  crawler to be hooked in, allowing remote sites to be searched using Omega.
+  are available.
 
 <li> You can also index data from any SQL or other RDBMS supported by the
 <A HREF="http://dbi.perl.org/">Perl DBI module</A>.
