@@ -25,7 +25,7 @@ indexed text in UTF-8.
 HREF="https://trac.xapian.org/wiki/SupportedPlatforms">Highly
 portable</a> - runs on Android, Linux, macOS, FreeBSD, NetBSD, OpenBSD,
 Solaris, HP-UX, AIX and probably other Unix platforms; as well as
-Microsoft Windows and OS/2.
+Microsoft Windows.
 
 <li> Written in C++, with bindings allowing use from
   <a href="/docs/bindings/">many other languages</a>.
