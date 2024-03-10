@@ -85,7 +85,7 @@ it easier and quicker to browse the repository online:
 
 <ul>
 <li> <a href="https://git.xapian.org/?p=xapian;a=summary">browse (using gitweb)</a>
-<li> <a href="https://trac.xapian.org/browser/git">browse (using trac)</a>
+<li> <a href="https://trac.xapian.org/browser/git">browse (using trac)</a> (after registering and verifying an account)
 <li> <a href="http://repo.or.cz/w/xapian.git">browse repo.or.cz mirror</a>
 <li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
 </ul>
@@ -100,7 +100,7 @@ git commit.  Say you want to find SVN revision 12345 - there are two ways:
 
 <ul>
 <li> Enter the URL <code>https://xapian.org/C?12345</code> which will redirect
-you to the corresponding git commit in trac.
+you to the corresponding git commit in gitweb.
 <li> <p>In your local clone of the git repo you can run:</p>
 
 <blockquote><code>
@@ -110,7 +110,7 @@ git log --grep '^git-svn-id: .*@12345 ' `git branch --list -r 'origin/svn/*'`
 <p>
 This searches the log messages of the history of all git branches which were
 imported from SVN for a commit with the requested SVN revision id in the
-mapping line added by git-svn.
+mapping line automatically added by git-svn.
 </p>
 </ul>
 

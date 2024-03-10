@@ -6,6 +6,7 @@ my $docroot = '/srv/www/xapian.org';
 my $path = $ENV{REDIRECT_URL};
 
 my $trac_root_url = 'https://trac.xapian.org/';
+my $gitweb_base_url = 'https://git.xapian.org/?p=xapian;';
 
 if (!defined $path) {
     print <<"END";
@@ -56,16 +57,18 @@ Sorry, no known git commit hash for SVN revision r$svnrev.
 END
     exit 0;
 	}
-	my $redirect = $trac_root_url;
+	my $redirect = $gitweb_base_url;
 	if ($rev2 ne '' && $file ne '') {
 	    # /C?SVNREV?FILE?SVNOLDREV
-	    $redirect .= 'browser/' . $file . '?rev=' . $rev;
+	    $redirect .= 'a=blob;f=' . $file . ';hb=' . $rev;
 	} elsif ($file ne '') {
 	    # /C?SVNREV?FILE
-	    $redirect .= 'changeset/' . $rev . '/' . $file . '#file0';
+	    # This used to show the diff for that one file, but that doesn't
+	    # seem easy to do with gitweb so just show the file.
+	    $redirect .= 'a=blob;f=' . $file . ';hb=' . $rev;
 	} else {
 	    # /C?SVNREV
-	    $redirect .= 'changeset/' . $rev;
+	    $redirect .= 'a=commitdiff;h=' . $rev;
 	}
 	redirect($redirect);
     } else {
