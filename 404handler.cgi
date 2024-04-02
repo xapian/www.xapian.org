@@ -179,6 +179,14 @@ if ($path =~ m,/cgi-bin/bugzilla, ||
     redirect($trac_root_url . "report/1");
 }
 
+# External links (likely from HTMLified text) with punctuation glued on.
+if ($path =~ /(.*\.html)\W{1,3}$/)  {
+    if (-f "$docroot$1") {
+	redirect("https://xapian.org$1");
+    }
+    fail();
+}
+
 # These won't work as they are valid URLs so won't reach the 404 handler:
 # RedirectPermanent /index.html https://xapian.org/
 # RedirectPermanent /omega.conf https://xapian.org/omega.cgi
