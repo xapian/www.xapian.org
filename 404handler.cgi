@@ -121,6 +121,12 @@ if ($path eq '/docs/serialistion.html') {
     redirect("https://xapian.org/docs/serialisation");
 }
 
+if ($path =~ m,/Xapian,) {
+    if (-f "$docroot/docs/bindings/perl$2") {
+	redirect("https://xapian.org/docs/bindings/perl$2");
+    }
+}
+
 # Redirect old URLs somewhere helpful.
 if ($path eq '/omega.cgi') {
     redirect("https://xapian.org/search?$ENV{REDIRECT_QUERY_STRING}");
