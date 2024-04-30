@@ -186,7 +186,7 @@ if ($path =~ m,/cgi-bin/bugzilla, ||
 }
 
 # External links (likely from HTMLified text) with punctuation glued on.
-if ($path =~ /(.*\.html)\W{1,3}$/)  {
+if ($path =~ /(.*\w)\W{1,3}$/)  {
     if (-f "$docroot$1") {
 	redirect("https://xapian.org$1");
     }
