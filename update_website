@@ -79,8 +79,9 @@ __END__
 cp -au "$srcdir"/robots.txt "$stagedir"
 cp -au "$srcdir"/404handler.cgi "$stagedir"
 cp -au "$srcdir"/svn2git41.map "$stagedir"
-mkdir -p "$stagedir"/docs/bindings
+mkdir -p "$stagedir"/docs/bindings/perl
 cp -au "$srcdir"/docs/bindings/index.html "$stagedir"/docs/bindings
+cp -au "$srcdir"/docs/bindings/perl/index.html "$stagedir"/docs/bindings/perl
 ln -sf "$prefix"/lib/xapian-omega/bin/omega "$stagedir"/search.cgi
 # Not *.tt .git generate news-to-html styleandmeta.txt update_website
 
