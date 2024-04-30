@@ -122,8 +122,8 @@ if ($path eq '/docs/serialistion.html') {
 }
 
 if ($path =~ m,/Xapian,) {
-    if (-f "$docroot/docs/bindings/perl$2") {
-	redirect("https://xapian.org/docs/bindings/perl$2");
+    if (-f "$docroot/docs/bindings/perl$path") {
+	redirect("https://xapian.org/docs/bindings/perl$path");
     }
 }
 
