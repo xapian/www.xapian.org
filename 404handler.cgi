@@ -187,6 +187,11 @@ if ($path =~ /(.*\.html)\W{1,3}$/)  {
     fail();
 }
 
+# Old links to packages we used to host.
+if ($path =~ m,/debian,) {
+    redirect("https://xapian.org/download");
+}
+
 # These won't work as they are valid URLs so won't reach the 404 handler:
 # RedirectPermanent /index.html https://xapian.org/
 # RedirectPermanent /omega.conf https://xapian.org/omega.cgi
