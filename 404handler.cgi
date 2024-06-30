@@ -200,7 +200,10 @@ if ($path =~ m,/debian,) {
 
 # Links to NEWS files we don't have unpack - redirect to git.
 if ($path =~ m,/docs/xapian-(bindings|core|omega)-(1\.[024]\.[0-9][0-9]?)/NEWS$,) {
-    redirect("https://git.xapian.org/?p=xapian;a=blob;f=$1/NEWS;hb=v$2");
+    my $d = $1;
+    my $v = $2;
+    $d = "applications/$d" if $d eq 'omega';
+    redirect("https://git.xapian.org/?p=xapian;a=blob;f=xapian-$d/NEWS;hb=v$v");
 }
 
 # These won't work as they are valid URLs so won't reach the 404 handler:
