@@ -198,6 +198,11 @@ if ($path =~ m,/debian,) {
     redirect("https://xapian.org/download");
 }
 
+# Links to NEWS files we don't have unpack - redirect to git.
+if ($path =~ m,/docs/xapian-(bindings|core|omega)-(1\.[024]\.[0-9][0-9]?)/NEWS$,) {
+    redirect("https://git.xapian.org/?p=xapian;a=blob;f=$1/NEWS;hb=v$2");
+}
+
 # These won't work as they are valid URLs so won't reach the 404 handler:
 # RedirectPermanent /index.html https://xapian.org/
 # RedirectPermanent /omega.conf https://xapian.org/omega.cgi
