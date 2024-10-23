@@ -121,6 +121,14 @@ if ($path eq '/docs/serialistion.html') {
     redirect("https://xapian.org/docs/serialisation");
 }
 
+if ($path eq '/doc') {
+    redirect("https://xapian.org/docs/");
+}
+
+if ($path eq '/docs/bindings/java/README') {
+    redirect("https://xapian.org/docs/bindings/java/");
+}
+
 if ($path =~ m,/Xapian,) {
     if (-f "$docroot/docs/bindings/perl$path") {
 	redirect("https://xapian.org/docs/bindings/perl$path");
@@ -198,8 +206,8 @@ if ($path =~ m,/debian,) {
     redirect("https://xapian.org/download");
 }
 
-# Links to NEWS files we don't have unpack - redirect to git.
-if ($path =~ m,/docs/xapian-(bindings|core|omega)-(1\.[024]\.[0-9][0-9]?)/NEWS$,) {
+# Links to NEWS files we don't have unpacked - redirect to git.
+if ($path =~ m,/docs/xapian-(bindings|core|omega)-(1\.[0-4]\.[0-9][0-9]?)/NEWS$,) {
     my $d = $1;
     my $v = $2;
     $d = "applications/$d" if $d eq 'omega';
