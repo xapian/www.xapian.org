@@ -64,8 +64,7 @@ list archives for <input type="text" name="query">
 
 <h1>Matrix Chat</h1>
 
-<p>Our Matrix room is #xapian:matrix.org, which is bridged to our IRC channel
-so messages sent to either should be visible to both.
+<p>Our Matrix room is #xapian:matrix.org.
 </p>
 
 <p>
@@ -78,19 +77,18 @@ discussion when you connect again.  There are also
 command line apps</a> available.
 </p>
 
-<h1>IRC</h1>
 
-<p>We have an active IRC channel - #xapian on libera.chat:</p>
-
-<ul>
-<li> <a href="irc://irc.libera.chat/xapian">irc: link</a> if you have a desktop or mobile IRC client installed
-<li> <a href="https://kiwiirc.com/client/irc.libera.chat/#xapian">web interface</a> (OK for casual use, but you'll disconnect from IRC when you aren't online)
-</ul>
-
-<p>The users of the channel are in many different timezones, so you won't
+<p>The users of the room are in many different timezones, so you won't
 necessarily get an instant response.  This doesn't mean we're ignoring you,
 just that none of us are at our computers right now, so please hang on for a
-reply, or use the mailing lists above if you're not able to stay online.
+reply, or use the mailing lists above instead.
+</p>
+
+<h1>IRC</h1>
+
+<p>We used to have an IRC channel on libera.chat which was bridged to the
+Matrix room, but that bridging is no longer available and the IRC channel has
+become inactive.  Please use the Matrix room instead.
 </p>
 
 </div>
