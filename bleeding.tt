@@ -15,10 +15,9 @@
 
 <p>
 If you want a stable version of Xapian, we recommend using a
-<a href="download">released version</a>.  But if you're happy to cope
+<a href="download">released version</a>.  If you're happy to cope
 with potential breakage and want to try the latest development code, or
-do development yourself, you can access our <a href="https://git-scm.com/">git</a>
-repository.
+do development yourself, you can access our git repository.
 </p>
 
 <p>
@@ -31,6 +30,13 @@ of the archived CVS tree.
 </p>
 
 <h2 id="git">Git</h2>
+
+<p>
+If you don't already have git installed you'll need to do that.  If you're
+using a distro with a package system then you should find it there.
+Otherwise see the <a href="https://git-scm.com/">git website</a> for
+downloads.
+</p>
 
 <p>
 You can check out code from the master git repo at git.xapian.org like so:
