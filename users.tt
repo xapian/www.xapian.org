@@ -135,8 +135,6 @@ Database size: over 17,000 pages <small>(2019-02-14)</small>
 <li> <a href="https://packages.debian.org/">Searching their archive of software packages</a><br>
 Database size: over 46,000 packages <small>(2015-03-05)</small>
 </li>
-<li> <a href="https://wiki.debian.org/Debtags">Debtags Package Tagging</a> uses Xapian for its
-<a href="https://debtags.debian.net/search/">smart search</a> and <a href="https://debtags.debian.net/edit/">tag editor</a>.
 </li>
 
 </ul>
