@@ -221,6 +221,10 @@ if ($path =~ m,/docs/xapian-(bindings|core|omega)-(1\.[0-4]\.[0-9][0-9]?)/NEWS$,
     $d = "applications/$d" if $d eq 'omega';
     redirect("https://git.xapian.org/?p=xapian;a=blob;f=xapian-$d/NEWS;hb=v$v");
 }
+if ($path =~ m,/docs/Search-Xapian-(1\.[0-4]\.[0-9][0-9]?)\.0/Changes$,) {
+    my $v = $1;
+    redirect("https://git.xapian.org/?p=xapian;a=blob;f=search-xapian/Changes;hb=v$v");
+}
 
 # These won't work as they are valid URLs so won't reach the 404 handler:
 # RedirectPermanent /index.html https://xapian.org/
