@@ -125,8 +125,16 @@ if ($path eq '/doc') {
     redirect("https://xapian.org/docs/");
 }
 
+if ($path eq '/doc/apidoc.pdf') {
+    redirect("https://xapian.org/docs/apidoc/html/annotated.html");
+}
+
 if ($path eq '/docs/bindings/java/README') {
     redirect("https://xapian.org/docs/bindings/java/");
+}
+
+if ($path eq '/ Xapian') {
+    redirect("https://xapian.org/");
 }
 
 if ($path =~ m,/Xapian,) {
