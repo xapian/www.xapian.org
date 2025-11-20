@@ -164,7 +164,7 @@ if test "$tarball" -nt xapian-bindings/stamp-unpacked ; then
 fi
 if test xapian-bindings/stamp-unpacked -nt xapian-bindings/stamp-built-docs ; then
   cd xapian-bindings
-  ./configure XAPIAN_CONFIG="${bindir}"/xapian-config
+  ./configure XAPIAN_CONFIG="${bindir}"/xapian-config --with-perl --with-python --with-python3 --with-ruby PYTHON=/usr/bin/python2
   make -C perl
   make -C python
   make -C python3
