@@ -183,8 +183,8 @@ for xapian-core, xapian-omega, and Search::Xapian.</p>
 
 <h1>macOS</h1>
 
-<p><a href="https://brew.sh/">Homebrew</a> has xapian-core and the bindings
-for several languages packaged.  For example, use
+<p><a href="https://brew.sh/">Homebrew</a> has xapian-core, omega and the
+bindings for several languages packaged.  For example, use
 <code>brew install --build-from-source xapian --with-python</code> to install
 the core library and the Python bindings (note that currently you need to have
 installed python from Homebrew first).</p>
