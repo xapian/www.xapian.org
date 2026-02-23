@@ -164,9 +164,8 @@ if test "$tarball" -nt xapian-bindings/stamp-unpacked ; then
 fi
 if test xapian-bindings/stamp-unpacked -nt xapian-bindings/stamp-built-docs ; then
   cd xapian-bindings
-  ./configure XAPIAN_CONFIG="${bindir}"/xapian-config --with-perl --with-python --with-python3 --with-ruby PYTHON=/usr/bin/python2
+  ./configure XAPIAN_CONFIG="${bindir}"/xapian-config --with-perl --with-python3 --with-ruby
   make -C perl
-  make -C python
   make -C python3
   make -C ruby
   cd ..
@@ -174,7 +173,7 @@ if test xapian-bindings/stamp-unpacked -nt xapian-bindings/stamp-built-docs ; th
 fi
 bindings_dir=$stagedir/docs/bindings
 mkdir -p "$bindings_dir"
-for l in python python3 ; do
+for l in python3 ; do
   mkdir -p "$bindings_dir/$l"
   cp -au "xapian-bindings/$l"/docs/{examples,html/*} "$bindings_dir/$l"
 done
