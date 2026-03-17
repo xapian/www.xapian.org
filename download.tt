@@ -17,7 +17,7 @@
 [% CASE 'stable' %]
 <h2>Stable release</h2>
 
-<p>The [% r.branch | html %] branch is the current stable release branch.  We
+<p>The Xapian [% r.branch | html %] branch is the current stable release branch.  We
 recommend you use this branch unless you have a particular need to use an older 
 version.
 </p>
@@ -25,14 +25,14 @@ version.
 [% CASE 'previous stable' %]
 <h2>Previous stable release</h2>
 
-<p>The [% r.branch | html %] branch is the previous stable release branch.
+<p>The Xapian [% r.branch | html %] branch is the previous stable release branch.
 Support is mostly limited to fixing serious bugs.  We recommend upgrading to
 the current stable release series.
 </p>
 [% CASE 'old stable' %]
 <h2>Old stable release</h2>
 
-<p>The [% r.branch | html %] branch is an old stable release branch.
+<p>The Xapian [% r.branch | html %] branch is an old stable release branch.
 We no longer provide support for this, and recommend upgrading to the current
 stable release series.
 </p>
