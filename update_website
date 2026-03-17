@@ -258,8 +258,6 @@ timestamp=`date +%s.%N`
     -Mconf:ignore -Mspec:ignore -Mxml:ignore \
     -Mcs:text/plain \
     -Mjava:text/plain \
-    -Mphp5:text/plain \
-    -Mphp7:text/plain \
     -Mphp8:text/plain \
     -Mpy:text/plain \
     -Mrb:text/plain \
