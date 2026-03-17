@@ -96,7 +96,7 @@ fi
 if test xapian-core/stamp-unpacked -nt xapian-core/stamp-built ; then
   cd xapian-core
   # Build with -fPIC so bindings can be built.
-  ./configure --prefix="${prefix}" --disable-shared --disable-backend-chert --enable-silent-rules CXXFLAGS='-fPIC -g -O2'
+  ./configure --prefix="${prefix}" --disable-shared --enable-silent-rules CXXFLAGS='-fPIC -g -O2'
   make
   make install
   cd ..
