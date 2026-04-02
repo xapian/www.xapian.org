@@ -210,7 +210,9 @@ if [ -n "$old_version" ] ; then
     chmod g+rws "$tardir"
     mv "$tardir" Search-Xapian
     cd Search-Xapian
-    perl Makefile.PL XAPIAN_CONFIG="${bindir}"/xapian-config
+    # Search::Xapian is not compatible with Xapian 2.x so use system
+    # xapian-config.  We're only building the HTML docs here.
+    perl Makefile.PL XAPIAN_CONFIG=/usr/bin/xapian-config
     make LINKTYPE=static
     ./makehtmldocs
     cd ..
