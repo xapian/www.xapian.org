@@ -110,7 +110,7 @@ you to the corresponding git commit in gitweb.
 <li> <p>In your local clone of the git repo you can run:</p>
 
 <blockquote><code>
-git log --grep '^git-svn-id: .*@12345 ' `git branch --list -r 'origin/svn/*'`
+git log --grep '^git-svn-id: .*@12345 ' `git branch --list -r 'origin/svn/*' 'origin/RELEASE/[01].*'`
 </code></blockquote>
 
 <p>
@@ -120,7 +120,9 @@ mapping line automatically added by git-svn.
 </p>
 </ul>
 
-<p>However, note that there are a small number of SVN revisions which aren't present in the git tree.</p>
+<p>Note that there are a small number of SVN revisions which aren't present in
+the git tree - for example, commits on branches that weren't useful enough to
+keep.</p>
 
 <h2>Snapshots</h2>
 
