@@ -121,9 +121,9 @@ repositories, though these may lag behind the latest releases a bit.</p>
 <h2 id="rhel">RedHat Enterprise Linux</h2>
 
 <p>
-If you want a recent release, you'll probably need to build it yourself.
-<a href="https://fedoraproject.org/wiki/EPEL">EPEL</a> has some older 1.2.x
-packages for RHEL 6 and RHEL 7, but note that we no longer support 1.2.x.
+<a href="https://fedoraproject.org/wiki/EPEL">EPEL</a> has some older 1.4.x
+packages for RHEL 8, 9 and 10.  If you want Xapian 2.x you may need to build it
+yourself.
 </p>
 
 <h2 id="slackware">Slackware</h2>
