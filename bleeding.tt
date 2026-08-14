@@ -109,8 +109,11 @@ git commit.  Say you want to find SVN revision 12345 - there are two ways:
 </p>
 
 <ul>
-<li> Enter the URL <code>https://xapian.org/C?12345</code> which will redirect
-you to the corresponding git commit in gitweb.
+<li> Visit the URL <code>https://xapian.org/C?12345</code> - this gives a
+custom 404 page which shows you the corresponding git commit hash and
+a git command to show it.  The page is text/plain so
+<code>curl https://xapian.org/C?12345</code> from the command line works
+well.
 <li> <p>In your local clone of the git repo you can run:</p>
 
 <blockquote><code>
@@ -125,8 +128,7 @@ mapping line automatically added by git-svn.
 </ul>
 
 <p>Note that there are a small number of SVN revisions which aren't present in
-the git tree - for example, commits on branches that weren't useful enough to
-keep.</p>
+the git tree - for example, commits on branches that weren't useful to keep.</p>
 
 <h2>Snapshots</h2>
 
