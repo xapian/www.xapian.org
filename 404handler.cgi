@@ -55,22 +55,56 @@ Content-Type: text/plain
 
 Sorry, no known git commit hash for SVN revision r$svnrev.
 END
-    exit 0;
+	    exit 0;
 	}
 	my $redirect = $gitweb_base_url;
 	if ($rev2 ne '' && $file ne '') {
 	    # /C?SVNREV?FILE?SVNOLDREV
-	    $redirect .= 'a=blob;f=' . $file . ';hb=' . $rev;
+	    my $svnrev2 = $rev2;
+	    $rev2 = svn2git($svnrev2);
+	    if ($rev !~ /^[0-9a-f]{40}$/) {
+		print <<"END";
+Status: 404 Not Found
+Content-Type: text/plain
+
+Sorry, no known git commit hash for SVN revision r$svnrev2.
+END
+		exit 0;
+	    }
+	    print <<"END";
+Status: 404 Not Found
+Content-Type: text/plain
+
+SVN revision r$svnrev is git commit $rev
+SVN revision r$svnrev2 is git commit $rev2
+
+git diff $rev $rev2 \Q$file\E
+END
+    exit 0;
 	} elsif ($file ne '') {
 	    # /C?SVNREV?FILE
-	    # This used to show the diff for that one file, but that doesn't
-	    # seem easy to do with gitweb so just show the file.
-	    $redirect .= 'a=blob;f=' . $file . ';hb=' . $rev;
+	    # Show the diff for just the specified file.
+	    print <<"END";
+Status: 404 Not Found
+Content-Type: text/plain
+
+SVN revision r$svnrev is git commit $rev
+
+git show $rev \Q$file\E
+END
+    exit 0;
 	} else {
 	    # /C?SVNREV
-	    $redirect .= 'a=commitdiff;h=' . $rev;
+	    print <<"END";
+Status: 404 Not Found
+Content-Type: text/plain
+
+SVN revision r$svnrev is git commit $rev
+
+git show $rev
+END
+    exit 0;
 	}
-	redirect($redirect);
     } else {
 	# CVS - nowhere to redirect to now.
 	# my $redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
