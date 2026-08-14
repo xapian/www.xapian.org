@@ -73,7 +73,9 @@ git remote set-url origin https://git.xapian.org/xapian
 
 <p>
 All branches should be available via git (you can list them with
-<code>git branch -r</code>).  Note that SVN tags appears as branches in git.
+<code>git branch -r</code>).  SVN tags were originally mapped to branches in
+git but we have now replaced these with git tags (and added git tags for a few
+old releases which were missing a tag in SVN).
 </p>
 
 <p>
