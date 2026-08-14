@@ -106,17 +106,29 @@ END
     exit 0;
 	}
     } else {
-	# CVS - nowhere to redirect to now.
-	# my $redirect = 'http://svn.xapian.org/' . $file . '?root=XapianCVS';
-	# if ($rev eq '') {
-	#     # deleted file
-	# } elsif ($rev2 eq '') {
-	#     # added file
-	#     $redirect .= '&rev=' . $rev . '&content-type=text/vnd.viewcvs-markup';
-	# } else {
-	#     # updated file
-	#     $redirect .= '&r1=' . $rev . '&r2=' . $rev2;
-	# }
+	# URLs used in very old xapian-commits automatic emails:
+	$file =~ s!(.*?)/!!;
+	my $repo_opt = defined $1 ? "-C \Q$1\E " : '';
+	my $action;
+	if ($rev eq '') {
+	    # /C?FILE
+	    $action = 'deleted';
+	} elsif ($rev2 eq '') {
+	    # /C?FILE?CVSREV
+	    $action = 'added';
+	} else {
+	    # /C?FILE?OLDCVSREV?NEWCVSREV
+	    $action = 'updated';
+	}
+	print <<"END";
+Status: 404 Not Found
+Content-Type: text/plain
+
+File $action in CVS
+
+git show $repo_opt-- \Q$file\E
+END
+	exit 0;
     }
 }
 
