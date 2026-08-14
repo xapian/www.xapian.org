@@ -208,10 +208,10 @@ if ($path =~ /(.*)\.php$/)  {
 # generated HTML for a while.
 if ($path =~ m!(.*/)([^/]*)\.rst$!) {
     if (-f "$docroot$1$2.html") {
-	redirect("http://xapian.org$1$2.html");
+	redirect("https://xapian.org$1$2.html");
     }
     if (-f "$docroot$1html/$2.html") {
-	redirect("http://xapian.org$1html/$2.html");
+	redirect("https://xapian.org$1html/$2.html");
     }
 }
 
