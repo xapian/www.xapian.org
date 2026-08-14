@@ -126,7 +126,7 @@ Content-Type: text/plain
 
 File $action in CVS
 
-git show $repo_opt-- \Q$file\E
+git ${repo_opt}log -- \Q$file\E
 END
 	exit 0;
     }
