@@ -92,7 +92,9 @@ it easier and quicker to browse the repository online:
 </p>
 
 <ul>
-<li> <a href="https://git.xapian.org/?p=xapian;a=summary">browse (using gitweb)</a>
+<!-- Currently disabled due to extreme abuse by AI crawlers
+    <li> <a href="https://git.xapian.org/?p=xapian;a=summary">browse (using gitweb)</a>
+-->
 <li> <a href="https://trac.xapian.org/browser/git">browse (using trac)</a> (after registering and verifying an account)
 <li> <a href="http://repo.or.cz/w/xapian.git">browse repo.or.cz mirror</a>
 <li> <a href="https://github.com/xapian/xapian">browse github mirror</a>
