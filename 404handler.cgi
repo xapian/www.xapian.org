@@ -6,7 +6,6 @@ my $docroot = '/srv/www/xapian.org';
 my $path = $ENV{REDIRECT_URL};
 
 my $trac_root_url = 'https://trac.xapian.org/';
-my $gitweb_base_url = 'https://git.xapian.org/?p=xapian;';
 
 if (!defined $path) {
     print <<"END";
@@ -57,7 +56,6 @@ Sorry, no known git commit hash for SVN revision r$svnrev.
 END
 	    exit 0;
 	}
-	my $redirect = $gitweb_base_url;
 	if ($rev2 ne '' && $file ne '') {
 	    # /C?SVNREV?FILE?SVNOLDREV
 	    my $svnrev2 = $rev2;
@@ -261,15 +259,24 @@ if ($path =~ m,/debian,) {
 }
 
 # Links to NEWS files we don't have unpacked - redirect to git.
+#
+# We've had to turn off gitweb on git.xapian.org due to AI crawler abuse so
+# redirect to github.  Not ideal but better than 404; also I unpacked all the
+# missing NEWS files and new ones should get unpacked when a release is made.
 if ($path =~ m,/docs/xapian-(bindings|core|omega)-(1\.[0-4]\.[0-9][0-9]?)/NEWS$,) {
     my $d = $1;
     my $v = $2;
     $d = "applications/$d" if $d eq 'omega';
-    redirect("https://git.xapian.org/?p=xapian;a=blob;f=xapian-$d/NEWS;hb=v$v");
+    redirect("https://raw.githubusercontent.com/xapian/xapian/refs/tags/v$v/xapian-$d/NEWS");
 }
-if ($path =~ m,/docs/Search-Xapian-(1\.[0-4]\.[0-9][0-9]?)\.0/Changes$,) {
+if ($path =~ m,/docs/xapian-(bindings|core|omega)-(2\.[0-9][0-9]?\.[0-9][0-9]?)/NEWS$,) {
+    my $d = $1;
+    my $v = $2;
+    redirect("https://raw.githubusercontent.com/xapian/xapian/refs/tags/v$v/xapian-$d/NEWS");
+}
+if ($path =~ m,/docs/Search-Xapian-(1\.[0-2]\.[0-9][0-9]?)\.0/Changes$,) {
     my $v = $1;
-    redirect("https://git.xapian.org/?p=xapian;a=blob;f=search-xapian/Changes;hb=v$v");
+    redirect("https://raw.githubusercontent.com/xapian/xapian/refs/tags/v$v/search-xapian/Changes");
 }
 
 # These won't work as they are valid URLs so won't reach the 404 handler:
