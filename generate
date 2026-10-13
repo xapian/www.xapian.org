@@ -24,7 +24,7 @@ my $vars = {
 	    version => '2.1.0',
 	    release_date => '2026-08-13',
 	    extension => 'tar.xz',
-	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2026-August/010138.html'
+	    announce => 'https://lists.mythic-beasts.com/mailman3/hyperkitty/list/xapian-discuss@lists.xapian.org/message/7NHGYUDP4P24KCX6IRKXQRJULWBZFFTL/'
 	},
 	{
 	    branch => '1.4',
@@ -32,7 +32,7 @@ my $vars = {
 	    version => '1.4.32',
 	    release_date => '2026-08-13',
 	    extension => 'tar.xz',
-	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2026-August/010137.html'
+	    announce => 'https://lists.mythic-beasts.com/mailman3/hyperkitty/list/xapian-discuss@lists.xapian.org/message/7CDHCQL6AGZ76ZM2JI7TYHFBYKTOZNX3/'
 	},
 	{
 	    branch => '1.2',
@@ -41,7 +41,7 @@ my $vars = {
 	    release_date => '2017-09-26',
 	    perl_minor => '.7',
 	    extension => 'tar.xz', # Search::Xapian hardcoded as tar.gz currently
-	    announce => 'https://lists.xapian.org/pipermail/xapian-discuss/2017-September/009553.html'
+	    announce => 'https://lists.mythic-beasts.com/mailman3/hyperkitty/list/xapian-discuss@lists.xapian.org/message/BBKZWI5D2A6SD3VOCZ6GWNUJP2PYRY36/'
 	},
 #	{
 #	    branch => '1.0',
